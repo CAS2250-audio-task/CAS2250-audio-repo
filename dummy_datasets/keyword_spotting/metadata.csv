@@ -1,0 +1,34 @@
+﻿path,label,group,split,source_url,license,annotator,notes
+audio/keyword_01/speaker_01.wav,시작,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_01/speaker_02.wav,시작,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_01/speaker_03.wav,시작,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_02/speaker_01.wav,정지,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_02/speaker_02.wav,정지,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_02/speaker_03.wav,정지,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_03/speaker_01.wav,확인,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_03/speaker_02.wav,확인,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_03/speaker_03.wav,확인,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_04/speaker_01.wav,취소,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_04/speaker_02.wav,취소,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_04/speaker_03.wav,취소,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_05/speaker_01.wav,위,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_05/speaker_02.wav,위,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_05/speaker_03.wav,위,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_06/speaker_01.wav,아래,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_06/speaker_02.wav,아래,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_06/speaker_03.wav,아래,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_07/speaker_01.wav,왼쪽,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_07/speaker_02.wav,왼쪽,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_07/speaker_03.wav,왼쪽,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_08/speaker_01.wav,오른쪽,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_08/speaker_02.wav,오른쪽,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_08/speaker_03.wav,오른쪽,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_09/speaker_01.wav,열어,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_09/speaker_02.wav,열어,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_09/speaker_03.wav,열어,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_10/speaker_01.wav,닫아,tts_speaker_01,train,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/keyword_10/speaker_02.wav,닫아,tts_speaker_02,val,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-SunHiNeural; sanity-check only
+audio/keyword_10/speaker_03.wav,닫아,tts_speaker_03,test,generated:edge-tts,synthetic-demo,generator,voice=ko-KR-InJoonNeural; sanity-check only
+audio/silence/room_01.wav,silence,silence_room_01,train,generated:room-noise,synthetic-demo,generator,low-level room noise; sanity-check only
+audio/silence/room_02.wav,silence,silence_room_02,val,generated:room-noise,synthetic-demo,generator,low-level room noise; sanity-check only
+audio/silence/room_03.wav,silence,silence_room_03,test,generated:room-noise,synthetic-demo,generator,low-level room noise; sanity-check only

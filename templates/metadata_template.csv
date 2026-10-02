@@ -1,0 +1,4 @@
+path,label,group,split,source_url,license,annotator,notes
+audio/class_name/example_001.wav,class_name,source_or_subject_id,train,https://example.com,permission-required,student_name,
+audio/class_name/example_002.wav,class_name,another_source_id,val,https://example.com,permission-required,student_name,
+audio/class_name/example_003.wav,class_name,third_source_id,test,https://example.com,permission-required,student_name,
