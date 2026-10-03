@@ -1,0 +1,7 @@
+path,label,group,split,speaker_id,room_session_id,room,distance_cm,device,style,source_url,license,annotator,notes
+audio/출발/spk01_001.wav,출발,speaker:spk01,train,spk01,session01,room01,50,phone01,normal,,participant-consent,annotator01,example only
+audio/출발/spk04_001.wav,출발,speaker:spk04,val,spk04,session04,room02,50,phone01,normal,,participant-consent,annotator01,example only
+audio/출발/spk05_001.wav,출발,speaker:spk05,test,spk05,session05,room03,50,phone01,normal,,participant-consent,annotator01,example only
+audio/silence/session01_001.wav,silence,room_session:session01,train,,session01,room01,50,phone01,background,,participant-consent,annotator01,no speaker or target keyword
+audio/silence/session04_001.wav,silence,room_session:session04,val,,session04,room02,50,phone01,background,,participant-consent,annotator01,no speaker or target keyword
+audio/silence/session05_001.wav,silence,room_session:session05,test,,session05,room03,50,phone01,background,,participant-consent,annotator01,no speaker or target keyword

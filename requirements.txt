@@ -1,17 +1,17 @@
-torch
-torchvision
-torchaudio
+# Python 3.10 / Linux x86_64 / NVIDIA driver 550.107.02 (CUDA 12.4)
+# Install: .venv/bin/python -m pip install -r requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cu124
 
-numpy
-pandas
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+torchaudio==2.6.0+cu124
 
-scikit-learn
-matplotlib
-
-jupyterlab
-ipykernel
-
-tqdm
-
-seaborn
-soundfile
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+seaborn==0.13.2
+soundfile==0.14.0
+jupyterlab==4.6.4
+ipykernel==7.3.0
+tqdm==4.70.1
