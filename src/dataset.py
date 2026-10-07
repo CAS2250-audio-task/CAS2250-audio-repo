@@ -77,7 +77,7 @@ def metadata_draft(root):
     for path in sorted(Path(root).glob("audio/*/*.wav")):
         rows.append(dict(path=path.relative_to(root).as_posix(), label=path.parent.name,
                          group="", split="", speaker_id="", room_session_id="", room="",
-                         distance_cm="", device="", style="", source_url="", license="",
+                         distance_cm="", noise_level="", noise_type="", device="", style="", source_url="", license="",
                          annotator="", notes="Fill actual speaker/session IDs and split before training"))
     if not rows:
         raise ValueError("No audio/<label>/*.wav files found.")

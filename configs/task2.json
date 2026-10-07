@@ -1,5 +1,17 @@
 {
-  "labels": ["출발", "정지", "전진", "후진", "왼쪽", "오른쪽", "회전", "복귀", "대기", "따라와", "silence"],
+  "labels": [
+    "출발",
+    "정지",
+    "전진",
+    "후진",
+    "왼쪽",
+    "오른쪽",
+    "시작",
+    "복귀",
+    "대기",
+    "재시작",
+    "silence"
+  ],
   "data_root": null,
   "metadata_csv": "metadata.csv",
   "dataset_version": "uncollected",

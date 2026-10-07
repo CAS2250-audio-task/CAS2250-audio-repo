@@ -114,7 +114,7 @@ def save_reports(directory, scores, predictions, frame, cfg):
     plt.close(fig)
     merged = predictions.merge(frame, on="path", validate="one_to_one")
     grouped = []
-    for column in ("speaker_id", "room_session_id", "room", "distance_cm", "device", "style", "group"):
+    for column in ("speaker_id", "room_session_id", "room", "distance_cm", "noise_level", "noise_type", "device", "style", "group"):
         if column not in merged:
             continue
         for value, subset in merged[merged[column].astype(str).str.strip() != ""].groupby(column):

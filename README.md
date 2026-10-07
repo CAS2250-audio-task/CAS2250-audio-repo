@@ -3,9 +3,11 @@
 교수 제공 노트북의 baseline을 모듈과 CLI로 옮긴 **완성형 참고 구현**입니다.
 `reference/ai-baseline` 브랜치에서 관리합니다. 팀원용 skeleton과 실제 데이터는 별도 단계입니다.
 
-현재 목표는 **출발 / 정지 / 전진 / 후진 / 왼쪽 / 오른쪽 / 회전 / 복귀 / 대기 / 따라와 + silence**입니다.
+현재 목표는 **출발 / 정지 / 전진 / 후진 / 왼쪽 / 오른쪽 / 시작 / 복귀 / 대기 / 재시작 + silence**입니다.
 단어 목록과 class ID 순서는 `configs/task2.json`의 `labels`로 관리합니다.
-실제 녹음은 아직 없고, AWS 저장 위치도 미정입니다. 경로는 실행 시 지정합니다.
+실제 녹음은 Google Drive에서 수합합니다. 내려받은 폴더 경로를 실행 시 지정합니다.
+
+팀원 시작 절차는 [VESSL · GitHub 팀 가이드](documents/vessl_github_team_guide.md)를 참고하세요.
 
 ## 환경과 설치
 
@@ -55,6 +57,43 @@ Dummy 설정은 제공 데이터의 원래 단어를 사용합니다. `출발` �
 평가 명령 분리 등은 reference의 관리 기능입니다. Fixed dB scaling을 다른 normalization으로
 바꾸거나 모델·augmentation을 조정하는 일은 baseline 이후 실험으로 분리합니다.
 
+## 팀 녹음 수집 형식 (Drive / GitHub 공통)
+
+`templates/task2_collection_plan.csv`는 모든 참여자의 음성을 합친 통합 수집표입니다.
+5명 × 10단어 × 단어당 20회 = 음성 1,000개이며, 단어별 100행을 제공합니다.
+사람별 폴더나 CSV는 만들지 않고 `audio/<label>/clip_001.wav`부터 `clip_100.wav`까지
+서로 겹치지 않는 파일명을 사용합니다. 파일별 실제 화자는 `speaker_id`에 기록합니다.
+장소·거리·소음 조건은 실제 녹음값으로 채우며 자동 배정하지 않습니다.
+Silence는 추가분(+α)이며 시작용으로 장소 3개 × 소음 유무 2개의 6행을 제공합니다.
+수합한 silence 개수에 맞게 행을 추가하고 파일명을 중복 없이 지정합니다.
+
+Drive에 `metadata.csv`와 `audio/<label>/*.wav`를 같은 데이터셋 폴더 아래 올립니다.
+수집 계획 CSV를 복사해 `metadata.csv`로 사용하며, `path`와 실제 파일명을 일치시킵니다.
+파일별 `speaker_id`, `room_session_id`, 장비와 환경을 기록합니다.
+`room`은 장소 종류, `noise_level`은 quiet/noisy, `noise_type`은 traffic/conversation/fan 등
+실제 소음 종류입니다. silence의 `distance_cm`과 `speaker_id`는 빈칸으로 둡니다.
+환경 필드는 보조 정보이며 분류 대상은 10단어와 silence입니다.
+
+`group`과 `split`은 수집 계획에서 비워 둡니다. 수집 후 실제 화자/세션 기준으로 배정하고
+아래 validate 명령을 통과해야 학습할 수 있습니다. 한 화자의 녹음을 여러 split으로
+나누는 방식은 현재 코드가 허용하지 않으므로 train/val/test에 각각 다른 화자가 필요합니다.
+전체 데이터셋을 하나로 수합하되, 학습 시에는 CSV의 split으로 train/val/test를 구분합니다.
+
+나중에 별도 GitHub 데이터 저장소로 옮겨도 이 상대 경로와 CSV를 그대로 유지합니다.
+README에 데이터 버전과 수집 방법을 함께 기록합니다. WAV를 Git LFS로 관리할 경우
+데이터 저장소에서 다음을 실행하고, 내려받을 때 `git lfs pull`로 실제 WAV를 받습니다.
+
+```bash
+git lfs install
+git lfs track "*.wav"
+git add .gitattributes metadata.csv audio README.md
+```
+
+이 프로젝트에서는 다운로드한 데이터 루트를 지정하면 되므로 Drive/GitHub 전용 로더는
+필요하지 않습니다. `prepare-metadata`는 환경 라벨을 추론하지 않으므로 이미 작성한
+수집 CSV가 있다면 그 CSV를 유지합니다. 녹음은 WAV로, 단어 전체가 1.5초 구간에
+들어가도록 맞추는 것을 권장합니다.
+
 ## 실제 데이터가 준비되면
 
 `configs/task2.json`의 `data_root`는 의도적으로 `null`입니다.
@@ -69,7 +108,7 @@ Dummy 설정은 제공 데이터의 원래 단어를 사용합니다. `출발` �
         출발/*.wav
         정지/*.wav
         ...
-        따라와/*.wav
+        재시작/*.wav
         silence/*.wav
 ```
 
@@ -93,7 +132,7 @@ Dummy 설정은 제공 데이터의 원래 단어를 사용합니다. `출발` �
 | `split` | `train`, `val`, `test` 중 하나; 전 행에 명시 |
 | `speaker_id` | keyword 행에 필수; 익명 화자 ID |
 | `room_session_id` | silence 행에 필수; 배경음 녹음 세션 ID. keyword 행에도 기록 권장 |
-| `room`, `distance_cm`, `device`, `style` | 환경별 분석을 위한 권장 필드 |
+| `room`, `distance_cm`, `noise_level`, `noise_type`, `device`, `style` | 환경별 분석을 위한 권장 필드 |
 | `source_url`, `license`, `annotator`, `notes` | 출처·동의·검수 기록 |
 
 5명 중 train 3명, validation 1명, test 1명을 먼저 정하고 **모든 keyword 녹음에 동일하게 적용**합니다.
