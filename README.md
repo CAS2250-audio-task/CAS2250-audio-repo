@@ -1,11 +1,12 @@
 # Task 2 — Keyword Spotting Reference Baseline
 
 교수 제공 노트북의 baseline을 모듈과 CLI로 옮긴 **완성형 참고 구현**입니다.
-`reference/ai-baseline` 브랜치에서 관리합니다. 팀원용 skeleton과 실제 데이터는 별도 단계입니다.
+`reference/ai-baseline` 브랜치에서 관리합니다. 실제 녹음 1,015개와 VAD 전처리 결과도 함께 제공합니다.
 
 현재 목표는 **출발 / 정지 / 전진 / 후진 / 왼쪽 / 오른쪽 / 시작 / 복귀 / 대기 / 재시작 + silence**입니다.
 단어 목록과 class ID 순서는 `configs/task2.json`의 `labels`로 관리합니다.
-실제 녹음은 Google Drive에서 수합합니다. 내려받은 폴더 경로를 실행 시 지정합니다.
+실제 데이터의 보관 위치, 전처리 결과와 실행법은 [데이터셋 안내](datasets/task2/README.md)를 참고하세요.
+`configs/task2_real.json`과 `notebooks/task2_real_preprocessed.ipynb`가 실제 데이터용 진입점입니다.
 
 팀원 시작 절차는 [VESSL · GitHub 팀 가이드](documents/vessl_github_team_guide.md)를 참고하세요.
 
@@ -199,3 +200,47 @@ Continuous streaming, unknown class, AWS 업로드, 팀원 skeleton, 실험 bran
 Regression checks: group/identity leakage, split별 class 누락, label 불일치, 경로 탈출/중복,
 평가 전처리의 결정성, stereo/resampling/padding, 11-class macro-F1.
 Dummy end-to-end GPU 학습·checkpoint 재평가·test·단일 WAV 추론도 개발 시 확인합니다.
+
+## 발화 전처리와 애매한 파일 검토
+
+`notebooks/audio_classification_resnet18_dummy_dataset.ipynb`는 더미 학습용 노트북입니다.
+keyword spotting에는 학습 전에 `src/preprocess.py`를 호출하는 셀과 검토 파일 재생/파형 셀을 추가했습니다.
+실제 데이터는 노트북의 `RAW_DATA_ROOT`를 변경하세요. 개 짖는 소리에는 사람 음성 VAD를 적용하지 않습니다.
+
+```bash
+python -m src.preprocess \
+  --data-root /path/to/raw_dataset \
+  --output-root processed_datasets/task2_v1
+```
+
+기본값은 Silero VAD, mono 16 kHz, 발화 앞뒤 각각 200ms, 최종 1.5초입니다.
+발화 속도는 유지하고 남는 길이를 양쪽 zero padding으로 채웁니다.
+발화 RMS 목표는 -20 dBFS, 최대 증폭은 +12 dB, 피크 상한은 -1 dBFS입니다.
+`silence`는 중앙 구간을 사용하고 음량을 증폭하지 않습니다.
+3초 비교는 `--seconds 3`으로 실행하고 학습 config의 `seconds`도 3으로 맞추세요.
+검출 민감도/여유는 `--threshold`와 `--margin-ms`로 조절합니다.
+다른 음량 설정은 Python의 `Options`로 지정할 수 있습니다.
+
+출력은 원본과 분리된 **새 폴더**에 저장하며 기존 결과를 덮어쓰지 않습니다.
+
+- `metadata.csv`: 자동 통과 파일만 포함하며 원래 label/group/split 및 보조 열을 보존합니다.
+- `preprocess_report.csv`: 전체 파일의 처리 상태, 검출 구간, 자른 구간, 증폭량, 검토 이유.
+- `review.csv`: 미검출, 여러 발화 구간, 원본 경계의 발화, 발화+여유 길이 초과,
+  낮은 전경/배경 에너지 대비, 과도하게 작은 음성, 원본 진폭 clipping 의심,
+  silence에서 음성 검출, 파일 읽기 오류 등을 기록합니다.
+- `preprocess_options.json`: 실행에 사용한 설정.
+
+에너지 대비는 실제 SNR이나 VAD confidence가 아닌 **검토용 휴리스틱**입니다.
+발화가 원본 경계 50ms 안에 있으면 이미 잘렸을 가능성 때문에 검토합니다.
+여러 검출 구간은 한 단어의 검출 끊김일 수도 있어 자동으로 이어 붙이거나 삭제하지 않습니다.
+검토 대상 오디오는 원본을 유지하고 자동 학습 목록에서는 제외합니다.
+노트북의 `REVIEW_INDEX`로 원본을 듣고 검출 구간을 확인한 뒤,
+원본/라벨 수정 또는 설정 변경 후 새 출력 폴더로 다시 실행하세요.
+
+실제 데이터의 split은 처리 전에 확정하고 모든 split에 동일한 설정을 적용하세요.
+검토 후 클래스가 빠지면 학습용 메타데이터 검증이 실패하므로 해당 파일을 해결해야 합니다.
+VAD 실패를 모두 silence로 바꾸지 않습니다. 배경 사람 목소리를 목표 화자와 구분하거나
+소음에 완전히 가려진 발화를 복구하는 기능은 없습니다.
+배포 시에도 같은 VAD/여유/padding/음량 정책을 적용해야 하며,
+이 오프라인 도구만으로 기존 `predict`의 전처리가 변경되지는 않습니다.
+테스트 결과를 보고 전처리 설정을 조절하지 말고 train/validation에서 확정하세요.
