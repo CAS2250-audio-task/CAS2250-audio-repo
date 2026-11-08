@@ -5,3 +5,9 @@ __pycache__/
 .DS_Store
 __MACOSX/
 runs/
+datasets/task2/decoded-v1/
+documents/audio_real_dataset.zip
+dummy_datasets/dog_breed/audio_real_dataset.zip
+datasets/task2/raw-v1/audio/
+datasets/task2/raw-v1/originals/
+processed_datasets/

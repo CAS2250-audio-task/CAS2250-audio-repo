@@ -24,12 +24,12 @@
   "hop_length": 160,
   "n_mels": 128,
   "batch_size": 32,
-  "epochs": 1,
-  "learning_rate": 0.0003,
+  "epochs": 10,
+  "learning_rate": 0.0005,
   "weight_decay": 0.0001,
   "num_workers": 0,
-  "use_pretrained": false,
-  "use_augmentation": true,
+  "use_pretrained": true,
+  "use_augmentation": false,
   "seed": 42,
   "device": "auto"
 }

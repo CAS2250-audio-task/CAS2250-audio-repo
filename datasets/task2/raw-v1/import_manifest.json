@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "07101815f0570cdff13dcf2be8b6cfa17d2988ed792f33f1c30e28c430760fa4",
+  "seed": 42,
+  "split_map": {
+    "spk04": "train",
+    "spk02": "train",
+    "spk03": "train",
+    "spk05": "val",
+    "spk01": "test"
+  },
+  "participants": {
+    "spk01": "audio_real_dataset/강재훈_녹음파일.zip",
+    "spk02": "audio_real_dataset/곽민채_녹음파일.zip",
+    "spk03": "audio_real_dataset/노정민_녹음파일.zip",
+    "spk04": "audio_real_dataset/이서준_녹음파일.zip",
+    "spk05": "audio_real_dataset/최환준_녹음파일.zip"
+  },
+  "annotation_source": "filename inference; room/session details not verified",
+  "decoder": "imageio-ffmpeg 0.6.0; mono 16 kHz PCM16, no gain adjustment"
+}
