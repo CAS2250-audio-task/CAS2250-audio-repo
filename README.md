@@ -1,7 +1,8 @@
 # Task 2 — Keyword Spotting Reference Baseline
 
 교수 제공 노트북의 baseline을 모듈과 CLI로 옮긴 **완성형 참고 구현**입니다.
-`reference/ai-baseline` 브랜치에서 관리합니다. 실제 녹음 1,015개와 VAD 전처리 결과도 함께 제공합니다.
+공통 baseline은 `main`과 `reference/ai-baseline`에서 원본 녹음 1,015개와 함께 관리합니다.
+이 `jaehun` 브랜치의 VAD 클리핑·음량 정규화 및 검토 목록은 개인 실험입니다.
 
 현재 목표는 **출발 / 정지 / 전진 / 후진 / 왼쪽 / 오른쪽 / 시작 / 복귀 / 대기 / 재시작 + silence**입니다.
 단어 목록과 class ID 순서는 `configs/task2.json`의 `labels`로 관리합니다.

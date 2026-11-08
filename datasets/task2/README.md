@@ -1,4 +1,7 @@
-# 실제 명령어 녹음 v1
+# 실제 명령어 녹음 v1 — jaehun 개인 클리핑 실험
+
+이 브랜치의 `clipped-v1` 및 검토 목록은 `jaehun` 전용입니다.
+공유 `main`/`reference/ai-baseline`은 원본 1,015개와 공통 학습 설정을 사용합니다.
 
 업로드된 `audio_real_dataset.zip`은 화자 5명 × 203개 = **1,015개 M4A**입니다.
 10개 명령어마다 100개씩 총 1,000개와 silence 15개를 포함합니다.
