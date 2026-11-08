@@ -19,12 +19,12 @@ class Config:
     hop_length: int = 160
     n_mels: int = 128
     batch_size: int = 32
-    epochs: int = 1
-    learning_rate: float = 3e-4
+    epochs: int = 10
+    learning_rate: float = 5e-4
     weight_decay: float = 1e-4
     num_workers: int = 0
-    use_pretrained: bool = False
-    use_augmentation: bool = True
+    use_pretrained: bool = True
+    use_augmentation: bool = False
     seed: int = 42
     device: str = "auto"
 

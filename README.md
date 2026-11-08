@@ -44,17 +44,22 @@ Dummy 설정은 제공 데이터의 원래 단어를 사용합니다. `출발` �
 
 ## Baseline 조건
 
+`notebooks/1차보고서_제출_70%.ipynb`의 학습 설정을 공통 baseline으로 사용합니다.
+`src.Config`, 모든 `configs/task2*.json`, 더미/실제 데이터 실행 노트북에 동일하게 적용합니다.
+데이터 경로·라벨·버전은 각 데이터셋에 맞게 구분합니다.
+
 - WAV를 mono, 16 kHz, 1.5초로 변환: 짧으면 zero padding, 길면 학습 random crop / 평가 center crop.
 - `n_fft=512`, `win_length=512`, `hop_length=160`, `n_mels=128`, `f_min=40`, `f_max=8000`.
 - Power mel → dB (`top_db=80`) → `(dB+80)/80` clamp → `(x-0.5)/0.25`.
 - Resize 없이 `[1, 128, 151]` 입력, 1채널 ResNet-18, 11개 출력.
-- 기본 ImageNet pretrained **off**, augmentation **on**.
-- 학습 augmentation: gain, circular time shift, additive noise, frequency/time masking. 평가에는 적용하지 않음.
-- 역빈도 WeightedRandomSampler, CrossEntropy, AdamW (`lr=3e-4`, `weight_decay=1e-4`), cosine schedule.
-- 기본 1 epoch는 교수 dummy 실행 조건. 실제 실험의 epoch는 설정이나 `--epochs`로 지정.
+- 기본 ImageNet pretrained **on**, augmentation **off**.
+- Augmentation을 실험적으로 켜면 gain, circular time shift, additive noise, frequency/time masking을 학습에만 적용.
+- 역빈도 WeightedRandomSampler, CrossEntropy, AdamW (`lr=5e-4`, `weight_decay=1e-4`), cosine schedule.
+- 기본 **10 epochs**. 다른 epoch 수는 별도 실험에서 설정이나 `--epochs`로 지정.
 - Validation macro-F1 최고 epoch를 `best.pt`에 저장. 동점이면 앞선 epoch 유지.
 
-처리와 학습 설정은 교수 노트북을 따릅니다. 경로/label 관리, identity 검사, 재현성 기록,
+모델 구조와 spectrogram 처리는 교수 노트북을 따르고, 학습 기본값은 70% 파일에 맞춥니다.
+경로/label 관리, identity 검사, 재현성 기록,
 평가 명령 분리 등은 reference의 관리 기능입니다. Fixed dB scaling을 다른 normalization으로
 바꾸거나 모델·augmentation을 조정하는 일은 baseline 이후 실험으로 분리합니다.
 
@@ -148,7 +153,7 @@ checkpoint에 보존됩니다. 기존 run 설정을 수정해서 checkpoint의 �
 
 ```bash
 .venv/bin/python -m src validate --config configs/task2.json --data-root /path/to/data
-.venv/bin/python -m src train --config configs/task2.json --data-root /path/to/data --epochs 20 --output runs/baseline-v1
+.venv/bin/python -m src train --config configs/task2.json --data-root /path/to/data --output runs/baseline-v1
 .venv/bin/python -m src evaluate --run runs/baseline-v1 --split val
 # 데이터·모델·설정 동결 후 마지막에만 실행
 .venv/bin/python -m src evaluate --run runs/baseline-v1 --split test --final-test

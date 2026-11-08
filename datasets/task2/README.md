@@ -58,8 +58,9 @@ python -m src validate --config configs/task2_real.json
 python -m src train --config configs/task2_real.json --output runs/task2-v1
 ```
 
-설정은 업로드된 `notebooks/1차보고서_제출_70%.ipynb`에서 가져온 **LR 5e-4,
+공통 baseline 설정은 업로드된 `notebooks/1차보고서_제출_70%.ipynb`에서 가져온 **LR 5e-4,
 10 epochs, ImageNet pretrained=True, augmentation=False**입니다.
+이 학습 기본값은 기본 config·더미 config·실제 config와 실행 노트북에 모두 동일하게 적용됩니다.
 실행용 노트북은 `notebooks/task2_real_preprocessed.ipynb`입니다.
 보고서 노트북에는 학습 출력이 없으므로 70%는 파일명이며 검증된 수치가 아닙니다.
 이번 통합 작업에서는 학습을 실행하지 않았습니다.
