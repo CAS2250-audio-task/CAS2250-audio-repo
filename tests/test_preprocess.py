@@ -56,6 +56,21 @@ class PreprocessTests(unittest.TestCase):
         self.assertIsNone(clip)
         self.assertIn('speech_in_silence', info['review_reasons'])
 
+    def test_review_candidate_keeps_long_speech_and_review_flag(self):
+        segments = [{"start": 8000, "end": 40000}]
+        clip, info = prepare_clip(self.wav, segments, "전진", self.options, keep_review=True)
+        self.assertGreater(clip.numel(), 24000)
+        self.assertIn("speech_and_margin_too_long", info["review_reasons"])
+        self.assertIsNone(prepare_clip(self.wav, segments, "전진", self.options)[0])
+
+    def test_quiet_review_candidate_uses_capped_gain(self):
+        clip, info = prepare_clip(self.wav * 0.01, self.segments, "전진", self.options, keep_review=True)
+        self.assertIsNotNone(clip)
+        self.assertEqual(clip.numel(), 24000)
+        self.assertAlmostEqual(info["gain_db"], 12.0)
+        self.assertIn("gain_limit_reached", info["review_reasons"])
+        self.assertIsNone(prepare_clip(self.wav * 0.01, self.segments, "전진", self.options)[0])
+
     def test_batch_keeps_identities_and_reviews_errors(self):
         with tempfile.TemporaryDirectory() as directory:
             root, out = Path(directory) / 'raw', Path(directory) / 'processed'

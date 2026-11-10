@@ -56,9 +56,11 @@ def rms(wav):
     return float(wav.square().mean().sqrt()) if wav.numel() else 0.0
 
 
-def prepare_clip(wav, segments, label, options):
+def prepare_clip(wav, segments, label, options, *, keep_review=False):
     """Return a fixed-length clip or None plus auditable review diagnostics.
 
+    keep_review exports a flagged listening candidate without approving it.
+    Overlong candidates retain their length instead of losing speech.
     Detector timestamps use unpadded 16-kHz sample indices. Contrast is only a
     foreground/background energy heuristic, not an estimated true speech SNR.
     """
@@ -116,10 +118,11 @@ def prepare_clip(wav, segments, label, options):
         info["gain_db"] = float(gain_db)
         clip = clip * (10 ** (gain_db / 20))
     info["review_reasons"] = ";".join(flags)
-    if flags:
+    if flags and not keep_review:
         return None, info
     remaining = target - clip.numel()
-    clip = F.pad(clip, (remaining // 2, remaining - remaining // 2))
+    if remaining > 0:
+        clip = F.pad(clip, (remaining // 2, remaining - remaining // 2))
     return clip, info
 
 

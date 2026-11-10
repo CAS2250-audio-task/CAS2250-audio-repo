@@ -90,3 +90,26 @@ python -m src.preprocess \
 
 단순 입력 crop을 사용하는 기존 `predict` 명령에는 이 VAD 정책이 자동 적용되지 않습니다.
 실제 배포 추론에도 동일한 VAD/여유/padding/음량 처리를 연결해야 합니다.
+
+## 전체 처리본 연속 청취 (jaehun 전용)
+
+기존 통과 703개는 그대로 두고 `review-candidates-v1/audio/`에 보류 312개의
+클리핑·정규화 후보를 추가했습니다. 상태는 계속 review이며 학습 metadata에는 포함하지 않습니다.
+`review-candidates-v1/candidates.csv`에 기존 사유, 후보 길이, 실제 증폭량과 자른 범위를 기록합니다.
+증폭 한도는 +12 dB이고 silence는 증폭하지 않습니다. 긴 후보 17개는 1.5초로 강제 절단하지 않습니다.
+
+현재 작업 환경의 `processed_datasets/manual-review/listening-v1/`에서
+`accepted_all.wav`(703개, 21:05)와 `pending_all.wav`(312개, 09:28)를 각각 연속 재생할 수 있습니다.
+원본 재생 없이 처리본만 포함하고, 음성 사이 0.3초 무음을 넣었습니다.
+각 `*_index.csv`의 시작/종료 시각과 파일명으로 문제 파일을 찾고 decision/notes를 기록하세요.
+연속 재생 파일은 로컬 검수 산출물이며 Git에서는 제외합니다.
+
+새 후보/출력 폴더에 다음과 같이 재생성합니다. 이미 있는 폴더는 덮어쓰지 않습니다.
+
+```bash
+python -m src.review_audio \
+  --data-root datasets/task2/raw-v1 \
+  --processed-root datasets/task2/clipped-v1 \
+  --candidate-root datasets/task2/review-candidates-v2 \
+  --output-root processed_datasets/manual-review/listening-v2
+```
