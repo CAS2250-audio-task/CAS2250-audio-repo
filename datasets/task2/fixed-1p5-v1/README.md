@@ -53,3 +53,10 @@ python -m src train --config configs/task2_real.json --output runs/task2-fixed-1
   기존 검토 사유, 선택 번호, 원본 WAV와 최종 WAV의 SHA-256.
 - `window_selections.csv`: 사용자의 8개 선택.
 - `manifest.json`: 규격·개수·분할·전처리 설정·해시.
+
+## 실행 결과
+
+기존 baseline 설정으로 10 epochs 학습을 완료했습니다.
+최적 epoch 10에서 validation accuracy **92.12%**, macro-F1 **0.925813**입니다.
+Test 203개는 추론하지 않았습니다.
+상세 지표와 학습 곡선은 [실행 기록](../../../reports/task2-fixed-1p5-v1/README.md)에 있습니다.
