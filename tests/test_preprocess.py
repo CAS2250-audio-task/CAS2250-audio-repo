@@ -8,7 +8,7 @@ import pandas as pd
 import soundfile as sf
 import torch
 
-from src.preprocess import Options, prepare_clip, preprocess_dataset
+from preprocessing.clip_audio import Options, prepare_clip, preprocess_dataset
 
 
 class PreprocessTests(unittest.TestCase):

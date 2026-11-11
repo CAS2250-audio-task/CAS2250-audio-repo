@@ -1,0 +1,43 @@
+{
+  "dataset_version": "task2-1015-fixed-1p5-v1",
+  "format": "mono PCM16 WAV",
+  "sample_rate": 16000,
+  "seconds": 1.5,
+  "samples": 24000,
+  "files": 1015,
+  "split_counts": {
+    "train": 609,
+    "test": 203,
+    "val": 203
+  },
+  "methods": {
+    "accepted_copy": 703,
+    "review_copy": 295,
+    "reduced_outer_margin": 9,
+    "window_selection": 8
+  },
+  "metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+  "recipe_sha256": "99ed2ec8ac71d3f472bb2ea7ab073c1913b3c1bbb9e8639e6b59f865afb9d887",
+  "original_archive_sha256": "07101815f0570cdff13dcf2be8b6cfa17d2988ed792f33f1c30e28c430760fa4",
+  "preprocessing": {
+    "seconds": 1.5,
+    "sample_rate": 16000,
+    "margin_ms": 200,
+    "threshold": 0.5,
+    "target_dbfs": -20.0,
+    "max_gain_db": 12.0,
+    "peak_dbfs": -1.0,
+    "min_contrast_db": 6.0
+  },
+  "manual_selection": "11111611",
+  "manual_selection_order": [
+    "spk03_003",
+    "spk03_028",
+    "spk01_155",
+    "spk03_108",
+    "spk02_188",
+    "spk04_150",
+    "spk01_009",
+    "spk03_187"
+  ]
+}

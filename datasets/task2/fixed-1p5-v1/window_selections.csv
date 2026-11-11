@@ -1,0 +1,9 @@
+﻿path,file_id,label,split,window_number,notes
+audio/출발/spk01_009.wav,spk01_009,출발,test,1,User selected 11111611 in the eight listening-group order
+audio/시작/spk01_155.wav,spk01_155,시작,test,1,User selected 11111611 in the eight listening-group order
+audio/정지/spk02_188.wav,spk02_188,정지,train,1,User selected 11111611 in the eight listening-group order
+audio/대기/spk03_003.wav,spk03_003,대기,train,1,User selected 11111611 in the eight listening-group order
+audio/복귀/spk03_028.wav,spk03_028,복귀,train,1,User selected 11111611 in the eight listening-group order
+audio/재시작/spk03_108.wav,spk03_108,재시작,train,1,User selected 11111611 in the eight listening-group order
+audio/후진/spk03_187.wav,spk03_187,후진,train,1,User selected 11111611 in the eight listening-group order
+audio/정지/spk04_150.wav,spk04_150,정지,train,6,User selected 11111611 in the eight listening-group order
