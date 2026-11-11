@@ -13,6 +13,9 @@
 원본 음성은 보존하며, 클리핑 코드는 [preprocessing/clip_audio.py](preprocessing/clip_audio.py)에 분리했습니다.
 실행 절차는 [1.5초 데이터 안내](datasets/task2/fixed-1p5-v1/README.md)를 참고하세요.
 
+`jaehun`의 시간 정렬 보조 특징 0~7세트 실험은 [실행 설명](experiments/auxiliary/README.md)과
+[실험 결과](reports/auxiliary-v1/README.md)에서 확인합니다. 기존 `src/`와 기준 설정은 유지합니다.
+
 팀원 시작 절차는 [VESSL · GitHub 팀 가이드](documents/vessl_github_team_guide.md)를 참고하세요.
 
 ## 환경과 설치

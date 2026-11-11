@@ -1,5 +1,6 @@
 # Install on top of the reference torch/torchvision/torchaudio stack.
-# Exact installed environment is also captured in each study's environment.txt.
+# Actual installed versions are captured in each study's environment.json.
+# For the recorded auxiliary-v1 numerical stack, use experiments/auxiliary/requirements-reproduce.txt.
 praat-parselmouth==0.4.6
 librosa==0.11.0
 pytest==8.3.5

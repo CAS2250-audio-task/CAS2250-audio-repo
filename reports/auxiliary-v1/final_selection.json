@@ -1,0 +1,23 @@
+{
+  "selected_set": "0",
+  "seed": 42,
+  "ranking": [
+    {
+      "set_id": "0",
+      "val_macro_f1": 0.8925642305324755,
+      "mean_noisy_macro_f1": 0.4247498093741666
+    },
+    {
+      "set_id": "4",
+      "val_macro_f1": 0.8909091950974837,
+      "mean_noisy_macro_f1": 0.4017234740605491
+    },
+    {
+      "set_id": "3",
+      "val_macro_f1": 0.865991701189068,
+      "mean_noisy_macro_f1": 0.36125971715061006
+    }
+  ],
+  "selected_without_test": true,
+  "created_utc": "2026-11-11T12:18:08.474378+00:00"
+}

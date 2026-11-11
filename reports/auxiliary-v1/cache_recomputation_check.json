@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "original",
+    "index": 0,
+    "all_passed": true
+  },
+  {
+    "condition": "original",
+    "index": 406,
+    "all_passed": true
+  },
+  {
+    "condition": "val_rain_0db",
+    "index": 0,
+    "all_passed": true
+  },
+  {
+    "condition": "val_rain_0db",
+    "index": 101,
+    "all_passed": true
+  },
+  {
+    "condition": "val_engine_10db",
+    "index": 0,
+    "all_passed": true
+  },
+  {
+    "condition": "val_engine_10db",
+    "index": 101,
+    "all_passed": true
+  },
+  {
+    "condition": "val_church_bells_0db",
+    "index": 0,
+    "all_passed": true
+  },
+  {
+    "condition": "val_church_bells_0db",
+    "index": 101,
+    "all_passed": true
+  },
+  {
+    "condition": "val_keyboard_typing_20db",
+    "index": 0,
+    "all_passed": true
+  },
+  {
+    "condition": "val_keyboard_typing_20db",
+    "index": 101,
+    "all_passed": true
+  },
+  {
+    "condition": "val_noise_only",
+    "index": 0,
+    "all_passed": true
+  },
+  {
+    "condition": "val_noise_only",
+    "index": 72,
+    "all_passed": true
+  }
+]

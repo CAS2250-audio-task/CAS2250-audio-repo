@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-11-11T12:13:56.671356+00:00",
+  "git": {
+    "commit": "3bb3f4d863a9171f4059c6e151caedb0b62ef4c8",
+    "branch": "jaehun",
+    "status": ""
+  },
+  "source_sha256": {
+    "experiments/auxiliary/__init__.py": "13b2e7eec686dc89a7f3d71db20994a2a8e2e51b22d0b99eea358f2b861406bb",
+    "experiments/auxiliary/features.py": "94c011a87a9bd404d0be010add4ed308fb1715a2bc2c36ddb1293c50f284b1d8",
+    "experiments/auxiliary/model.py": "a0dadc0061dfbe99e426f09b9889432a18b9edd1437bbe1aae020bb419895771",
+    "experiments/auxiliary/data.py": "94b3170780f3471b8f115919f60b2882ff43c2d60f9e6901ccde9693333add17",
+    "experiments/auxiliary/study.py": "c3d95bc82cc54cf9564f2e7fdbb4b000c36f77c6e3b9d0c64c91a10f9985a18e",
+    "experiments/auxiliary/report.py": "4ea2187db0abc94b00102232f3020005356a6f73b726478e95c53b0f8299d1b5",
+    "experiments/auxiliary/repair_support.py": "631e079038f5d295363d9fd925c0f67b79e6a05c4c8e0235ebb0a36ebcc64eed",
+    "src/__init__.py": "6cd6327b6a20b0d88061f01586756609f759c300586000f3966c44e90ba87712",
+    "src/__main__.py": "c7eb49c202fe0f93b5e610a6b2e2d1ce25db06ae7ccc49914f569c82ef94a90c",
+    "src/config.py": "265eb645c0771b27e6b54b68683d226640d1498a2741c3b197dbf1d3fefc8e96",
+    "src/dataset.py": "01a6b68881bb72982c11f957099f99d028b5b71e7c6dd11971079cfcee40a5f4",
+    "src/engine.py": "e09f2e0c1d045f54b581d77afc4d658212b04e388a10595d076b73793f9b2114",
+    "src/model.py": "e7c75a42414375a1b3afcf79b3c3ea3c6eb4bedbe3356c97b90c0ebff8d267d0",
+    "src/import_recordings.py": "2e7b54ab557e45d422444bb6ff3a8fcef324907dd281e8b2b93d105e41ab44b8"
+  },
+  "protocol_sha256": "374449a20de5e8e4e515f9c7f0cf0ad39eb2247d18e85b027c2d1341ca81f89f",
+  "scaler_sha256": "708b663b2b583fb6da075610e564c63c8b51789120ac90e07fc51eb8725852fb",
+  "original_cache_sha256": "175f507d7b6dc5fbc54fa12297bda34d4bd0a00f91b4a104afd69ea8931679d7",
+  "python": "3.10.12",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "backbone_initial_sha256": "05e1bfc3dc41199b721eac10d7c61ef333d25da224671aa5576fdbb3350ea4da",
+  "parameters": 11217259,
+  "baseline_head": "512 -> 11",
+  "test_evaluated": false
+}

@@ -1,0 +1,18 @@
+{
+  "set_id": "3",
+  "seed": 43,
+  "fusion": "middle",
+  "control_extra": 0,
+  "parameters": 11217259,
+  "best_epoch": 6,
+  "validation": {
+    "accuracy": 0.8374384236453202,
+    "macro_f1": 0.8537406326960195,
+    "loss": 0.5751843558156432,
+    "n": 203
+  },
+  "training_seconds": 13.219190426170826,
+  "peak_cuda_allocated_mib": 491.91748046875,
+  "backbone_initial_sha256": "a6db6f9701f2c5aba09f191ff1d69bd4914a54c3e46fc2f58c9e4e8aed55a291",
+  "test_evaluated": false
+}

@@ -1,0 +1,152 @@
+{
+  "version": "auxiliary-midfusion-v1",
+  "baseline_config": {
+    "labels": [
+      "출발",
+      "정지",
+      "전진",
+      "후진",
+      "왼쪽",
+      "오른쪽",
+      "시작",
+      "복귀",
+      "대기",
+      "재시작",
+      "silence"
+    ],
+    "data_root": "/root/audio/datasets/task2/fixed-1p5-v1",
+    "metadata_csv": "metadata.csv",
+    "dataset_version": "task2-1015-fixed-1p5-v1",
+    "split_version": "speaker-disjoint-seed42-v1",
+    "dummy": false,
+    "sample_rate": 16000,
+    "seconds": 1.5,
+    "n_fft": 512,
+    "win_length": 512,
+    "hop_length": 160,
+    "n_mels": 128,
+    "batch_size": 32,
+    "epochs": 10,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "num_workers": 0,
+    "use_pretrained": true,
+    "use_augmentation": false,
+    "seed": 42,
+    "device": "auto"
+  },
+  "feature_config": {
+    "sample_rate": 16000,
+    "samples": 24000,
+    "hop": 160,
+    "n_fft": 512,
+    "pitch_frame": 1024,
+    "pitch_min": 65.0,
+    "pitch_max": 600.0,
+    "formant_ceiling": 5500.0,
+    "formant_window": 0.025,
+    "delta_radius": 2,
+    "version": "aligned-acoustics-v2-support"
+  },
+  "feature_sets": {
+    "0": [],
+    "1": [
+      "log_f0",
+      "delta_log_f0",
+      "voiced",
+      "voiced_prob"
+    ],
+    "2": [
+      "f1",
+      "f2",
+      "f3"
+    ],
+    "3": [
+      "f1",
+      "f2",
+      "f3",
+      "b1",
+      "b2",
+      "b3"
+    ],
+    "4": [
+      "f1",
+      "f2",
+      "f3",
+      "delta_f1",
+      "delta_f2",
+      "delta_f3"
+    ],
+    "5": [
+      "flatness",
+      "flux",
+      "centroid"
+    ],
+    "6": [
+      "log_rms"
+    ],
+    "7": [
+      "log_f0",
+      "voiced",
+      "voiced_prob",
+      "f1",
+      "f2",
+      "f3",
+      "b1",
+      "b2",
+      "b3",
+      "delta_log_f0",
+      "delta_f1",
+      "delta_f2",
+      "delta_f3",
+      "flatness",
+      "flux",
+      "centroid",
+      "log_rms"
+    ]
+  },
+  "representations": {
+    "log_f0": "12*log2(Hz/100)",
+    "formants": "Hz, train-valid-frame zscore",
+    "bandwidths": "Hz, train-valid-frame zscore",
+    "derivatives": "5-frame local slope per second, no missing gaps",
+    "log_rms": "20*log10(max(RMS,1e-8))",
+    "flux": "RMS difference of L1-normalized magnitude spectra",
+    "flags": "availability only, not correctness; probabilities unchanged"
+  },
+  "architecture": {
+    "backbone": "reference one-channel ImageNet ResNet18",
+    "fusion": "after layer1; concat + identity-initialized 1x1 projection",
+    "auxiliary": "Conv1d 32/64/64, k5 d1/2/4, GroupNorm, GELU, dropout .2",
+    "time_alignment": "input centres 4*j after ResNet stem/layer1",
+    "tail": "unchanged layer2/3/4 -> avgpool -> 512 -> 11",
+    "freeze_backbone": false
+  },
+  "training_noise_augmentation": false,
+  "training_pitch_augmentation": false,
+  "noise_categories": [
+    "rain",
+    "engine",
+    "church_bells",
+    "keyboard_typing"
+  ],
+  "added_snr_db": [
+    20,
+    10,
+    0
+  ],
+  "snr_definition": "original full-clip power, including existing noise, versus added noise; silence uses train-keyword median RMS",
+  "peak_control": "scale mixed signal uniformly only if peak exceeds .99; preserves mixture SNR",
+  "checkpoint_selection": "original validation macro F1; earliest epoch on a tie",
+  "screening_seed": 42,
+  "confirmation_seeds": [
+    42,
+    43,
+    44
+  ],
+  "finalist_selection": "highest original validation macro F1 in screening, tie by mean noisy macro F1; keep baseline plus best two auxiliary sets",
+  "final_model_selection": "highest mean original validation macro F1 over seeds 42/43/44 among confirmed baseline/auxiliary sets; tie by mean noisy F1",
+  "final_seed": "42 fixed before looking at test; test evaluates baseline and selected candidate, no test-based tuning",
+  "final_test_noise": "ESC-50 fold5 source IDs disjoint from validation fold4",
+  "test_features_before_selection": false
+}

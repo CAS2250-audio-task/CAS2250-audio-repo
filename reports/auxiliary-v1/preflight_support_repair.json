@@ -1,0 +1,75 @@
+{
+  "before_training": true,
+  "conditions": [
+    {
+      "condition": "original",
+      "before": "db5c039d5b59e702dbc41506e0e448d95ef1dd1d985b93f61ab792e36bed39b6",
+      "after": "175f507d7b6dc5fbc54fa12297bda34d4bd0a00f91b4a104afd69ea8931679d7"
+    },
+    {
+      "condition": "val_church_bells_0db",
+      "before": "c32960876be669d6409965b81bb26950b810f29f2b71a333b5bdc65eb22c46bc",
+      "after": "82233581bdfa241c872d1da406bb2cd380ab072b8424be2d9366f3af327df1ec"
+    },
+    {
+      "condition": "val_church_bells_10db",
+      "before": "27a73897d1f5fade80112cfd6931ae21641ed97fd126ffc0169bb92b600e1355",
+      "after": "7c17fb843c6015e56d6a92e15d04e486cbc7e73f609179bf3fbb9fdda8125f02"
+    },
+    {
+      "condition": "val_church_bells_20db",
+      "before": "f1ecb1554e86b4f9c03e07c8458df4cde1b949173e3a9d85807a275c5787ef23",
+      "after": "96d6f5ad958e9a2792dcdc4ef6cef5b9caaa92a4e4149402c320bda8edf3522d"
+    },
+    {
+      "condition": "val_engine_0db",
+      "before": "1a5f2340ec8394d1fa50d1b875b951300ecce27f5ef1b5b6af8f69b77438b8f4",
+      "after": "cd9f9aa4e63705fd09325cb0e10b483dd4f1cc7626f896b0849c389804d179d8"
+    },
+    {
+      "condition": "val_engine_10db",
+      "before": "43ad4a88834ad0723b91d2fe74c78809f113ab6fdcdec744fa2f143f9de3fd21",
+      "after": "ca59e9a2059d64b5f71f79bcd75f9a9d50db910f13ba32698fda4b75cd211a8d"
+    },
+    {
+      "condition": "val_engine_20db",
+      "before": "d74236db64dffaee4ed420ceefb117b7139a5f3dadcb12ac269d11dca4afa93f",
+      "after": "3413b8d88de6f81eb4da38891d28da1cdd7b8651d343ed239c4f3f5fd697e0e3"
+    },
+    {
+      "condition": "val_keyboard_typing_0db",
+      "before": "4bfb53c5cc4b2d70704cbdb53f3419307cff292213c96798f2f64dab44e97606",
+      "after": "1767a96982de74a7dd0f1fb3f732909914b4dd9dbd75049de8c44481282bf45a"
+    },
+    {
+      "condition": "val_keyboard_typing_10db",
+      "before": "0ceab488b2f222b4babe3d81cee8e27afda258f3ef62d7a428618a6df9861487",
+      "after": "c965c56e8632be976fb802b79037bf27e7d484c30fc27a1022f8a96fbd01b5c0"
+    },
+    {
+      "condition": "val_keyboard_typing_20db",
+      "before": "5883967b7cf2a0d463daddd7697c7a57b682aa923e30aa0ffa6c4e7692a3bcae",
+      "after": "74c0b83fa36f0fd9f010ad4ffae93f218b73ae39c2bb1b9232413564e85a942b"
+    },
+    {
+      "condition": "val_noise_only",
+      "before": "cd81d6b6a08fbbe28ced6b5270919c37e69ab92a2eceaed5366317219d7ec2d0",
+      "after": "0f38b81b50d6866feb658ca08e4fa5c7adab445e20332a24a7efa030ebbf43a3"
+    },
+    {
+      "condition": "val_rain_0db",
+      "before": "0e75909359f12ed507c3a26f609b4dda11555f486362b30c274e106f5aa12907",
+      "after": "63ac79a58f13a3e3983f959ce64bc68dd405b36faf7d859fc0bcf7ac91c3bf80"
+    },
+    {
+      "condition": "val_rain_10db",
+      "before": "4b01421befb18709549f589904a86f824a66ea3b71f58da109b351cbddf64efc",
+      "after": "ee329ab8e8d10fcaa4bad06645a1526b97572e272a3b7725dce7fb80bbb599a2"
+    },
+    {
+      "condition": "val_rain_20db",
+      "before": "69d570a8c4b8793d6a1384399981b92f703d65ec10127b848e4abe9b190b4601",
+      "after": "22bfeb82b28b4ff2d595237affb880c0b83b37426a91121c63bde6d27cbad69e"
+    }
+  ]
+}

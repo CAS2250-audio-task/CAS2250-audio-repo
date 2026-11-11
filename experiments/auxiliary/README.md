@@ -38,6 +38,14 @@ Flux는 L1 정규화 magnitude 스펙트럼의 프레임 차이 RMS다. 음량 �
 이는 음성 검출이 아니며 무성 자음을 제거하지 않는다. 학습 전 캐시 수정 이력은
 `preflight_support_repair.json`에 남긴다.
 
+이 검사는 분석 창 RMS `<= 1e-8`(약 -160 dBFS)에만 적용한다. 현재 PCM16 입력은
+최소 비영 샘플 하나만 1024샘플 창에 있어도 RMS가 약 `9.54e-7`이므로, 원본 평가에서는
+사실상 디지털 0 창 검사다. 0과 작은 신호 사이에 음성학적 경계가 있다는 뜻이 아니고,
+작은 목소리를 배제하는 음량 문턱도 아니다. 잡음이 들어간 창은 통과하며 오측정이 남을 수 있다.
+마스크 0은 **해당 측정값 사용 불가**를 뜻하고, 포먼트의 물리적 부재를 뜻하지 않는다.
+더 높은 음량 문턱이나 추정 품질 기준을 도입하려면 약한 발화의 손실도 함께 보는 별도 비교가
+필요하다. 이번 실행에서는 해당 기준을 추가하거나 validation 결과에 맞춰 조절하지 않는다.
+
 ## 모델과 비교 조건
 
 보조 경로: Conv1D 32/64/64, kernel 5, dilation 1/2/4, GroupNorm, GELU, dropout 0.2.
@@ -77,14 +85,24 @@ ESC-50 fold4는 validation, fold5는 final test에 쓰며 원본 source ID를 �
 
 ## 실행
 
-실제 실행 환경 버전은 study의 environment.json에 기록한다.
-기준 requirements의 torch 스택과 `requirements-experiments.txt`가 필요하다.
+실제 실행 환경 버전은 study의 environment.json에 기록한다. 이번 실행은 복원한 torch 스택과
+기존 시스템 패키지를 함께 사용했으며, numpy/pandas 등 일부 버전은 기준 requirements와 다르다.
+따라서 과거 결과를 그대로 비교하지 않고 같은 환경에서 세트 0부터 다시 실행했다.
+이번 수치 스택을 새 환경에 설치하려면 아래 별도 파일을 사용한다. 기준 requirements는 수정하지 않는다.
+
+```bash
+python3.10 -m venv .venv-aux
+.venv-aux/bin/python -m pip install -r experiments/auxiliary/requirements-reproduce.txt
+```
+
+아래는 실제 실행한 `.venv` 경로다. 새 환경을 쓴다면 `.venv-aux`로 바꾼다.
 
 ```bash
 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 .venv/bin/python -m experiments.auxiliary.study prepare --workers 4
 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 .venv/bin/python -m experiments.auxiliary.study screen
 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 .venv/bin/python -m experiments.auxiliary.study confirm
 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 .venv/bin/python -m experiments.auxiliary.study finalize --workers 4
+.venv/bin/python -m experiments.auxiliary.report
 ```
 
 `runs/auxiliary-v1/`에 캐시·환경·노이즈 출처·가중치·전체 예측을 보관한다.

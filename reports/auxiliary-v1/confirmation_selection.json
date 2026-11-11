@@ -1,0 +1,8 @@
+{
+  "sets": [
+    "0",
+    "3",
+    "4"
+  ],
+  "based_on": "screening original validation macro F1, noisy F1 tie break"
+}

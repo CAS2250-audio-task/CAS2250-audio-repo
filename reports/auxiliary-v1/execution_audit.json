@@ -1,0 +1,261 @@
+{
+  "verified_utc": "2026-11-11T12:24:13.618855+00:00",
+  "total_training_runs": 16,
+  "dataset_split_counts": {
+    "train": 609,
+    "test": 203,
+    "val": 203
+  },
+  "reviewed_audio_hashes_verified": 1015,
+  "raw_wav_files": 1015,
+  "original_m4a_files": 1015,
+  "original_archive_sha256": "07101815f0570cdff13dcf2be8b6cfa17d2988ed792f33f1c30e28c430760fa4",
+  "reference_base_commit": "6d208bc0eead31d179e63d050a26ff4511a8fee9",
+  "baseline_source_config_notebook_preprocessing_and_dataset_diff_empty": true,
+  "training_source_hashes_unchanged": true,
+  "report_generator_updated_after_training": true,
+  "all_cache_hashes_verified": true,
+  "noise_source_ids_disjoint": true,
+  "tests": {
+    "command": "OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m pytest -q",
+    "passed": 39,
+    "failed": 0,
+    "seconds": 6.08
+  },
+  "final_selection": {
+    "selected_set": "0",
+    "seed": 42,
+    "ranking": [
+      {
+        "set_id": "0",
+        "val_macro_f1": 0.8925642305324755,
+        "mean_noisy_macro_f1": 0.4247498093741666
+      },
+      {
+        "set_id": "4",
+        "val_macro_f1": 0.8909091950974837,
+        "mean_noisy_macro_f1": 0.4017234740605491
+      },
+      {
+        "set_id": "3",
+        "val_macro_f1": 0.865991701189068,
+        "mean_noisy_macro_f1": 0.36125971715061006
+      }
+    ],
+    "selected_without_test": true,
+    "created_utc": "2026-11-11T12:18:08.474378+00:00"
+  },
+  "checkpoint_and_metrics_audit": [
+    {
+      "run": "capacity_control_seed42",
+      "checkpoint_sha256": "716b56acebce8c563b6fa8fba2e4fa2473a2f0a004abcf02cbbf75fae33b1ddb",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set0_seed42_middle",
+      "checkpoint_sha256": "1e9f35a7fe0cfb26593496b6d0c788bb53ee13299007dbfa1f5e13a986382091",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": true
+    },
+    {
+      "run": "set0_seed43_middle",
+      "checkpoint_sha256": "77eefe4095095f4fd1294a2bcd2151ceaa84d16738bc154745b4271222ebca41",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set0_seed44_middle",
+      "checkpoint_sha256": "53a16c700bda62f4357ff0fcf7d89c2c144c436b4d71954c5872b643a1944b18",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set1_seed42_middle",
+      "checkpoint_sha256": "a92f4592be251ca4da978b0ace865b609cd7352ccb2b8b3b6982b8dc5d375e98",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set2_seed42_middle",
+      "checkpoint_sha256": "4fbb0c1ed80507a612bcc201c9d26e1c979ad2b776b4f17f08185c6dcaf61b9c",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set3_seed42_late",
+      "checkpoint_sha256": "9824aea106f84601c4002b3a1bc4a807cfc838c083dcf35a14d227295cc1a843",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set3_seed42_middle",
+      "checkpoint_sha256": "e4d4b3380b4738121bc4535156d446242fa53317b5f9ca12026024a523007ba1",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set3_seed43_middle",
+      "checkpoint_sha256": "12095f41b2c8193a0a6947e5b072884690c2b28ac13edd354a2981533cef55ae",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set3_seed44_middle",
+      "checkpoint_sha256": "faa22d8864442ee06565dc4680c9373abdf3b29a29ee0c670d3159dc229c2e3b",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set4_seed42_middle",
+      "checkpoint_sha256": "976e00f116e470aedfcd58c42eb8631b69bfd4de2b06b32f9d15dccddb3f4f1b",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set4_seed43_middle",
+      "checkpoint_sha256": "513581849d827254c2863a0b788a6150a840d246905e6906d6b9b67be42e4b90",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set4_seed44_middle",
+      "checkpoint_sha256": "fc43e40c65409d9471a6ebad33f97379d2e458819f59f29dc5645038ff182fcf",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set5_seed42_middle",
+      "checkpoint_sha256": "c9315fdba5a98e4fe4052b9e24335e127bd65720b81726934e91d18085fb9758",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set6_seed42_middle",
+      "checkpoint_sha256": "2a572d8bd5c2f9f7f6ebe4a0ff8b99b36a524076f5fda798946df05b03c23f06",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    },
+    {
+      "run": "set7_seed42_middle",
+      "checkpoint_sha256": "4e9476bda756c7f37fef80c910f41954b023eb21d7d72019fae66013a25c6ab3",
+      "validation_metrics_recomputed": true,
+      "test_evaluated": false
+    }
+  ],
+  "cache_audit": [
+    {
+      "condition": "original",
+      "inputs_sha256": "175f507d7b6dc5fbc54fa12297bda34d4bd0a00f91b4a104afd69ea8931679d7"
+    },
+    {
+      "condition": "test_church_bells_0db",
+      "inputs_sha256": "70cef54d58288cfd0dfec0be5594de63cdd3ff99c865174c278bf8b6f395b126"
+    },
+    {
+      "condition": "test_church_bells_10db",
+      "inputs_sha256": "d7c24a708bed88f519e1fb0577167ca7b77cb65478f4e92decb96ebdda38653e"
+    },
+    {
+      "condition": "test_church_bells_20db",
+      "inputs_sha256": "add7db01693846958c49ac5bb30221c32e3b1d3b92b64aa8d075b9160ffce2eb"
+    },
+    {
+      "condition": "test_engine_0db",
+      "inputs_sha256": "3969dd4295c194b3afb3b5b6b063511ebd6a332d4039e78d1b3cdc54d227e2aa"
+    },
+    {
+      "condition": "test_engine_10db",
+      "inputs_sha256": "2d070c3b6c42d030db680ac6032baeea6fc15bf81577b8882589ffdfcf208f64"
+    },
+    {
+      "condition": "test_engine_20db",
+      "inputs_sha256": "517a7819767b2ddec8cce4d238bcb166c6d6a0423c2930984f0c873a488466c2"
+    },
+    {
+      "condition": "test_keyboard_typing_0db",
+      "inputs_sha256": "b11da9d1868533faef395b54960cce059d9870f4a42abee0190e8380a5602fb3"
+    },
+    {
+      "condition": "test_keyboard_typing_10db",
+      "inputs_sha256": "8ac38652aaad634502cc36b49f6d21ad29bbf07ba13965828439007ec9361011"
+    },
+    {
+      "condition": "test_keyboard_typing_20db",
+      "inputs_sha256": "2aef4bcec4220cf8853aec41f2394812c983e4fc32d45af1618889eb7e0e5524"
+    },
+    {
+      "condition": "test_noise_only",
+      "inputs_sha256": "23eafe1545f101bb98e184007843899ee4ec7791f2aea78afaf556fe448d1e61"
+    },
+    {
+      "condition": "test_original",
+      "inputs_sha256": "76dd27b4ba01b088274d329de31a46d510d062f324124b294859b02fa904cf40"
+    },
+    {
+      "condition": "test_rain_0db",
+      "inputs_sha256": "2513701a9d197e85c743ebea35d2594eb99b81edd3766b8695b2e37d7b35cc3e"
+    },
+    {
+      "condition": "test_rain_10db",
+      "inputs_sha256": "c226e19aa9c8df133a7a3abc44bb9b20f05d07f33a271f34ab8ba33b559321d2"
+    },
+    {
+      "condition": "test_rain_20db",
+      "inputs_sha256": "aaab101f9c1aae39d7e4e524d4cfbb9d365ffb79af01699ad12ee4c31b8d9b72"
+    },
+    {
+      "condition": "val_church_bells_0db",
+      "inputs_sha256": "82233581bdfa241c872d1da406bb2cd380ab072b8424be2d9366f3af327df1ec"
+    },
+    {
+      "condition": "val_church_bells_10db",
+      "inputs_sha256": "7c17fb843c6015e56d6a92e15d04e486cbc7e73f609179bf3fbb9fdda8125f02"
+    },
+    {
+      "condition": "val_church_bells_20db",
+      "inputs_sha256": "96d6f5ad958e9a2792dcdc4ef6cef5b9caaa92a4e4149402c320bda8edf3522d"
+    },
+    {
+      "condition": "val_engine_0db",
+      "inputs_sha256": "cd9f9aa4e63705fd09325cb0e10b483dd4f1cc7626f896b0849c389804d179d8"
+    },
+    {
+      "condition": "val_engine_10db",
+      "inputs_sha256": "ca59e9a2059d64b5f71f79bcd75f9a9d50db910f13ba32698fda4b75cd211a8d"
+    },
+    {
+      "condition": "val_engine_20db",
+      "inputs_sha256": "3413b8d88de6f81eb4da38891d28da1cdd7b8651d343ed239c4f3f5fd697e0e3"
+    },
+    {
+      "condition": "val_keyboard_typing_0db",
+      "inputs_sha256": "1767a96982de74a7dd0f1fb3f732909914b4dd9dbd75049de8c44481282bf45a"
+    },
+    {
+      "condition": "val_keyboard_typing_10db",
+      "inputs_sha256": "c965c56e8632be976fb802b79037bf27e7d484c30fc27a1022f8a96fbd01b5c0"
+    },
+    {
+      "condition": "val_keyboard_typing_20db",
+      "inputs_sha256": "74c0b83fa36f0fd9f010ad4ffae93f218b73ae39c2bb1b9232413564e85a942b"
+    },
+    {
+      "condition": "val_noise_only",
+      "inputs_sha256": "0f38b81b50d6866feb658ca08e4fa5c7adab445e20332a24a7efa030ebbf43a3"
+    },
+    {
+      "condition": "val_rain_0db",
+      "inputs_sha256": "63ac79a58f13a3e3983f959ce64bc68dd405b36faf7d859fc0bcf7ac91c3bf80"
+    },
+    {
+      "condition": "val_rain_10db",
+      "inputs_sha256": "ee329ab8e8d10fcaa4bad06645a1526b97572e272a3b7725dce7fb80bbb599a2"
+    },
+    {
+      "condition": "val_rain_20db",
+      "inputs_sha256": "22bfeb82b28b4ff2d595237affb880c0b83b37426a91121c63bde6d27cbad69e"
+    }
+  ],
+  "dataset_audit_note": "dataset_audit.json is the preparation snapshot before predictions, not a claim that test remains unopened after finalize"
+}

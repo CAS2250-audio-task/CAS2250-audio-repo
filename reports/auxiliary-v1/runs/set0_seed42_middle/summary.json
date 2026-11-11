@@ -1,0 +1,24 @@
+{
+  "set_id": "0",
+  "seed": 42,
+  "fusion": "middle",
+  "control_extra": 0,
+  "parameters": 11175883,
+  "best_epoch": 9,
+  "validation": {
+    "accuracy": 0.916256157635468,
+    "macro_f1": 0.9237782468665642,
+    "loss": 0.3827076689363113,
+    "n": 203
+  },
+  "training_seconds": 4.580499254865572,
+  "peak_cuda_allocated_mib": 450.64501953125,
+  "backbone_initial_sha256": "05e1bfc3dc41199b721eac10d7c61ef333d25da224671aa5576fdbb3350ea4da",
+  "test_evaluated": true,
+  "test": {
+    "accuracy": 0.729064039408867,
+    "macro_f1": 0.7488435110339353,
+    "loss": 1.0359018710740093,
+    "n": 203
+  }
+}

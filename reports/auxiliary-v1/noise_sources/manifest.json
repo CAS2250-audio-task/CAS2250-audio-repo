@@ -1,0 +1,169 @@
+{
+  "dataset": "ESC-50",
+  "repository": "https://github.com/karolpiczak/ESC-50",
+  "commit": "33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6",
+  "license": "CC BY-NC 3.0 (dataset); original source attribution via Freesound IDs",
+  "use": "evaluation only; no noise augmentation during the baseline ablation",
+  "files": [
+    {
+      "filename": "4-160999-A-10.wav",
+      "category": "rain",
+      "split": "val",
+      "fold": 4,
+      "source_id": 160999,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/4-160999-A-10.wav",
+      "freesound_url": "https://freesound.org/s/160999/",
+      "sha256": "c85ef3d5cbd86ba80a7f089277d66f165e36b8dcf8070643ddc7ec73eb4f5dcb"
+    },
+    {
+      "filename": "4-161127-A-10.wav",
+      "category": "rain",
+      "split": "val",
+      "fold": 4,
+      "source_id": 161127,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/4-161127-A-10.wav",
+      "freesound_url": "https://freesound.org/s/161127/",
+      "sha256": "3ea9076dd2ee68b67bd0707652a0c0ca77811b0664426e10e6860c187401af89"
+    },
+    {
+      "filename": "4-171652-A-44.wav",
+      "category": "engine",
+      "split": "val",
+      "fold": 4,
+      "source_id": 171652,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/4-171652-A-44.wav",
+      "freesound_url": "https://freesound.org/s/171652/",
+      "sha256": "5f0b309e3fa62f6b34763b72f641d7ce1318a1db2fcd7c5ddd27cf380fd58401"
+    },
+    {
+      "filename": "4-186935-A-44.wav",
+      "category": "engine",
+      "split": "val",
+      "fold": 4,
+      "source_id": 186935,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/4-186935-A-44.wav",
+      "freesound_url": "https://freesound.org/s/186935/",
+      "sha256": "d5fa3e05bb7222e031cf0fde1866e20aee5f3686d45a69337757930c46769bf4"
+    },
+    {
+      "filename": "4-125825-A-46.wav",
+      "category": "church_bells",
+      "split": "val",
+      "fold": 4,
+      "source_id": 125825,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/4-125825-A-46.wav",
+      "freesound_url": "https://freesound.org/s/125825/",
+      "sha256": "796a0d8975ce9db3eb4e6d8ce438f6dbbd4ad4a1a8a6a18de4521face6eeb28a"
+    },
+    {
+      "filename": "4-140034-A-46.wav",
+      "category": "church_bells",
+      "split": "val",
+      "fold": 4,
+      "source_id": 140034,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/4-140034-A-46.wav",
+      "freesound_url": "https://freesound.org/s/140034/",
+      "sha256": "0f0e831ad6c1df8e9367f1390c35ff464c1df60205d5688eab478e71fecdb0bd"
+    },
+    {
+      "filename": "4-158653-A-32.wav",
+      "category": "keyboard_typing",
+      "split": "val",
+      "fold": 4,
+      "source_id": 158653,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/4-158653-A-32.wav",
+      "freesound_url": "https://freesound.org/s/158653/",
+      "sha256": "125691734898f9db80100600cb63a65203ac0948b4a234e136f0e369bffe3b6b"
+    },
+    {
+      "filename": "4-167155-A-32.wav",
+      "category": "keyboard_typing",
+      "split": "val",
+      "fold": 4,
+      "source_id": 167155,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/4-167155-A-32.wav",
+      "freesound_url": "https://freesound.org/s/167155/",
+      "sha256": "c95a4bcca8a2113cb7a20bd59d404919eb88f10dc23401815369a449a7f59344"
+    },
+    {
+      "filename": "5-181766-A-10.wav",
+      "category": "rain",
+      "split": "test",
+      "fold": 5,
+      "source_id": 181766,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/5-181766-A-10.wav",
+      "freesound_url": "https://freesound.org/s/181766/",
+      "sha256": "608fcc0bef32512e2a984c7d3d2cac8ea161f6337ec0056850a6d34f07f8db35"
+    },
+    {
+      "filename": "5-188655-A-10.wav",
+      "category": "rain",
+      "split": "test",
+      "fold": 5,
+      "source_id": 188655,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/5-188655-A-10.wav",
+      "freesound_url": "https://freesound.org/s/188655/",
+      "sha256": "9ed876436c72f36c230c275744818829912a2299bcbd8ccca6eccce9df6f8a57"
+    },
+    {
+      "filename": "5-209992-A-44.wav",
+      "category": "engine",
+      "split": "test",
+      "fold": 5,
+      "source_id": 209992,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/5-209992-A-44.wav",
+      "freesound_url": "https://freesound.org/s/209992/",
+      "sha256": "502bb337b61dfa4080eb22b9098a2b38f975c1544933187f530a5552eb7bd32d"
+    },
+    {
+      "filename": "5-232272-A-44.wav",
+      "category": "engine",
+      "split": "test",
+      "fold": 5,
+      "source_id": 232272,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/5-232272-A-44.wav",
+      "freesound_url": "https://freesound.org/s/232272/",
+      "sha256": "e5562a8bf2a03e4f314ae65a5dbae73f8f15af6b22760f3ad7f51b5ce0b49435"
+    },
+    {
+      "filename": "5-179294-A-46.wav",
+      "category": "church_bells",
+      "split": "test",
+      "fold": 5,
+      "source_id": 179294,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/5-179294-A-46.wav",
+      "freesound_url": "https://freesound.org/s/179294/",
+      "sha256": "cf3361dd0aa9599293f29f1f5a090fbb58b02dbbc0c8d2f366752c0387ded722"
+    },
+    {
+      "filename": "5-188716-A-46.wav",
+      "category": "church_bells",
+      "split": "test",
+      "fold": 5,
+      "source_id": 188716,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/5-188716-A-46.wav",
+      "freesound_url": "https://freesound.org/s/188716/",
+      "sha256": "db92bfce468a286fe4cad679bac89e05bd8ed32e40d9edde5fe0bb157df30d85"
+    },
+    {
+      "filename": "5-205090-A-32.wav",
+      "category": "keyboard_typing",
+      "split": "test",
+      "fold": 5,
+      "source_id": 205090,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/5-205090-A-32.wav",
+      "freesound_url": "https://freesound.org/s/205090/",
+      "sha256": "5a8f193f14fa649248b1d645ce6dae97f5c105015b3351ffaf86406e998c36d3"
+    },
+    {
+      "filename": "5-215005-A-32.wav",
+      "category": "keyboard_typing",
+      "split": "test",
+      "fold": 5,
+      "source_id": 215005,
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/5-215005-A-32.wav",
+      "freesound_url": "https://freesound.org/s/215005/",
+      "sha256": "b8c6b7a28f1523c4aa0a0261ed45dee934c5a8f2558893312d9d981bf1f92067"
+    }
+  ]
+}

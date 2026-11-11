@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.6875,
+  "macro_f1": 0.07407407407407407,
+  "loss": 0.7585926387045119,
+  "n": 144,
+  "false_keyword_rate": 0.3125,
+  "macro_f1_interpretation": "not used for ranking; noise-only has one true class"
+}

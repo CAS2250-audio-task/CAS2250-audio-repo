@@ -1,0 +1,122 @@
+{
+  "conditions": [
+    {
+      "condition": "val_rain_20db",
+      "category": "rain",
+      "snr_db": 20,
+      "accuracy": 0.6847290640394089,
+      "macro_f1": 0.6655436115364903,
+      "loss": 0.855605998649973,
+      "n": 203
+    },
+    {
+      "condition": "val_rain_10db",
+      "category": "rain",
+      "snr_db": 10,
+      "accuracy": 0.4187192118226601,
+      "macro_f1": 0.3966928763686346,
+      "loss": 1.8485848410376187,
+      "n": 203
+    },
+    {
+      "condition": "val_rain_0db",
+      "category": "rain",
+      "snr_db": 0,
+      "accuracy": 0.12315270935960591,
+      "macro_f1": 0.0645366568640226,
+      "loss": 2.762089690551382,
+      "n": 203
+    },
+    {
+      "condition": "val_engine_20db",
+      "category": "engine",
+      "snr_db": 20,
+      "accuracy": 0.7044334975369458,
+      "macro_f1": 0.698410896827459,
+      "loss": 0.9615983669393755,
+      "n": 203
+    },
+    {
+      "condition": "val_engine_10db",
+      "category": "engine",
+      "snr_db": 10,
+      "accuracy": 0.4482758620689655,
+      "macro_f1": 0.46106609124059167,
+      "loss": 1.9736496897166587,
+      "n": 203
+    },
+    {
+      "condition": "val_engine_0db",
+      "category": "engine",
+      "snr_db": 0,
+      "accuracy": 0.2413793103448276,
+      "macro_f1": 0.25403074572983037,
+      "loss": 2.7991441811246824,
+      "n": 203
+    },
+    {
+      "condition": "val_church_bells_20db",
+      "category": "church_bells",
+      "snr_db": 20,
+      "accuracy": 0.46798029556650245,
+      "macro_f1": 0.4375880621498547,
+      "loss": 1.7678439408687536,
+      "n": 203
+    },
+    {
+      "condition": "val_church_bells_10db",
+      "category": "church_bells",
+      "snr_db": 10,
+      "accuracy": 0.3645320197044335,
+      "macro_f1": 0.33829300224254977,
+      "loss": 2.256993907425791,
+      "n": 203
+    },
+    {
+      "condition": "val_church_bells_0db",
+      "category": "church_bells",
+      "snr_db": 0,
+      "accuracy": 0.32019704433497537,
+      "macro_f1": 0.2641619748382099,
+      "loss": 2.4540683794491396,
+      "n": 203
+    },
+    {
+      "condition": "val_keyboard_typing_20db",
+      "category": "keyboard_typing",
+      "snr_db": 20,
+      "accuracy": 0.5665024630541872,
+      "macro_f1": 0.5472723767673986,
+      "loss": 1.387870221302427,
+      "n": 203
+    },
+    {
+      "condition": "val_keyboard_typing_10db",
+      "category": "keyboard_typing",
+      "snr_db": 10,
+      "accuracy": 0.3842364532019704,
+      "macro_f1": 0.34073381838211003,
+      "loss": 2.1965589969616217,
+      "n": 203
+    },
+    {
+      "condition": "val_keyboard_typing_0db",
+      "category": "keyboard_typing",
+      "snr_db": 0,
+      "accuracy": 0.22167487684729065,
+      "macro_f1": 0.17103043961920542,
+      "loss": 2.8106257739325464,
+      "n": 203
+    }
+  ],
+  "noise_only": {
+    "accuracy": 0.8194444444444444,
+    "macro_f1": 0.08188757807078417,
+    "loss": 0.4894754687945048,
+    "n": 144,
+    "false_keyword_rate": 0.18055555555555555,
+    "macro_f1_interpretation": "not used for ranking; noise-only has one true class"
+  },
+  "mean_noisy_accuracy": 0.41215106732348117,
+  "mean_noisy_macro_f1": 0.3866133793805297
+}

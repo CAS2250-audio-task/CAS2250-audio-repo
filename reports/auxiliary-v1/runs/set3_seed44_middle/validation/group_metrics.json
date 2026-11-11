@@ -1,0 +1,72 @@
+[
+  {
+    "dimension": "speaker_id",
+    "value": "spk05",
+    "n": 203,
+    "accuracy": 0.812807881773399,
+    "macro_f1": 0.8218266763721309,
+    "class_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  {
+    "dimension": "room_session_id",
+    "value": "spk05:021",
+    "n": 1,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "class_ids": [
+      10
+    ]
+  },
+  {
+    "dimension": "room_session_id",
+    "value": "spk05:022",
+    "n": 1,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "class_ids": [
+      10
+    ]
+  },
+  {
+    "dimension": "room_session_id",
+    "value": "spk05:023",
+    "n": 1,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "class_ids": [
+      10
+    ]
+  },
+  {
+    "dimension": "group",
+    "value": "speaker:spk05",
+    "n": 203,
+    "accuracy": 0.812807881773399,
+    "macro_f1": 0.8218266763721309,
+    "class_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  }
+]
