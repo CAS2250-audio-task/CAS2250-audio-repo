@@ -8,6 +8,10 @@
 단어 목록과 class ID 순서는 `configs/task2.json`의 `labels`로 관리합니다.
 실제 데이터의 보관 위치, 전처리 결과와 실행법은 [데이터셋 안내](datasets/task2/README.md)를 참고하세요.
 `configs/task2_real.json`과 `notebooks/task2_real_preprocessed.ipynb`가 실제 데이터용 진입점입니다.
+현재 개인 실험은 **1,015개 전부를 1.5초로 규격화**하는 `fixed-1p5-v1`입니다.
+1,007개는 준비했고 긴 8개는 사용자의 윈도우 선택을 기다립니다. 선택을 모두 반영한 뒤
+`metadata.csv`를 생성하므로 그 전에는 이 설정으로 학습할 수 없습니다.
+선택과 실행 절차는 [1.5초 규격화 안내](datasets/task2/fixed-1p5-v1/README.md)를 참고하세요.
 
 팀원 시작 절차는 [VESSL · GitHub 팀 가이드](documents/vessl_github_team_guide.md)를 참고하세요.
 

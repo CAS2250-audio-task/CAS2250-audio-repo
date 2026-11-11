@@ -12,9 +12,9 @@
     "재시작",
     "silence"
   ],
-  "data_root": "../datasets/task2/clipped-v1",
+  "data_root": "../datasets/task2/fixed-1p5-v1",
   "metadata_csv": "metadata.csv",
-  "dataset_version": "task2-1015-v1-vad-1.5s",
+  "dataset_version": "task2-1015-fixed-1p5-v1",
   "split_version": "speaker-disjoint-seed42-v1",
   "dummy": false,
   "sample_rate": 16000,

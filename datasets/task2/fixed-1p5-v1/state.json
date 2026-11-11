@@ -1,0 +1,26 @@
+{
+  "status": "awaiting_selection",
+  "expected_files": 1015,
+  "sample_rate": 16000,
+  "samples": 24000,
+  "seconds": 1.5,
+  "candidate_root": "../window-candidates-v1",
+  "metadata_draft_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+  "windows_manifest_sha256": "b0efdd2d6b8f0b624100758ae0d7731846ace506becf4267b92346c04b5ed0e0",
+  "prepared_files": 1007,
+  "awaiting_selection": 8,
+  "methods": {
+    "accepted_copy": 703,
+    "review_copy": 295,
+    "reduced_outer_margin": 9,
+    "window_selection": 8
+  },
+  "listening": {
+    "recordings": 8,
+    "windows": 39,
+    "seconds": 77.5,
+    "duration": "00:01:17.500",
+    "gap_seconds": 0.5
+  },
+  "note": "All earlier review flags are retained. No metadata.csv until all window choices are supplied."
+}
