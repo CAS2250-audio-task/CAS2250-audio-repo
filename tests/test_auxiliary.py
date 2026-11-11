@@ -97,6 +97,17 @@ def test_set7_is_union_of_all_other_sets():
     assert set(SETS["7"]) == set().union(*(set(SETS[str(i)]) for i in range(1,7)))
 
 
+def test_partial_digital_silence_cannot_be_a_valid_formant():
+    from experiments.auxiliary.features import apply_support
+    raw=np.ones((len(NAMES),151),dtype=np.float32)*500
+    wav=np.zeros(24000)
+    wav[8000:16000]=0.1
+    corrected, valid=apply_support(wav,raw)
+    assert not valid[NAMES.index("f1"),:40].any()
+    assert valid[NAMES.index("f1"),60:90].all()
+    assert not valid[NAMES.index("delta_f1"),:40].any()
+
+
 def test_cached_spectrogram_is_exact_reference_frontend():
     cfg = load_config(ROOT / "configs/task2_real.json")
     path = sorted((Path(cfg.data_root)/"audio").glob("*/*.wav"))[0]

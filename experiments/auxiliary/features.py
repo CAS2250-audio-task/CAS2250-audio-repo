@@ -15,7 +15,7 @@ class FeatureConfig:
     formant_ceiling: float = 5500.0
     formant_window: float = 0.025
     delta_radius: int = 2
-    version: str = "aligned-acoustics-v1"
+    version: str = "aligned-acoustics-v2-support"
 
     def to_dict(self):
         return asdict(self)
@@ -47,6 +47,35 @@ def masked_delta(values, valid, hop_seconds, radius=2):
         if valid[sl].all():
             out[t] = np.dot(positions, values[sl]) / denom
     return out
+
+
+def apply_support(wav, raw, cfg=FeatureConfig()):
+    """Reject digitally empty analysis windows, not quiet/unvoiced speech.
+
+    LPC can manufacture finite roots in a silent span of an otherwise non-silent
+    recording. Availability must therefore also reflect the waveform support.
+    This is not VAD and does not establish correctness of a nonempty estimate.
+    """
+    import librosa
+    raw = np.asarray(raw, dtype=np.float32).copy()
+    idx = {n: i for i, n in enumerate(NAMES)}
+    def supported(length):
+        rms = librosa.feature.rms(y=np.asarray(wav, dtype=np.float64), frame_length=length,
+                                 hop_length=cfg.hop, center=True, pad_mode="constant")[0]
+        return rms > 1e-8
+    pitch_support = supported(cfg.pitch_frame)
+    raw[idx["log_f0"], ~pitch_support] = np.nan
+    raw[idx["voiced"], ~pitch_support] = 0
+    raw[idx["voiced_prob"], ~pitch_support] = 0
+    # Praat's Gaussian window actual length is twice its effective window length.
+    formant_support = supported(round(2*cfg.formant_window*cfg.sample_rate))
+    for name in ["f1","f2","f3","b1","b2","b3"]:
+        raw[idx[name], ~formant_support] = np.nan
+    for name in ["log_f0","f1","f2","f3"]:
+        values = raw[idx[name]]
+        raw[idx[f"delta_{name}"]] = masked_delta(
+            values, np.isfinite(values), cfg.hop/cfg.sample_rate, cfg.delta_radius)
+    return raw, np.isfinite(raw)
 
 
 def extract(wav, cfg=FeatureConfig()):
@@ -108,12 +137,7 @@ def extract(wav, cfg=FeatureConfig()):
     rms = librosa.feature.rms(y=wav, frame_length=cfg.n_fft, hop_length=cfg.hop,
                              center=True, pad_mode="reflect")[0]
     raw[idx["log_rms"]] = 20 * np.log10(np.maximum(rms, 1e-8))
-    for name in ("log_f0", "f1", "f2", "f3"):
-        values = raw[idx[name]]
-        raw[idx[f"delta_{name}"]] = masked_delta(
-            values, np.isfinite(values), cfg.hop / cfg.sample_rate, cfg.delta_radius)
-    valid = np.isfinite(raw)
-    return raw.astype(np.float32), valid
+    return apply_support(wav, raw, cfg)
 
 
 def fit_scaler(raw, valid):

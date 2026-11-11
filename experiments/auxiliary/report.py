@@ -56,7 +56,8 @@ def generate(study, output):
         raise ValueError("No completed runs")
     result.to_csv(output/"all_runs.csv",index=False)
     for filename in ["protocol.json","dataset_audit.json","scaler.json","environment.json",
-                     "confirmation_selection.json","final_selection.json","noise_reference.json"]:
+                     "confirmation_selection.json","final_selection.json","noise_reference.json",
+                     "preflight_support_repair.json","cache_recomputation_check.json"]:
         if (study/filename).exists():
             shutil.copy2(study/filename,output/filename)
     attribution = output/"noise_sources"
