@@ -1,5 +1,23 @@
 # 사전학습 실험 인계
 
+## 완료: 조기 종료 제거 후 100epoch 공통 종료점 비교
+
+- 사용자 승인: 02·03의 일시적인 회복에도 종료된 점을 확인하고 조기 종료 분기들을 더 학습한다.
+- 새 코드 `experiments/conformer_fixed100/`, 결과 `reports/conformer-fixed100-v1/`, 체크포인트와 로그 `runs/conformer-fixed100-v1/`. 기존 frozen 실험은 변경하지 않는다.
+- 실제 100epoch 미만 종료는 9분기이며 총 405epoch를 추가한다. 기존 악화신호 10분기 중 하나는 이미 100epoch이므로 기존 완료 7분기는 재사용한다.
+- 모델·AdamW·Torch/CUDA/sampler/validation RNG를 기존 LAST에서 복원한다. LR·배치·증강·609draw/epoch·고정 검증 입력·best 선택은 유지하고 조기 종료만 제거한다. 전체 최종 epoch는 100이다.
+- 각 분기 재개 전 원래 1,827개 검증 예측·손실을 재현한다. 매 epoch 예측·증강 trace·history·LAST를 저장한다. 기존 best도 후보에 포함한다. 종료 시 기존과 같은 전체3draw 0dB·원본·잡음단독, DFN3 off/on을 평가하고 독립 검사를 실행한다.
+- 재개 명령 `runs/denoise-env/bin/python -u -m experiments.conformer_fixed100.run`. 중복 실행 전 `process.json`, `progress.json`, `execution.log` 확인. 파일 잠금 적용. protocol 생성 이후 해당 패키지 소스는 동결한다.
+- 시작 전 기존58tests 통과. 시작 직전 기존증강/B32/무필터 최고본의 4fold validation: 원본F1 99.5447%·정확도99.5074%, 전체3draw0dB F1 88.9664%·정확도89.6193%. test01 미사용.
+- 중간 진입점 `reports/conformer-fixed100-v1/README.md`, 갱신 곡선 `speaker_curves.png`. 완료는 `runs/conformer-fixed100-v1/complete.json`과 독립검사 보고서로 확인한다.
+- 405epoch 추가 학습·전체 평가·독립 검사 모두 완료했다. 한국시간 11월13일02:13 종료. 전체16분기의 마지막 epoch가100이며 GPU는 유휴 상태다. 연장9개 중7개가 이전 종료 이후 고정draw0 F1 최고점을 갱신했다.
+- 최고 결과는 기존증강/B16/무필터 최고본: 전체3draw0dB F1 89.7492%, 정확도90.1888%(이전 같은조건88.8946% 대비+0.8546%p). 원본F1 99.6585%, 정확도99.6305%. 기존B32 최고본은F1 88.9664→89.1274%, 정확도89.7321%.
+- 기존증강/B16의02 F1 74.1500→76.6339%,03 92.1406→92.5395%,04 93.3438→93.8793%,05 95.9442% 유지. 최고epoch02/03/04/05=[63,97,87,99]. B32의02 최고53 유지,03은68→84.
+- 기존증강/B16 종료본 F1 87.9194%로 최고본보다1.8299%p 낮다. 같은최고본+DFN3는89.4946%로 무필터89.7492%보다 낮고 잡음단독 오반응3.4375→10.0%다. 이번 비교의 최고는 무필터B16 최고본이다.
+- 강화증강/B16의02·03 및B32의02는 일시 회복해 최고점을 갱신했지만02의후반추세는악화했다. 모든02/03이동일하게과적합하거나회복한것으로묶지않는다. 03/B16은97epoch최고라100epoch만으로추가개선불가를입증하지못한다.
+- 독립검사: 신규739,935검증예측·246,645훈련draw·188,460최종예측 지표/입력검사, 최고본32,886개 재추론일치. source/parent 체크포인트·AdamW·RNG 보존확인. 기존증강/B16 추가draw1~2 F1도88.6517→89.7523%. 개발평가이며 test01 미사용.
+- 검토 진입점 `reports/conformer-fixed100-v1/RESULTS.md`. 별도 분석 `experiments/analyze_conformer_fixed100.py`는 frozen 패키지를 변경하지 않는다. 분석검증 `review_validation.json`, 화자별비교 `paired_speaker_comparison.csv`, 추가draw `draw_split_summary.csv`.
+
 ## 완료: 0dB 기준 장기 학습·배치16/32·학습률 선택
 
 - 사용자 승인: 0dB를기준으로epoch를늘려전형적인과적합추세까지관찰하고배치축소·적절한LR도비교한다.

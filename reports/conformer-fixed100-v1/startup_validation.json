@@ -1,0 +1,9 @@
+{
+  "regression_tests_passed": 58,
+  "regression_test_seconds": 16.83,
+  "new_source_hashes_verified": true,
+  "source_last_predictions_replayed": 1827,
+  "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+  "training_pid": 10539,
+  "test_evaluated": false
+}

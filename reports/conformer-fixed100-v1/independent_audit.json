@@ -1,0 +1,14 @@
+{
+  "extended_branches": 9,
+  "new_validation_predictions_recomputed": 739935,
+  "new_training_draws_checked": 246645,
+  "final_prediction_rows_recomputed": 188460,
+  "best_checkpoint_predictions_replayed": 32886,
+  "parent_checkpoints_preserved": true,
+  "training_input_pairing_checked": true,
+  "optimizer_and_rng_verified": true,
+  "early_stopping_disabled": true,
+  "all_final_epochs": 100,
+  "test_audio_read": false,
+  "test_evaluated": false
+}

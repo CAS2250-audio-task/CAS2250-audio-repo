@@ -1,0 +1,58 @@
+{
+  "condition": "speech_focus",
+  "batch": 16,
+  "encoder_lr": 1e-05,
+  "speaker": "spk02",
+  "source_epoch": 36,
+  "best_epoch": 38,
+  "final_epoch": 100,
+  "best_monitor_f1": 0.706433089041717,
+  "final_results": {
+    "best_off": {
+      "epoch": 38,
+      "zero_f1": 0.7085421005817579,
+      "zero_loss": 0.9089072581609896,
+      "zero_accuracy": 0.7169540229885056,
+      "clean_f1": 0.9818068110751038,
+      "clean_loss": 0.05491950306091231,
+      "noise_only_fpr": 0.05,
+      "clean_accuracy": 0.9802955665024631
+    },
+    "best_dfn3": {
+      "epoch": 38,
+      "zero_f1": 0.8034558979643842,
+      "zero_loss": 0.6615209303588543,
+      "zero_accuracy": 0.8033661740558292,
+      "clean_f1": 0.9863579509920973,
+      "clean_loss": 0.047725763819596916,
+      "noise_only_fpr": 0.05625,
+      "clean_accuracy": 0.9852216748768473
+    },
+    "last_off": {
+      "epoch": 100,
+      "zero_f1": 0.6193604204611648,
+      "zero_loss": 1.543411351311466,
+      "zero_accuracy": 0.6330049261083744,
+      "clean_f1": 0.975462705886326,
+      "clean_loss": 0.07454350085705466,
+      "noise_only_fpr": 0.0,
+      "clean_accuracy": 0.9852216748768473
+    },
+    "last_dfn3": {
+      "epoch": 100,
+      "zero_f1": 0.7904325671372044,
+      "zero_loss": 0.8297352999976031,
+      "zero_accuracy": 0.7935139573070608,
+      "clean_f1": 0.9909062482233214,
+      "clean_loss": 0.029038431651234833,
+      "noise_only_fpr": 0.0125,
+      "clean_accuracy": 0.9901477832512315
+    }
+  },
+  "checkpoint_sha256": "d81bc6c44d76867d505ab5ea98bec5df81869d557cd4517e72aee503d2ae5a3d",
+  "last_checkpoint_sha256": "27c806b1be3b5821213fd2c5749b29e479c877719c4dd00b4fd300842c063901",
+  "extended": true,
+  "run_dir": "runs/conformer-fixed100-v1/branches/speech_focus/bs16/lr1e-05/spk02",
+  "stop_reason": "fixed_epoch100_without_early_stopping",
+  "test_evaluated": false
+}

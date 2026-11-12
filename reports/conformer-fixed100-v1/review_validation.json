@@ -1,0 +1,11 @@
+{
+  "paired_speaker_rows": 64,
+  "draw_split_rows": 16,
+  "summary_rows": 16,
+  "extended_branches": 9,
+  "branches_with_new_monitor_peak": 7,
+  "all_endpoints_epoch100": true,
+  "parent_protocol_and_checkpoint_hashes_verified": true,
+  "test_evaluated": false,
+  "analyzer_sha256": "aeb3f765a16051d2088eece754ad50a637431b819caf2893bf9bab4623856cbc"
+}

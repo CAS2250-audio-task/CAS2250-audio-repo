@@ -1,0 +1,17 @@
+condition,batch,speaker,old_end_epoch,old_best_epoch,new_best_epoch,new_end_epoch,extended
+baseline,16,spk02,40,25,63,100,True
+baseline,16,spk03,72,59,97,100,True
+baseline,16,spk04,69,44,87,100,True
+baseline,16,spk05,100,99,99,100,False
+baseline,32,spk02,56,53,53,100,True
+baseline,32,spk03,72,68,84,100,True
+baseline,32,spk04,100,69,69,100,False
+baseline,32,spk05,100,92,92,100,False
+speech_focus,16,spk02,36,11,38,100,True
+speech_focus,16,spk03,46,33,55,100,True
+speech_focus,16,spk04,100,76,76,100,False
+speech_focus,16,spk05,100,98,98,100,False
+speech_focus,32,spk02,34,11,40,100,True
+speech_focus,32,spk03,70,56,56,100,True
+speech_focus,32,spk04,100,73,73,100,False
+speech_focus,32,spk05,100,95,95,100,False
