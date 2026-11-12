@@ -1,0 +1,12 @@
+{
+  "mode": "frozen",
+  "seed": 42,
+  "copied_encoder_tensors": 406,
+  "encoder_initial_sha256": "820e16cfeb066382691faab7e460c99ea47f6d37edc3ce6dcd973764b0ee496a",
+  "classifier_initial_sha256": "cc671b80b01579106dbaa6f8e1f0efac4ab8624f24e9b5fe70892006cb8d5c20",
+  "total_parameters": 32122699,
+  "trainable_parameters": 2827,
+  "classifier_parameters": 2827,
+  "encoder_dropout_active": false,
+  "source_normalization_updated": false
+}

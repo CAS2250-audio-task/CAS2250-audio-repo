@@ -10,6 +10,8 @@
 [한국어 Conformer 실행](experiments/conformer/README.md) ·
 [Conformer 3시드 결과·학습곡선](reports/conformer-ref-v1/README.md)
 
+[성능 점검: 입력·라벨 대조와 개발 화자4-fold](reports/conformer-sanity-v1/README.md)
+
 현재 목표는 **출발 / 정지 / 전진 / 후진 / 왼쪽 / 오른쪽 / 시작 / 복귀 / 대기 / 재시작 + silence**입니다.
 단어 목록과 class ID 순서는 `configs/task2.json`의 `labels`로 관리합니다.
 실제 데이터의 보관 위치, 전처리 결과와 실행법은 [데이터셋 안내](datasets/task2/README.md)를 참고하세요.

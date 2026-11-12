@@ -1,0 +1,41 @@
+{
+  "checkpoint_sha256": "bd82b1088c61b08adf4b90dfbb354192cc805ba926f216a3048c253189964b71",
+  "seed": 44,
+  "normal_correct": 202,
+  "validation_files": 203,
+  "permutation_seed": 3957,
+  "reordered_predictions_identical": true,
+  "conditions": [
+    {
+      "condition": "normal_audio",
+      "accuracy": 0.9950738916256158,
+      "macro_f1": 0.995451702768776,
+      "loss": 0.3359711780923928
+    },
+    {
+      "condition": "zero_audio",
+      "accuracy": 0.014778325123152709,
+      "macro_f1": 0.00264783759929391,
+      "loss": 4.142364302292246
+    },
+    {
+      "condition": "permuted_audio",
+      "accuracy": 0.11330049261083744,
+      "macro_f1": 0.1043294104269714,
+      "loss": 3.5800106995211447
+    },
+    {
+      "condition": "permuted_targets",
+      "accuracy": 0.11330049261083744,
+      "macro_f1": 0.1043294104269714,
+      "loss": 3.5837158957138437
+    },
+    {
+      "condition": "reordered_files_batch17",
+      "accuracy": 0.9950738916256158,
+      "macro_f1": 0.995451702768776,
+      "loss": 0.3359684173403115
+    }
+  ],
+  "test_evaluated": false
+}

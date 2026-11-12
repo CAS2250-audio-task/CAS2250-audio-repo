@@ -1,0 +1,2 @@
+﻿path,true_idx,pred_idx,true_label,pred_label,error_reason
+audio/오른쪽/spk04_067.wav,5,4,오른쪽,왼쪽,

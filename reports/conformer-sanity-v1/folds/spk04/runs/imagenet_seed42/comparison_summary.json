@@ -1,0 +1,10 @@
+{
+  "best_epoch": 9,
+  "validation": {
+    "accuracy": 0.8669950738916257,
+    "macro_f1": 0.8657055253974382,
+    "loss": 0.38734823023083764
+  },
+  "checkpoint_sha256": "98a1df6198025624e1a0e6c308faa0b80f266e5bf84061167bbc2580af73507d",
+  "test_evaluated": false
+}

@@ -1,0 +1,4 @@
+﻿path,true_idx,pred_idx,true_label,pred_label,error_reason
+audio/왼쪽/spk03_102.wav,4,7,왼쪽,복귀,
+audio/재시작/spk03_108.wav,9,6,재시작,시작,
+audio/전진/spk03_143.wav,2,1,전진,정지,

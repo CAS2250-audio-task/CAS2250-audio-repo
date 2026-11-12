@@ -1,0 +1,9 @@
+heldout_speaker,model,seed,best_epoch,accuracy,macro_f1,loss,correct,final_epoch_macro_f1,source_run,reused
+spk02,imagenet,42,9,0.5960591133004927,0.5977787430455538,1.4883066529197058,121,0.5610259087749696,runs/conformer-sanity-v1/folds/spk02/runs/imagenet_seed42,False
+spk02,conformer,42,4,0.9901477832512315,0.9910089910089911,0.5640320754403552,201,0.9863408521303256,runs/conformer-sanity-v1/folds/spk02/runs/conformer_finetune_seed42,False
+spk03,imagenet,42,9,0.8522167487684729,0.833341719705356,0.5515271735015174,173,0.8313358481872893,runs/conformer-sanity-v1/folds/spk03/runs/imagenet_seed42,False
+spk03,conformer,42,4,0.9852216748768473,0.9863551083063278,0.5611246501283692,200,0.9863551083063278,runs/conformer-sanity-v1/folds/spk03/runs/conformer_finetune_seed42,False
+spk04,imagenet,42,9,0.8669950738916257,0.8657055253974382,0.38734823023083764,176,0.8386840171392307,runs/conformer-sanity-v1/folds/spk04/runs/imagenet_seed42,False
+spk04,conformer,42,8,0.9950738916256158,0.995451702768776,0.2619885308255116,202,0.995451702768776,runs/conformer-sanity-v1/folds/spk04/runs/conformer_finetune_seed42,False
+spk05,imagenet,42,9,0.9113300492610837,0.9183300102320636,0.37639440192377627,185,0.917808265258376,runs/conformer-sanity-v1/folds/spk05/runs/imagenet_seed42,False
+spk05,conformer,42,6,1.0,1.0,0.25625539148969606,203,1.0,runs/conformer-ref-v1/runs/conformer_finetune_seed42,True

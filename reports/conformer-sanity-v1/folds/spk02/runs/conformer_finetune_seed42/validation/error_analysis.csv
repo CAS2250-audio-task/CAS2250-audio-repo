@@ -1,0 +1,3 @@
+﻿path,true_idx,pred_idx,true_label,pred_label,error_reason
+audio/전진/spk02_041.wav,2,7,전진,복귀,
+audio/정지/spk02_047.wav,1,7,정지,복귀,

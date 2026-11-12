@@ -1,0 +1,28 @@
+{
+  "train_speakers": [
+    "spk02",
+    "spk03",
+    "spk04"
+  ],
+  "validation_speakers": [
+    "spk05"
+  ],
+  "train_validation_metadata_overlap": {
+    "path": 0,
+    "group": 0,
+    "speaker_id": 0,
+    "source_sha256": 0,
+    "source_filename": 0
+  },
+  "exact_audio_duplicates": {
+    "file_sha256": 0,
+    "pcm_sha256": 0
+  },
+  "zero_waveforms": 0,
+  "checked_train_and_validation_files": 812,
+  "model_input": "waveform tensor only; paths and labels are not model arguments",
+  "source_normalization": "fixed pretrained global statistics; no validation statistics fitted",
+  "pretraining_corpus_overlap": "not independently checked against the full KsponSpeech corpus",
+  "transformed_near_duplicates": "not ruled out by exact hashes",
+  "test_evaluated": false
+}

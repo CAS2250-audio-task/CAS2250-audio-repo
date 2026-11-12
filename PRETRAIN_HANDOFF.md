@@ -1,5 +1,35 @@
 # 사전학습 실험 인계
 
+## 최신 완료: 높은 성능 점검
+
+- 사용자:99.85%가 너무 높은 것 아닌지 점검 요청, 이후 재개 요청.
+- 붙여준 Conv2개+Transformer6층·512→11·약2,060만 표는 Whisper-base 설명이며 실제 Conformer와 다름을 정정.
+- 별도 `experiments/conformer_sanity.py`에서 입력 대조, 훈련 라벨만 섞는 고정 인코더 대조,
+  개발 화자02–05의4-fold를seed42 한 개·각10epoch로 점검했다.
+- Conformer는 기존 미세조정 조건 그대로, ImageNet은 원래 ref 학습 그대로. 양쪽matmul TF32 on.
+- spk05 Conformer seed42는 같은 분할의 기존 실행 재사용. 다른3fold Conformer+4fold ResNet 신규.
+- test spk01은 추론하지 않는다. 원본데이터·기존99.85% 보고서·동결 프로토콜은 보존한다.
+- 실행 `runs/conformer-env/bin/python -u -m experiments.conformer_sanity`.
+  로그 `runs/conformer-sanity-v1/execution.log`, 보고서 `reports/conformer-sanity-v1`.
+- 새 점검 스크립트의 프로토콜은 실행 시 소스 해시를 고정한다. 실행 도중 수정하지 말 것.
+- 총CV8회·80epoch(신규7회+기존spk05 Conformer1회 재사용), 훈련 라벨 대조1회·10epoch 완료.
+- 검증spk02/03/04/05 F1 ImageNet:59.77787/83.33417/86.57055/91.83300%,
+  Conformer:99.10090/98.63551/99.54517/100%. 평균80.37890/99.32040%, +18.94150%p.
+- 최고epoch선택 대신 마지막epoch10으로도 평균F1 ImageNet78.72135/Conformer99.20369%.
+- 기존seed44 입력 대조 F1: 정상99.54517%, 전체0음성0.26478%, 오디오 순서 교환10.43294%,
+  정답 순서 교환10.43294%. 파일순서·batch32→17 변경 시 파일별 예측 동일.
+- 훈련 라벨만 섞은 동결 인코더+분류층10epoch: 최고검증F1 9.86836%, 정확도12.31527%.
+- 개발4명812개에서 화자 간 원본SHA·원본파일명·WAV/PCM 정확 중복0.
+  검증통계로normalization학습 없음, 모델입력은파형만. 변형·근사중복과 사전학습원음전체 중복은 미확인.
+- 독립 확인 `experiments/check_conformer_sanity.py`로8개CV checkpoint의1,624개 검증예측 재추론 일치.
+  80epoch16,240개+라벨대조10epoch2,030개 지표 재계산. 전체테스트39개 통과.
+- 환경·거리·잡음·기기·발화스타일 metadata가 없어 해당조건의 일반화는 이번 결과로 판단할 수 없다.
+  unknown없는11클래스, 개발4명·seed42 한 개의 결과다. test spk01은 계속 미평가.
+- 점검 결론: 명백한 누수·평가오류 징후가 없으며 다른개발화자에서도높은성능이재현됨.
+  실제환경99.85%를보장하는결과는아니다. 원래99.85%는spk05·3시드평균이며CV99.32%와집계가다르다.
+- 새보고서 `reports/conformer-sanity-v1/README.md`, `speaker_cv.csv`, `cv_checkpoint_replay.json`.
+  학습프로세스종료, GPU유휴.
+
 ## 최신 완료: 한국어 Conformer
 
 - 사용자 요청으로 `experiments/conformer`에서 한국어 Conformer를 ref 데이터로 실험했다.

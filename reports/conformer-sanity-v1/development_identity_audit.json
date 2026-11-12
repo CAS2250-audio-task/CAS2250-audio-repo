@@ -1,0 +1,17 @@
+{
+  "files": 812,
+  "speakers": [
+    "speaker:spk02",
+    "speaker:spk03",
+    "speaker:spk04",
+    "speaker:spk05"
+  ],
+  "cross_speaker_duplicate_identifiers": {
+    "source_sha256": 0,
+    "source_filename": 0,
+    "file_sha256": 0,
+    "pcm_sha256": 0
+  },
+  "metadata_environment_columns_available": [],
+  "test_evaluated": false
+}
