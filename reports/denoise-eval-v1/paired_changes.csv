@@ -1,0 +1,10 @@
+filter,kind,n,fixed,broken,both_wrong
+deepfilternet3,clean,812,5,36,2
+deepfilternet3,mixed,19488,2048,1332,1925
+deepfilternet3,noise_only,640,18,73,9
+dns64,clean,812,3,7,4
+dns64,mixed,19488,2298,1277,1675
+dns64,noise_only,640,0,217,27
+nsnet2,clean,812,5,19,2
+nsnet2,mixed,19488,1907,1441,2066
+nsnet2,noise_only,640,22,45,5

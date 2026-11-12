@@ -1,5 +1,32 @@
 # 사전학습 실험 인계
 
+## 최신 완료: 소음 혼합 학습본에 잡음 제거기 3개 비교
+
+- 사용자 요청: 0dB 개선을 위해 필터 3개를 소음 혼합 학습본에만 평가한다.
+- 고정 분류기: `runs/conformer-aug-v1/folds/spk02~05/noise/best.pt` 4개, 추가 학습 없음.
+- 필터: DeepFilterNet3, Meta DNS64 Demucs, Microsoft NSNet2 16k. 공개 가중치와 공식 코드 revision/SHA 고정.
+- 폴더 `experiments/denoise_eval/`, 결과 `reports/denoise-eval-v1/`, 큰 캐시와 로그 `runs/denoise-eval-v1/`.
+- 0dB 혼합19,488개, 원본812개, 0dB 기준 잡음 단독640개를 동일하게 비교. test01 제외.
+- 필터 입력은 혼합 파형뿐. 깨끗한 원본/분리된 잡음/라벨/SNR을 필터에 전달하지 않는다.
+- 16k·1.5초를 유지하고 DFN만48k 왕복 리샘플. 공식 지연 보정. 임의 피크 정규화/클리핑/원본 혼합 없음.
+- 세 필터 재호출 bitwise 일치 및 순서 독립성 통과. batch/single RMS 차이 <0.02%, NSNet2는 공식16k 경로와 정확히 일치.
+- 별도 `runs/denoise-env` 설치; 기존 학습환경 변경 없음. 외부 DNS 사전학습 잡음의 평가 원본 중복은 완전히 감사하지 못한 한계.
+- `process.json` PID와 `execution.log` 확인 후 중복 실행하지 않는다. 중단 시 같은 환경으로
+  `python -u -m experiments.denoise_eval.run`을 재개. protocol 고정 후 소스를 변경하면 새 study를 쓴다.
+- 총83,760개 예측 완료. 원본/0dB F1 및 잡음 단독 오반응률:
+  - 없음:99.2043/78.4748%, 오반응4.21875%.
+  - DFN3:95.6769/83.7984%, 오반응12.8125%.
+  - DNS64:98.7530/83.2600%, 오반응38.125%.
+  - NSNet2:97.6081/81.8614%, 오반응7.8125%.
+- 0dB는 모두 개선됐지만 원본 손상/잡음 오반응 증가가 있어 기본 경로에 자동 채택하지 않았다. 특히 DNS64는 정답률 개선과 높은 오반응이 함께 나타남.
+- DFN3는 압축기60.59→75.09%, 식당48.11→59.21%로 개선. 구내식당71.12→71.32%로 거의 변화 없음.
+- 독립 검사:528개 조건 지표 재계산, 출력83,760개 SHA 확인, 파형816개 재필터링 정확히 일치, 분류1,840개 재추론 일치. 기존 분류기/데이터/소음/원래 보고서 해시 보존.
+- 프로젝트51개 테스트 통과. vendor 외부 테스트까지 수집되던 문제는 pytest.ini testpaths=tests로 해결했다.
+- batch1 필터만/전체 중앙값: 없음0.04/15.49ms,DFN3 15.00/30.59ms,DNS64 7.07/22.12ms,NSNet2 17.39/33.90ms. RTX3090+CPU2threads;100회. 창 확보/로딩/WAVdecode/통신 제외, 비스트리밍.
+- `runs/denoise-eval-v1/listening/README.md`: 이전 출발/spk02_052를 같은3종0dB로 처리한 실제 입력 WAV/이어듣기. 오류 선별 없이 고정 예시 유지, 일부 필터 후 정답→오답도 있음.
+- 최종 문서 `reports/denoise-eval-v1/README.md`, 검증/재개 방법 `VALIDATION.md`, 독립 검사 `experiments.check_denoise_eval`.
+- 외부 코드/가중치 복구 `experiments.prepare_denoise_assets`, 별도 환경 의존성 `experiments/denoise_eval_requirements.txt`. 새study가 아니면 prepare/preflight를 다시 실행하지 않는다(시간 포함 파일 해시 변경).
+
 ## 추가 측정: 현재 Conformer latency
 
 - 사용자 요청으로 실제 소음 혼합 학습 모델의 batch1·1.5초 입력 지연을 측정했다.

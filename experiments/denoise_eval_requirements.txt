@@ -1,0 +1,5 @@
+# Install in a separate environment exposing the existing Conformer dependencies.
+appdirs==1.4.4
+loguru==0.7.3
+deepfilterlib==0.5.6
+onnxruntime==1.23.2

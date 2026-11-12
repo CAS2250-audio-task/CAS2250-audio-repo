@@ -1,0 +1,30 @@
+{
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "python": "3.10.12",
+  "torch": "2.6.0+cu124",
+  "batch_size": 1,
+  "input": "CPU float32 mixture, mono16k,24000 samples",
+  "output": "CPU waveform or CPU predicted index",
+  "warmup": 20,
+  "repetitions": 100,
+  "torch_threads": 2,
+  "tf32": true,
+  "included": "resampling, state reset, enhancement, output crop, CPU/GPU transfers; plus native Fbank and classifier in total",
+  "excluded": "model loading, WAV decode, input acquisition/window wait, networking",
+  "streaming": false,
+  "window_seconds": 1.5,
+  "fixture": {
+    "heldout_speaker": "spk02",
+    "kind": "mixed",
+    "noise_id": "traffic",
+    "category": "road",
+    "snr_db": 0,
+    "draw": 0,
+    "path": "audio/출발/spk02_050.wav",
+    "true_idx": 0,
+    "prior_pred_idx": 0,
+    "case_index": 252,
+    "input_sha256": "5f1f09316244b23bf9c4168b37b70b26656577b01cb0e60eacc84f62b9b32d31"
+  },
+  "note": "Processing time for an available whole window; not streaming algorithmic delay or time from speech onset"
+}

@@ -1,0 +1,40 @@
+{
+  "deepfilternet3": {
+    "shape": [
+      8,
+      24000
+    ],
+    "dtype": "float32",
+    "finite": true,
+    "batch_relative_rms": 4.423121572472155e-05,
+    "order_relative_rms": 0.0,
+    "repeated_call_bitwise_equal": true,
+    "first_batch_seconds": 0.2560555711388588,
+    "resampling_matches_official_sinc_fast": true
+  },
+  "dns64": {
+    "shape": [
+      8,
+      24000
+    ],
+    "dtype": "float32",
+    "finite": true,
+    "batch_relative_rms": 0.00014772468421142548,
+    "order_relative_rms": 0.0,
+    "repeated_call_bitwise_equal": true,
+    "first_batch_seconds": 0.0724104680120945
+  },
+  "nsnet2": {
+    "shape": [
+      8,
+      24000
+    ],
+    "dtype": "float32",
+    "finite": true,
+    "batch_relative_rms": 0.0,
+    "order_relative_rms": 0.0,
+    "repeated_call_bitwise_equal": true,
+    "first_batch_seconds": 0.0766021169256419,
+    "official_reference_max_abs_error": 0.0
+  }
+}

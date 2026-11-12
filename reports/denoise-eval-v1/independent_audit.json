@@ -1,0 +1,111 @@
+{
+  "rows": 83760,
+  "metric_groups_recomputed": 528,
+  "baseline_predictions_match": 20940,
+  "mixture_hashes_matched_during_preparation": 20128,
+  "filtered_output_sha256_checked": 83760,
+  "filter_replay_cases": 816,
+  "filter_replay": [
+    {
+      "filter": "none",
+      "heldout_speaker": "spk02",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "none",
+      "heldout_speaker": "spk03",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "none",
+      "heldout_speaker": "spk04",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "none",
+      "heldout_speaker": "spk05",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "deepfilternet3",
+      "heldout_speaker": "spk02",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "deepfilternet3",
+      "heldout_speaker": "spk03",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "deepfilternet3",
+      "heldout_speaker": "spk04",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "deepfilternet3",
+      "heldout_speaker": "spk05",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "dns64",
+      "heldout_speaker": "spk02",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "dns64",
+      "heldout_speaker": "spk03",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "dns64",
+      "heldout_speaker": "spk04",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "dns64",
+      "heldout_speaker": "spk05",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "nsnet2",
+      "heldout_speaker": "spk02",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "nsnet2",
+      "heldout_speaker": "spk03",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "nsnet2",
+      "heldout_speaker": "spk04",
+      "cases": 51,
+      "max_abs_error": 0.0
+    },
+    {
+      "filter": "nsnet2",
+      "heldout_speaker": "spk05",
+      "cases": 51,
+      "max_abs_error": 0.0
+    }
+  ],
+  "classifier_replay_cases": 1840,
+  "all_replayed_predictions_equal": true,
+  "protocol_and_source_weight_input_dataset_hashes_valid": true,
+  "test_evaluated": false,
+  "code_sha256": "0f8686ebd4836d8a5fcbda7dfef4db776abf9409f57094aea75f283f9136e246"
+}
