@@ -1,0 +1,9 @@
+{
+  "speaker": "spk02",
+  "original_run": "c2ed04a871308_set3_seed44_spk02",
+  "history_csv_identical": true,
+  "selected_model_tensors_identical": true,
+  "selected_predictions_identical": true,
+  "scores_identical": true,
+  "epoch_predictions_complete": true
+}

@@ -1,0 +1,51 @@
+{
+  "base": {
+    "labels": [
+      "출발",
+      "정지",
+      "전진",
+      "후진",
+      "왼쪽",
+      "오른쪽",
+      "시작",
+      "복귀",
+      "대기",
+      "재시작",
+      "silence"
+    ],
+    "data_root": "/root/audio/datasets/task2/real-context-1p5-v1",
+    "metadata_csv": "metadata.csv",
+    "dataset_version": "task2-real-context-1p5-v1",
+    "split_version": "speaker-disjoint-seed42-v1",
+    "dummy": false,
+    "sample_rate": 16000,
+    "seconds": 1.5,
+    "n_fft": 512,
+    "win_length": 512,
+    "hop_length": 160,
+    "n_mels": 128,
+    "batch_size": 32,
+    "epochs": 10,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "num_workers": 0,
+    "use_pretrained": true,
+    "use_augmentation": false,
+    "seed": 44,
+    "device": "auto"
+  },
+  "condition": {
+    "augmentation": [
+      "mask",
+      "speed"
+    ],
+    "weight_decay": 0.0001,
+    "dropout": 0.0,
+    "freeze_front": false,
+    "backbone_lr_ratio": 1.0
+  },
+  "set_id": "0",
+  "seed": 44,
+  "validation_speaker": "spk04",
+  "test_evaluated": false
+}

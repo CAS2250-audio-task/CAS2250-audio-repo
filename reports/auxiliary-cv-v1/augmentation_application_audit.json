@@ -1,0 +1,158 @@
+{
+  "cached_variants": 2,
+  "clips": 812,
+  "training_draw_application_probability": 0.5,
+  "speed_variant_counts": {
+    "silence_unchanged": 24,
+    "faster_zero_padded": 797,
+    "slower_protected_crop": 784,
+    "infeasible_slowdowns_skipped": 19
+  },
+  "speed_protected_interval_check": true,
+  "protected_interval_definition": "entire previous reviewed crop, not independently verified true speech boundaries",
+  "sample_rounding_tolerance": 1,
+  "maximum_added_zero_padding_samples": 2173,
+  "maximum_added_zero_padding_ms": 135.8125,
+  "infeasible_slowdowns": [
+    {
+      "path": "audio/대기/spk02_069.wav",
+      "variant": 0,
+      "requested_rate": 0.9705811709691766,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/오른쪽/spk02_116.wav",
+      "variant": 0,
+      "requested_rate": 0.9148904652169582,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/전진/spk02_133.wav",
+      "variant": 0,
+      "requested_rate": 0.9241798354794215,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/정지/spk02_188.wav",
+      "variant": 0,
+      "requested_rate": 0.9557855660251925,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/대기/spk03_006.wav",
+      "variant": 0,
+      "requested_rate": 0.9003506442710097,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/전진/spk03_143.wav",
+      "variant": 0,
+      "requested_rate": 0.9477522274505443,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/후진/spk03_187.wav",
+      "variant": 0,
+      "requested_rate": 0.9361455820604883,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/후진/spk03_203.wav",
+      "variant": 0,
+      "requested_rate": 0.9825335700198077,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/대기/spk04_015.wav",
+      "variant": 0,
+      "requested_rate": 0.9283559509158927,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/정지/spk04_150.wav",
+      "variant": 0,
+      "requested_rate": 0.9315013037325112,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/오른쪽/spk02_116.wav",
+      "variant": 1,
+      "requested_rate": 0.9147683523862437,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/전진/spk02_133.wav",
+      "variant": 1,
+      "requested_rate": 0.9794658423489976,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/정지/spk02_188.wav",
+      "variant": 1,
+      "requested_rate": 0.9211453682535472,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/대기/spk03_003.wav",
+      "variant": 1,
+      "requested_rate": 0.9899808494202836,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/복귀/spk03_043.wav",
+      "variant": 1,
+      "requested_rate": 0.9916973594533168,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/재시작/spk03_108.wav",
+      "variant": 1,
+      "requested_rate": 0.9582972193786882,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/후진/spk03_187.wav",
+      "variant": 1,
+      "requested_rate": 0.9734030668200279,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/전진/spk04_129.wav",
+      "variant": 1,
+      "requested_rate": 0.9174165385798807,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    },
+    {
+      "path": "audio/정지/spk04_150.wav",
+      "variant": 1,
+      "requested_rate": 0.9578227695801361,
+      "applied_rate": 1.0,
+      "skipped": "protected_interval_would_be_cut"
+    }
+  ],
+  "pitch_dynamic_curve_checks_passed": 1600,
+  "pitch_curve_endpoints_semitones": [
+    0,
+    0
+  ],
+  "human_listening_performed": false,
+  "trace_scope": "fixed cache variants across all development clips; not counts of actual stochastic training draws"
+}

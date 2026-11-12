@@ -1,0 +1,105 @@
+{
+  "development_files": 812,
+  "test_files_extracted": 0,
+  "spec_shape": [
+    812,
+    1,
+    128,
+    151
+  ],
+  "raw_shape": [
+    812,
+    17,
+    151
+  ],
+  "folds": {
+    "spk02": {
+      "train": 609,
+      "val": 203,
+      "train_silence": 9,
+      "val_silence": 3,
+      "scaler_sha256": "fbe1dd6366fb4147717518b021a5dd72491b3a2c565bff186c8c4ae207dff172"
+    },
+    "spk03": {
+      "train": 609,
+      "val": 203,
+      "train_silence": 9,
+      "val_silence": 3,
+      "scaler_sha256": "8d216771438e0e1cc82fe79b4dbdc9bd12b6070fcb01cc4d06b1508fc95c1c7f"
+    },
+    "spk04": {
+      "train": 609,
+      "val": 203,
+      "train_silence": 9,
+      "val_silence": 3,
+      "scaler_sha256": "5c5138b29a5781fc819ec3451e46b42b534a364ae1a8e33ad364e0cc2aac20c2"
+    },
+    "spk05": {
+      "train": 609,
+      "val": 203,
+      "train_silence": 9,
+      "val_silence": 3,
+      "scaler_sha256": "1622809ff5f21b27b498fd85776cc4d89b5f9f8939b7d06ed112cea455b053be"
+    }
+  },
+  "all_scalers_refitted_and_verified": true,
+  "training_noise_files": 16,
+  "training_noise_sources_disjoint_from_old_evaluation": true,
+  "peak_exception_signal_checks": [
+    {
+      "path": "audio/대기/spk04_003.wav",
+      "retained_rms": 0.0292426707213634,
+      "outside_peak": 0.891265869140625,
+      "outside_over_0p5_samples": 87,
+      "retained_interval_not_cut": true
+    },
+    {
+      "path": "audio/대기/spk04_008.wav",
+      "retained_rms": 0.07584535139016715,
+      "outside_peak": 0.891265869140625,
+      "outside_over_0p5_samples": 98,
+      "retained_interval_not_cut": true
+    },
+    {
+      "path": "audio/대기/spk05_015.wav",
+      "retained_rms": 0.008349697675918265,
+      "outside_peak": 0.8912353515625,
+      "outside_over_0p5_samples": 6,
+      "retained_interval_not_cut": true
+    },
+    {
+      "path": "audio/오른쪽/spk05_076.wav",
+      "retained_rms": 0.04923691301795418,
+      "outside_peak": 0.8912353515625,
+      "outside_over_0p5_samples": 7,
+      "retained_interval_not_cut": true
+    },
+    {
+      "path": "audio/전진/spk05_143.wav",
+      "retained_rms": 0.07641242883379838,
+      "outside_peak": 0.891265869140625,
+      "outside_over_0p5_samples": 1,
+      "retained_interval_not_cut": true
+    },
+    {
+      "path": "audio/출발/spk05_174.wav",
+      "retained_rms": 0.0742499591540366,
+      "outside_peak": 0.8912353515625,
+      "outside_over_0p5_samples": 3,
+      "retained_interval_not_cut": true
+    }
+  ],
+  "human_listening_review_performed": false,
+  "tests_passed": 55,
+  "recovery_check": {
+    "checkpoint_recovery_bit_identical": true,
+    "validation_identical": true,
+    "seed": 99,
+    "set_id": "4",
+    "validation_speaker": "spk02",
+    "epochs_per_equivalent_run": 2,
+    "engineering_smoke_epochs_total": 4,
+    "not_used_for_condition_selection": true,
+    "test_evaluated": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "definition": "diagnostic only; voiced probability is not pitch accuracy probability; no feature threshold changed",
+  "by_speaker": [
+    {
+      "speaker": "speaker:spk02",
+      "available_F0_frames": 15149,
+      "F0_65_to_67Hz_fraction_of_available": 0.009901643672849693,
+      "median_voiced_probability_at_lower_bound": 0.010001017712056637
+    },
+    {
+      "speaker": "speaker:spk03",
+      "available_F0_frames": 10465,
+      "F0_65_to_67Hz_fraction_of_available": 0.3601528905876732,
+      "median_voiced_probability_at_lower_bound": 0.01000000536441803
+    },
+    {
+      "speaker": "speaker:spk04",
+      "available_F0_frames": 10120,
+      "F0_65_to_67Hz_fraction_of_available": 0.28211462450592883,
+      "median_voiced_probability_at_lower_bound": 0.010000016540288925
+    },
+    {
+      "speaker": "speaker:spk05",
+      "available_F0_frames": 13909,
+      "F0_65_to_67Hz_fraction_of_available": 0.5196635272125961,
+      "median_voiced_probability_at_lower_bound": 0.010026725009083748
+    }
+  ]
+}

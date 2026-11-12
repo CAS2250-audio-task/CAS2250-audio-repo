@@ -1,0 +1,33 @@
+{
+  "run": "cc505336f1381_set0_seed42_spk04",
+  "condition_id": "c505336f1381",
+  "condition": {
+    "augmentation": [
+      "mask"
+    ],
+    "weight_decay": 0.0001,
+    "dropout": 0.0,
+    "freeze_front": false,
+    "backbone_lr_ratio": 1.0
+  },
+  "set_id": "0",
+  "seed": 42,
+  "validation_speaker": "spk04",
+  "validation": {
+    "accuracy": 0.8620689655172413,
+    "macro_f1": 0.8586964605486521,
+    "loss": 0.4244011675782979,
+    "n": 203
+  },
+  "original_train": {
+    "accuracy": 0.9950738916256158,
+    "macro_f1": 0.995451702768776,
+    "loss": 0.012283264713634069,
+    "n": 609
+  },
+  "best_epoch": 7,
+  "training_seconds": 5.727597395889461,
+  "backbone_initial_sha256": "05e1bfc3dc41199b721eac10d7c61ef333d25da224671aa5576fdbb3350ea4da",
+  "parameters": 11175883,
+  "test_evaluated": false
+}

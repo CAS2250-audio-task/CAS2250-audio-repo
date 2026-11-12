@@ -8,13 +8,17 @@
 단어 목록과 class ID 순서는 `configs/task2.json`의 `labels`로 관리합니다.
 실제 데이터의 보관 위치, 전처리 결과와 실행법은 [데이터셋 안내](datasets/task2/README.md)를 참고하세요.
 `configs/task2_real.json`과 `notebooks/task2_real_preprocessed.ipynb`가 실제 데이터용 진입점입니다.
-현재 개인 실험 데이터는 **1,015개 전부 정확히 1.5초인 `fixed-1p5-v1`**입니다.
+기존 기준 실험 데이터는 **1,015개 전부 정확히 1.5초인 `fixed-1p5-v1`**입니다.
+완료한 CV 실험에는 원본 주변 녹음을 더 보존한 `real-context-1p5-v1`을 사용했습니다.
+665개는 원본 연속 1.5초, 짧은 350개는 원본 전체에 부족한 길이만 0 패딩합니다.
+새 데이터 설정은 `configs/task2_real_context.json`이며 기존 baseline 설정과 결과는 보존합니다.
 긴 8개의 `11111611` 선택을 반영했고 train 609 / validation 203 / test 203으로 분리했습니다.
 원본 음성은 보존하며, 클리핑 코드는 [preprocessing/clip_audio.py](preprocessing/clip_audio.py)에 분리했습니다.
 실행 절차는 [1.5초 데이터 안내](datasets/task2/fixed-1p5-v1/README.md)를 참고하세요.
 
 `jaehun`의 시간 정렬 보조 특징 0~7세트 실험은 [실행 설명](experiments/auxiliary/README.md)과
 [실험 결과](reports/auxiliary-v1/README.md)에서 확인합니다. 기존 `src/`와 기준 설정은 유지합니다.
+완료한 184회 4-fold CV의 [실험 정리](reports/auxiliary-cv-v1/INTERIM.md)와 [전체 보고서](reports/auxiliary-cv-v1/README.md)를 참고합니다.
 
 팀원 시작 절차는 [VESSL · GitHub 팀 가이드](documents/vessl_github_team_guide.md)를 참고하세요.
 

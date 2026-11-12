@@ -1,0 +1,31 @@
+{
+  "run": "c99ac2f16480a_set0_seed43_spk02",
+  "condition_id": "99ac2f16480a",
+  "condition": {
+    "augmentation": [],
+    "weight_decay": 0.0001,
+    "dropout": 0.0,
+    "freeze_front": false,
+    "backbone_lr_ratio": 1.0
+  },
+  "set_id": "0",
+  "seed": 43,
+  "validation_speaker": "spk02",
+  "validation": {
+    "accuracy": 0.5467980295566502,
+    "macro_f1": 0.5727991954437283,
+    "loss": 1.6253011940148077,
+    "n": 203
+  },
+  "original_train": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.0029709320341440282,
+    "n": 609
+  },
+  "best_epoch": 8,
+  "training_seconds": 5.041621534852311,
+  "backbone_initial_sha256": "a6db6f9701f2c5aba09f191ff1d69bd4914a54c3e46fc2f58c9e4e8aed55a291",
+  "parameters": 11175883,
+  "test_evaluated": false
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://archive.ubuntu.com/ubuntu/pool/universe/r/rubberband/librubberband2_2.0.0-2_amd64.deb",
+    "sha256": "ffe78e254bb3817c70e2bf6986c0aa16533fdc8d0eb7c7db4910ec5df6742f09"
+  },
+  {
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/libfftw3-double3_3.3.8-2ubuntu1_amd64.deb",
+    "sha256": "c448a27c04c925797c8493afa427404fd77ecdb224e8ebfabfefe037d14aede9"
+  },
+  {
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libs/libsamplerate/libsamplerate0_0.2.2-1build1_amd64.deb",
+    "sha256": "89faab8f6a9ca71cb6dd6d9dd604301d3e9f7f534790a8a4bf8156b4da33ccbb"
+  }
+]

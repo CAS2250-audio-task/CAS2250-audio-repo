@@ -1,0 +1,47 @@
+{
+  "dataset_version": "task2-real-context-1p5-v1",
+  "status": "prepared",
+  "sample_rate": 16000,
+  "samples": 24000,
+  "seconds": 1.5,
+  "format": "mono PCM16 WAV",
+  "files": 1015,
+  "total_originals": 1015,
+  "short_source_policy": "zero",
+  "continuous_candidates": 665,
+  "zero_padded_originals": 350,
+  "pending_short_originals": 0,
+  "pending_by_split": {},
+  "pending_by_group": {},
+  "candidate_split_counts": {
+    "test": 203,
+    "train": 609,
+    "val": 203
+  },
+  "split_counts": {
+    "test": 203,
+    "train": 609,
+    "val": 203
+  },
+  "gain_reduced_files": [
+    "audio/대기/spk04_003.wav",
+    "audio/대기/spk04_008.wav",
+    "audio/대기/spk05_015.wav",
+    "audio/오른쪽/spk05_076.wav",
+    "audio/전진/spk05_143.wav",
+    "audio/출발/spk05_174.wav"
+  ],
+  "artificial_padding_added": 1154493,
+  "time_stretching_applied": false,
+  "listening_review_status": "not_performed",
+  "all_reviewed_crop_samples_retained": true,
+  "inputs_unchanged": true,
+  "input_wavs_verified": 2030,
+  "raw_metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+  "metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+  "recipe_sha256": "4f8d993b109ecc1e39dac3395bebe29ca9fb466eb95784cbeac4352da4fffb1b",
+  "reviewed_metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+  "reviewed_recipe_sha256": "99ed2ec8ac71d3f472bb2ea7ab073c1913b3c1bbb9e8639e6b59f865afb9d887",
+  "raw_root": "/root/audio/datasets/task2/raw-v1",
+  "reviewed_root": "/root/audio/datasets/task2/fixed-1p5-v1"
+}

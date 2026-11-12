@@ -1,0 +1,81 @@
+{
+  "출발": {
+    "precision": 0.5882352941176471,
+    "recall": 1.0,
+    "f1-score": 0.7407407407407407,
+    "support": 20.0
+  },
+  "정지": {
+    "precision": 1.0,
+    "recall": 0.05,
+    "f1-score": 0.09523809523809523,
+    "support": 20.0
+  },
+  "전진": {
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1-score": 0.6666666666666666,
+    "support": 20.0
+  },
+  "후진": {
+    "precision": 0.7,
+    "recall": 0.7,
+    "f1-score": 0.7,
+    "support": 20.0
+  },
+  "왼쪽": {
+    "precision": 1.0,
+    "recall": 0.35,
+    "f1-score": 0.5185185185185185,
+    "support": 20.0
+  },
+  "오른쪽": {
+    "precision": 0.7727272727272727,
+    "recall": 0.85,
+    "f1-score": 0.8095238095238095,
+    "support": 20.0
+  },
+  "시작": {
+    "precision": 1.0,
+    "recall": 0.05,
+    "f1-score": 0.09523809523809523,
+    "support": 20.0
+  },
+  "복귀": {
+    "precision": 0.46511627906976744,
+    "recall": 1.0,
+    "f1-score": 0.6349206349206349,
+    "support": 20.0
+  },
+  "대기": {
+    "precision": 0.5454545454545454,
+    "recall": 0.9,
+    "f1-score": 0.6792452830188679,
+    "support": 20.0
+  },
+  "재시작": {
+    "precision": 0.6086956521739131,
+    "recall": 0.7,
+    "f1-score": 0.6511627906976745,
+    "support": 20.0
+  },
+  "silence": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3.0
+  },
+  "accuracy": 0.625615763546798,
+  "macro avg": {
+    "precision": 0.7663844585039224,
+    "recall": 0.6545454545454545,
+    "f1-score": 0.5992049667784639,
+    "support": 203.0
+  },
+  "weighted avg": {
+    "precision": 0.7468205954229701,
+    "recall": 0.625615763546798,
+    "f1-score": 0.5656408506958722,
+    "support": 203.0
+  }
+}

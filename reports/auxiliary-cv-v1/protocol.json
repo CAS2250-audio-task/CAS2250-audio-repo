@@ -1,0 +1,210 @@
+{
+  "version": "speaker-auxiliary-cv-v1",
+  "data": {
+    "dataset_version": "task2-real-context-1p5-v1",
+    "status": "prepared",
+    "sample_rate": 16000,
+    "samples": 24000,
+    "seconds": 1.5,
+    "format": "mono PCM16 WAV",
+    "files": 1015,
+    "total_originals": 1015,
+    "short_source_policy": "zero",
+    "continuous_candidates": 665,
+    "zero_padded_originals": 350,
+    "pending_short_originals": 0,
+    "pending_by_split": {},
+    "pending_by_group": {},
+    "candidate_split_counts": {
+      "test": 203,
+      "train": 609,
+      "val": 203
+    },
+    "split_counts": {
+      "test": 203,
+      "train": 609,
+      "val": 203
+    },
+    "gain_reduced_files": [
+      "audio/대기/spk04_003.wav",
+      "audio/대기/spk04_008.wav",
+      "audio/대기/spk05_015.wav",
+      "audio/오른쪽/spk05_076.wav",
+      "audio/전진/spk05_143.wav",
+      "audio/출발/spk05_174.wav"
+    ],
+    "artificial_padding_added": 1154493,
+    "time_stretching_applied": false,
+    "listening_review_status": "not_performed",
+    "all_reviewed_crop_samples_retained": true,
+    "inputs_unchanged": true,
+    "input_wavs_verified": 2030,
+    "raw_metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+    "metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+    "recipe_sha256": "4f8d993b109ecc1e39dac3395bebe29ca9fb466eb95784cbeac4352da4fffb1b",
+    "reviewed_metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+    "reviewed_recipe_sha256": "99ed2ec8ac71d3f472bb2ea7ab073c1913b3c1bbb9e8639e6b59f865afb9d887",
+    "raw_root": "/root/audio/datasets/task2/raw-v1",
+    "reviewed_root": "/root/audio/datasets/task2/fixed-1p5-v1"
+  },
+  "config": {
+    "labels": [
+      "출발",
+      "정지",
+      "전진",
+      "후진",
+      "왼쪽",
+      "오른쪽",
+      "시작",
+      "복귀",
+      "대기",
+      "재시작",
+      "silence"
+    ],
+    "data_root": "/root/audio/datasets/task2/real-context-1p5-v1",
+    "metadata_csv": "metadata.csv",
+    "dataset_version": "task2-real-context-1p5-v1",
+    "split_version": "speaker-disjoint-seed42-v1",
+    "dummy": false,
+    "sample_rate": 16000,
+    "seconds": 1.5,
+    "n_fft": 512,
+    "win_length": 512,
+    "hop_length": 160,
+    "n_mels": 128,
+    "batch_size": 32,
+    "epochs": 10,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "num_workers": 0,
+    "use_pretrained": true,
+    "use_augmentation": false,
+    "seed": 42,
+    "device": "auto"
+  },
+  "speakers": [
+    "spk02",
+    "spk03",
+    "spk04",
+    "spk05"
+  ],
+  "test_excluded": "spk01",
+  "features": {
+    "sample_rate": 16000,
+    "samples": 24000,
+    "hop": 160,
+    "n_fft": 512,
+    "pitch_frame": 1024,
+    "pitch_min": 65.0,
+    "pitch_max": 600.0,
+    "formant_ceiling": 5500.0,
+    "formant_window": 0.025,
+    "delta_radius": 2,
+    "version": "aligned-acoustics-v2-support"
+  },
+  "sets": {
+    "0": [],
+    "1": [
+      "log_f0",
+      "delta_log_f0",
+      "voiced",
+      "voiced_prob"
+    ],
+    "2": [
+      "f1",
+      "f2",
+      "f3"
+    ],
+    "3": [
+      "f1",
+      "f2",
+      "f3",
+      "b1",
+      "b2",
+      "b3"
+    ],
+    "4": [
+      "f1",
+      "f2",
+      "f3",
+      "delta_f1",
+      "delta_f2",
+      "delta_f3"
+    ],
+    "5": [
+      "flatness",
+      "flux",
+      "centroid"
+    ],
+    "6": [
+      "log_rms"
+    ],
+    "7": [
+      "log_f0",
+      "voiced",
+      "voiced_prob",
+      "f1",
+      "f2",
+      "f3",
+      "b1",
+      "b2",
+      "b3",
+      "delta_log_f0",
+      "delta_f1",
+      "delta_f2",
+      "delta_f3",
+      "flatness",
+      "flux",
+      "centroid",
+      "log_rms"
+    ]
+  },
+  "source_sha256": {
+    "experiments/auxiliary_cv/__init__.py": "b91707d93518752f92fac4eb5584f9ca8ad3fa8398b14a371a0b289a46664c9f",
+    "experiments/auxiliary_cv/data.py": "568a891bcd818a589a4e0063b88ba40846753af61f9fc484a1cb3a6f1e1e68ec",
+    "experiments/auxiliary_cv/study.py": "69e1af2a53611f4e518729377d5ea56aebed0df5aeb3f5311622db9ba5721f16",
+    "experiments/auxiliary_cv/augment.py": "784e0f258441559c8309a6d7cb12f22deac8e78263f77efbb91a9e4cabc8722f",
+    "experiments/auxiliary_cv/pipeline.py": "6d6fe0f1cfecfe61743a120f9335c82090f8ebcda60b8f1e9fe3099e9a5cc814",
+    "experiments/auxiliary/__init__.py": "13b2e7eec686dc89a7f3d71db20994a2a8e2e51b22d0b99eea358f2b861406bb",
+    "experiments/auxiliary/features.py": "94c011a87a9bd404d0be010add4ed308fb1715a2bc2c36ddb1293c50f284b1d8",
+    "experiments/auxiliary/model.py": "a0dadc0061dfbe99e426f09b9889432a18b9edd1437bbe1aae020bb419895771",
+    "experiments/auxiliary/data.py": "94b3170780f3471b8f115919f60b2882ff43c2d60f9e6901ccde9693333add17",
+    "experiments/auxiliary/study.py": "c3d95bc82cc54cf9564f2e7fdbb4b000c36f77c6e3b9d0c64c91a10f9985a18e",
+    "experiments/auxiliary/report.py": "12474eca1b38278bb23444f6450652d858f071b416673ccfbba802403cbb28e1",
+    "experiments/auxiliary/repair_support.py": "631e079038f5d295363d9fd925c0f67b79e6a05c4c8e0235ebb0a36ebcc64eed",
+    "src/__init__.py": "6cd6327b6a20b0d88061f01586756609f759c300586000f3966c44e90ba87712",
+    "src/__main__.py": "c7eb49c202fe0f93b5e610a6b2e2d1ce25db06ae7ccc49914f569c82ef94a90c",
+    "src/config.py": "265eb645c0771b27e6b54b68683d226640d1498a2741c3b197dbf1d3fefc8e96",
+    "src/dataset.py": "01a6b68881bb72982c11f957099f99d028b5b71e7c6dd11971079cfcee40a5f4",
+    "src/engine.py": "e09f2e0c1d045f54b581d77afc4d658212b04e388a10595d076b73793f9b2114",
+    "src/model.py": "e7c75a42414375a1b3afcf79b3c3ea3c6eb4bedbe3356c97b90c0ebff8d267d0",
+    "src/import_recordings.py": "2e7b54ab557e45d422444bb6ff3a8fcef324907dd281e8b2b93d105e41ab44b8"
+  },
+  "checkpoint": "maximum original validation macro F1; earliest epoch on tie",
+  "scaler": "original fold train valid frames only; reused for train augmentation",
+  "augmentation": {
+    "application_probability_per_component": 0.5,
+    "fixed_wave_variants": 2,
+    "variant_bank_shared_across_models_and_training_seeds": true,
+    "pitch": "time-varying 0/random[-1,1]/random[-1,1]/0 semitone anchors, formant-preserved Rubber Band 2.0 R2",
+    "speed": "pitch-preserved 0.9..1.1; preserve entire previous reviewed interval; skip infeasible rates; center zero padding",
+    "noise": "ESC-50 four categories, 16 training sources disjoint from prior val/test, SNR U[10,30] relative to current full-clip power including silence's own background",
+    "mask": "20..50ms on spec and aux values+availability together; 4..8 mel bins on spec only; spec fill -2",
+    "combinations": "independent Bernoulli application; waveform transform order pitch, speed, noise; recompute all features"
+  },
+  "selection": {
+    "screen_seed": 42,
+    "confirmation_seeds": [
+      42,
+      43,
+      44
+    ],
+    "improvement_min_mean_macro_f1": 0.005,
+    "maximum_worst_speaker_regression": 0.01,
+    "maximum_either_set_regression": 0.005,
+    "maximum_individual_augmentation_confirmations": 2,
+    "optional_freeze_lr_trigger": "mean train minus validation F1 >= .08 and validation F1 < .95",
+    "final_auxiliary_choice": "keep set0 unless confirmed mean CV F1 improves by >= .005 with worst speaker regression <= .01"
+  },
+  "test_evaluation": false
+}

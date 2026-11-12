@@ -1,0 +1,17 @@
+{
+  "set_id": 0,
+  "seed": 44,
+  "speakers": 4,
+  "clips_per_speaker": 203,
+  "epochs_per_speaker": 10,
+  "prediction_rows_checked": 8120,
+  "all_prediction_metrics_reproduced": true,
+  "replays_bit_identical": 3,
+  "same_epoch_comparison": [
+    3,
+    10
+  ],
+  "original_selection_unchanged": true,
+  "user_authorized_spk01_post_selection_evaluation": true,
+  "human_listening_performed": false
+}

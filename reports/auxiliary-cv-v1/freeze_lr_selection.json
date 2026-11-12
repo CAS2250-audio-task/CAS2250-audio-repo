@@ -1,0 +1,114 @@
+{
+  "reference": {
+    "augmentation": [
+      "mask",
+      "speed"
+    ],
+    "weight_decay": 0.0001,
+    "dropout": 0.0,
+    "freeze_front": false,
+    "backbone_lr_ratio": 1.0
+  },
+  "screens": [
+    {
+      "condition": {
+        "augmentation": [
+          "mask",
+          "speed"
+        ],
+        "weight_decay": 0.0001,
+        "dropout": 0.0,
+        "freeze_front": true,
+        "backbone_lr_ratio": 1.0
+      },
+      "metrics": {
+        "mean_f1": 0.7894502451955978,
+        "accuracy": 0.7838669950738917,
+        "worst_speaker_f1": 0.5640400005395056,
+        "per_set": {
+          "0": 0.762849107359698,
+          "4": 0.8160513830314975
+        },
+        "per_speaker": {
+          "spk02": 0.5640400005395056,
+          "spk03": 0.8236740055078777,
+          "spk04": 0.8850612735099969,
+          "spk05": 0.8850257012250106
+        },
+        "seed_std": 0.0,
+        "mean_train_f1": 0.9982936518566816,
+        "runs": 8,
+        "seeds": [
+          42
+        ]
+      }
+    },
+    {
+      "condition": {
+        "augmentation": [
+          "mask",
+          "speed"
+        ],
+        "weight_decay": 0.0001,
+        "dropout": 0.0,
+        "freeze_front": false,
+        "backbone_lr_ratio": 0.1
+      },
+      "metrics": {
+        "mean_f1": 0.5481287322173891,
+        "accuracy": 0.5369458128078818,
+        "worst_speaker_f1": 0.35378326265906407,
+        "per_set": {
+          "0": 0.48607811164632353,
+          "4": 0.6101793527884549
+        },
+        "per_speaker": {
+          "spk02": 0.35378326265906407,
+          "spk03": 0.6104274368866336,
+          "spk04": 0.6093548362675412,
+          "spk05": 0.6189493930563181
+        },
+        "seed_std": 0.0,
+        "mean_train_f1": 0.9646927168878525,
+        "runs": 8,
+        "seeds": [
+          42
+        ]
+      }
+    }
+  ],
+  "confirmed_effective": [],
+  "selected": {
+    "augmentation": [
+      "mask",
+      "speed"
+    ],
+    "weight_decay": 0.0001,
+    "dropout": 0.0,
+    "freeze_front": false,
+    "backbone_lr_ratio": 1.0
+  },
+  "selected_metrics": {
+    "mean_f1": 0.8296271765589122,
+    "accuracy": 0.8249178981937603,
+    "worst_speaker_f1": 0.6815311416900834,
+    "per_set": {
+      "0": 0.8250858811909759,
+      "4": 0.8341684719268483
+    },
+    "per_speaker": {
+      "spk02": 0.6815311416900834,
+      "spk03": 0.8773679044385428,
+      "spk04": 0.8653798818703246,
+      "spk05": 0.8942297782366978
+    },
+    "seed_std": 0.010285598906942315,
+    "mean_train_f1": 0.9975368664316422,
+    "runs": 24,
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  }
+}

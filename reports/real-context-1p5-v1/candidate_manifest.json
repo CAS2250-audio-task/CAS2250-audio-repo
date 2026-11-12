@@ -1,0 +1,39 @@
+{
+  "dataset_version": "real-context-1p5-candidates-v1",
+  "status": "pending_short_source_policy",
+  "sample_rate": 16000,
+  "samples": 24000,
+  "seconds": 1.5,
+  "total_originals": 1015,
+  "continuous_candidates": 665,
+  "pending_short_originals": 350,
+  "pending_by_split": {
+    "test": 79,
+    "train": 118,
+    "val": 153
+  },
+  "pending_by_group": {
+    "speaker:spk01": 79,
+    "speaker:spk04": 118,
+    "speaker:spk05": 153
+  },
+  "candidate_split_counts": {
+    "test": 124,
+    "train": 491,
+    "val": 50
+  },
+  "gain_reduced_files": [
+    "audio/대기/spk04_003.wav",
+    "audio/출발/spk05_174.wav"
+  ],
+  "artificial_padding_added": 0,
+  "time_stretching_applied": false,
+  "all_reviewed_crop_samples_retained": true,
+  "inputs_unchanged": true,
+  "input_wavs_verified": 2030,
+  "raw_metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+  "reviewed_metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+  "reviewed_recipe_sha256": "99ed2ec8ac71d3f472bb2ea7ab073c1913b3c1bbb9e8639e6b59f865afb9d887",
+  "raw_root": "/root/audio/datasets/task2/raw-v1",
+  "reviewed_root": "/root/audio/datasets/task2/fixed-1p5-v1"
+}

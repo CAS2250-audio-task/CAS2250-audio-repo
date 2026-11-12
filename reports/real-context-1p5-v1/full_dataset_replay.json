@@ -1,0 +1,12 @@
+{
+  "files": 1015,
+  "sample_rate": 16000,
+  "seconds": 1.5,
+  "samples": 24000,
+  "split_counts": {
+    "train": 609,
+    "test": 203,
+    "val": 203
+  },
+  "all_output_hashes_match": true
+}

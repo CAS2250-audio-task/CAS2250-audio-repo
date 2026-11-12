@@ -1,0 +1,29 @@
+{
+  "source_sha256": {
+    "experiments/auxiliary_cv/__init__.py": "b91707d93518752f92fac4eb5584f9ca8ad3fa8398b14a371a0b289a46664c9f",
+    "experiments/auxiliary_cv/data.py": "568a891bcd818a589a4e0063b88ba40846753af61f9fc484a1cb3a6f1e1e68ec",
+    "experiments/auxiliary_cv/study.py": "69e1af2a53611f4e518729377d5ea56aebed0df5aeb3f5311622db9ba5721f16",
+    "experiments/auxiliary_cv/augment.py": "784e0f258441559c8309a6d7cb12f22deac8e78263f77efbb91a9e4cabc8722f",
+    "experiments/auxiliary_cv/pipeline.py": "6d6fe0f1cfecfe61743a120f9335c82090f8ebcda60b8f1e9fe3099e9a5cc814",
+    "experiments/auxiliary/__init__.py": "13b2e7eec686dc89a7f3d71db20994a2a8e2e51b22d0b99eea358f2b861406bb",
+    "experiments/auxiliary/features.py": "94c011a87a9bd404d0be010add4ed308fb1715a2bc2c36ddb1293c50f284b1d8",
+    "experiments/auxiliary/model.py": "a0dadc0061dfbe99e426f09b9889432a18b9edd1437bbe1aae020bb419895771",
+    "experiments/auxiliary/data.py": "94b3170780f3471b8f115919f60b2882ff43c2d60f9e6901ccde9693333add17",
+    "experiments/auxiliary/study.py": "c3d95bc82cc54cf9564f2e7fdbb4b000c36f77c6e3b9d0c64c91a10f9985a18e",
+    "experiments/auxiliary/report.py": "12474eca1b38278bb23444f6450652d858f071b416673ccfbba802403cbb28e1",
+    "experiments/auxiliary/repair_support.py": "631e079038f5d295363d9fd925c0f67b79e6a05c4c8e0235ebb0a36ebcc64eed",
+    "src/__init__.py": "6cd6327b6a20b0d88061f01586756609f759c300586000f3966c44e90ba87712",
+    "src/__main__.py": "c7eb49c202fe0f93b5e610a6b2e2d1ce25db06ae7ccc49914f569c82ef94a90c",
+    "src/config.py": "265eb645c0771b27e6b54b68683d226640d1498a2741c3b197dbf1d3fefc8e96",
+    "src/dataset.py": "01a6b68881bb72982c11f957099f99d028b5b71e7c6dd11971079cfcee40a5f4",
+    "src/engine.py": "e09f2e0c1d045f54b581d77afc4d658212b04e388a10595d076b73793f9b2114",
+    "src/model.py": "e7c75a42414375a1b3afcf79b3c3ea3c6eb4bedbe3356c97b90c0ebff8d267d0",
+    "src/import_recordings.py": "2e7b54ab557e45d422444bb6ff3a8fcef324907dd281e8b2b93d105e41ab44b8"
+  },
+  "protocol_sha256": "5d8d6b847e8e211d173d931d0a901ef2ea9251061b071a4443ebd60d918618be",
+  "scaler_sha256": "8d216771438e0e1cc82fe79b4dbdc9bd12b6070fcb01cc4d06b1508fc95c1c7f",
+  "backbone_initial_sha256": "5a71bd286896b3d8b4d12cff2b3e8895f8abb4f04ae0514fdce33459767c73c9",
+  "torch": "2.6.0+cu124",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "test_evaluated": false
+}

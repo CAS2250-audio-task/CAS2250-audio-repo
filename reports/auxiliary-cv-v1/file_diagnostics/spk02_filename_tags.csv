@@ -1,0 +1,7 @@
+field,tag,total_files,correct_e03,regressed,recovered
+filename_prefix,(prefix 없음),60,49,9,5
+filename_prefix,거리,60,33,12,7
+filename_prefix,백양,20,8,2,0
+filename_prefix,복도,60,43,20,5
+filename_distance_tag,20cm,110,72,18,8
+filename_distance_tag,50cm,90,61,25,9

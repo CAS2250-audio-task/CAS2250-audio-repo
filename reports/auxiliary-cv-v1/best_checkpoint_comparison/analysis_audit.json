@@ -1,0 +1,165 @@
+{
+  "seed": 44,
+  "condition_id": "2ed04a871308",
+  "set_ids": [
+    0,
+    3
+  ],
+  "comparison": "originally_selected_best_checkpoints_per_set_and_fold",
+  "selected_epochs_from_original_summaries": true,
+  "source_history_argmax_verified": true,
+  "original_selected_predictions_exact_match": true,
+  "prediction_rows_checked": 1624,
+  "all_prediction_metrics_reproduced": true,
+  "frozen_sources_unchanged": true,
+  "spk01_epochs_selected_only_on_spk02": true,
+  "additional_training_epochs": 0,
+  "original_formal_runs_unchanged": 184,
+  "provenance": {
+    "spk01": {
+      "0": {
+        "source_run": "c2ed04a871308_set0_seed44_spk02",
+        "selected_epoch": 4,
+        "scores": {
+          "accuracy": 0.5665024630541872,
+          "macro_f1": 0.5845893370383362,
+          "loss": 1.9458553133339718,
+          "n": 203
+        },
+        "prediction_source": "reports/auxiliary-cv-v1/file_diagnostics_set0/spk01_external_model_spk02_seed44/epoch_04.csv",
+        "prediction_sha256": "a31dd9bfe20dbb5ddcd804a1864acec4a64586ff480dcb01a0e8119ab65145ff",
+        "source_best_checkpoint_sha256": "3aeda56a733e614a8522341b679be55ef31326440d5d1306ac3693d3a20998cd"
+      },
+      "3": {
+        "source_run": "c2ed04a871308_set3_seed44_spk02",
+        "selected_epoch": 3,
+        "scores": {
+          "accuracy": 0.6896551724137931,
+          "macro_f1": 0.7186164215508226,
+          "loss": 1.1088216740803178,
+          "n": 203
+        },
+        "prediction_source": "reports/auxiliary-cv-v1/file_diagnostics/spk01_external_model_spk02_seed44/epoch_03.csv",
+        "prediction_sha256": "b3b51cbc4515e16f44bee6ecab32d8049ae5180ea263f49b1e061d0f2fadbada",
+        "source_best_checkpoint_sha256": "da99803caf48cfe70fe515314d2b47994b69401d4fc1feb498d0b2560e77e715"
+      }
+    },
+    "spk02": {
+      "0": {
+        "source_run": "c2ed04a871308_set0_seed44_spk02",
+        "selected_epoch": 4,
+        "scores": {
+          "accuracy": 0.6206896551724138,
+          "macro_f1": 0.6282093697193738,
+          "loss": 1.2559262991612181,
+          "n": 203
+        },
+        "prediction_source": "reports/auxiliary-cv-v1/file_diagnostics_set0/c2ed04a871308_set0_seed44_spk02/epoch_04.csv",
+        "prediction_sha256": "4e5787795455dfd3a0d414cc4dc511b70a8dc6b1134f5b4a0035f9c52f9e30ec",
+        "source_best_checkpoint_sha256": "3aeda56a733e614a8522341b679be55ef31326440d5d1306ac3693d3a20998cd"
+      },
+      "3": {
+        "source_run": "c2ed04a871308_set3_seed44_spk02",
+        "selected_epoch": 3,
+        "scores": {
+          "accuracy": 0.6699507389162561,
+          "macro_f1": 0.7014381663302046,
+          "loss": 1.1441301080980912,
+          "n": 203
+        },
+        "prediction_source": "reports/auxiliary-cv-v1/file_diagnostics/c2ed04a871308_set3_seed44_spk02/epoch_03.csv",
+        "prediction_sha256": "6fe2da8e0311038fd7f14d8b5c7827f69b5a4291a4f0c0f4f567fdb7cb1d56d4",
+        "source_best_checkpoint_sha256": "da99803caf48cfe70fe515314d2b47994b69401d4fc1feb498d0b2560e77e715"
+      }
+    },
+    "spk03": {
+      "0": {
+        "source_run": "c2ed04a871308_set0_seed44_spk03",
+        "selected_epoch": 8,
+        "scores": {
+          "accuracy": 0.8620689655172413,
+          "macro_f1": 0.8701789752483573,
+          "loss": 0.45341667411803027,
+          "n": 203
+        },
+        "prediction_source": "reports/auxiliary-cv-v1/file_diagnostics_set0/c2ed04a871308_set0_seed44_spk03/epoch_08.csv",
+        "prediction_sha256": "3d328aa9181d445d28ce2ee6f9056fcdb1391e42724ec7000be22ab1131efbed",
+        "source_best_checkpoint_sha256": "665668bbeeeae2370df15473cb5d3656383f1a46bd6b0b6048653766bf8ad57b"
+      },
+      "3": {
+        "source_run": "c2ed04a871308_set3_seed44_spk03",
+        "selected_epoch": 7,
+        "scores": {
+          "accuracy": 0.8669950738916257,
+          "macro_f1": 0.8759039860967124,
+          "loss": 0.5131751125669245,
+          "n": 203
+        },
+        "prediction_source": "reports/auxiliary-cv-v1/file_diagnostics/c2ed04a871308_set3_seed44_spk03/epoch_07.csv",
+        "prediction_sha256": "35fba303dab82a4c52d1dc29544ac13a789eb9891d8963b814d0cefdc8ceccce",
+        "source_best_checkpoint_sha256": "a7b6c7a247ad26e4822bfb74a982918caff8f19e4400ee41c8c51055777d2838"
+      }
+    },
+    "spk04": {
+      "0": {
+        "source_run": "c2ed04a871308_set0_seed44_spk04",
+        "selected_epoch": 9,
+        "scores": {
+          "accuracy": 0.8522167487684729,
+          "macro_f1": 0.8472795069714197,
+          "loss": 0.5086775244456794,
+          "n": 203
+        },
+        "prediction_source": "reports/auxiliary-cv-v1/file_diagnostics_set0/c2ed04a871308_set0_seed44_spk04/epoch_09.csv",
+        "prediction_sha256": "d7bb86c0237778151470b83c76b15d6900658c93a331e7611382312ee00a8b53",
+        "source_best_checkpoint_sha256": "1cef20e0d51171b1a95946c6937f77efcde9cd378ac456931563c4a0cdea67c8"
+      },
+      "3": {
+        "source_run": "c2ed04a871308_set3_seed44_spk04",
+        "selected_epoch": 9,
+        "scores": {
+          "accuracy": 0.8866995073891626,
+          "macro_f1": 0.8742485425480513,
+          "loss": 0.44737737827700347,
+          "n": 203
+        },
+        "prediction_source": "reports/auxiliary-cv-v1/file_diagnostics/c2ed04a871308_set3_seed44_spk04/epoch_09.csv",
+        "prediction_sha256": "2e16c7f7202d3a5c8e3e71c2727816e718507f477967197d27e6716aaa368b75",
+        "source_best_checkpoint_sha256": "676b4e848896c69bf28ce2d9db291f67809ba99536744c5b53d2961540a8f40a"
+      }
+    }
+  },
+  "artifact_sha256": {
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/README.md": "88d3a7f8b319d390dab9395e47240428a3a2a9356165d1554dd7bc8225a40b9e",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/speaker_summary.csv": "1b15dce81f6a31ce8e30555525a07487d373744bbe067c137723e668a654e1b9",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk01.md": "e85b5ed23de4ebf343c86b1c90be69c5e2fd1b70885f6ab0d99c77e4a682e39f",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk01_all_files.csv": "568d993493f6e6cbba486c951063c5c3a087e828dffaf3e61f92b3f6b8595e6e",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk01_both_correct.csv": "22a12c2b64e62244de6b142a83ce1abfc92162130e51e178585edda28eae5286",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk01_both_wrong.csv": "15308f522494f1d48a153f5fe792539fad31c59c7c4eb65b74903dfb27b065e9",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk01_class_comparison.csv": "04289c121b2abf9cd0a55f95dbf7008e675d0d86e54b3572beafda42fd78dafd",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk01_set0_only_correct.csv": "6cd9b785ad304c6420cde1f1685000f2fd018775311379e53c82a2b09cbc5f6c",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk01_set3_only_correct.csv": "ddc23ede50c1b59f078f63f3393b12867d7b598e7a7595fc3636d8966e3eeaae",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk02.md": "4c24cf03d086fcee571fb2b44f0f82aa13e58eaac9ca12bf7428afb293208f83",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk02_all_files.csv": "cf7277b95974d76f0292e3040aefec136b9a5a36fd59c1dc2ceaf9d5473e1501",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk02_both_correct.csv": "2a06e99dc70edc618d919147ae513f0260cc42f4480572f9a9e27cd3dc3f08aa",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk02_both_wrong.csv": "3bfb2fb090c07386a5ebf8b46f338eafbd56010d0ed869e3c02fe2baf70435c6",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk02_class_comparison.csv": "90cba49b602e273291de1f6417cc4b41d0e1356a45565e208085d9de62fdfd32",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk02_previous_43_at_best.csv": "6d227b021c34c8de201c2350943bb0cb0508ae5c63383595f95050c00c497ea6",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk02_set0_only_correct.csv": "17c7865ba3c19ed8f55700efcea14b83e5429ca8589d73d77a73fb74cc6345a4",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk02_set3_only_correct.csv": "6c94d0d29790ffdc0e493c45bfa559af58b85b4690a6d8d97dd417231bd6c5f6",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk03.md": "959a083f4ef20fdfba7aa8364815a2898bb627fa0bf2ab63ea2913a3c1b60080",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk03_all_files.csv": "0be557b516f634943ac81a7fb5ff7ace77c8b4c229983c3f6ecd6c2c722a65ad",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk03_both_correct.csv": "ce769665248dfca96430f67ce0d8ea327c9feee7b558371ea6158ed72c8deef7",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk03_both_wrong.csv": "ee91d4f7abc57413ced506b70a884d5ba613e9afd7d2a81455786d9f11740f19",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk03_class_comparison.csv": "a16fb4c0591f2683202f0564c747eea8a9c768affae3c2506b497f5d234e6306",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk03_set0_only_correct.csv": "4608f3465c296d750b0070eb64a99b06ffd6db614e728fbc16f17fca80b3807d",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk03_set3_only_correct.csv": "93153203213cb4dd75740f4b756d906a0770d088c4f4a92d65b92a1d0755039d",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk04.md": "5544855903badd5466da34103abf128a77496e1d6e6df5d1babc1d83f0d5c241",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk04_all_files.csv": "1d27faf7bb42781b380393e204a62dc75b53ca58c1b82dae33f049e3c6f9ec4b",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk04_both_correct.csv": "72b32ba76b2610833245ad6c8bd8f5d26a32c40593e804ab763af36272b8d659",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk04_both_wrong.csv": "f741890b35cf160050c0272ddf62ae17046bb01c09356756d45878150d4e615f",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk04_class_comparison.csv": "87fb4bfb25c274a799e1c8a7e08ab882bef113084496b503d5d327ce382c3582",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk04_set0_only_correct.csv": "3d9646eec5d8ec116e9152e561d133c2767fd3cafbf44ea2d556d3c22c9bd519",
+    "reports/auxiliary-cv-v1/best_checkpoint_comparison/spk04_set3_only_correct.csv": "f550e296acf095145eab3255de61b73978a29ef759d8ff9dc078b9ddbb7e2a90"
+  }
+}

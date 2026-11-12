@@ -5,6 +5,7 @@ __pycache__/
 .DS_Store
 __MACOSX/
 /runs/
+/.worktrees/
 .pytest_cache/
 processed_datasets/
 datasets/task2/raw-v1/audio/

@@ -1,0 +1,18 @@
+{
+  "evaluation_speaker": "spk01",
+  "source_model": "c2ed04a871308_set3_seed44_spk02",
+  "source_training_speakers": [
+    "spk03",
+    "spk04",
+    "spk05"
+  ],
+  "fixed_comparison_epochs": [
+    3,
+    10
+  ],
+  "user_requested_post_selection_diagnostic": true,
+  "test_evaluated": true,
+  "no_training_or_scaler_fit_on_spk01": true,
+  "original_study_selection_unchanged": true,
+  "original_scaler_sha256": "fbe1dd6366fb4147717518b021a5dd72491b3a2c565bff186c8c4ae207dff172"
+}

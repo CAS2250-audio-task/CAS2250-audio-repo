@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-11-12T00:13:39.672466+00:00",
+  "cuda_error": "No CUDA GPUs are available",
+  "nvml_error": "Failed to initialize NVML: Unknown Error",
+  "device_open_error": "EPERM on /dev/nvidiactl, /dev/nvidia3 and /dev/nvidia-uvm",
+  "cgroup_devices_readonly": true,
+  "allowed_devices": "b *:* m\nc *:* m\nc 1:3 rwm\nc 1:5 rwm\nc 1:7 rwm\nc 1:8 rwm\nc 1:9 rwm\nc 5:0 rwm\nc 5:2 rwm\nc 10:200 rwm\nc 136:* rwm\n",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "completed_runs": 126,
+  "status": "resolved_after_reboot",
+  "resolved_at": "2026-11-12T09:19:38+09:00",
+  "cuda_probe": "torch.ones(1, device=cuda).item() == 1.0",
+  "gpu_current": "NVIDIA GeForce RTX 3090"
+}

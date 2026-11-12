@@ -1,0 +1,55 @@
+{
+  "dataset_version": "task2-real-context-1p5-v1",
+  "files": 1015,
+  "continuous_originals": 665,
+  "whole_short_originals_with_zero_padding": 350,
+  "split_counts": {
+    "train": 609,
+    "test": 203,
+    "val": 203
+  },
+  "metadata_identity_preserved": true,
+  "all_reviewed_intervals_retained": true,
+  "whole_short_originals_retained": true,
+  "all_declared_padding_is_zero": true,
+  "maximum_pcm_sample_error": 0,
+  "raw_and_previous_wav_hashes_verified": 2030,
+  "no_cross_split_duplicate_audio": true,
+  "gain_reduced_files": [
+    {
+      "path": "audio/대기/spk04_003.wav",
+      "previous_gain_db": 10.88212191927672,
+      "gain_db": -0.7340791582328563
+    },
+    {
+      "path": "audio/대기/spk04_008.wav",
+      "previous_gain_db": 5.556428743417943,
+      "gain_db": -0.08066692949607956
+    },
+    {
+      "path": "audio/대기/spk05_015.wav",
+      "previous_gain_db": 12.0,
+      "gain_db": -0.7999703645502637
+    },
+    {
+      "path": "audio/오른쪽/spk05_076.wav",
+      "previous_gain_db": 3.65244996945345,
+      "gain_db": -0.5637864943788863
+    },
+    {
+      "path": "audio/전진/spk05_143.wav",
+      "previous_gain_db": 7.247983750475218,
+      "gain_db": 5.844107517963024
+    },
+    {
+      "path": "audio/출발/spk05_174.wav",
+      "previous_gain_db": 6.215457915415268,
+      "gain_db": 5.429263437480462
+    }
+  ],
+  "listening_review_status": "not_performed",
+  "tests_passed": 47,
+  "cv_training_implemented": false,
+  "training_performed": false,
+  "config": "configs/task2_real_context.json"
+}

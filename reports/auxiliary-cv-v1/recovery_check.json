@@ -1,0 +1,11 @@
+{
+  "checkpoint_recovery_bit_identical": true,
+  "validation_identical": true,
+  "seed": 99,
+  "set_id": "4",
+  "validation_speaker": "spk02",
+  "epochs_per_equivalent_run": 2,
+  "engineering_smoke_epochs_total": 4,
+  "not_used_for_condition_selection": true,
+  "test_evaluated": false
+}

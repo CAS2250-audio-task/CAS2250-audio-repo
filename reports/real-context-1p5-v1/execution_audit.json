@@ -1,0 +1,55 @@
+{
+  "candidate_files_checked": 665,
+  "candidate_pcm_comparison_failures": [],
+  "maximum_pcm_sample_error": 0,
+  "unchanged_reviewed_outputs": 32,
+  "expanded_context_outputs": 633,
+  "raw_m4a_count_verified": 1015,
+  "raw_m4a_hash_failures": [],
+  "original_zip_sha256": "07101815f0570cdff13dcf2be8b6cfa17d2988ed792f33f1c30e28c430760fa4",
+  "original_zip_matches_recorded_hash": true,
+  "short_original_seconds_min": 1.0666875,
+  "short_original_seconds_max": 1.4933125,
+  "per_group": {
+    "speaker:spk01": {
+      "total": 203,
+      "continuous": 124,
+      "short": 79
+    },
+    "speaker:spk02": {
+      "total": 203,
+      "continuous": 203,
+      "short": 0
+    },
+    "speaker:spk03": {
+      "total": 203,
+      "continuous": 203,
+      "short": 0
+    },
+    "speaker:spk04": {
+      "total": 203,
+      "continuous": 85,
+      "short": 118
+    },
+    "speaker:spk05": {
+      "total": 203,
+      "continuous": 50,
+      "short": 153
+    }
+  },
+  "pytest": "44 passed",
+  "training_performed": false,
+  "short_source_policy": "pending; user requested pros and cons, has not selected a policy",
+  "gain_review": [
+    {
+      "path": "audio/대기/spk04_003.wav",
+      "previous_gain_db": 10.88212191927672,
+      "applied_gain_db": -0.7340791582328563
+    },
+    {
+      "path": "audio/출발/spk05_174.wav",
+      "previous_gain_db": 6.215457915415268,
+      "applied_gain_db": 5.429263437480462
+    }
+  ]
+}

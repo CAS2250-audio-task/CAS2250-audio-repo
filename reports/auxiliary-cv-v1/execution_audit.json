@@ -1,0 +1,32 @@
+{
+  "formal_training_runs": 184,
+  "completed_epochs": 1840,
+  "all_run_checks_passed": true,
+  "same_initial_backbone_per_seed": {
+    "42": true,
+    "43": true,
+    "44": true
+  },
+  "source_hashes_match_frozen_protocol": true,
+  "head_shape": [
+    11,
+    512
+  ],
+  "test_evaluated": false,
+  "final_selection_reproduced_from_predictions": true,
+  "selected_condition_id": "2ed04a871308",
+  "selected_set": "3",
+  "engineering_recovery_probe": {
+    "checkpoint_recovery_bit_identical": true,
+    "validation_identical": true,
+    "seed": 99,
+    "set_id": "4",
+    "validation_speaker": "spk02",
+    "epochs_per_equivalent_run": 2,
+    "engineering_smoke_epochs_total": 4,
+    "not_used_for_condition_selection": true,
+    "test_evaluated": false
+  },
+  "raw_previous_and_new_wavs_unchanged": true,
+  "wav_hashes_verified_after_training": 3045
+}
