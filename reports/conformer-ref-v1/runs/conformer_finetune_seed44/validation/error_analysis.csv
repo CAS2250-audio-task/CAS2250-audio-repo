@@ -1,0 +1,2 @@
+﻿path,true_idx,pred_idx,true_label,pred_label,error_reason
+audio/복귀/spk05_042.wav,7,8,복귀,대기,

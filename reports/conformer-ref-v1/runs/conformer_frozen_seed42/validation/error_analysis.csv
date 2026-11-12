@@ -1,0 +1,4 @@
+﻿path,true_idx,pred_idx,true_label,pred_label,error_reason
+audio/시작/spk05_059.wav,6,9,시작,재시작,
+audio/시작/spk05_060.wav,6,9,시작,재시작,
+audio/시작/spk05_062.wav,6,9,시작,재시작,

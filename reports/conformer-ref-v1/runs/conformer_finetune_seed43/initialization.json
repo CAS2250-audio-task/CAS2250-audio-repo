@@ -1,0 +1,12 @@
+{
+  "mode": "finetune",
+  "seed": 43,
+  "copied_encoder_tensors": 406,
+  "encoder_initial_sha256": "820e16cfeb066382691faab7e460c99ea47f6d37edc3ce6dcd973764b0ee496a",
+  "classifier_initial_sha256": "10580e9477bad880b0e8d1d1af6c9afd2cf58483919d66317b1224ce22d12796",
+  "total_parameters": 32122699,
+  "trainable_parameters": 32122699,
+  "classifier_parameters": 2827,
+  "encoder_dropout_active": true,
+  "source_normalization_updated": false
+}

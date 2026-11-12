@@ -1,0 +1,25 @@
+{
+  "input_shape": [
+    2,
+    24000
+  ],
+  "feature_shape": [
+    2,
+    151,
+    80
+  ],
+  "encoded_shape": [
+    2,
+    38,
+    256
+  ],
+  "output_shape": [
+    2,
+    11
+  ],
+  "one_second_input_accepted": true,
+  "no_extra_audio_padding": true,
+  "source_normalizer_count": 193800,
+  "encoder_tensors_loaded": 406,
+  "total_parameters": 32122699
+}

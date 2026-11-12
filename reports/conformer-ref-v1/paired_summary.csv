@@ -1,0 +1,7 @@
+seed,condition,conformer_only_correct,imagenet_only_correct,imagenet_correct,conformer_correct
+42,conformer_frozen,16,2,186,200
+42,conformer_finetune,17,0,186,203
+43,conformer_frozen,21,1,181,201
+43,conformer_finetune,22,0,181,203
+44,conformer_frozen,30,3,171,198
+44,conformer_finetune,32,1,171,202

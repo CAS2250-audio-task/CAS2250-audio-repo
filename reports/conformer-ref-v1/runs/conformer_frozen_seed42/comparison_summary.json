@@ -1,0 +1,20 @@
+{
+  "initialization": "conformer_frozen",
+  "seed": 42,
+  "best_epoch": 7,
+  "validation": {
+    "accuracy": 0.9852216748768473,
+    "macro_f1": 0.9862864979144049,
+    "loss": 1.011304346798676
+  },
+  "original_train": {
+    "accuracy": 0.9852216748768473,
+    "macro_f1": 0.9823292097322711,
+    "loss": 1.0157638600307146
+  },
+  "checkpoint_sha256": "39a96c0b51250b901e85f55f43ef765d9a9ebbe92b45beb881a34e0d8324f644",
+  "encoder_final_sha256": "820e16cfeb066382691faab7e460c99ea47f6d37edc3ce6dcd973764b0ee496a",
+  "source_normalization_unchanged": true,
+  "test_evaluated": false,
+  "seconds": 9.767838635016233
+}

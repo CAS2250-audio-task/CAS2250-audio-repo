@@ -1,5 +1,36 @@
 # 사전학습 실험 인계
 
+## 최신 완료: 한국어 Conformer
+
+- 사용자 요청으로 `experiments/conformer`에서 한국어 Conformer를 ref 데이터로 실험했다.
+- 동결 분류층 학습 / 인코더 LR1e-5 미세조정 ×3시드42/43/44, 각10epoch.
+- 공개 가중치 버전·해시와 원래 정규화 통계를 고정했다. 추가 오디오 패딩 없이1.5초를 입력한다.
+- 공개 모델 `speechbrain/asr-conformer-transformerlm-ksponspeech`, revision
+  `ecb74648052c89618cd1ce53ccbc909d1141f164`, checkpoint SHA256
+  `8e718dc29b403dfaa8d2604c43c3666be3fa99e958b77e3c6ff387e94d4a174c`.
+- 전체32,122,699개 파라미터, 본체406개 텐서 strict load. 고정 조건은2,827개 분류층만 학습.
+- 실행 환경 `runs/conformer-env/bin/python`; 추가 의존성은 기존 `.venv`와 분리했다.
+  torch/torchaudio2.6.0+cu124, SpeechBrain1.0.3. 원래 환경에 새 패키지를 설치하지 않았다.
+- 총6회·60epoch 완료. 고정/미세조정의 평균 검증F1 **98.47695/99.84839%**,
+  정확도98.35796/99.83580%. 기존 ImageNet 대조군F1 89.25642% 대비 **+9.22053/+10.59197%p**.
+- 고정 seed42/43/44: F1 98.62865/99.09034/97.71187%, best epoch7/6/6,
+  정답200/201/198개. 미세조정: F1 100/100/99.54517%, best epoch6/9/6, 정답203/203/202개.
+- 공통 최고epoch는 두 조건 모두9. 평균F1은 실행별 최고 평균과 동일하다.
+- 고정/미세조정의 원본 학습F1은96.77366/99.46103%. 단일 검증 화자가 학습 화자보다 쉬울 수 있다.
+- 새6개 최고checkpoint의 train/val4,872개를 재추론해 저장 예측·지표 일치 확인.
+  이전 대조군까지 총24,360개epoch 예측에서 지표 재계산, 원본1,015개 해시·초기head일치·
+  동결본체 보존·정규화 통계 보존 확인. 전체 테스트36개 통과.
+- 해석: 모델 구조·크기·80-bin native Fbank·정규화·인코더 LR도 바뀐 시스템 비교다.
+  한국어 하나만의 효과가 아니다. SpeechBrain은 CUDA matmul TF32를 켜며 기존 대조군의 기본값은off였다.
+  검증spk05의203개 개발 결과이고 testspk01은 이번에도 추론하지 않았다.
+- 로그 `runs/conformer-ref-v1/execution.log`; 학습 명령
+  `runs/conformer-env/bin/python -m experiments.conformer.run`.
+  매 epoch의 `last.pt`로 중단 재개 가능하며 완료된 실행은 건너뛴다.
+- 보고서 `reports/conformer-ref-v1/README.md`, `learning_curves.png`, `checkpoint_replay.json`,
+  `execution_audit.json`; 보고서 재생성 `runs/conformer-env/bin/python -m experiments.report_conformer`.
+- 원래 ref의 `src/`, 기본 설정·데이터는 변경하지 않았다. 학습 프로세스 종료, GPU 유휴.
+- 아래 내용은 완료된 이전 CLAR 실험이며 Conformer 결과와 구분한다.
+
 2026-11-12 사용자 요청: 기존 실험 커밋 후 ref에서 새 브랜치 생성,
 ref 기준의 스펙트로그램 음성 사전학습 활용.
 
