@@ -1,0 +1,27 @@
+{
+  "native_logits_preserved_all_aux_sets": true,
+  "auxiliary_backward_finite": true,
+  "synthetic_formant_ratio": 1.0960125786258272,
+  "synthetic_pitch_preserved": true,
+  "parameter_counts": {
+    "0": 32122699,
+    "1": 32150955,
+    "2": 32150635,
+    "3": 32151595,
+    "7": 32155115
+  },
+  "seven_waveform_combinations_finite": true,
+  "auxiliary_time_masks_aligned": true,
+  "sources": {
+    "__init__.py": "40c45abb5a3681f61ae21e789661a8d4b44eecd365681e1538a972078c1b6d8b",
+    "features.py": "94c011a87a9bd404d0be010add4ed308fb1715a2bc2c36ddb1293c50f284b1d8",
+    "data.py": "9740675607992a28d76b08a5affa7520d040b25cde1fd1cde141431ab703c620",
+    "model.py": "f8efd1e58f3ee9f1dd54170b10138d232347d5206b368f49b4b91253566ca41e",
+    "report.py": "cfc114e6f16dc8146dda842b4fa8d950ca9da3ec56a1e91d339ac4c48e119172",
+    "run.py": "1c285fddd2813b0b537959f000f7b342c4c831141dec92d6b708fb44f1906e1f",
+    "waveforms.py": "213d2446bc4347f3ed8d2291d0f3f1eeddacd2b2482e61bb7f487baeaa6111ea"
+  },
+  "train_validation_disjoint": true,
+  "test_audio_read": false,
+  "test_evaluated": false
+}

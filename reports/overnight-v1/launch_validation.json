@@ -1,0 +1,8 @@
+{
+  "pid": 25273,
+  "detached_session": true,
+  "parent_pid": 1,
+  "training_epoch_confirmed": 22,
+  "candidate": "wd_1e-3",
+  "test_evaluated": false
+}

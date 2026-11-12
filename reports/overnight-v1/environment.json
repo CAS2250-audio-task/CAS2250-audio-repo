@@ -1,0 +1,9 @@
+{
+  "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "numpy": "1.24.4",
+  "parselmouth": "0.4.6",
+  "core_tests_passed": 4
+}
