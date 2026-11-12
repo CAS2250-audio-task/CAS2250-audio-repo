@@ -1,0 +1,70 @@
+{
+  "condition": "baseline",
+  "batch": 32,
+  "encoder_lr": 1e-05,
+  "speaker": "spk02",
+  "best_epoch": 53,
+  "final_epoch": 56,
+  "best_monitor_f1": 0.7699320345043501,
+  "stop": {
+    "stop": true,
+    "reason": "sustained_overfit_indicator_plus_five_epochs",
+    "confirmation_epoch": 51,
+    "evidence": {
+      "reference": {
+        "epoch": 40,
+        "train_loss": 0.05113448980087704,
+        "zero_loss": 0.7587935619949513,
+        "zero_f1": 0.7599603449659766
+      },
+      "current": {
+        "epoch": 51,
+        "train_loss": 0.04819146339114377,
+        "zero_loss": 0.8171105994790377,
+        "zero_f1": 0.744295176278948
+      }
+    },
+    "latest_bad_streak": 0
+  },
+  "final_results": {
+    "best_off": {
+      "epoch": 53,
+      "zero_f1": 0.7662833273789061,
+      "zero_loss": 0.7202130514064579,
+      "zero_accuracy": 0.7707307060755336,
+      "clean_f1": 0.9863380094445563,
+      "clean_loss": 0.04056793506807198,
+      "noise_only_fpr": 0.04375
+    },
+    "best_dfn3": {
+      "epoch": 53,
+      "zero_f1": 0.8040847379051287,
+      "zero_loss": 0.6534114752370993,
+      "zero_accuracy": 0.7996715927750411,
+      "clean_f1": 0.9863579509920973,
+      "clean_loss": 0.05149011643544806,
+      "noise_only_fpr": 0.10625
+    },
+    "last_off": {
+      "epoch": 56,
+      "zero_f1": 0.7354312724080857,
+      "zero_loss": 0.8567733053839768,
+      "zero_accuracy": 0.7401477832512317,
+      "clean_f1": 0.9816670278801215,
+      "clean_loss": 0.05048490283118513,
+      "noise_only_fpr": 0.0
+    },
+    "last_dfn3": {
+      "epoch": 56,
+      "zero_f1": 0.8123002555796325,
+      "zero_loss": 0.6211763360709331,
+      "zero_accuracy": 0.8074712643678161,
+      "clean_f1": 0.9863579509920973,
+      "clean_loss": 0.045968509190267105,
+      "noise_only_fpr": 0.1
+    }
+  },
+  "checkpoint_sha256": "dca8a1681d114e3786a9fb6920f5290ff2c24e07cf22468cfe2b205ba56dc374",
+  "last_checkpoint_sha256": "aecb03983fba309f8a5628e0e44eaca071196e474bc9494b9933addd4cbee7f1",
+  "test_evaluated": false
+}

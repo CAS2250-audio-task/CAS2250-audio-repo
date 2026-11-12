@@ -1,0 +1,10 @@
+{
+  "stage": "complete",
+  "updated_utc": "2026-11-12T16:19:55Z",
+  "pid": 999,
+  "pilot_completed": 48,
+  "long_completed": 16,
+  "analysis_complete": true,
+  "independent_audit_complete": true,
+  "test_evaluated": false
+}

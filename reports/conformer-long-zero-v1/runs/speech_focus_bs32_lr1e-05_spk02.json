@@ -1,0 +1,70 @@
+{
+  "condition": "speech_focus",
+  "batch": 32,
+  "encoder_lr": 1e-05,
+  "speaker": "spk02",
+  "best_epoch": 11,
+  "final_epoch": 34,
+  "best_monitor_f1": 0.6747554466038007,
+  "stop": {
+    "stop": true,
+    "reason": "sustained_overfit_indicator_plus_five_epochs",
+    "confirmation_epoch": 29,
+    "evidence": {
+      "reference": {
+        "epoch": 17,
+        "train_loss": 0.27693768310068523,
+        "zero_loss": 1.0595177269015712,
+        "zero_f1": 0.6680639256174727
+      },
+      "current": {
+        "epoch": 29,
+        "train_loss": 0.1691926173077204,
+        "zero_loss": 1.2775263496260674,
+        "zero_f1": 0.6394089092036586
+      }
+    },
+    "latest_bad_streak": 10
+  },
+  "final_results": {
+    "best_off": {
+      "epoch": 11,
+      "zero_f1": 0.6726086841352378,
+      "zero_loss": 1.1130762364350606,
+      "zero_accuracy": 0.6818555008210181,
+      "clean_f1": 0.990909090909091,
+      "clean_loss": 0.22182948131279406,
+      "noise_only_fpr": 0.0125
+    },
+    "best_dfn3": {
+      "epoch": 11,
+      "zero_f1": 0.7714365857808166,
+      "zero_loss": 0.8889370859326865,
+      "zero_accuracy": 0.7610837438423647,
+      "clean_f1": 0.9771277075513276,
+      "clean_loss": 0.36493946367810515,
+      "noise_only_fpr": 0.09375
+    },
+    "last_off": {
+      "epoch": 34,
+      "zero_f1": 0.6039786525582822,
+      "zero_loss": 1.4800559796744361,
+      "zero_accuracy": 0.6100164203612479,
+      "clean_f1": 0.9680961516752782,
+      "clean_loss": 0.08785007825788521,
+      "noise_only_fpr": 0.00625
+    },
+    "last_dfn3": {
+      "epoch": 34,
+      "zero_f1": 0.7894015676705509,
+      "zero_loss": 0.6879815530234777,
+      "zero_accuracy": 0.7865353037766831,
+      "clean_f1": 0.9863579509920973,
+      "clean_loss": 0.05540425512621987,
+      "noise_only_fpr": 0.05625
+    }
+  },
+  "checkpoint_sha256": "7b0d2895079817bc1b502d10985c5ab07ca675c5b303d50ece27488026b24e6b",
+  "last_checkpoint_sha256": "4bd79187fa96c7af552a58a0bc17546163196c392e31c4f59a06bb692fc09da6",
+  "test_evaluated": false
+}

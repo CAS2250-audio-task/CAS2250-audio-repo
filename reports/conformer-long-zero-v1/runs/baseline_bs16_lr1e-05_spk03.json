@@ -1,0 +1,70 @@
+{
+  "condition": "baseline",
+  "batch": 16,
+  "encoder_lr": 1e-05,
+  "speaker": "spk03",
+  "best_epoch": 59,
+  "final_epoch": 72,
+  "best_monitor_f1": 0.9238005702206589,
+  "stop": {
+    "stop": true,
+    "reason": "sustained_overfit_indicator_plus_five_epochs",
+    "confirmation_epoch": 67,
+    "evidence": {
+      "reference": {
+        "epoch": 60,
+        "train_loss": 0.043545344528866325,
+        "zero_loss": 0.28870027481577454,
+        "zero_f1": 0.9171024960409215
+      },
+      "current": {
+        "epoch": 67,
+        "train_loss": 0.03393883105961741,
+        "zero_loss": 0.3392567275775129,
+        "zero_f1": 0.9040101825593626
+      }
+    },
+    "latest_bad_streak": 2
+  },
+  "final_results": {
+    "best_off": {
+      "epoch": 59,
+      "zero_f1": 0.9214057769815628,
+      "zero_loss": 0.2567909570043472,
+      "zero_accuracy": 0.9314449917898194,
+      "clean_f1": 1.0,
+      "clean_loss": 0.008086184855371891,
+      "noise_only_fpr": 0.09375
+    },
+    "best_dfn3": {
+      "epoch": 59,
+      "zero_f1": 0.8935180502750196,
+      "zero_loss": 0.38386757525290255,
+      "zero_accuracy": 0.8973727422003285,
+      "clean_f1": 0.9727016458081926,
+      "clean_loss": 0.08659386568890534,
+      "noise_only_fpr": 0.14375
+    },
+    "last_off": {
+      "epoch": 72,
+      "zero_f1": 0.9051971643226882,
+      "zero_loss": 0.3399563787062028,
+      "zero_accuracy": 0.9209770114942528,
+      "clean_f1": 0.9954517027687758,
+      "clean_loss": 0.010044021366902061,
+      "noise_only_fpr": 0.0125
+    },
+    "last_dfn3": {
+      "epoch": 72,
+      "zero_f1": 0.8940981708381722,
+      "zero_loss": 0.40904586537316706,
+      "zero_accuracy": 0.8992200328407224,
+      "clean_f1": 0.9682670560077491,
+      "clean_loss": 0.08808951712834028,
+      "noise_only_fpr": 0.1
+    }
+  },
+  "checkpoint_sha256": "33d6f43f182cd22b52c50d523a8241c7779551e2e92ff0ed65e7535d75235832",
+  "last_checkpoint_sha256": "8cf57511d47965b80229d75d63c6f46e4853b900448b8301ead7f31333c218a3",
+  "test_evaluated": false
+}

@@ -1,0 +1,17 @@
+condition,batch,speaker,confirmation_epoch,new_f1_peak_after_confirmation,final_bad_streak,interpretation
+baseline,16,spk02,35.0,False,10,악화신호관측
+baseline,16,spk03,67.0,False,2,악화신호관측
+baseline,16,spk04,64.0,False,0,후속창에서악화신호비지속
+baseline,16,spk05,,False,0,지속과적합미확인
+baseline,32,spk02,51.0,True,0,탐지후F1최고점재갱신
+baseline,32,spk03,67.0,True,1,탐지후F1최고점재갱신
+baseline,32,spk04,,False,0,지속과적합미확인
+baseline,32,spk05,,False,0,지속과적합미확인
+speech_focus,16,spk02,31.0,False,10,악화신호관측
+speech_focus,16,spk03,41.0,False,3,악화신호관측
+speech_focus,16,spk04,,False,0,지속과적합미확인
+speech_focus,16,spk05,,False,0,지속과적합미확인
+speech_focus,32,spk02,29.0,False,10,악화신호관측
+speech_focus,32,spk03,65.0,False,10,악화신호관측
+speech_focus,32,spk04,95.0,False,10,악화신호관측
+speech_focus,32,spk05,,False,0,지속과적합미확인

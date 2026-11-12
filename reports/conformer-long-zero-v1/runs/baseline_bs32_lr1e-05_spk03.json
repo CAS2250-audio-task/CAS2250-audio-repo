@@ -1,0 +1,70 @@
+{
+  "condition": "baseline",
+  "batch": 32,
+  "encoder_lr": 1e-05,
+  "speaker": "spk03",
+  "best_epoch": 68,
+  "final_epoch": 72,
+  "best_monitor_f1": 0.9075691434568275,
+  "stop": {
+    "stop": true,
+    "reason": "sustained_overfit_indicator_plus_five_epochs",
+    "confirmation_epoch": 67,
+    "evidence": {
+      "reference": {
+        "epoch": 56,
+        "train_loss": 0.07242104339510963,
+        "zero_loss": 0.32508711665240875,
+        "zero_f1": 0.895148918597679
+      },
+      "current": {
+        "epoch": 67,
+        "train_loss": 0.04971927560680264,
+        "zero_loss": 0.35917982666128434,
+        "zero_f1": 0.8935017578264501
+      }
+    },
+    "latest_bad_streak": 1
+  },
+  "final_results": {
+    "best_off": {
+      "epoch": 68,
+      "zero_f1": 0.9062836378905893,
+      "zero_loss": 0.3063522781394017,
+      "zero_accuracy": 0.9230295566502463,
+      "clean_f1": 0.9954517027687758,
+      "clean_loss": 0.01105932624018642,
+      "noise_only_fpr": 0.025
+    },
+    "best_dfn3": {
+      "epoch": 68,
+      "zero_f1": 0.8922643050451171,
+      "zero_loss": 0.3687867607391186,
+      "zero_accuracy": 0.8973727422003285,
+      "clean_f1": 0.9680367984604185,
+      "clean_loss": 0.0821692778860013,
+      "noise_only_fpr": 0.10625
+    },
+    "last_off": {
+      "epoch": 72,
+      "zero_f1": 0.8979892172462808,
+      "zero_loss": 0.343380413719903,
+      "zero_accuracy": 0.91564039408867,
+      "clean_f1": 0.9954517027687758,
+      "clean_loss": 0.00921529825237606,
+      "noise_only_fpr": 0.01875
+    },
+    "last_dfn3": {
+      "epoch": 72,
+      "zero_f1": 0.8907613164246536,
+      "zero_loss": 0.3935808039389717,
+      "zero_accuracy": 0.8961412151067324,
+      "clean_f1": 0.977141514882208,
+      "clean_loss": 0.0854299555181847,
+      "noise_only_fpr": 0.1
+    }
+  },
+  "checkpoint_sha256": "bb6c17171a4b0a5426bd9bd6c1a8c7614d9f3c1065ca2733d5f4b5765b17b75c",
+  "last_checkpoint_sha256": "a537cf20fd195e202d4a53c0ec7f4d72c9c8f8e69c03d062e2d087622c6b2875",
+  "test_evaluated": false
+}

@@ -1,0 +1,9 @@
+condition,stage,batch,denoiser,number_of_mixed_cases,wrong_to_correct,correct_to_wrong,both_wrong,both_correct,count_unit
+baseline,long_best,32,off,19488,2183,355,1668,15282,"repeated speaker clip x noise recording x crop, not unique utterances"
+baseline,long_best,32,dfn3,19488,1170,177,2032,16109,"repeated speaker clip x noise recording x crop, not unique utterances"
+baseline,long_best,16,off,19488,2144,327,1707,15310,"repeated speaker clip x noise recording x crop, not unique utterances"
+baseline,long_best,16,dfn3,19488,1154,195,2048,16091,"repeated speaker clip x noise recording x crop, not unique utterances"
+speech_focus,long_best,32,off,19488,1877,205,2261,15145,"repeated speaker clip x noise recording x crop, not unique utterances"
+speech_focus,long_best,32,dfn3,19488,1022,162,2163,16141,"repeated speaker clip x noise recording x crop, not unique utterances"
+speech_focus,long_best,16,off,19488,2018,298,2120,15052,"repeated speaker clip x noise recording x crop, not unique utterances"
+speech_focus,long_best,16,dfn3,19488,1023,202,2162,16101,"repeated speaker clip x noise recording x crop, not unique utterances"

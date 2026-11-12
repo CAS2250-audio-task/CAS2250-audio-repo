@@ -1,0 +1,70 @@
+{
+  "condition": "baseline",
+  "batch": 16,
+  "encoder_lr": 1e-05,
+  "speaker": "spk04",
+  "best_epoch": 44,
+  "final_epoch": 69,
+  "best_monitor_f1": 0.9413139580068799,
+  "stop": {
+    "stop": true,
+    "reason": "sustained_overfit_indicator_plus_five_epochs",
+    "confirmation_epoch": 64,
+    "evidence": {
+      "reference": {
+        "epoch": 57,
+        "train_loss": 0.057364519864112264,
+        "zero_loss": 0.21958923953597392,
+        "zero_f1": 0.9359493324203583
+      },
+      "current": {
+        "epoch": 64,
+        "train_loss": 0.04469087415293621,
+        "zero_loss": 0.22899704629757348,
+        "zero_f1": 0.93246829386114
+      }
+    },
+    "latest_bad_streak": 0
+  },
+  "final_results": {
+    "best_off": {
+      "epoch": 44,
+      "zero_f1": 0.933437956233013,
+      "zero_loss": 0.22577119540612364,
+      "zero_accuracy": 0.9295977011494253,
+      "clean_f1": 1.0,
+      "clean_loss": 0.008675416236476809,
+      "noise_only_fpr": 0.025
+    },
+    "best_dfn3": {
+      "epoch": 44,
+      "zero_f1": 0.9086349763640396,
+      "zero_loss": 0.29922135886883405,
+      "zero_accuracy": 0.9076354679802955,
+      "clean_f1": 0.9818124964466427,
+      "clean_loss": 0.1109618810677168,
+      "noise_only_fpr": 0.10625
+    },
+    "last_off": {
+      "epoch": 69,
+      "zero_f1": 0.9299871748675992,
+      "zero_loss": 0.21877748346491524,
+      "zero_accuracy": 0.9267241379310346,
+      "clean_f1": 1.0,
+      "clean_loss": 0.006543268315223309,
+      "noise_only_fpr": 0.0
+    },
+    "last_dfn3": {
+      "epoch": 69,
+      "zero_f1": 0.9167829764742143,
+      "zero_loss": 0.26774264943339926,
+      "zero_accuracy": 0.9164614121510674,
+      "clean_f1": 0.9818124964466427,
+      "clean_loss": 0.10571612920492564,
+      "noise_only_fpr": 0.0875
+    }
+  },
+  "checkpoint_sha256": "c6f3a371b6ce3ff1164d7ce4790638e5b254989e900f1bed8c2f44bb2103b59a",
+  "last_checkpoint_sha256": "028e41110cc3abe546a9555ed1c6f1eb14db97db4e487feb9cae4711d632ca16",
+  "test_evaluated": false
+}

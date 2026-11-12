@@ -1,0 +1,7 @@
+{
+  "canonical_predictions_replayed": 3654,
+  "batch16_and_last_batch1_backward_finite": true,
+  "validation_samples_per_epoch": 1827,
+  "zero_mixed_monitor_samples": 1624,
+  "test_evaluated": false
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "condition": "baseline",
+    "batch": 32,
+    "encoder_lr": 1e-05,
+    "score": 0.8197647294234112,
+    "loss": 0.6174179977226891
+  },
+  {
+    "condition": "baseline",
+    "batch": 16,
+    "encoder_lr": 1e-05,
+    "score": 0.8340020933399357,
+    "loss": 0.5454298830974443
+  },
+  {
+    "condition": "speech_focus",
+    "batch": 32,
+    "encoder_lr": 1e-05,
+    "score": 0.809035251101825,
+    "loss": 0.6851150075047346
+  },
+  {
+    "condition": "speech_focus",
+    "batch": 16,
+    "encoder_lr": 1e-05,
+    "score": 0.8219771091094209,
+    "loss": 0.6099505553443997
+  }
+]

@@ -1,5 +1,29 @@
 # 사전학습 실험 인계
 
+## 완료: 0dB 기준 장기 학습·배치16/32·학습률 선택
+
+- 사용자 승인: 0dB를기준으로epoch를늘려전형적인과적합추세까지관찰하고배치축소·적절한LR도비교한다.
+- 새코드 `experiments/conformer_long_zero/`, 결과 `reports/conformer-long-zero-v1/`, 체크포인트/로그 `runs/conformer-long-zero-v1/`. 기존코드·프로토콜·checkpoint는보존한다.
+- 기존 noise와 speech_focus 두조건의각4fold **epoch10 last.pt**에서 모델·AdamW 모멘텀·sampler·torch/CUDA RNG를복원한다. 새ASR초기화나clean-best재개가아니다.
+- old cosine은10epoch에서끝났으므로epoch11부터고정LR을쓴다. 인코더1e-6/3e-6/1e-5, head50배. 배치32/16 각각4fold의추가5epoch를비교하고epoch13~15평균0dB F1로선택한다. 총48pilot분기, 선택된16분기는그epoch15상태에서계속한다.
+- 609draw/epoch유지. batch32는20update/epoch,16은39update/epoch. 작은batch의동일epoch는같은입력노출량이지만약2배update다. 배치별LR선택이므로최종비교를순수batch단일요인효과라고주장하지않는다.
+- 매epoch모니터: 기존검증8원본×0dB×고정draw0×203=1,624혼합/화자+원본203. 최고checkpoint는DFN없는8소음평균macroF1,동점이면먼저도달한epoch. 매번같은검증파형과unit별batch32경계를사용한다.
+- 선택best·마지막last·시작epoch10은기존전체3draw0dB·원본·잡음단독과DFN3off/on평가. DFN은기존B16필터캐시를재사용하고훈련/epoch/LR선택에쓰지않는다.
+- 최소25epoch후3epoch평균에서과거최저검증손실대비검증손실≥3%상승·훈련손실≥2%감소·과거최고F1대비≥0.5%p하락이5회연속이면확인후5epoch추가. 최대100epoch. 정체/상한도달만으로과적합을주장하지않는다.
+- 개발화자·0dB소음을epoch/LR튜닝에사용하므로결과는독립test추정치가아니다. 전체3draw도모니터draw를포함하는개발평가다. test01오디오/추론미사용.
+- 사전검사:기존원본/0dB3,654예측모두재현,batch16/마지막batch1역전파정상. 전체58tests통과. epoch별원본/0dB예측·손실과609개증강trace를기록한다.
+- 48pilot모두완료. 두증강조건×두batch모두후보중encoder1e-5/head5e-4선택. 고정draw0의4fold×epoch13~15평균F1:기존B32 81.9765%,B16 83.4002%;speech_focusB32 80.9035%,B16 82.1977%. 기존전체3draw0dB표와직접같은평가범위가아니다. LR선택4개는독립재계산일치. 선택분기의epoch15last에서장기학습으로자동전환했다.
+- 중간독립검사`interim_audit.json`:전체pilot48개·288epoch의검증526,176예측F1/손실재계산,146,160훈련draw와업데이트수검사통과. 초기배치/LR간동일입력24,360draw비교도통과. 이는최종전체검사완료가아니다.
+- 첫장기분기baseline/B32/spk02는악화신호51epoch탐지후56epoch종료,최고F1은53epoch였다. 탐지뒤새최고점갱신이있으므로51부터지속적으로과적합이라고단정하지않는다. 훈련코드/종료규칙은동결유지,보고서의`overfit_diagnostics.csv`와종료표에후속회복여부를별도로표시한다. 전체16장기분기와최종독립검사완료. 신호탐지10분기,100epoch까지미탐지6분기이며모두가같은epoch에서과적합했다고주장하지않는다.
+- 추가GPU2개할당실패후3090한장으로재개했다. 중단당시7/16완료, speech_focus/B16/spk03의39epoch저장상태였다. 재개PID와이전기록은`process.json`/`restart_history.jsonl`,로그의RESUME이벤트에기록한다. 새GPU에서재개첫40epoch의609증강파형은이전B32분기와해시일치. 새driver가완료분기를다시학습하지않는것도확인했다.
+- `experiments/analyze_conformer_long_zero.py`는전체완료/독립검사후실행하는추가분석이다. 이전clean-best·시작epoch10·연장best/last,선택draw0/추가draw1~2,화자/소음별변화·같은epoch비교·누적update를`RESULTS.md`/CSV/PNG/SVG로정리한다. training폴더외부이며고정훈련은변경하지않는다. 분석집계는이전0dB공식값4개와일치확인했다.
+- 최종학습량:추가pilot240epoch+선택16분기추가955epoch=1,195새epoch,727,755draw. 주독립검사는1,243epoch의검증2,270,961예측·최종335,040예측지표재계산,최고본58,464예측재추론전부일치. 모든last의AdamW업데이트수와RNG저장상태확인,원래source/checkpoint/개발WAV보존. 재개환경전체58tests통과.
+- 전체3draw0dB F1(off/DFN3),0dB최고본:기존B32 88.9664/88.6285%,B16 88.8946/88.5038%;speech_focusB32 86.5163/88.0687%,B16 86.7678/87.8682%. 이전10epoch clean-best기존78.4748/83.7984%,시작epoch10last79.1574/83.9533%. 긴학습/LR재설정/0dB선택이함께바뀐결과이며순수epoch단일요인인과주장이아니다.
+- 전체best/last·필터조합중최고관측은기존B16종료본+DFN3의89.1578%. 원본97.9552%,잡음단독오반응9.2188%로무필터기존B32최고본(원본99.5447%,오반응2.8125%)과tradeoff가있다. DFN용최고epoch를따로튜닝하지않았다.
+- 기존B32최고epoch02/03/04/05=[53,68,69,92],B16=[25,59,44,99]. 기존B32의추가draw1~2 F1도78.4705→88.8281%로개선. 이구간도같은개발화자/소음의다른crop이며독립test아니다. test01은이번실험에서계속미평가.
+- 실행 `runs/denoise-env/bin/python -u -m experiments.conformer_long_zero.run`. 먼저 `runs/conformer-long-zero-v1/process.json`, `progress.json`, `execution.log`를확인해중복실행하지않는다. 파일잠금으로동시driver를막는다. 중단시같은명령으로각epoch의last.pt에서재개한다. 동결후training소스를수정하지않는다.
+- 최종진입점 `reports/conformer-long-zero-v1/RESULTS.md`,학습곡선/종료신호는`README.md`,검증방법은`VALIDATION.md`. 핵심완료는`complete.json`,추가분석완료는`postprocess_complete.json`;추가표검사는`analysis_validation.json`과`artifact_checksums.json`. 완료후driver를다시실행해학습을중복하지않는다.
+
 ## 최신 완료: 말소리 소음 확장·0dB 비중 증가·DFN3 유무
 
 - 사용자 승인: 기존 넓은 SNR/원본을 유지하면서 사람 말소리 소음과0dB 부근 입력을 늘리고, DFN3 유무까지 비교.

@@ -1,0 +1,13 @@
+{
+  "comparison_rows_cross_checked": 24,
+  "draw_split_rows_reconciled": 48,
+  "paired_mixed_error_tables_checked": 8,
+  "common_epoch_groups_checked": 20,
+  "local_document_links_checked": 19,
+  "regression_tests_passed": 58,
+  "original_primary_results_match": true,
+  "monitor_and_all3draw_metrics_reconcile": true,
+  "analysis_sha256": "6651bfd45cdd430c9c21f0cfa5924c5922dfcf295ef3568b317fca5dd2368013",
+  "checker_sha256": "9091c410e6608b7015b3ac1c4b4701fe21b624e9ea6cf26a312108500a79b888",
+  "test_evaluated": false
+}

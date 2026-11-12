@@ -1,0 +1,70 @@
+{
+  "condition": "speech_focus",
+  "batch": 32,
+  "encoder_lr": 1e-05,
+  "speaker": "spk04",
+  "best_epoch": 73,
+  "final_epoch": 100,
+  "best_monitor_f1": 0.9402554403348395,
+  "stop": {
+    "stop": true,
+    "reason": "maximum_epoch_reached",
+    "confirmation_epoch": 95,
+    "evidence": {
+      "reference": {
+        "epoch": 75,
+        "train_loss": 0.10947707480349968,
+        "zero_loss": 0.21211059481116798,
+        "zero_f1": 0.9384680976571017
+      },
+      "current": {
+        "epoch": 95,
+        "train_loss": 0.08805854911771235,
+        "zero_loss": 0.23881048980467973,
+        "zero_f1": 0.9281247309066605
+      }
+    },
+    "latest_bad_streak": 10
+  },
+  "final_results": {
+    "best_off": {
+      "epoch": 73,
+      "zero_f1": 0.937581962949105,
+      "zero_loss": 0.20523664408332878,
+      "zero_accuracy": 0.9355500821018062,
+      "clean_f1": 1.0,
+      "clean_loss": 0.0065801189970972045,
+      "noise_only_fpr": 0.0
+    },
+    "best_dfn3": {
+      "epoch": 73,
+      "zero_f1": 0.9190669662337784,
+      "zero_loss": 0.25761524356990645,
+      "zero_accuracy": 0.9203612479474549,
+      "clean_f1": 0.9818124964466427,
+      "clean_loss": 0.08727739514228762,
+      "noise_only_fpr": 0.05625
+    },
+    "last_off": {
+      "epoch": 100,
+      "zero_f1": 0.9269632855752342,
+      "zero_loss": 0.23696869375568533,
+      "zero_accuracy": 0.9261083743842365,
+      "clean_f1": 1.0,
+      "clean_loss": 0.006722902443502319,
+      "noise_only_fpr": 0.0
+    },
+    "last_dfn3": {
+      "epoch": 100,
+      "zero_f1": 0.9077838256802971,
+      "zero_loss": 0.3020787869551486,
+      "zero_accuracy": 0.9113300492610837,
+      "clean_f1": 0.9817897122133323,
+      "clean_loss": 0.1051493572589508,
+      "noise_only_fpr": 0.03125
+    }
+  },
+  "checkpoint_sha256": "073116468266b4f92d29768e6a97524ac53cd7efd00f48191d5e921080ffc179",
+  "last_checkpoint_sha256": "742cb55983f5f0ded4716bccbfb2f2ef5e459a8c52f387a0bf6507cf7f816cf6",
+  "test_evaluated": false
+}

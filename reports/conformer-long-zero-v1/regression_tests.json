@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/root/audio/.worktrees/pretrain/runs/denoise-env/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "exit_code": 0,
+  "passed": 58,
+  "log_sha256": "9d6e0cd8fc22644d0145083439645b37d16bad617fce4db790e73588e6559ba7",
+  "recorded_utc": "2026-11-12T15:40:58Z"
+}

@@ -1,0 +1,57 @@
+{
+  "condition": "baseline",
+  "batch": 16,
+  "encoder_lr": 1e-05,
+  "speaker": "spk05",
+  "best_epoch": 99,
+  "final_epoch": 100,
+  "best_monitor_f1": 0.9599156377505593,
+  "stop": {
+    "stop": true,
+    "reason": "maximum_epoch_reached",
+    "confirmation_epoch": null,
+    "evidence": null,
+    "latest_bad_streak": 0
+  },
+  "final_results": {
+    "best_off": {
+      "epoch": 99,
+      "zero_f1": 0.9594418857178111,
+      "zero_loss": 0.13446618729415027,
+      "zero_accuracy": 0.9677750410509032,
+      "clean_f1": 1.0,
+      "clean_loss": 0.0017076731608645572,
+      "noise_only_fpr": 0.0
+    },
+    "best_dfn3": {
+      "epoch": 99,
+      "zero_f1": 0.9432628884521524,
+      "zero_loss": 0.18815557544936315,
+      "zero_accuracy": 0.9460180623973727,
+      "clean_f1": 0.9725958659594507,
+      "clean_loss": 0.08468471556898965,
+      "noise_only_fpr": 0.09375
+    },
+    "last_off": {
+      "epoch": 100,
+      "zero_f1": 0.9588934276986566,
+      "zero_loss": 0.1357747963335663,
+      "zero_accuracy": 0.9679802955665023,
+      "clean_f1": 1.0,
+      "clean_loss": 0.0015389682568914356,
+      "noise_only_fpr": 0.0
+    },
+    "last_dfn3": {
+      "epoch": 100,
+      "zero_f1": 0.9434474783177217,
+      "zero_loss": 0.18904211522343517,
+      "zero_accuracy": 0.9460180623973727,
+      "clean_f1": 0.9772243161203367,
+      "clean_loss": 0.08078135945727029,
+      "noise_only_fpr": 0.0875
+    }
+  },
+  "checkpoint_sha256": "874ce9c07411513320097724b96f906a6b307611fcf40fcefaa6d64a76904006",
+  "last_checkpoint_sha256": "00c69fc6edf0b8d67a01f162852d60fa14d41216114b53b0042de1664a385643",
+  "test_evaluated": false
+}

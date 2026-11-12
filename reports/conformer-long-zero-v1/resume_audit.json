@@ -1,0 +1,22 @@
+{
+  "resumed_condition": "speech_focus",
+  "batch": 16,
+  "speaker": "spk03",
+  "saved_epoch_before_restart": 39,
+  "compared_epochs": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "compared_training_inputs": 4263,
+  "input_paths_and_waveforms_match_preexisting_batch32_branch": true,
+  "test_evaluated": false,
+  "final_resumed_branch_epoch": 46,
+  "optimizer_step_count": 1604,
+  "optimizer_parameter_states_checked": 406,
+  "optimizer_steps_match_inherited_training": true
+}

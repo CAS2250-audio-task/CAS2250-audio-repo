@@ -1,0 +1,70 @@
+{
+  "condition": "baseline",
+  "batch": 16,
+  "encoder_lr": 1e-05,
+  "speaker": "spk02",
+  "best_epoch": 25,
+  "final_epoch": 40,
+  "best_monitor_f1": 0.7501928750391083,
+  "stop": {
+    "stop": true,
+    "reason": "sustained_overfit_indicator_plus_five_epochs",
+    "confirmation_epoch": 35,
+    "evidence": {
+      "reference": {
+        "epoch": 27,
+        "train_loss": 0.07122995067855774,
+        "zero_loss": 0.7919126238651835,
+        "zero_f1": 0.7457415432576768
+      },
+      "current": {
+        "epoch": 35,
+        "train_loss": 0.056235206050079034,
+        "zero_loss": 0.9122851971285276,
+        "zero_f1": 0.7255360943683388
+      }
+    },
+    "latest_bad_streak": 10
+  },
+  "final_results": {
+    "best_off": {
+      "epoch": 25,
+      "zero_f1": 0.7414995814657012,
+      "zero_loss": 0.7753989568627372,
+      "zero_accuracy": 0.7536945812807881,
+      "clean_f1": 0.9863380094445563,
+      "clean_loss": 0.03431028995957264,
+      "noise_only_fpr": 0.00625
+    },
+    "best_dfn3": {
+      "epoch": 25,
+      "zero_f1": 0.7947340993661078,
+      "zero_loss": 0.6746683300509613,
+      "zero_accuracy": 0.7885878489326764,
+      "clean_f1": 0.9816869694276625,
+      "clean_loss": 0.06774336173000695,
+      "noise_only_fpr": 0.1125
+    },
+    "last_off": {
+      "epoch": 40,
+      "zero_f1": 0.7408944295908718,
+      "zero_loss": 0.8266569576997639,
+      "zero_accuracy": 0.7508210180623974,
+      "clean_f1": 0.9909034055375519,
+      "clean_loss": 0.025509032301074354,
+      "noise_only_fpr": 0.0125
+    },
+    "last_dfn3": {
+      "epoch": 40,
+      "zero_f1": 0.8119830504372656,
+      "zero_loss": 0.6135763303163562,
+      "zero_accuracy": 0.8113711001642036,
+      "clean_f1": 0.9909034055375519,
+      "clean_loss": 0.05134049494252735,
+      "noise_only_fpr": 0.09375
+    }
+  },
+  "checkpoint_sha256": "52ce327fb8248457be271d4335ada1ef649d572b0b8e5a84ea4e9221f5c20288",
+  "last_checkpoint_sha256": "ccc20515dc57e0717d9fc75ca5b2cbb3a5bfb20af09b3c5048441b5a4390d101",
+  "test_evaluated": false
+}

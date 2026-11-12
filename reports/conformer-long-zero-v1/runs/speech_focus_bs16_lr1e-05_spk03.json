@@ -1,0 +1,70 @@
+{
+  "condition": "speech_focus",
+  "batch": 16,
+  "encoder_lr": 1e-05,
+  "speaker": "spk03",
+  "best_epoch": 33,
+  "final_epoch": 46,
+  "best_monitor_f1": 0.8916154518722628,
+  "stop": {
+    "stop": true,
+    "reason": "sustained_overfit_indicator_plus_five_epochs",
+    "confirmation_epoch": 41,
+    "evidence": {
+      "reference": {
+        "epoch": 34,
+        "train_loss": 0.1445862069449703,
+        "zero_loss": 0.352553314714978,
+        "zero_f1": 0.8872740461279907
+      },
+      "current": {
+        "epoch": 41,
+        "train_loss": 0.13143624254310657,
+        "zero_loss": 0.4011277120549262,
+        "zero_f1": 0.8785909629302215
+      }
+    },
+    "latest_bad_streak": 3
+  },
+  "final_results": {
+    "best_off": {
+      "epoch": 33,
+      "zero_f1": 0.888703439195439,
+      "zero_loss": 0.34256144455132365,
+      "zero_accuracy": 0.909072249589491,
+      "clean_f1": 0.9909034055375519,
+      "clean_loss": 0.01617806310851789,
+      "noise_only_fpr": 0.0
+    },
+    "best_dfn3": {
+      "epoch": 33,
+      "zero_f1": 0.879350212292436,
+      "zero_loss": 0.3943280811667385,
+      "zero_accuracy": 0.8864942528735632,
+      "clean_f1": 0.9593142453607569,
+      "clean_loss": 0.12284720307158342,
+      "noise_only_fpr": 0.05
+    },
+    "last_off": {
+      "epoch": 46,
+      "zero_f1": 0.8777382001408225,
+      "zero_loss": 0.41366822601116215,
+      "zero_accuracy": 0.9004515599343185,
+      "clean_f1": 0.9954517027687758,
+      "clean_loss": 0.016021156472718224,
+      "noise_only_fpr": 0.0
+    },
+    "last_dfn3": {
+      "epoch": 46,
+      "zero_f1": 0.8832990778555775,
+      "zero_loss": 0.41865638124363685,
+      "zero_accuracy": 0.888752052545156,
+      "clean_f1": 0.9546813552052827,
+      "clean_loss": 0.1319634567874977,
+      "noise_only_fpr": 0.04375
+    }
+  },
+  "checkpoint_sha256": "1b7e1d019234c461815841709333b0b995afc0e7313be895f364bfb8d3b11ea4",
+  "last_checkpoint_sha256": "193cbcb7fe7afe81a60b2cf4615ed82faa7235452cf1b71dab05434acf34ebe5",
+  "test_evaluated": false
+}

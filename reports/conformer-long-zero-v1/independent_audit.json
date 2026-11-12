@@ -1,0 +1,15 @@
+{
+  "validation_epoch_rows_recomputed": 2270961,
+  "epoch_groups_recomputed": 1243,
+  "training_draws_checked": 727755,
+  "final_prediction_rows_recomputed": 335040,
+  "selected_checkpoint_predictions_replayed": 58464,
+  "all_initial_checkpoints_and_frozen_sources_preserved": true,
+  "paired_inputs_across_batch_and_lr": true,
+  "learning_rate_selections_recomputed": true,
+  "stopping_decisions_recomputed": true,
+  "optimizer_update_counters_and_resume_states_verified": true,
+  "test_audio_read": false,
+  "test_evaluated": false,
+  "checker_sha256": "07b31d1d252df162de59d4fc0afdae891288ba355da8ea4d6cb24fcfd23f5c49"
+}

@@ -1,0 +1,24 @@
+{
+  "condition": "speech_focus",
+  "speaker": "spk05",
+  "epoch": 10,
+  "results": {
+    "off": {
+      "zero_f1": 0.8288643698529713,
+      "zero_loss": 0.8618642672145516,
+      "zero_accuracy": 0.8460591133004925,
+      "clean_f1": 0.995451702768776,
+      "clean_loss": 0.36620362812258633,
+      "noise_only_fpr": 0.025
+    },
+    "dfn3": {
+      "zero_f1": 0.9032425822410014,
+      "zero_loss": 0.6468600529530476,
+      "zero_accuracy": 0.9064039408866996,
+      "clean_f1": 0.9634852096983035,
+      "clean_loss": 0.5215417855405455,
+      "noise_only_fpr": 0.10625
+    }
+  },
+  "test_evaluated": false
+}

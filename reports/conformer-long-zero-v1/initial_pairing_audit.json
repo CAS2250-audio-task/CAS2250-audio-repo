@@ -1,0 +1,6 @@
+{
+  "completed_pilot_branches": 10,
+  "paired_training_draws_compared": 24360,
+  "batch_and_lr_keep_sampled_inputs_equal": true,
+  "test_evaluated": false
+}

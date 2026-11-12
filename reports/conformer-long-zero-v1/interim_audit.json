@@ -1,0 +1,8 @@
+{
+  "completed_pilot_branches_checked": 48,
+  "prediction_rows_recomputed": 526176,
+  "epoch_groups_recomputed": 288,
+  "training_draws_checked": 146160,
+  "test_evaluated": false,
+  "scope": "all pilots; final long-run audit pending"
+}

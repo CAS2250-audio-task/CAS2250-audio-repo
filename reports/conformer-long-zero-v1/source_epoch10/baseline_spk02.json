@@ -1,0 +1,24 @@
+{
+  "condition": "baseline",
+  "speaker": "spk02",
+  "epoch": 10,
+  "results": {
+    "off": {
+      "zero_f1": 0.6773598365881597,
+      "zero_loss": 1.141851178845253,
+      "zero_accuracy": 0.6873973727422004,
+      "clean_f1": 0.990909090909091,
+      "clean_loss": 0.2590767022846221,
+      "noise_only_fpr": 0.01875
+    },
+    "dfn3": {
+      "zero_f1": 0.7557651994633399,
+      "zero_loss": 0.9576113540121035,
+      "zero_accuracy": 0.7419950738916256,
+      "clean_f1": 0.9771277075513276,
+      "clean_loss": 0.43178909844512425,
+      "noise_only_fpr": 0.1125
+    }
+  },
+  "test_evaluated": false
+}
