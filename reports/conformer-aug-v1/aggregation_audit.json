@@ -1,0 +1,9 @@
+{
+  "prediction_rows": 325296,
+  "metric_conditions": 2064,
+  "training_draws": 73080,
+  "paired_sampler_draws_per_condition": 24360,
+  "speed_streams_paired": true,
+  "noise_streams_paired": true,
+  "test_evaluated": false
+}

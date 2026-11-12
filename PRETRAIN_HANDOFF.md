@@ -1,5 +1,37 @@
 # 사전학습 실험 인계
 
+## 최신 완료: Conformer 증강만 비교
+
+- 사용자 요청: 보조 특징 없이 기존 증강과 실제 훈련 소음 혼합부터 비교. 중단 후 재개 요청.
+- ‘모델 올림’은 새 파일이 보이지 않아 채팅 AI 모델 변경으로 해석한다고 알렸으며, 기존 Conformer를 사용한다.
+- 폴더 `experiments/conformer_aug/`, `reports/conformer-aug-v1/`, `runs/conformer-aug-v1/`.
+- 무증강4개는 기존 개발CV checkpoint 재사용. legacy(속도+마스킹),noise,combined ×4fold를 새로 학습.
+  기존 ASR 원본/같은seed42 head에서 매번 시작,10epoch·LR1e-5/5e-4·WD1e-4·배치32 유지.
+- 속도0.9~1.1배는 검수 비패딩 구간 전체 보존, 넘치는 감속 건너뜀, 가속 부족분만0패딩.
+  마스킹20~50ms·80mel중3~5bin,훈련에서만native무음값으로 채움. 기존128mel와폭비율을맞춘이식이다.
+- 훈련 소음6개: 다른원본의도로·버스·광장·구내식당·믹서·펌프. 기존검증8개원본과분리.
+  매입력p.5,SNR U[-5,20]dB,새1.5초구간. silence는600훈련키워드RMS중앙값기준.
+- 선택은원본validationF1,이후고정된기존소음검증으로비교. testspk01오디오미사용.
+- 새증강검증5개통과. 준비로그download.log/speed_bank.log, 학습로그execution.log.
+  실행 `runs/conformer-env/bin/python -m experiments.conformer_aug.run`.
+- 각last.pt에서epoch재개. 동결프로토콜/속도캐시생성이후소스수정시새버전을쓸것.
+- 12회·120epoch 새 학습 및 기존 무증강4개 재사용 완료. 모든 실행에서 baseline과 초기본체·head해시 동일.
+- 개발4fold seed42 macro-F1, 원본/10/0/−5/−10dB:
+  - baseline:99.3204/95.4593/72.5709/51.8756/34.5590%.
+  - legacy:99.2038/95.6524/73.0936/52.2871/34.3696%.
+  - noise:99.2043/96.5309/78.4748/57.6967/38.2219%.
+  - combined:98.9765/96.5033/78.0475/57.3530/38.2696%.
+- 이번선별은noise가유망:0dB+5.90%p,−10dB+3.66%p,원본−0.12%p. legacy추가효과작고combined추가이득불명확.
+- 잡음단독오반응률0/−10dB baseline6.41/11.09%,noise4.22/9.53%.
+  원본학습–검증격차baseline0.34%p,noise0.30%p로변화작아‘과적합해결’보다소음강건성개선근거가분명함.
+- 기존검증혼합80,512개를SHA256까지일치시켜재사용. 전체예측325,296개,새예측243,972개.
+- 독립검사:2,064개조건F1/정확도·120epoch24,360개예측지표재계산,
+  새12개최고checkpoint의train/val9,744개·잡음768개재추론일치. 원본/소음/가중치해시·정규화보존.
+- 전체테스트48개통과. 73,080개훈련draw를기록했고조건간sampler·speed/noise랜덤스트림짝일치확인.
+- 보고서 `reports/conformer-aug-v1/README.md`, `augmentation_comparison.png`, `learning_curves.png`, `VALIDATION.md`.
+  재검증 `runs/conformer-env/bin/python -m experiments.check_conformer_aug`.
+- 보조음향특징은추가하지않음. 단일seed42의개발4명결과,최고본은원본val로선택. 모든프로세스종료.
+
 ## 최신 완료: 강한 실제 환경 소음 평가
 
 - 사용자 요청: 도로·사람 많은 곳·기계 등 다양한 강한 소음, 긴 녹음의 랜덤 구간 활용.

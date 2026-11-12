@@ -1,0 +1,43 @@
+{
+  "tests_passed": 48,
+  "new_training_runs": 12,
+  "new_training_epochs": 120,
+  "baseline_runs_reused": 4,
+  "original_predictions_independently_replayed": 9744,
+  "stress_predictions_independently_replayed": 768,
+  "metric_conditions_recomputed": 2064,
+  "original_stress_waves_hash_matched": 80512,
+  "old_implementation_and_reports_unchanged": true,
+  "source_and_baseline_hashes_match": true,
+  "test_evaluated": false,
+  "additional_source_sha256": {
+    "experiments/evaluate_conformer_aug.py": "2317e3225c02fc0fc3766bead8ba7ee62924a2e25130ab992ca691c84d0c2ff6",
+    "experiments/report_conformer_aug.py": "335453d5ea806e6115a74fe8b20bfd56a73802d0dfeb673a05f1d65fe9c116ab",
+    "experiments/check_conformer_aug.py": "c43ef90a8d06be6c98d47526c5afe26d8d3a8c40c13df41be82c9e7c6f9aca3a",
+    "tests/test_conformer_aug.py": "9fc131dae2aa9f5df86df4269771c3edde14871566de7a0ba9386cbc2944bdee"
+  },
+  "artifact_sha256": {
+    "reports/conformer-aug-v1/README.md": "00be8cdb4809882a5106bcdcee55293f37bc32c196e248f1cb60b5d72bd8d1e9",
+    "reports/conformer-aug-v1/training_noise_sources.json": "e2f420b90ae500435295bba550a1b04fdf3844d2bc20f88e3dcdaa1c150bedfd",
+    "reports/conformer-aug-v1/protocol.json": "81ade8e3634a22600b627a204e01c02f7c4f25292d31cef5760f35f68dda45ad",
+    "reports/conformer-aug-v1/predictions.csv.gz": "30cc1934e93d5f9054880f024b3fb17fb8dbc557d1a09938bbc7d4fb52447f33",
+    "reports/conformer-aug-v1/evaluation_audit.json": "b799076a71dba2453c1171f04115c1778a2a01da5399711e1b44b2d61bcd30a1",
+    "reports/conformer-aug-v1/condition_metrics.csv": "5f6a922f21da604fc175c2c85e42b0c72cdb8a384ac9bb1ba581f222321a52a6",
+    "reports/conformer-aug-v1/clean_summary.csv": "d5c4a01df8398d062ef533ba611d94b0461fab1544222957287d133f58fd3d47",
+    "reports/conformer-aug-v1/snr_summary.csv": "5c21a311f747b70f5980d634d736be9b0a9d1ef354b880c618084aa8f9b1f22c",
+    "reports/conformer-aug-v1/noise_summary.csv": "74b1fd45ba1073f12c66c47828a911ed66d25ce8174ae5ced8585637e03565d5",
+    "reports/conformer-aug-v1/speaker_summary.csv": "f068c2ee12eb89dd31da2c4910347bca311bba41bb9bb7a3ccf2c452b7475051",
+    "reports/conformer-aug-v1/noise_only_summary.csv": "9e50fe8bd852d3098dc0f12c59c58e490040a7c973f7752f2b8ea8c8f37b37c8",
+    "reports/conformer-aug-v1/runs.csv": "7f42fb8c9c1cf32d47fb21f75cb2405cd116a7c1770cb19b5d3cbf4735bd99d7",
+    "reports/conformer-aug-v1/generalization_gap.csv": "d0bc5e7fc48f54db563635f9615ef8c0be7d465cc73267a9614e7ef6de7a2ec7",
+    "reports/conformer-aug-v1/learning_curve_means.csv": "cb58600ac2440e35d9aea86955f6cabd973de1b0090b31d27835aa73ba807eca",
+    "reports/conformer-aug-v1/learning_curves.png": "0e8be0cd9f6bc9f25994354896d88508054aba34046d19deddc4a06319e86597",
+    "reports/conformer-aug-v1/training_draws.csv.gz": "c2e3e3e5bd8c3f92b4b53555e8e09f4918508bcac734d8c614d4ca9eee22da2e",
+    "reports/conformer-aug-v1/augmentation_rates.csv": "a7febf67bb357dd396a1a9e0825c9eff3fb47edd62a6e092c6ffcdb84c9ae4e7",
+    "reports/conformer-aug-v1/speed_application_audit.json": "76c55f98eed7a412ca810eadeeb5476f44f38fd7359f40be79249e761cc53dcc",
+    "reports/conformer-aug-v1/augmentation_comparison.png": "0f539da0b43aa4a4e0581c6cdba0680beda9ecd11b7e516ce7ac403c36e7003f",
+    "reports/conformer-aug-v1/aggregation_audit.json": "dbb06c4afd4140ce0f01579f16022a91d1ff55d7d2c84ba8c9eeb90362d97d9e",
+    "reports/conformer-aug-v1/independent_audit.json": "cfde60fd4a4925fdf497283c3a6deb833a6e3412c11a162fbd0acf57fda36547",
+    "reports/conformer-aug-v1/VALIDATION.md": "6fc443ca0c1165e7b57c645d31cb96c159aac78533db7414c2128f841b4a1f64"
+  }
+}

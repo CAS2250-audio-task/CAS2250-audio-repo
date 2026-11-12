@@ -1,0 +1,17 @@
+condition,snr_db,false_command_rate
+baseline,-10,0.1109375
+baseline,-5,0.09375
+baseline,0,0.0640625
+baseline,10,0.0140625
+combined,-10,0.1109375
+combined,-5,0.0921875
+combined,0,0.05625
+combined,10,0.00625
+legacy,-10,0.1125
+legacy,-5,0.0921875
+legacy,0,0.0578125
+legacy,10,0.010937500000000001
+noise,-10,0.0953125
+noise,-5,0.065625
+noise,0,0.0421875
+noise,10,0.00625
