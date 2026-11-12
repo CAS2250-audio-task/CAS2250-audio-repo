@@ -1,0 +1,23 @@
+{
+  "note": "Two passes used identical inference settings; first pass retained as summary only, raw samples.csv is the final pass.",
+  "first_pass": {
+    "gpu_host_waveform_to_label_p50_ms": 15.0437605,
+    "gpu_host_waveform_to_label_p95_ms": 15.92021095,
+    "cpu_waveform_to_label_threads2_p50_ms": 59.648686,
+    "cpu_waveform_to_label_threads2_p95_ms": 60.3880595
+  },
+  "final_pass": {
+    "gpu_resident_waveform": {
+      "p50_ms": 14.910528,
+      "p95_ms": 15.855467
+    },
+    "gpu_host_waveform_to_label": {
+      "p50_ms": 15.022228,
+      "p95_ms": 15.83482105
+    },
+    "cpu_waveform_to_label_threads2": {
+      "p50_ms": 75.32349500000001,
+      "p95_ms": 77.20667575
+    }
+  }
+}

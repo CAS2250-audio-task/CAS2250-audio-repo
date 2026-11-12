@@ -1,5 +1,14 @@
 # 사전학습 실험 인계
 
+## 추가 측정: 현재 Conformer latency
+
+- 사용자 요청으로 실제 소음 혼합 학습 모델의 batch1·1.5초 입력 지연을 측정했다.
+- 스크립트 `experiments/benchmark_conformer_latency.py`, 결과 `reports/conformer-latency-v1/`.
+- GPU RTX3090은 워밍업30회 후300회, 서버CPU 2스레드는 워밍업10회 후100회 측정.
+  float32·TF32 on, native Fbank부터분류·argmax·CPU라벨반환까지포함. 모델로딩·녹음·통신·잡음제거는제외.
+- 중앙값은GPU약15ms·CPU약60~75ms다(두번측정변동). 정확한최종수치/p95/CPU모델은benchmark.json참조.
+- 첫1.5초창을모으는대기시간과순수추론지연은별개. 현재는비인과적창전체추론이며스트리밍구현측정이아니다.
+
 ## 최신 완료: Conformer 증강만 비교
 
 - 사용자 요청: 보조 특징 없이 기존 증강과 실제 훈련 소음 혼합부터 비교. 중단 후 재개 요청.

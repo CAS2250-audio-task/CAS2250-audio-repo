@@ -16,6 +16,8 @@
 
 [Conformer 속도·마스킹·훈련 소음 증강 비교](reports/conformer-aug-v1/README.md)
 
+[현재 Conformer batch1 추론 지연 측정](reports/conformer-latency-v1/README.md)
+
 현재 목표는 **출발 / 정지 / 전진 / 후진 / 왼쪽 / 오른쪽 / 시작 / 복귀 / 대기 / 재시작 + silence**입니다.
 단어 목록과 class ID 순서는 `configs/task2.json`의 `labels`로 관리합니다.
 실제 데이터의 보관 위치, 전처리 결과와 실행법은 [데이터셋 안내](datasets/task2/README.md)를 참고하세요.

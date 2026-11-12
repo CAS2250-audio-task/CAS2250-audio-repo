@@ -1,0 +1,62 @@
+{
+  "batch_size": 1,
+  "sample_rate": 16000,
+  "input_samples": 24000,
+  "input_seconds": 1.5,
+  "model": "Korean Conformer 12-layer classifier, no denoiser or auxiliary features",
+  "parameters": 32122699,
+  "parameter_bytes": 128490796,
+  "checkpoint_sha256": "d79828a44e2e506dad3e471bc4e48659a3c6a18a18a401f48b49a4d498e974d2",
+  "source_sha256": "bddf4509b7c809a61cef01c0997ebf9ec64781793e27300133303d16530ae2f4",
+  "benchmark_sha256": "f093d3ad8f809bee1e91343af77209d010260059ec51668acfa4389af1349706",
+  "input_waveform_sha256": "8603c85bcc9b8131614ddef3745edd4353a974d9b417d77e27cd8b9f99d7bac6",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "cpu": "AMD EPYC 7452 32-Core Processor",
+  "cpu_threads": 2,
+  "cpu_interop_threads": 1,
+  "torch": "2.6.0+cu124",
+  "dtype": "float32",
+  "cuda_matmul_allow_tf32": true,
+  "cudnn_allow_tf32": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": true,
+  "gpu_allocated_bytes": 139995648,
+  "gpu_peak_allocated_bytes": 143568896,
+  "includes": "native 80-bin Fbank, fixed normalization, CNN, Conformer, pooling, classifier, argmax and CPU scalar result",
+  "excludes": "model loading, WAV file decoding, microphone acquisition, window accumulation, networking, speech endpointing, denoising",
+  "measurements": [
+    {
+      "mode": "gpu_resident_waveform",
+      "warmup": 30,
+      "repeats": 300,
+      "mean_ms": 15.023908313333335,
+      "p50_ms": 14.910528,
+      "p95_ms": 15.855467,
+      "min_ms": 14.841033,
+      "max_ms": 20.491692,
+      "real_time_factor_p50": 0.009940352
+    },
+    {
+      "mode": "gpu_host_waveform_to_label",
+      "warmup": 30,
+      "repeats": 300,
+      "mean_ms": 15.329815839999998,
+      "p50_ms": 15.022228,
+      "p95_ms": 15.83482105,
+      "min_ms": 14.890354,
+      "max_ms": 16.544568,
+      "real_time_factor_p50": 0.010014818666666666
+    },
+    {
+      "mode": "cpu_waveform_to_label_threads2",
+      "warmup": 10,
+      "repeats": 100,
+      "mean_ms": 72.28786885,
+      "p50_ms": 75.32349500000001,
+      "p95_ms": 77.20667575,
+      "min_ms": 59.938643,
+      "max_ms": 124.386226,
+      "real_time_factor_p50": 0.05021566333333334
+    }
+  ]
+}
