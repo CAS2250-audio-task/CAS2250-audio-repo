@@ -1,0 +1,17 @@
+{
+  "prediction_rows": 162648,
+  "mixture_rows": 80512,
+  "clean_rows": 1624,
+  "mixed_rows": 155904,
+  "noise_only_rows": 5120,
+  "conditions": 1032,
+  "mixed_conditions": 768,
+  "source_count": 8,
+  "fold_count": 4,
+  "seed_count": 1,
+  "max_snr_error_db": 1.928654933106575e-15,
+  "jointly_attenuated_fraction": 0.07755365659777425,
+  "checkpoint_and_source_pins_match": true,
+  "test_evaluated": false,
+  "protocol_sha256": "6f1ff7e76f361d480ccffcce28e4d3e00e528815382a5defbdb0cedeb1792ef2"
+}

@@ -1,0 +1,34 @@
+{
+  "tests_passed": 43,
+  "old_tracked_implementation_unchanged": true,
+  "old_model_and_dataset_hashes_match": true,
+  "test_evaluated": false,
+  "clean_predictions_replayed": 1624,
+  "noisy_predictions_independently_replayed": 512,
+  "metric_conditions_recomputed": 1032,
+  "training_rms_references_independently_recomputed": 4,
+  "additional_source_sha256": {
+    "experiments/report_noise_stress.py": "e3c249b563194181e5cbb743fe9325f3c84fb0b21b9e2cc41a0049499be0fb10",
+    "experiments/check_noise_stress.py": "63e120a68cdd876a379fc82a7fea294efbbc9eee83b1b676da1680ebf820b338",
+    "tests/test_noise_stress.py": "4ef10331afff88664049dea1966c7739d2ba03b2fb10bc0e8079272ddd8c3b8a"
+  },
+  "artifact_sha256": {
+    "reports/noise-stress-v1/README.md": "9c45ef5a5fd72bb98d49c3499870e0096473a0519f3c298cd61f0ceb7804ef07",
+    "reports/noise-stress-v1/noise_sources.json": "d6193fc2045a24cb1167cf01dce3b378d603968cab4b335aa0aa2204b33b702c",
+    "reports/noise-stress-v1/protocol.json": "6f1ff7e76f361d480ccffcce28e4d3e00e528815382a5defbdb0cedeb1792ef2",
+    "reports/noise-stress-v1/condition_metrics.csv": "b5f2282b99ace4d7dffe4bf2448600feefd8946f598f50a85080913ff0046615",
+    "reports/noise-stress-v1/clean_summary.csv": "febb7b577c79c80c8bf7c94437f68816dff1fe9f828be676977af77e8f9057c3",
+    "reports/noise-stress-v1/snr_summary.csv": "48c8eed1cb8ada2f673cea7f884fd4ed32fbd76966f2bfb224a73da8d12cf683",
+    "reports/noise-stress-v1/noise_summary.csv": "ec957cc2df021e030a07bbdb07537d330ba180a605c138e5c21cd6eeb6770b85",
+    "reports/noise-stress-v1/speaker_summary.csv": "2cdfdfa1818fe01d2973c536b04f706a4afb0f23d5945ae44e3de69ce277fc56",
+    "reports/noise-stress-v1/family_summary.csv": "28c7125b9990885084e098bb401e6a5e3e913c45dc4869bc376e645495070088",
+    "reports/noise-stress-v1/noise_only_summary.csv": "079c03025ffef76b565a02c5002bcb492d6b97bd167c09b8d8c18832c5bf67b1",
+    "reports/noise-stress-v1/predictions.csv.gz": "0fb9fabeeb355758e352abbfddd79f2f085c0c8925a216bfcca4bfcb42a65b53",
+    "reports/noise-stress-v1/mixtures.csv.gz": "8104ffec952356adc9243147e2e5a10331fc7232df3cfe54cc893e9cd29e92d9",
+    "reports/noise-stress-v1/noise_stress.png": "68b85b6640467017c8cefce9667f1736b4eabb985a06b47b61de12c724fb3e0e",
+    "reports/noise-stress-v1/aggregation_audit.json": "3c4b1af65ac4863199f7b9fdf1ef49b691cb36ba9b282f987a51af45d8b57ed9",
+    "reports/noise-stress-v1/independent_replay.json": "3977957f32a001b7163d8d2a4c5d2ce69b5385b347c8ae584810856e02e154af",
+    "reports/noise-stress-v1/keyword_error_modes.csv": "358c71673e043075824d05323fa3c6950a191f6291b0eded2bdc02c5aa7350ee",
+    "reports/noise-stress-v1/VALIDATION.md": "6c41bb8ab1165f8b290a1b2dcaf62489d5eb162dca9b30eaac876948f9f464a7"
+  }
+}

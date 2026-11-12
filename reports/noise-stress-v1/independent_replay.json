@@ -1,0 +1,56 @@
+{
+  "metric_conditions_recomputed": 1032,
+  "prediction_rows": 162648,
+  "mixture_rows": 80512,
+  "identical_crops_across_levels": 19488,
+  "independent_waveforms_reconstructed": 256,
+  "noisy_predictions_replayed": 512,
+  "all_predictions_identical": true,
+  "original_development_wav_hashes_checked": 812,
+  "original_checkpoint_hashes_unchanged": true,
+  "training_rms_references_independently_recomputed": 4,
+  "test_evaluated": false,
+  "details": [
+    {
+      "speaker": "spk02",
+      "model": "imagenet",
+      "mixed_predictions_replayed": 64
+    },
+    {
+      "speaker": "spk02",
+      "model": "conformer",
+      "mixed_predictions_replayed": 64
+    },
+    {
+      "speaker": "spk03",
+      "model": "imagenet",
+      "mixed_predictions_replayed": 64
+    },
+    {
+      "speaker": "spk03",
+      "model": "conformer",
+      "mixed_predictions_replayed": 64
+    },
+    {
+      "speaker": "spk04",
+      "model": "imagenet",
+      "mixed_predictions_replayed": 64
+    },
+    {
+      "speaker": "spk04",
+      "model": "conformer",
+      "mixed_predictions_replayed": 64
+    },
+    {
+      "speaker": "spk05",
+      "model": "imagenet",
+      "mixed_predictions_replayed": 64
+    },
+    {
+      "speaker": "spk05",
+      "model": "conformer",
+      "mixed_predictions_replayed": 64
+    }
+  ],
+  "verifier_sha256": "63e120a68cdd876a379fc82a7fea294efbbc9eee83b1b676da1680ebf820b338"
+}
