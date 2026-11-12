@@ -1,0 +1,17 @@
+{
+  "initialization": "speech_sc09",
+  "seed": 43,
+  "best_epoch": 5,
+  "validation": {
+    "accuracy": 0.8423645320197044,
+    "macro_f1": 0.8520528596108292,
+    "loss": 0.6352765618873935
+  },
+  "original_train": {
+    "accuracy": 0.993431855500821,
+    "macro_f1": 0.9939389730347437,
+    "loss": 0.03196461506765978
+  },
+  "checkpoint_sha256": "53fc7e8c5ca8ade8ca3cd9db95526618572f30180874e02f0490cec6b6193900",
+  "test_evaluated": false
+}

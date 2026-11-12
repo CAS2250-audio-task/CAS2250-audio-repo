@@ -1,0 +1,4 @@
+seed,speech_only_correct,imagenet_only_correct,imagenet_correct,speech_correct
+42,10,22,186,174
+43,12,22,181,171
+44,22,22,171,171

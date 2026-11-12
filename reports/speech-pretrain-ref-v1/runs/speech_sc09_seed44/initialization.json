@@ -1,0 +1,26 @@
+{
+  "initialization": "speech_sc09",
+  "source": {
+    "sampling_rate": 16000,
+    "dataset": "sc09",
+    "model": "sp_2d_100_fd_tm",
+    "n_classes": 10,
+    "checkpoint_epoch": 1002,
+    "inert_metadata_aliases": [
+      "pytorch_lightning.utilities.parsing.AttributeDict"
+    ],
+    "checkpoint_sha256": "ac36f2f4d6f25dfe792a2ea4699cc046630903decc5c948a700554741bbc5b7f",
+    "source_url": "https://drive.usercontent.google.com/download?id=1xZP8eaFoW7aOiVU5p8hN-cfCTaKKrREg&export=download&confirm=t"
+  },
+  "copied_backbone_tensors": 120,
+  "copied_backbone_elements": 11179860,
+  "retained_reference_classifier": [
+    512,
+    11
+  ],
+  "source_channel_used": "log_mel_index_2",
+  "classifier_loaded_from_pretraining": false,
+  "classifier_initial_sha256": "7846bf5ff4e5737c094e3325f2df7ca4759618a209990347adecd2a2517d87ae",
+  "backbone_initial_sha256": "088dd65fce810384f0347eaa5e7cff6df4a9c9565e792db40a95004855a5e3b4",
+  "parameters": 11175883
+}

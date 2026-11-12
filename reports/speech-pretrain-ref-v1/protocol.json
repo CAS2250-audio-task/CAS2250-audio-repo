@@ -1,0 +1,82 @@
+{
+  "base_ref_commit": "6d208bc",
+  "source_initialization": {
+    "sampling_rate": 16000,
+    "dataset": "sc09",
+    "model": "sp_2d_100_fd_tm",
+    "n_classes": 10,
+    "checkpoint_epoch": 1002,
+    "inert_metadata_aliases": [
+      "pytorch_lightning.utilities.parsing.AttributeDict"
+    ],
+    "checkpoint_sha256": "ac36f2f4d6f25dfe792a2ea4699cc046630903decc5c948a700554741bbc5b7f",
+    "source_url": "https://drive.usercontent.google.com/download?id=1xZP8eaFoW7aOiVU5p8hN-cfCTaKKrREg&export=download&confirm=t"
+  },
+  "config": {
+    "labels": [
+      "출발",
+      "정지",
+      "전진",
+      "후진",
+      "왼쪽",
+      "오른쪽",
+      "시작",
+      "복귀",
+      "대기",
+      "재시작",
+      "silence"
+    ],
+    "data_root": "/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1",
+    "metadata_csv": "metadata.csv",
+    "dataset_version": "task2-1015-fixed-1p5-v1",
+    "split_version": "speaker-disjoint-seed42-v1",
+    "dummy": false,
+    "sample_rate": 16000,
+    "seconds": 1.5,
+    "n_fft": 512,
+    "win_length": 512,
+    "hop_length": 160,
+    "n_mels": 128,
+    "batch_size": 32,
+    "epochs": 10,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "num_workers": 0,
+    "use_pretrained": true,
+    "use_augmentation": false,
+    "seed": 42,
+    "device": "auto"
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "conditions": [
+    "imagenet",
+    "speech_sc09"
+  ],
+  "dataset_metadata_sha256": "121576d7a3e6405a355b5f85f78aee2bbbe50c682c4cc7d64c14ac7a9f0e01f8",
+  "source_sha256": {
+    "src/__init__.py": "6cd6327b6a20b0d88061f01586756609f759c300586000f3966c44e90ba87712",
+    "src/__main__.py": "c7eb49c202fe0f93b5e610a6b2e2d1ce25db06ae7ccc49914f569c82ef94a90c",
+    "src/config.py": "265eb645c0771b27e6b54b68683d226640d1498a2741c3b197dbf1d3fefc8e96",
+    "src/dataset.py": "01a6b68881bb72982c11f957099f99d028b5b71e7c6dd11971079cfcee40a5f4",
+    "src/engine.py": "e09f2e0c1d045f54b581d77afc4d658212b04e388a10595d076b73793f9b2114",
+    "src/import_recordings.py": "2e7b54ab557e45d422444bb6ff3a8fcef324907dd281e8b2b93d105e41ab44b8",
+    "src/model.py": "e7c75a42414375a1b3afcf79b3c3ea3c6eb4bedbe3356c97b90c0ebff8d267d0",
+    "experiments/pretrain/__init__.py": "dc08385d553b8750068f68b4134ab4e64efd04acf0821885e0732228f1871b3e",
+    "experiments/pretrain/run.py": "c361b4d6f5182fe2842765eddbfc0114099237f2ae44c18d1c82909dc1012919",
+    "experiments/pretrain/weights.py": "31f1608ec5c43c7ad433fec2d22b283e4ecf1d2a6ce4fc804ffd995374dac140"
+  },
+  "same_reference_data_split_model_trainer": true,
+  "source_input_channels": [
+    "STFT_magnitude",
+    "STFT_phase",
+    "log_mel"
+  ],
+  "target_input": "unchanged reference one-channel log-mel",
+  "first_conv_transfer": "select source channel 2",
+  "test_excluded": true,
+  "no_auxiliary_features": true
+}

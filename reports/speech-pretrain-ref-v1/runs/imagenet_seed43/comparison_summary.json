@@ -1,0 +1,17 @@
+{
+  "initialization": "imagenet",
+  "seed": 43,
+  "best_epoch": 9,
+  "validation": {
+    "accuracy": 0.8916256157635468,
+    "macro_f1": 0.9014517790687706,
+    "loss": 0.34315732282958006
+  },
+  "original_train": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "loss": 0.0013899143727126185
+  },
+  "checkpoint_sha256": "9d8f01aaaf79012ebb0fd4b15846104ae634770c0be42cfdc53317c19dc6bd2c",
+  "test_evaluated": false
+}

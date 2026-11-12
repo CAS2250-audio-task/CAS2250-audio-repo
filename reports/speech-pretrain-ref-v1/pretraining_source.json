@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/haideraltahan/CLAR",
+  "commit": "3b5a7828744333f8915de4e64d87a544c8ce91fd",
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/haideraltahan/CLAR/3b5a7828744333f8915de4e64d87a544c8ce91fd/README.md",
+      "sha256": "2d05f0b80b5c0e7fdac1ffe1c9a32fa1245f30dc7f47c10533d7e2625658b956"
+    },
+    "main_supervised.py": {
+      "url": "https://raw.githubusercontent.com/haideraltahan/CLAR/3b5a7828744333f8915de4e64d87a544c8ce91fd/main_supervised.py",
+      "sha256": "30cab30693cdc70ee378cfdf6ada4e564aad4dc60a49ccc73e2cb165212a77be"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/haideraltahan/CLAR/3b5a7828744333f8915de4e64d87a544c8ce91fd/LICENSE",
+      "sha256": "30acbf2d6d77f34e1f6edbf1cf7874f1c0e7a8fccfaeef8a81fff46cbb35bfd2"
+    }
+  },
+  "checkpoint_folder": "https://drive.google.com/drive/folders/1GA-HCBXlRuOCWHQ-_A_Ei265OEek2kms",
+  "source_task": "English spoken digit classification on Speech Commands SC09",
+  "source_spectrogram_channels": [
+    "STFT magnitude in dB",
+    "STFT phase",
+    "log-mel"
+  ],
+  "target_reference_commit": "6d208bc",
+  "target_spectrogram": "unchanged one-channel reference log-mel"
+}

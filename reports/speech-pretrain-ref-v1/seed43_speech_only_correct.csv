@@ -1,0 +1,13 @@
+﻿path,true_label,imagenet_prediction,speech_prediction,imagenet_correct,speech_correct,audio_path
+audio/시작/spk05_048.wav,시작,재시작,시작,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/시작/spk05_048.wav
+audio/시작/spk05_063.wav,시작,재시작,시작,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/시작/spk05_063.wav
+audio/왼쪽/spk05_085.wav,왼쪽,오른쪽,왼쪽,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/왼쪽/spk05_085.wav
+audio/왼쪽/spk05_090.wav,왼쪽,오른쪽,왼쪽,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/왼쪽/spk05_090.wav
+audio/왼쪽/spk05_095.wav,왼쪽,복귀,왼쪽,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/왼쪽/spk05_095.wav
+audio/재시작/spk05_115.wav,재시작,대기,재시작,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/재시작/spk05_115.wav
+audio/전진/spk05_141.wav,전진,정지,전진,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/전진/spk05_141.wav
+audio/전진/spk05_142.wav,전진,출발,전진,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/전진/spk05_142.wav
+audio/출발/spk05_164.wav,출발,시작,출발,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/출발/spk05_164.wav
+audio/출발/spk05_174.wav,출발,재시작,출발,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/출발/spk05_174.wav
+audio/출발/spk05_180.wav,출발,시작,출발,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/출발/spk05_180.wav
+audio/출발/spk05_181.wav,출발,재시작,출발,False,True,/root/audio/.worktrees/pretrain/datasets/task2/fixed-1p5-v1/audio/출발/spk05_181.wav

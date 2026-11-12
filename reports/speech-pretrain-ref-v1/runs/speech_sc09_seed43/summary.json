@@ -1,0 +1,6 @@
+{
+  "best_epoch": 5,
+  "best_val_macro_f1": 0.8520528596108292,
+  "dummy": false,
+  "test_evaluated": false
+}

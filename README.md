@@ -2,7 +2,10 @@
 
 교수 제공 노트북의 baseline을 모듈과 CLI로 옮긴 **완성형 참고 구현**입니다.
 공통 baseline은 `main`과 `reference/ai-baseline`에서 원본 녹음 1,015개와 함께 관리합니다.
-이 `jaehun` 브랜치의 VAD 클리핑·음량 정규화 및 검토 목록은 개인 실험입니다.
+이 `pretrain` 브랜치는 ref의 검수 데이터와 기본 학습 경로를 유지하면서 사전학습 초기화를 비교합니다.
+
+[스펙트로그램 음성 사전학습 실행](experiments/pretrain/README.md) ·
+[3시드 비교 결과](reports/speech-pretrain-ref-v1/README.md) · [인수인계](PRETRAIN_HANDOFF.md)
 
 현재 목표는 **출발 / 정지 / 전진 / 후진 / 왼쪽 / 오른쪽 / 시작 / 복귀 / 대기 / 재시작 + silence**입니다.
 단어 목록과 class ID 순서는 `configs/task2.json`의 `labels`로 관리합니다.

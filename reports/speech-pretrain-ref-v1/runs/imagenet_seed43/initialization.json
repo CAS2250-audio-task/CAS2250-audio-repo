@@ -1,0 +1,9 @@
+{
+  "initialization": "imagenet",
+  "source": {
+    "weights": "torchvision.ResNet18_Weights.IMAGENET1K_V1"
+  },
+  "classifier_initial_sha256": "2a7a3e08067b5c0b3a2fc390549e1abee7604b00a608aa79534f109fd9656658",
+  "backbone_initial_sha256": "0d48b8cdf73ee942c27176c6ec0a356f4e29f15691a7225fb0eb167c947628df",
+  "parameters": 11175883
+}
