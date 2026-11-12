@@ -1,5 +1,27 @@
 # 사전학습 실험 인계
 
+## 최신 완료: 말소리 소음 확장·0dB 비중 증가·DFN3 유무
+
+- 사용자 승인: 기존 넓은 SNR/원본을 유지하면서 사람 말소리 소음과0dB 부근 입력을 늘리고, DFN3 유무까지 비교.
+- 별도 `experiments/conformer_noise_focus/`, `runs/conformer-noise-focus-v1/`, `reports/conformer-noise-focus-v1/`.
+- 기준은 기존 noise4fold 재사용. speech/focus/speech_focus 각각4fold, 총12회·120epoch 새 학습. seed42·epoch10·609draw/epoch·초기 ASR/같은head·LR/WD/clean-best 선택 유지.
+- focus 입력 비율: 원본50%, 기존U[-5,20]소음25%, 추가U[-3,3]소음25%. 전체 학습량을 늘리지 않고 SNR 혼합 분포만 변경한다.
+- speech: 소음 draw의 절반은 기존6개, 절반은 MS-SNSD train의Babble/NeighborSpeaking/AirportAnnouncements37개에서 유형→파일 균등 선택. 기존 소음/도로/기계도 유지.
+- 추가 파일은 약45.75분. Git revision/blob SHA 및 파일/PCM 해시 검증, 평가 원본과 파일명·원본/준비해시 분리. MS-SNSD의DEMAND 이름변경파일(CafeTeria/Restaurant/Station 등)은 사용하지 않는다.
+- 8초 first/middle/last 구간을 평가8원본 전체와200Hz 상관도 검색, .95초과없음. 높은저주파상관5개는300~5000Hz에서0.006~0.029로 확인했다. 완전한원본추적/모든부분중복 부재를 증명하는 감사는 아니다. 37파일을독립37녹음세션으로주장하지않는다.
+- 새증강검사3개통과: flags off일때기존훈련입력정확재현, source/SNR스트림독립, 원본/넓은범위유지·길이·재현성.
+- 학습12회/120epoch완료, 전체54tests통과. 최초driver는평가의Path import누락으로종료됐고학습은재실행하지않았다.
+- 정식평가650,592예측과독립검사·듣기샘플까지완료. `postprocess_complete.json` 존재. 모든실험프로세스종료. 재개가필요하면완료단위를재사용하며중복실행하지않는다.
+- 큰배치203검사에서spk03/cafeteria/-5dB의기존예측차이가발견돼그결과는`batch203_engineering_probe`에분리하고정식평가는기존batch32로통일했다. DFN3는batch16유지. 완료단위와후속SNR의DFN파형캐시를재사용한다.
+- 각epoch last.pt에서재개. protocol 고정 이후training소스를수정하지않는다. 분류기/DFN3모두 test01오디오미사용.
+- 평가: 모든학습조건×DFN3 off/on, 기존8소음×10/0/-5/-10dB×3draw+원본/잡음단독. 총650,592예측. 기존DFN3의원본/0dB20,940파형은해시검증후재사용.
+- 0dB F1(off/DFN3):기존78.4748/83.7984%,speech75.8412/83.7414%,focus77.6656/83.3163%,둘다75.0336/82.9481%. 이번비율에서는0dB F1향상미확인.
+- speech+DFN3의잡음단독오반응12.8125→10.15625%. off의실제명령어무음누락3.161→8.766%로늘어F1손실과동반됐다.
+- 원본off F1:기존/speech99.2043%,focus99.2039%,둘다99.0902%. 0dB±2학습비중7.9064→20.4639%,추가말소리draw24.5567%,원본50.4885%.
+- 독립검사:4,128조건지표·120epoch24,360예측지표재계산,원본train/val9,744개·스트레스20,128개재추론전부일치. 훈련파형288개와DFN파형2,516개해시일치. 원래DFN캐시재생성도원래batch16경계에맞췄다.
+- 새훈련소음3유형각0dB근처실제draw와고정검증3예시의DFN3전후: `runs/conformer-noise-focus-v1/listening/README.md`.15개실제파형해시검증. 학습조건별예측도같이기록했다.
+- 최종진입점 `reports/conformer-noise-focus-v1/README.md`, `VALIDATION.md`, `independent_audit.json`. `INTERIM.md`도완료상태로갱신했다.이번비율의새결합조건을기본경로로자동채택하지않았다.
+
 ## 최신 완료: 소음 혼합 학습본에 잡음 제거기 3개 비교
 
 - 사용자 요청: 0dB 개선을 위해 필터 3개를 소음 혼합 학습본에만 평가한다.

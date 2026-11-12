@@ -1,0 +1,17 @@
+training_condition,heldout_speaker,best_epoch,original_train_f1,original_validation_f1,checkpoint_sha256,source_run
+baseline,spk02,9,0.9969694865173718,0.990909090909091,d79828a44e2e506dad3e471bc4e48659a3c6a18a18a401f48b49a4d498e974d2,runs/conformer-aug-v1/folds/spk02/noise
+baseline,spk03,9,0.9969694865173718,0.9909034055375519,d1ad9a3812258b31e7b88cab71317d5c7ade2451283c2bc90157d8331d8856af,runs/conformer-aug-v1/folds/spk03/noise
+baseline,spk04,6,0.9924235110161614,0.9863607936778668,3953ec9449822e731acc3b2068a72ad9fe6d979cd8460daa76123901969ebafb,runs/conformer-aug-v1/folds/spk04/noise
+baseline,spk05,7,0.9939390782609062,1.0,ae9580c267ef18ffdb69bf1fca8a3d72cee35f515856f6270b1df337d5ad8647,runs/conformer-aug-v1/folds/spk05/noise
+speech,spk02,7,0.9954543350022202,0.990909090909091,0ed4589703282df51d12f9de8a5646e633742ce83193d2684031ab9efaeb2a5e,runs/conformer-noise-focus-v1/folds/spk02/speech
+speech,spk03,6,0.9924232952133534,0.9909034055375519,23228396a92e5d0b94514ae3f822db5f2f1dc39ee4f283d8eaa624cdbf53f6e8,runs/conformer-noise-focus-v1/folds/spk03/speech
+speech,spk04,6,0.9924475228535935,0.9863607936778668,4904b6acbf675aef286a1e74618f805aa6c6ff00cc2e4047c6a07be02ffd1e1b,runs/conformer-noise-focus-v1/folds/spk04/speech
+speech,spk05,9,0.9939391834870688,1.0,f04a1683dc990c7b929b199d4e8672efecaa222dd67f1bc4e4c9271bf54c1dfb,runs/conformer-noise-focus-v1/folds/spk05/speech
+focus,spk02,8,0.9969694865173718,0.990909090909091,80f4ddf1681b8780a70e6b69068f31e3909bf32774d2a3ef8e72edea105d3cae,runs/conformer-noise-focus-v1/folds/spk02/focus
+focus,spk03,4,0.984822045770949,0.9909090909090907,d6e4048c07a3f6096549206c446558a1d7bd14d2f2024f48e7bf3562e0dd75d6,runs/conformer-noise-focus-v1/folds/spk03/focus
+focus,spk04,7,0.9954542297760578,0.9863380094445563,288376dfd5f9309d95d44c837827147edb1921bdb1093072ffad3bbbfed54ff5,runs/conformer-noise-focus-v1/folds/spk04/focus
+focus,spk05,7,0.9939390782609062,1.0,75e228f1b47715de212d0f6fb70e1f3284985b9f020a6c58739a92f098379cf2,runs/conformer-noise-focus-v1/folds/spk05/focus
+speech_focus,spk02,7,0.9954543350022202,0.990909090909091,12e459e2371acbcba5a49e8d1301a6d17720ff403a75e219e58b35e0569e170e,runs/conformer-noise-focus-v1/folds/spk02/speech_focus
+speech_focus,spk03,4,0.9762323182876876,0.9909090909090907,bb90981ba13518758525d219dae51e32c803844e4d838f2345d4374525c688d6,runs/conformer-noise-focus-v1/folds/spk03/speech_focus
+speech_focus,spk04,7,0.9954542297760578,0.9863380094445563,5a31671505bd0c588e653bce72708e8591231637ecea88efd59178c6aa05a5a8,runs/conformer-noise-focus-v1/folds/spk04/speech_focus
+speech_focus,spk05,6,0.9893935184892889,0.995451702768776,0644d44ae9b94a9ac1e4ce6672172ee5c38cdbac4f95d9bc42dad5879a3a1137,runs/conformer-noise-focus-v1/folds/spk05/speech_focus

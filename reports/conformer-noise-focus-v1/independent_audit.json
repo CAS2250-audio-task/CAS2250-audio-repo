@@ -1,0 +1,17 @@
+{
+  "prediction_rows": 650592,
+  "metric_groups_recomputed": 4128,
+  "evaluation_input_cases_with_hashes": 81324,
+  "epoch_metric_groups_recomputed": 120,
+  "original_predictions_replayed": 9744,
+  "training_input_waveforms_replayed": 288,
+  "stress_predictions_replayed": 20128,
+  "dfn_waveforms_replayed": 2516,
+  "matched_sampler_paths_and_independent_policies": true,
+  "unchanged_inputs_match_original_baseline": true,
+  "original_initializations_and_normalization_preserved": true,
+  "all_replayed_predictions_equal": true,
+  "source_checkpoint_dataset_pins_valid": true,
+  "test_evaluated": false,
+  "code_sha256": "f01926ed58770a5d1e98acfbb8985e494ef47f47e932287ec51a70f8274ab356"
+}

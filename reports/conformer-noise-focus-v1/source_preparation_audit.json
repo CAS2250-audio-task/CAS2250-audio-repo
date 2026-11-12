@@ -1,0 +1,10 @@
+{
+  "candidate_files": 37,
+  "unique_pcm_files": 37,
+  "exact_pcm_duplicates_removed": [],
+  "original_training_sources": 6,
+  "evaluation_sources": 8,
+  "shared_filename_original_hash_prepared_hash": 0,
+  "test_audio_read": false,
+  "limitation": "Different numbered files may share underlying recordings; unique PCM files are not claimed to be independent original sessions"
+}

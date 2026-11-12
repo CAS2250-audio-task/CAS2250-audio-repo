@@ -1,0 +1,44 @@
+{
+  "added_files": 37,
+  "evaluation_recordings": 8,
+  "probe_pairs": 888,
+  "downsample_rate": 200,
+  "probe_seconds": 8,
+  "probe_positions": "first/middle/last",
+  "maximum_abs_correlation": 0.7233682828654161,
+  "threshold": 0.95,
+  "suspicious_probe_pairs": 0,
+  "test_audio_read": false,
+  "limitation": "Probes reject obvious shifted/rescaled/re-encoded copies; they cannot prove complete provenance or absence of all partial overlap",
+  "high_low_frequency_correlation_checks": [
+    {
+      "added": "speech_babble_12",
+      "evaluation": "compressor",
+      "bandpass_max_correlation": 0.0056417755225212675
+    },
+    {
+      "added": "speech_neighborspeaking_1",
+      "evaluation": "compressor",
+      "bandpass_max_correlation": 0.029428471097137126
+    },
+    {
+      "added": "speech_neighborspeaking_13",
+      "evaluation": "compressor",
+      "bandpass_max_correlation": 0.01978513318869891
+    },
+    {
+      "added": "speech_neighborspeaking_13",
+      "evaluation": "compressor",
+      "bandpass_max_correlation": 0.0232503849716413
+    },
+    {
+      "added": "speech_neighborspeaking_13",
+      "evaluation": "compressor",
+      "bandpass_max_correlation": 0.023360993251304363
+    }
+  ],
+  "confirmation_band_hz": [
+    300,
+    5000
+  ]
+}
