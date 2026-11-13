@@ -1,0 +1,76 @@
+[
+  {
+    "speaker": "spk02",
+    "source": "audio/출발/spk02_051.wav",
+    "file": "spk02/original.wav",
+    "formant_ratio": 1.0,
+    "source_float32_sha256": "a59c0eaab1b7918d58c1e6b2c729f8f4b6c78e1f2082e869b33b31ccfb4462f7",
+    "export_file_sha256": "ab7e18a3c788681bf52bc7550df20f2393da5c4c6657c6ecca53c600a4831a72",
+    "training_event": null
+  },
+  {
+    "speaker": "spk02",
+    "source": "audio/출발/spk02_051.wav",
+    "file": "spk02/formants_lower.wav",
+    "formant_ratio": 0.9292543607494067,
+    "source_float32_sha256": "5be321c7ed489bdbb27f8f88c246067e4f8c3a44bb4e97a6e0f4440d6898fcb3",
+    "export_file_sha256": "197d6f8ec515c727d032fda584e6385cc06c53d487cfefcb05456d6dfc4cd2bf",
+    "training_event": {
+      "heldout_speaker": "spk03",
+      "epoch": 14,
+      "draw": 248,
+      "input_sha256": "5be321c7ed489bdbb27f8f88c246067e4f8c3a44bb4e97a6e0f4440d6898fcb3"
+    }
+  },
+  {
+    "speaker": "spk02",
+    "source": "audio/출발/spk02_051.wav",
+    "file": "spk02/formants_higher.wav",
+    "formant_ratio": 1.077295181058445,
+    "source_float32_sha256": "badeb0f6e21f230a3cfec1898e8fe0a803d9cb17619499f4eb2553bd362920f2",
+    "export_file_sha256": "70e69242d84fabf2f18fad8f73f7b3e0ca3132b137eb8c628a3a77a74b739b08",
+    "training_event": {
+      "heldout_speaker": "spk03",
+      "epoch": 11,
+      "draw": 292,
+      "input_sha256": "badeb0f6e21f230a3cfec1898e8fe0a803d9cb17619499f4eb2553bd362920f2"
+    }
+  },
+  {
+    "speaker": "spk03",
+    "source": "audio/출발/spk03_166.wav",
+    "file": "spk03/original.wav",
+    "formant_ratio": 1.0,
+    "source_float32_sha256": "e801cb66e76e6e5b9e639175e87af4d1ebb3f3dde02fc0bc63bcafdb9305a1d4",
+    "export_file_sha256": "e1f0b4f8660de0a8a0fbbeb0717f77e69b97ff37869db34048fdb65e3f905c04",
+    "training_event": null
+  },
+  {
+    "speaker": "spk03",
+    "source": "audio/출발/spk03_166.wav",
+    "file": "spk03/formants_lower.wav",
+    "formant_ratio": 0.9195959017561418,
+    "source_float32_sha256": "5c3ba17ba793ecda1707667feb0dd400e16a2f4d660db78352af1137bacb10cd",
+    "export_file_sha256": "3732c5d0cbbfdef79af92d972e114866411ec74967b50ee9351bd02704b457d1",
+    "training_event": {
+      "heldout_speaker": "spk02",
+      "epoch": 32,
+      "draw": 245,
+      "input_sha256": "5c3ba17ba793ecda1707667feb0dd400e16a2f4d660db78352af1137bacb10cd"
+    }
+  },
+  {
+    "speaker": "spk03",
+    "source": "audio/출발/spk03_166.wav",
+    "file": "spk03/formants_higher.wav",
+    "formant_ratio": 1.0324865737052444,
+    "source_float32_sha256": "6e7d6722e00aaa078992ad6570cfbc246e916d8cad091ba94704a3ddaf0e3c9a",
+    "export_file_sha256": "44476e42992515037c30e31199abe1cf24385bd298c5b06150930820f5fbcfcc",
+    "training_event": {
+      "heldout_speaker": "spk02",
+      "epoch": 17,
+      "draw": 501,
+      "input_sha256": "6e7d6722e00aaa078992ad6570cfbc246e916d8cad091ba94704a3ddaf0e3c9a"
+    }
+  }
+]
