@@ -1,5 +1,15 @@
 # 야간 실험 인계
 
+## 완료 결과
+
+- 한국시간2026-11-13 09:08완료, 시작03:18부터약5시간50분. 신규28fold×90epoch=2,520epoch와최종DFN3비교·독립검사완료. GPU유휴. 실패표식없음.
+- 선택: WD1e-4·Dropout0.2·기존소음+포먼트B·보조없음·무필터. 0dB F1 91.2974%, 정확도91.8719%. 이전89.7492/90.1888% 대비+1.5482/+1.6831%p.
+- WD1e-3은89.6436%,Dropout0.2는90.6651%. 선택Dropout에서A90.6826%,B91.2974%,A+B90.8539%. 둘다통과한정규화후보가아니므로WD+Dropout결합은규칙대로생략했다.
+- 보조3은91.3015%로B대비+0.00408%p에그쳐채택기준+0.5%p를못넘었다. 보조7은90.9084%. DFN3는90.4063%로하락했다.
+- 02의F1 76.6339→79.3503→81.9513%. 추가draw1~2의B F1도89.7523→91.2724%. 피치단독효과나성별인과효과를분리하는실험은아니다.
+- 검증: epoch예측4,604,040개·훈련draw1,534,680개·최종146,580개재계산, 최고본51,156개재추론일치. source해시보존과전체마지막epoch100확인. test01미사용.
+- 진입점 `reports/overnight-v1/RESULTS.md`. 독립검사 `independent_audit.json`,선택재집계 `review_validation.json`,화자별 `fold_results.csv`,추가구간 `draw_split_summary.csv`. 완료후재실행하지않는다.
+
 브랜치 `overnight-regularization-formant-aux`, worktree `/root/audio/.worktrees/overnight`.
 기준 commit은 pretrain의 `9fbdad4`이며 기존 실험·체크포인트는 읽기만 한다.
 

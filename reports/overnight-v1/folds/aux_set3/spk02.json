@@ -1,0 +1,33 @@
+{
+  "candidate": "aux_set3",
+  "spec": {
+    "name": "aux_set3",
+    "wd": 0.0001,
+    "dropout": 0.2,
+    "formant": "weak",
+    "set_id": "3",
+    "augmented": false
+  },
+  "speaker": "spk02",
+  "best_epoch": 68,
+  "final_epoch": 100,
+  "metrics": {
+    "zero_f1": 0.8193533919683732,
+    "zero_loss": 0.5882652770238954,
+    "zero_accuracy": 0.8208128078817735,
+    "clean_f1": 0.9909034055375519,
+    "clean_loss": 0.012938488255522898,
+    "noise_only_fpr": 0.01875,
+    "clean_accuracy": 0.9901477832512315
+  },
+  "audit": {
+    "epoch_predictions_recomputed": 164430,
+    "training_draws_checked": 54810,
+    "all_epochs_to100": true,
+    "best_predictions_replayed": 1827,
+    "final_predictions_recomputed": 5235
+  },
+  "run_dir": "runs/overnight-v1/candidates/aux_set3/spk02",
+  "best_sha256": "be114c2dd5977cf80e4966077b8fb5d14624475a2871740a0f80473e3759eb03",
+  "test_evaluated": false
+}

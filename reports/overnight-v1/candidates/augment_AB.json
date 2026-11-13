@@ -1,0 +1,12 @@
+{
+  "spec": {
+    "name": "augment_AB",
+    "wd": 0.0001,
+    "dropout": 0.2,
+    "formant": "weak",
+    "set_id": "0",
+    "augmented": true
+  },
+  "seconds": 1731.3565845210105,
+  "f1": 0.9085394992350254
+}

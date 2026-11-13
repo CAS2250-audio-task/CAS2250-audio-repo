@@ -1,0 +1,33 @@
+{
+  "candidate": "wd_1e-3",
+  "spec": {
+    "name": "wd_1e-3",
+    "wd": 0.001,
+    "dropout": 0.1,
+    "formant": null,
+    "set_id": "0",
+    "augmented": false
+  },
+  "speaker": "spk04",
+  "best_epoch": 44,
+  "final_epoch": 100,
+  "metrics": {
+    "zero_f1": 0.9333955361366062,
+    "zero_loss": 0.2259386130955652,
+    "zero_accuracy": 0.9295977011494253,
+    "clean_f1": 1.0,
+    "clean_loss": 0.008662463797304665,
+    "noise_only_fpr": 0.025,
+    "clean_accuracy": 1.0
+  },
+  "audit": {
+    "epoch_predictions_recomputed": 164430,
+    "training_draws_checked": 54810,
+    "all_epochs_to100": true,
+    "best_predictions_replayed": 1827,
+    "final_predictions_recomputed": 5235
+  },
+  "run_dir": "runs/overnight-v1/candidates/wd_1e-3/spk04",
+  "best_sha256": "9b07b653ab50b6b718ee86de00bc467928fcd59106a4d583ba31a5cdf42544aa",
+  "test_evaluated": false
+}

@@ -1,0 +1,12 @@
+{
+  "candidate": "formant_B",
+  "speaker": "spk03",
+  "denoiser": "off",
+  "zero_f1": 0.9312313500302857,
+  "zero_loss": 0.2438360495075865,
+  "zero_accuracy": 0.9478653530377669,
+  "clean_f1": 1.0,
+  "clean_loss": 0.003561602973710036,
+  "noise_only_fpr": 0.00625,
+  "clean_accuracy": 1.0
+}

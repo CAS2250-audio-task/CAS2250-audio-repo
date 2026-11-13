@@ -1,0 +1,12 @@
+{
+  "spec": {
+    "name": "formant_B",
+    "wd": 0.0001,
+    "dropout": 0.2,
+    "formant": "weak",
+    "set_id": "0",
+    "augmented": false
+  },
+  "seconds": 1678.1994429349434,
+  "f1": 0.9129738877816385
+}

@@ -1,0 +1,16 @@
+{
+  "native_logits_preserved_all_aux_sets": true,
+  "auxiliary_backward_finite": true,
+  "synthetic_formant_ratio": 1.0960116982107877,
+  "synthetic_pitch_preserved": true,
+  "parameter_counts": {
+    "0": 32122699,
+    "1": 32150955,
+    "2": 32150635,
+    "3": 32151595,
+    "7": 32155115
+  },
+  "train_validation_disjoint": true,
+  "test_audio_read": false,
+  "test_evaluated": false
+}

@@ -1,0 +1,27 @@
+{
+  "candidate": "baseline",
+  "spec": {
+    "name": "baseline",
+    "wd": 0.0001,
+    "dropout": 0.1,
+    "formant": null,
+    "set_id": "0",
+    "augmented": false
+  },
+  "speaker": "spk02",
+  "best_epoch": 63,
+  "final_epoch": 100,
+  "metrics": {
+    "zero_f1": 0.7663389911742855,
+    "zero_loss": 0.7509814690245605,
+    "zero_accuracy": 0.7666256157635468,
+    "clean_f1": 0.9863380094445563,
+    "clean_loss": 0.027246625155501605,
+    "noise_only_fpr": 0.05625,
+    "clean_accuracy": 0.9852216748768472
+  },
+  "reused": true,
+  "run_dir": "runs/conformer-fixed100-v1/branches/baseline/bs16/lr1e-05/spk02",
+  "best_sha256": "4dbbfbe0ed9aa8e4cea802e9d399446826b0ca20bc48586b690de56120cf6c25",
+  "test_evaluated": false
+}

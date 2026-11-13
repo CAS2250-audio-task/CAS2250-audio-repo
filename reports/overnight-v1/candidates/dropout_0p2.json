@@ -1,0 +1,12 @@
+{
+  "spec": {
+    "name": "dropout_0p2",
+    "wd": 0.0001,
+    "dropout": 0.2,
+    "formant": null,
+    "set_id": "0",
+    "augmented": false
+  },
+  "seconds": 1713.0124445501715,
+  "f1": 0.906651405104555
+}

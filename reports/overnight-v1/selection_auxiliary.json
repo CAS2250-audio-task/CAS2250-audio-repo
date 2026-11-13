@@ -1,0 +1,32 @@
+{
+  "selected": "formant_B",
+  "spec": {
+    "name": "formant_B",
+    "wd": 0.0001,
+    "dropout": 0.2,
+    "formant": "weak",
+    "set_id": "0",
+    "augmented": false
+  },
+  "reference": "formant_B",
+  "results": [
+    {
+      "name": "formant_B",
+      "f1": 0.9129738877816385,
+      "worst_f1": 0.8195130609882387,
+      "passes_gate": true
+    },
+    {
+      "name": "aux_set3",
+      "f1": 0.913014663982425,
+      "worst_f1": 0.8193533919683732,
+      "passes_gate": false
+    },
+    {
+      "name": "aux_set7",
+      "f1": 0.9090839199776741,
+      "worst_f1": 0.8128117220869663,
+      "passes_gate": false
+    }
+  ]
+}

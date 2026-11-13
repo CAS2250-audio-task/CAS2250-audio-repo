@@ -1,0 +1,38 @@
+{
+  "selected": "formant_B",
+  "spec": {
+    "name": "formant_B",
+    "wd": 0.0001,
+    "dropout": 0.2,
+    "formant": "weak",
+    "set_id": "0",
+    "augmented": false
+  },
+  "reference": "dropout_0p2",
+  "results": [
+    {
+      "name": "dropout_0p2",
+      "f1": 0.906651405104555,
+      "worst_f1": 0.7935030613588379,
+      "passes_gate": true
+    },
+    {
+      "name": "augment_A",
+      "f1": 0.9068260157299587,
+      "worst_f1": 0.8014589843716612,
+      "passes_gate": false
+    },
+    {
+      "name": "formant_B",
+      "f1": 0.9129738877816385,
+      "worst_f1": 0.8195130609882387,
+      "passes_gate": true
+    },
+    {
+      "name": "augment_AB",
+      "f1": 0.9085394992350254,
+      "worst_f1": 0.8020642718721213,
+      "passes_gate": false
+    }
+  ]
+}

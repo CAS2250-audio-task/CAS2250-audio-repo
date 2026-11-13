@@ -1,0 +1,12 @@
+{
+  "spec": {
+    "name": "wd_1e-3",
+    "wd": 0.001,
+    "dropout": 0.1,
+    "formant": null,
+    "set_id": "0",
+    "augmented": false
+  },
+  "seconds": 1705.8151354910806,
+  "f1": 0.8964364159172843
+}

@@ -1,0 +1,12 @@
+{
+  "completed_folds": 32,
+  "trained_folds": 28,
+  "epoch_predictions_recomputed": 4604040,
+  "training_draws_checked": 1534680,
+  "best_predictions_replayed": 51156,
+  "final_predictions_recomputed": 146580,
+  "source_hashes_preserved": true,
+  "all_final_epochs100": true,
+  "test_audio_read": false,
+  "test_evaluated": false
+}

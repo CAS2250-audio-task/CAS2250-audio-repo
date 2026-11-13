@@ -1,0 +1,33 @@
+{
+  "candidate": "augment_A",
+  "spec": {
+    "name": "augment_A",
+    "wd": 0.0001,
+    "dropout": 0.2,
+    "formant": null,
+    "set_id": "0",
+    "augmented": true
+  },
+  "speaker": "spk05",
+  "best_epoch": 97,
+  "final_epoch": 100,
+  "metrics": {
+    "zero_f1": 0.9505773476164259,
+    "zero_loss": 0.17156241005724723,
+    "zero_accuracy": 0.958128078817734,
+    "clean_f1": 0.995451702768776,
+    "clean_loss": 0.0066001466228698714,
+    "noise_only_fpr": 0.0375,
+    "clean_accuracy": 0.9950738916256158
+  },
+  "audit": {
+    "epoch_predictions_recomputed": 164430,
+    "training_draws_checked": 54810,
+    "all_epochs_to100": true,
+    "best_predictions_replayed": 1827,
+    "final_predictions_recomputed": 5235
+  },
+  "run_dir": "runs/overnight-v1/candidates/augment_A/spk05",
+  "best_sha256": "4a73cac56d09999f5426ec600f872be28b61c142f45384738d57cc5d02f9edf8",
+  "test_evaluated": false
+}

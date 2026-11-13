@@ -1,0 +1,32 @@
+{
+  "selected": "dropout_0p2",
+  "spec": {
+    "name": "dropout_0p2",
+    "wd": 0.0001,
+    "dropout": 0.2,
+    "formant": null,
+    "set_id": "0",
+    "augmented": false
+  },
+  "reference": "baseline",
+  "results": [
+    {
+      "name": "baseline",
+      "f1": 0.8974922222609515,
+      "worst_f1": 0.7663389911742855,
+      "passes_gate": true
+    },
+    {
+      "name": "wd_1e-3",
+      "f1": 0.8964364159172843,
+      "worst_f1": 0.767938686718162,
+      "passes_gate": false
+    },
+    {
+      "name": "dropout_0p2",
+      "f1": 0.906651405104555,
+      "worst_f1": 0.7935030613588379,
+      "passes_gate": true
+    }
+  ]
+}

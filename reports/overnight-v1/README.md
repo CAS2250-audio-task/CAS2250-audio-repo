@@ -1,6 +1,6 @@
 # Overnight: 정규화 → 포먼트 증강 → 보조음향 → DFN3
 
-상태: `training`, 조건 `wd_1e-3`, 화자 `spk02`, epoch `20`.
+상태: `complete`, 조건 `formant_B`, 화자 ``, epoch ``.
 
 별도 브랜치 overnight-regularization-formant-aux. 원본 test01은 사용하지 않는다.
 공통 epoch10 LAST에서 모델·AdamW·RNG를 복원하고100까지 학습한다. 초기10epoch는 이전실험 공통 상태이며 새 후보 변화는epoch11부터 적용한다.
@@ -16,7 +16,23 @@ WD1e-3과encoder dropout0.2를 각각 비교, 둘 다 유효하면 결합. 선�
 
 | 후보 | 완료fold | 0dB F1 | 0dB 정확도 | 최저화자 F1 |
 |---|---:|---:|---:|---:|
+| augment_A | 4/4 | 90.68% | 91.10% | 80.15% |
+| augment_AB | 4/4 | 90.85% | 91.40% | 80.21% |
+| aux_set3 | 4/4 | 91.30% | 91.91% | 81.94% |
+| aux_set7 | 4/4 | 90.91% | 91.45% | 81.28% |
 | baseline | 4/4 | 89.75% | 90.19% | 76.63% |
+| dropout_0p2 | 4/4 | 90.67% | 91.31% | 79.35% |
+| formant_B | 4/4 | 91.30% | 91.87% | 81.95% |
+| wd_1e-3 | 4/4 | 89.64% | 90.11% | 76.79% |
 
 ![화자별 학습 진행](speaker_curves.png)
 
+선택 regularization: `dropout_0p2`
+
+선택 augmentation: `formant_B`
+
+선택 auxiliary: `formant_B`
+
+[완료 검증](independent_audit.json)
+
+완료 결과 해석: [RESULTS.md](RESULTS.md).

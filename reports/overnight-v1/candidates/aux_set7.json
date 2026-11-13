@@ -1,0 +1,12 @@
+{
+  "spec": {
+    "name": "aux_set7",
+    "wd": 0.0001,
+    "dropout": 0.2,
+    "formant": "weak",
+    "set_id": "7",
+    "augmented": false
+  },
+  "seconds": 2652.3510243690107,
+  "f1": 0.9090839199776741
+}
