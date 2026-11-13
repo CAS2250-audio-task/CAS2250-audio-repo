@@ -1,0 +1,13 @@
+{
+  "prediction_rows_checked": 38552,
+  "independent_confusion_matrix_units": 244,
+  "new_mixtures_independently_regenerated": 17612,
+  "previous_attention_predictions_matched": 20940,
+  "fresh_vad_and_classifier_predictions_replayed": 812,
+  "source_sha256": "6d0929c21cd60e4b2e5ad685027743f85753b6ff32fa6474127ffbea0a47c666",
+  "filters_used": false,
+  "training_performed": false,
+  "test_audio_read": false,
+  "test_evaluated": false,
+  "elapsed_seconds": 8.817581338109449
+}

@@ -1,0 +1,9 @@
+{
+  "existing_f1": 0.9164181094701522,
+  "new_recording_mean_f1": 0.7700163268425266,
+  "new_family_mean_f1": 0.769991653325716,
+  "clean_f1": 0.997725851384388,
+  "new_noise_only_fpr": 0.29464285714285715,
+  "prediction_rows": 38552,
+  "test_evaluated": false
+}

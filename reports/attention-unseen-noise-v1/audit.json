@@ -1,0 +1,14 @@
+{
+  "existing_attention_predictions_exactly_replayed": 20940,
+  "new_mixed_predictions": 17052,
+  "new_noise_only_predictions": 560,
+  "prediction_rows": 38552,
+  "units": 244,
+  "original_checkpoint_and_sources_preserved": true,
+  "new_mixture_hashes_checked": 17612,
+  "filters_used": false,
+  "training_performed": false,
+  "test_audio_read": false,
+  "test_evaluated": false,
+  "elapsed_seconds": 63.68606798793189
+}
