@@ -1,0 +1,15 @@
+{
+  "pitch_bank_words": 800,
+  "pitch_variants_per_word": 8,
+  "skipped_pitch_without_voiced_points": [
+    "audio/시작/spk05_057.wav"
+  ],
+  "note": "Thisword remains unchanged at the new pitch stage; original common formant/noise policies still apply. Selection and actual transformation are distinct.",
+  "vad_cache_sha256": {
+    "runs/attention-pitch-v1/vad/spk02.npy": "66c47613d3d520751141dc8b6732dec1c2755a952d6842a157254bf6d13a2dc4",
+    "runs/attention-pitch-v1/vad/spk03.npy": "0996db76776ae9ed31ce89bf65bf380f4b05f438b259fccc042ddba327bc6990",
+    "runs/attention-pitch-v1/vad/spk04.npy": "b534b34b09352d3a79f8765a8b2376046e8b25fa944b3d79e20d408c499eb756",
+    "runs/attention-pitch-v1/vad/spk05.npy": "476116e3c7024166e558fe550b9b8caf1c696717fa2cfb572481c156f96f2e95"
+  },
+  "pitch_record_manifest_sha256": "36617e4207c481d16384829a9d12f87335fd06f12926c8315745b54be2559c5c"
+}

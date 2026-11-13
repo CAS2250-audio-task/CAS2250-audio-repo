@@ -1,0 +1,98 @@
+[
+  {
+    "source": "audio/출발/spk02_051.wav",
+    "variant": 0,
+    "file": "spk02_pitch_0.wav",
+    "input_sha256": "6f805e36efc253711f00b0f444e41e6507073146d2134d253ec80512f605889c"
+  },
+  {
+    "source": "audio/출발/spk02_051.wav",
+    "variant": 1,
+    "file": "spk02_pitch_1.wav",
+    "input_sha256": "27ecbeeb56353d49cf4ab95f887a3c7a32fd618898b72f89d21ab57ac5d55154"
+  },
+  {
+    "source": "audio/출발/spk02_051.wav",
+    "variant": 2,
+    "file": "spk02_pitch_2.wav",
+    "input_sha256": "a204a0aad6c5404bb605b785b333690f52ce74363c5daa72166678495555a072"
+  },
+  {
+    "source": "audio/출발/spk02_051.wav",
+    "variant": 3,
+    "file": "spk02_pitch_3.wav",
+    "input_sha256": "a33d9fe320c85240f5fdfbce1a9752af151bb888620e5206f47816fd81168a75"
+  },
+  {
+    "source": "audio/출발/spk02_051.wav",
+    "variant": 4,
+    "file": "spk02_pitch_4.wav",
+    "input_sha256": "fbfe0390ec2f082c3715abe3381f4b10219c54628efd0fc87b6fcd9c6480126e"
+  },
+  {
+    "source": "audio/출발/spk02_051.wav",
+    "variant": 5,
+    "file": "spk02_pitch_5.wav",
+    "input_sha256": "d8557883237dceaf706241111613248115cd0f9a80eac84aaba73e01dfaf470d"
+  },
+  {
+    "source": "audio/출발/spk02_051.wav",
+    "variant": 6,
+    "file": "spk02_pitch_6.wav",
+    "input_sha256": "b1a18efd86cbded460672f23382d911c8bc6cfb6cbde4683950b62a93afb4af2"
+  },
+  {
+    "source": "audio/출발/spk02_051.wav",
+    "variant": 7,
+    "file": "spk02_pitch_7.wav",
+    "input_sha256": "ab9313b52494f7949a0ccc6ce7e8efaa0ee0dab5690e6f873e3f12fd813783bd"
+  },
+  {
+    "source": "audio/출발/spk03_166.wav",
+    "variant": 0,
+    "file": "spk03_pitch_0.wav",
+    "input_sha256": "ca5ee7004cc30ec99b74d6148387a318f6680e2129f5c6713e6ea37d819954c4"
+  },
+  {
+    "source": "audio/출발/spk03_166.wav",
+    "variant": 1,
+    "file": "spk03_pitch_1.wav",
+    "input_sha256": "3962f2359544ebaaf3ce995f7e7bc60021183fee5ba1210feaac4aaad28a70c0"
+  },
+  {
+    "source": "audio/출발/spk03_166.wav",
+    "variant": 2,
+    "file": "spk03_pitch_2.wav",
+    "input_sha256": "c90a65d81947e22ab5f1664182ad568a9f1af8b434a055685b1f6c54fc915363"
+  },
+  {
+    "source": "audio/출발/spk03_166.wav",
+    "variant": 3,
+    "file": "spk03_pitch_3.wav",
+    "input_sha256": "e3b59521867793f51dc59a420a96bb66fca4bda02e45f161e414d157b4836def"
+  },
+  {
+    "source": "audio/출발/spk03_166.wav",
+    "variant": 4,
+    "file": "spk03_pitch_4.wav",
+    "input_sha256": "a1bd555b560d6628ac3a43d72e360d63756955a9504bb10727dcb4d012d34348"
+  },
+  {
+    "source": "audio/출발/spk03_166.wav",
+    "variant": 5,
+    "file": "spk03_pitch_5.wav",
+    "input_sha256": "fe9b2f342a971b2b37b38f8b6ef9e0cb96481d9228d3d394cf86321b190dfa20"
+  },
+  {
+    "source": "audio/출발/spk03_166.wav",
+    "variant": 6,
+    "file": "spk03_pitch_6.wav",
+    "input_sha256": "2f4de9446c794675771b6db2b8109baa6dbaa0955944400bf05c752496e4b75a"
+  },
+  {
+    "source": "audio/출발/spk03_166.wav",
+    "variant": 7,
+    "file": "spk03_pitch_7.wav",
+    "input_sha256": "32d3e646a888d430f5f3de1cfae97cae6f436891a1d7c4eb83668b98f4fe09e2"
+  }
+]

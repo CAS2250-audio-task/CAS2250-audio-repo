@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "masking": false,
+      "train_step_seconds": 0.0837182397954166,
+      "monitor_seconds": 1.2439466470386833,
+      "estimated_epoch_seconds": 4.50895799905993,
+      "estimated_four_fold_90epoch_seconds": 1623.224879661575
+    },
+    {
+      "masking": true,
+      "train_step_seconds": 0.0931449388153851,
+      "monitor_seconds": 1.5025098929181695,
+      "estimated_epoch_seconds": 5.1351625067181885,
+      "estimated_four_fold_90epoch_seconds": 1848.6585024185479
+    }
+  ],
+  "basis": "39batch16 updates + canonical1827-case monitor; cache cleared for train VAD; excludes checkpoint/file overhead"
+}

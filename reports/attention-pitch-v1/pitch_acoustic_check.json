@@ -1,0 +1,21 @@
+{
+  "synthetic_f0_hz": 170,
+  "checks": [
+    {
+      "variant": 0,
+      "median_pitch_error_semitones": 0.029154828584868536,
+      "contour_correlation": 0.9962516568049354
+    },
+    {
+      "variant": 3,
+      "median_pitch_error_semitones": 0.026006917433932047,
+      "contour_correlation": 0.9994350240219355
+    },
+    {
+      "variant": 7,
+      "median_pitch_error_semitones": 0.02692228537877847,
+      "contour_correlation": 0.9992719850558104
+    }
+  ],
+  "all_passed": true
+}
