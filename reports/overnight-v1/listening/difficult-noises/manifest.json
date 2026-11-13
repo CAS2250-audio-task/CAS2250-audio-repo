@@ -1,0 +1,153 @@
+{
+  "description": "Actual error examples from selected formant_B checkpoints, no denoiser; exact cached0dB inputs before PCM16 export",
+  "selection": "For each speaker, first lexicographic path correctly classified clean and incorrectly classified in both restaurant/compressor draw0",
+  "test_audio_used": false,
+  "raw_noise_previews": [
+    {
+      "noise_id": "restaurant",
+      "source": "/root/audio/.worktrees/pretrain/runs/noise-stress-v1/sources/restaurant_mono16k.wav",
+      "start_seconds": 0.087875,
+      "playback_gain": 12.93089296360874,
+      "source_record_url": "https://zenodo.org/records/1227121",
+      "file": "restaurant_noise_10s.wav",
+      "seconds": 10.0,
+      "float32_sha256": "5a6f55576e806bf4dc7fca2e3a19b8971d4d7f3d6c48d0c0fd1cc42730589cff",
+      "file_sha256": "9819f16e955db8aa5cd25805b44255747cccde84e1c0de42e3e7874210c4bc33"
+    },
+    {
+      "noise_id": "compressor",
+      "source": "/root/audio/.worktrees/pretrain/runs/noise-stress-v1/sources/compressor_mono16k.wav",
+      "start_seconds": 865.1698125,
+      "playback_gain": 0.6046498484390372,
+      "source_record_url": "https://zenodo.org/records/7493820",
+      "file": "compressor_noise_10s.wav",
+      "seconds": 10.0,
+      "float32_sha256": "2902015f7730c8dcbf7783b0719a14baf5d4895d906538c2066c73872cc877d0",
+      "file_sha256": "776bfe0353bce1c97e91d4112edab4f3bdaf9dc75e3d1fc9e083b093b03b9577"
+    }
+  ],
+  "cases": [
+    {
+      "speaker": "spk02",
+      "source": "audio/대기/spk02_004.wav",
+      "true_label": "대기",
+      "predicted_label": "후진",
+      "noise_id": "restaurant",
+      "snr_db": 0,
+      "draw": 0,
+      "case_index": 2093,
+      "noise_start_seconds": 0.087875,
+      "source_noise": "/root/audio/.worktrees/pretrain/runs/noise-stress-v1/sources/restaurant_mono16k.wav",
+      "cache_input_sha256": "0fb1ea26f9020dc98c4679a8ae06d20e598d3822fa955cadf7c61ba92ae59491",
+      "waveform_exactly_rebuilt": true,
+      "original": {
+        "file": "spk02_original.wav",
+        "seconds": 1.5,
+        "float32_sha256": "f460458010ed1cf5166ad1aea730a6ebff41f9d37f26a80f3d689c05d9261293",
+        "file_sha256": "75a008e81aee2d82b8c4ae152bcea7c8a8c10e2979f722622021be272635ebcc"
+      },
+      "file": "spk02_restaurant_0dB.wav",
+      "seconds": 1.5,
+      "float32_sha256": "0fb1ea26f9020dc98c4679a8ae06d20e598d3822fa955cadf7c61ba92ae59491",
+      "file_sha256": "8a7e7a7baafb5de6a21501a39728ab06eaf95c4b2d6fa73ec1e6195424696d61"
+    },
+    {
+      "speaker": "spk02",
+      "source": "audio/대기/spk02_004.wav",
+      "true_label": "대기",
+      "predicted_label": "후진",
+      "noise_id": "compressor",
+      "snr_db": 0,
+      "draw": 0,
+      "case_index": 4183,
+      "noise_start_seconds": 865.1698125,
+      "source_noise": "/root/audio/.worktrees/pretrain/runs/noise-stress-v1/sources/compressor_mono16k.wav",
+      "cache_input_sha256": "f11bcd610e07582420d2c8709c24026df72043e5e5e3a4ef7b75c61a02295f81",
+      "waveform_exactly_rebuilt": true,
+      "original": {
+        "file": "spk02_original.wav",
+        "seconds": 1.5,
+        "float32_sha256": "f460458010ed1cf5166ad1aea730a6ebff41f9d37f26a80f3d689c05d9261293",
+        "file_sha256": "75a008e81aee2d82b8c4ae152bcea7c8a8c10e2979f722622021be272635ebcc"
+      },
+      "file": "spk02_compressor_0dB.wav",
+      "seconds": 1.5,
+      "float32_sha256": "f11bcd610e07582420d2c8709c24026df72043e5e5e3a4ef7b75c61a02295f81",
+      "file_sha256": "8006fde244f4cc51b8a98cb554c5bccf51e2737512e481752dbf95a57e5455b7"
+    },
+    {
+      "speaker": "spk03",
+      "source": "audio/대기/spk03_003.wav",
+      "true_label": "대기",
+      "predicted_label": "silence",
+      "noise_id": "restaurant",
+      "snr_db": 0,
+      "draw": 0,
+      "case_index": 2092,
+      "noise_start_seconds": 0.047875,
+      "source_noise": "/root/audio/.worktrees/pretrain/runs/noise-stress-v1/sources/restaurant_mono16k.wav",
+      "cache_input_sha256": "45172e3025ca3dc88e8f36b1f6b7e92689885abd6691d384205050d253e82e16",
+      "waveform_exactly_rebuilt": true,
+      "original": {
+        "file": "spk03_original.wav",
+        "seconds": 1.5,
+        "float32_sha256": "c12a2a7902a05c2b16d25e08a6812b7e600302a8cd95ee6a5b28a78ced4c55cb",
+        "file_sha256": "c6f18e8e6574a9fa0aba42dc950fae99b8e96a4d9244172e9f08ca4b1decdc73"
+      },
+      "file": "spk03_restaurant_0dB.wav",
+      "seconds": 1.5,
+      "float32_sha256": "45172e3025ca3dc88e8f36b1f6b7e92689885abd6691d384205050d253e82e16",
+      "file_sha256": "bc385ea68384a44fff4b92606faf6851f4cbc48299555f03adcb19576f85096a"
+    },
+    {
+      "speaker": "spk03",
+      "source": "audio/대기/spk03_003.wav",
+      "true_label": "대기",
+      "predicted_label": "silence",
+      "noise_id": "compressor",
+      "snr_db": 0,
+      "draw": 0,
+      "case_index": 3979,
+      "noise_start_seconds": 3466.144125,
+      "source_noise": "/root/audio/.worktrees/pretrain/runs/noise-stress-v1/sources/compressor_mono16k.wav",
+      "cache_input_sha256": "9f0c60dd4009a7b30336dd0f03c4e4bd9b375bf41a21e3f8abdebc1f4b5eb7e7",
+      "waveform_exactly_rebuilt": true,
+      "original": {
+        "file": "spk03_original.wav",
+        "seconds": 1.5,
+        "float32_sha256": "c12a2a7902a05c2b16d25e08a6812b7e600302a8cd95ee6a5b28a78ced4c55cb",
+        "file_sha256": "c6f18e8e6574a9fa0aba42dc950fae99b8e96a4d9244172e9f08ca4b1decdc73"
+      },
+      "file": "spk03_compressor_0dB.wav",
+      "seconds": 1.5,
+      "float32_sha256": "9f0c60dd4009a7b30336dd0f03c4e4bd9b375bf41a21e3f8abdebc1f4b5eb7e7",
+      "file_sha256": "c9dee9f74f75a64c7f9eed15e88f6aa7514e423954b3ce8b3696d715ae583a11"
+    }
+  ],
+  "montages": [
+    {
+      "speaker": "spk02",
+      "order": [
+        "original",
+        "restaurant0dB",
+        "compressor0dB"
+      ],
+      "file": "spk02_comparison.wav",
+      "seconds": 5.3,
+      "float32_sha256": "95ae1f97e3b14d875a4b7b22ea42dcb7a4e88c25dbce7eca685d345f7031df3f",
+      "file_sha256": "dc2cc172dcdf741ae53404f5346c366d20a23ceb0ae88fbd18cd12bd0a27eedf"
+    },
+    {
+      "speaker": "spk03",
+      "order": [
+        "original",
+        "restaurant0dB",
+        "compressor0dB"
+      ],
+      "file": "spk03_comparison.wav",
+      "seconds": 5.3,
+      "float32_sha256": "6af463ea4acd48f4c369d432c6cec5e21ce583fba49bce5d7f02c7c93c3ffef8",
+      "file_sha256": "89c144bf7e6a54244475ed384b651d188199733f780a93b3225417c222faa257"
+    }
+  ]
+}
