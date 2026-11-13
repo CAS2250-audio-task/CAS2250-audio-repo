@@ -1,0 +1,10 @@
+{
+  "spec": {
+    "name": "pitch",
+    "masking": false,
+    "pitch": true,
+    "blocks": 12
+  },
+  "seconds": 1784.977073470829,
+  "zero_f1": 0.908363723497909
+}

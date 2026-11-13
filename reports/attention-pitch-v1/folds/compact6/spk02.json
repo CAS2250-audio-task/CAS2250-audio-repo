@@ -1,0 +1,41 @@
+{
+  "candidate": "compact6",
+  "spec": {
+    "name": "compact6",
+    "masking": false,
+    "pitch": false,
+    "blocks": 6
+  },
+  "speaker": "spk02",
+  "parameters": 16289611,
+  "kept_layers": [
+    0,
+    2,
+    4,
+    7,
+    9,
+    11
+  ],
+  "best_epoch": 100,
+  "final_epoch": 100,
+  "metrics": {
+    "zero_f1": 0.6781658143986533,
+    "zero_loss": 1.2453691899593842,
+    "zero_accuracy": 0.6869868637110016,
+    "clean_f1": 0.9816399816399816,
+    "clean_loss": 0.0672740589746605,
+    "noise_only_fpr": 0.05,
+    "clean_accuracy": 0.9802955665024631
+  },
+  "audit": {
+    "epoch_predictions_recomputed": 164430,
+    "training_draws_checked": 54810,
+    "paired_source_crop_snr_preserved": true,
+    "optimizer_steps_preserved": true,
+    "final_predictions_recomputed": 5235,
+    "best_predictions_replayed": 1827
+  },
+  "run_dir": "runs/attention-pitch-v1/candidates/compact6/spk02",
+  "best_sha256": "286b80858b8c06c45859fa78952308fa88d3595882dd014ffb26f844cdcf61af",
+  "test_evaluated": false
+}

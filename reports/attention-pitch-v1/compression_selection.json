@@ -1,0 +1,17 @@
+{
+  "selected": {
+    "name": "baseline",
+    "masking": false,
+    "pitch": false,
+    "blocks": 12
+  },
+  "eligible": [
+    "baseline"
+  ],
+  "parent": {
+    "name": "baseline",
+    "masking": false,
+    "pitch": false,
+    "blocks": 12
+  }
+}

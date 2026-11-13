@@ -1,0 +1,10 @@
+{
+  "spec": {
+    "name": "compact6",
+    "masking": false,
+    "pitch": false,
+    "blocks": 6
+  },
+  "seconds": 1098.7081062209327,
+  "zero_f1": 0.8537500364334651
+}

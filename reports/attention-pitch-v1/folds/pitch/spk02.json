@@ -1,0 +1,47 @@
+{
+  "candidate": "pitch",
+  "spec": {
+    "name": "pitch",
+    "masking": false,
+    "pitch": true,
+    "blocks": 12
+  },
+  "speaker": "spk02",
+  "parameters": 32122699,
+  "kept_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "best_epoch": 69,
+  "final_epoch": 100,
+  "metrics": {
+    "zero_f1": 0.8107113328526051,
+    "zero_loss": 0.6159386879267585,
+    "zero_accuracy": 0.8140394088669951,
+    "clean_f1": 0.9909034055375519,
+    "clean_loss": 0.016574941457548256,
+    "noise_only_fpr": 0.01875,
+    "clean_accuracy": 0.9901477832512315
+  },
+  "audit": {
+    "epoch_predictions_recomputed": 164430,
+    "training_draws_checked": 54810,
+    "paired_source_crop_snr_preserved": true,
+    "optimizer_steps_preserved": true,
+    "final_predictions_recomputed": 5235,
+    "best_predictions_replayed": 1827
+  },
+  "run_dir": "runs/attention-pitch-v1/candidates/pitch/spk02",
+  "best_sha256": "75dbaf5cd44da4209f0d1e1411900afc8a838f2b08914ebb17fc65e92f4c6158",
+  "test_evaluated": false
+}

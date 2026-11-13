@@ -1,0 +1,23 @@
+{
+  "selected": {
+    "name": "baseline",
+    "masking": false,
+    "pitch": false,
+    "blocks": 12
+  },
+  "raw_highest": {
+    "name": "attention",
+    "masking": true,
+    "pitch": false,
+    "blocks": 12
+  },
+  "means": {
+    "baseline": 0.9129738877816385,
+    "attention": 0.9164181094701523,
+    "pitch": 0.908363723497909,
+    "attention_pitch": 0.9130234675745519
+  },
+  "eligible": [
+    "baseline"
+  ]
+}

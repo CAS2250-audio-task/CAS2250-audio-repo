@@ -1,0 +1,10 @@
+{
+  "spec": {
+    "name": "attention",
+    "masking": true,
+    "pitch": false,
+    "blocks": 12
+  },
+  "seconds": 2104.8365431770217,
+  "zero_f1": 0.9164181094701523
+}

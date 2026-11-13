@@ -1,0 +1,47 @@
+{
+  "candidate": "attention",
+  "spec": {
+    "name": "attention",
+    "masking": true,
+    "pitch": false,
+    "blocks": 12
+  },
+  "speaker": "spk05",
+  "parameters": 32122699,
+  "kept_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "best_epoch": 98,
+  "final_epoch": 100,
+  "metrics": {
+    "zero_f1": 0.9564993319524735,
+    "zero_loss": 0.15580606880883166,
+    "zero_accuracy": 0.9636699507389164,
+    "clean_f1": 1.0,
+    "clean_loss": 0.002265165705695137,
+    "noise_only_fpr": 0.0,
+    "clean_accuracy": 1.0
+  },
+  "audit": {
+    "epoch_predictions_recomputed": 164430,
+    "training_draws_checked": 54810,
+    "paired_source_crop_snr_preserved": true,
+    "optimizer_steps_preserved": true,
+    "final_predictions_recomputed": 5235,
+    "best_predictions_replayed": 1827
+  },
+  "run_dir": "runs/attention-pitch-v1/candidates/attention/spk05",
+  "best_sha256": "90217f96d18049cede8b20634ec4971059bb665c54a1b5f88917e7bc7159af7c",
+  "test_evaluated": false
+}

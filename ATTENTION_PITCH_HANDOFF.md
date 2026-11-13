@@ -1,5 +1,14 @@
 # Attention 마스킹·발화 구간 피치·경량화 실험
 
+## 완료 안내
+
+전체 실험과 검증은 2026-11-13 17:13 KST에 완료됐다(약2시간21분, 신규20fold 모두100epoch).
+관측 최고 attention: 0dB F1 91.6418%(기준91.2974%, +0.3444%p), 화자02 81.9513→84.0838%.
+사전 채택 기준(+0.5%p)에 미달하여 공식 선택은 baseline 유지. pitch90.8364%, 결합91.3023%, compact8 88.9261%, compact6 85.3750%.
+경량화는 채택된 baseline 조건에서 수행했다. test01 음성은 읽거나 평가하지 않았다.
+아래 실행 중/재개 설명은 과거 실행 기록이다. 재개할 미완료 fold는 없다.
+다음 채팅용 전체 인계는 `/root/audio/CHAT_HANDOFF_ATTENTION_PITCH.md`를 먼저 읽는다.
+
 브랜치 `attention-pitch-v1`, worktree `/root/audio/.worktrees/attention-pitch`.
 이전 완료 실험은 `/root/audio/.worktrees/overnight`에 그대로 보존한다.
 

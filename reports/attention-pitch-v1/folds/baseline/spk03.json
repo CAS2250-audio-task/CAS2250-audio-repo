@@ -1,0 +1,25 @@
+{
+  "candidate": "baseline",
+  "spec": {
+    "name": "baseline",
+    "masking": false,
+    "pitch": false,
+    "blocks": 12
+  },
+  "speaker": "spk03",
+  "parameters": 32122699,
+  "best_epoch": 93,
+  "final_epoch": 100,
+  "metrics": {
+    "zero_f1": 0.9312313500302857,
+    "zero_loss": 0.2438360495075865,
+    "zero_accuracy": 0.9478653530377669,
+    "clean_f1": 1.0,
+    "clean_loss": 0.003561602973710036,
+    "noise_only_fpr": 0.00625,
+    "clean_accuracy": 1.0
+  },
+  "reused": true,
+  "run_dir": "runs/overnight-v1/candidates/formant_B/spk03",
+  "best_sha256": "67d5e00dcfd525e9513c49ecc0e239aed11177b48db12f48a796785c964c8a1d"
+}

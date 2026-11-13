@@ -10,9 +10,65 @@
 
 | 조건 | 완료fold | 파라미터 | 0dB F1 | 정확도 | 최저화자 F1 | 원본 F1 |
 |---|---:|---:|---:|---:|---:|---:|
+| baseline | 4/4 | 32,122,699 | 91.30% | 91.87% | 81.95% | 99.77% |
+| attention | 4/4 | 32,122,699 | 91.64% | 92.06% | 84.08% | 99.77% |
+| pitch | 4/4 | 32,122,699 | 90.84% | 91.36% | 81.07% | 99.66% |
+| attention_pitch | 4/4 | 32,122,699 | 91.30% | 91.63% | 83.01% | 99.77% |
+| compact8 | 4/4 | 21,567,307 | 88.93% | 89.58% | 75.46% | 99.31% |
+| compact6 | 4/4 | 16,289,611 | 85.38% | 85.91% | 67.82% | 99.31% |
 
 조건 채택: 기준보다4fold 평균 F1 +0.5%p 이상, 최저 개별 화자 하락1%p 이내. raw 최고점도 별도로 남긴다.
 경량화 허용: 선택12블록 대비 평균 F1 하락0.5%p 이내·개별 화자 하락1%p 이내. 통과 모델 중 가장 작은 모델을 표시한다.
+
+`selection.json`
+
+```json
+{
+  "selected": {
+    "name": "baseline",
+    "masking": false,
+    "pitch": false,
+    "blocks": 12
+  },
+  "raw_highest": {
+    "name": "attention",
+    "masking": true,
+    "pitch": false,
+    "blocks": 12
+  },
+  "means": {
+    "baseline": 0.9129738877816385,
+    "attention": 0.9164181094701523,
+    "pitch": 0.908363723497909,
+    "attention_pitch": 0.9130234675745519
+  },
+  "eligible": [
+    "baseline"
+  ]
+}
+```
+
+`compression_selection.json`
+
+```json
+{
+  "selected": {
+    "name": "baseline",
+    "masking": false,
+    "pitch": false,
+    "blocks": 12
+  },
+  "eligible": [
+    "baseline"
+  ],
+  "parent": {
+    "name": "baseline",
+    "masking": false,
+    "pitch": false,
+    "blocks": 12
+  }
+}
+```
 
 [현재 진행](progress.json) · [고정 조건](protocol.json) · [검증 검사](preflight.json) · [진단](diagnostics.csv)
 

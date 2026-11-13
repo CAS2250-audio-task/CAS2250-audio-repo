@@ -1,0 +1,11 @@
+{
+  "trained_folds": 20,
+  "epoch_predictions_recomputed": 3288600,
+  "training_draws_checked": 1096200,
+  "final_predictions_recomputed": 104700,
+  "source_hashes_preserved": true,
+  "paired_source_crop_snr_preserved": true,
+  "all_trained_folds_to100": true,
+  "test_audio_read": false,
+  "test_evaluated": false
+}
