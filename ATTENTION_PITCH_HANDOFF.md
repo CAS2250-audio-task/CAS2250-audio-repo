@@ -74,3 +74,9 @@ cd /root/audio/.worktrees/attention-pitch
 7시간은 선택 경량화의 시간 제한이며 필수 core나 진행 중fold를 중간에 자르지 않는다.
 
 SSH/VSCode 연결은 종료해도 되지만 서버·컨테이너·GPU 할당은 유지해야 한다.
+
+## 이번 실행 확인
+
+2026-11-13 14:51 KST 시작. PID/SID `259650`, 부모PID1, SIGHUP무시, 표준입력DEVNULL.
+19epoch LAST와 optimizer 551step 및Torch/CUDA/샘플러 RNG 저장을 확인했다. 소스 커밋 `2faebd6`.
+기준·마스킹·새피치·결합 비교 후 선택 조건의8/6블록을 시간 여유에 따라 실행한다.

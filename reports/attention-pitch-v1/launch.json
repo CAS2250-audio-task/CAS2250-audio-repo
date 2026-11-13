@@ -1,0 +1,17 @@
+{
+  "pid": 259650,
+  "session_id": 259650,
+  "started_utc": "2026-11-13T05:51:43.880179+00:00",
+  "command": [
+    "/root/audio/.worktrees/pretrain/runs/denoise-env/bin/python",
+    "-u",
+    "-m",
+    "experiments.attention_pitch.run"
+  ],
+  "cwd": "/root/audio/.worktrees/attention-pitch",
+  "git_commit": "2faebd6f4da0718423a1ede122e47b0bc327b107",
+  "detached": true,
+  "stdin": "DEVNULL",
+  "sighup": "ignored",
+  "log": "/root/audio/.worktrees/attention-pitch/runs/attention-pitch-v1/execution.log"
+}

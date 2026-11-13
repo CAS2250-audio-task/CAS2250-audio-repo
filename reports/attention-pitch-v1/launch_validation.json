@@ -1,0 +1,15 @@
+{
+  "pid": 259650,
+  "parent_pid": 1,
+  "session_id": 259650,
+  "sighup_ignored": true,
+  "stdin_devnull": true,
+  "checkpoint_epoch": 19,
+  "optimizer_steps": 551,
+  "resume_rng_states_present": true,
+  "model_tensor_count": 411,
+  "checkpoint_bytes": 388493114,
+  "checked_utc": "2026-11-13T05:53:16.576447+00:00",
+  "safe_to_disconnect_ssh": true,
+  "server_container_and_gpu_must_remain_running": true
+}
