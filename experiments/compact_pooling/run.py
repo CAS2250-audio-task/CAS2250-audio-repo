@@ -199,7 +199,7 @@ def evaluate(model, units):
                 original_f1=rows[0]['macro_f1']),rows
 
 
-def main():
+def main(argv=None, model_factory=None, experiment_config=None):
     global OUT,REPORT,NAMES
     parser=argparse.ArgumentParser()
     parser.add_argument('--epochs',type=int,default=100)
@@ -210,7 +210,8 @@ def main():
     parser.add_argument('--models',nargs='+',choices=NAMES,default=list(NAMES))
     parser.add_argument('--supcon-weight',type=float,default=.1)
     parser.add_argument('--temperature',type=float,default=.1)
-    args=parser.parse_args()
+    parser.add_argument('--positive-mode',choices=['same_recording','same_command'],default='same_command')
+    args=parser.parse_args(argv)
     assert args.epochs>0 and args.temperature>0 and args.supcon_weight>=0
     assert len(set(args.models))==len(args.models)
     assert args.objective=='ce' or args.output.resolve()!=OUT.resolve(), 'Paired runs require a separate --output folder'
@@ -252,7 +253,8 @@ def main():
         frontend='64 log10 mel bands, 20..7800Hz, FFT512 win400 hop160 center=True; 151 frames; per-band mean/std fitted on original training-fold audio only',
         objective=dict(name=args.objective,supcon_weight=args.supcon_weight if args.objective=='paired_supcon' else 0.,temperature=args.temperature,
             paired_reference='Same formant-transformed original before additional noise; not guaranteed clean',
-            positives='Same command, including different speakers and paired views; exclude silence from contrastive only',
+            positive_mode=args.positive_mode,
+            positives=('Same recording original/noisy pair only; same-command other recordings ignored, not negatives' if args.positive_mode=='same_recording' else 'Same command, including different training speakers and paired views; exclude silence from contrastive only'),
             projection='32->64->32, training only; discarded at inference' if args.objective=='paired_supcon' else None),
         augmentation=dict(noise_probability=.5 if args.objective=='ce' else 1.,snr_db=[-5,20],formant_probability=.5,
             formant_range=[1/1.1,1.1],fixed_variants=2,pitch_preserved=True,
@@ -265,7 +267,7 @@ def main():
         monitor=f'Original + {len(noises["evaluation"])} reserved noise sources at 0dB fixed draw0 every epoch',
         selection='Per model/fold earliest strict maximum mean of per-noise 11-class macroF1 values at 0dB draw0',
         final='Selected best + final last: original and all three 0dB noise crops; noise-only false positives on selected best',
-        limitations=['One seed and two dev folds; not independent test results',
+        limitations=[f'One seed and {len(args.folds)} dev fold(s); not independent test results',
                     'The validation draw0 used for checkpoint selection is included in final three-draw evaluation',
                     'Self attention adds a transformer block, positional encoding and CLS, not only a different weighted mean',
                     'The common CNN has a large temporal receptive field; mean pooling does not imply absence of temporal context',
@@ -273,6 +275,9 @@ def main():
         test_audio_read=False,test_evaluated=False,labels=LABELS,sources=source_manifest,
         audio_sha256={p:sha(DATA/p) for p in frame.path},
         source_sha256={str(p.relative_to(ROOT)):sha(p) for p in Path(__file__).parent.glob('*.py')})
+    if experiment_config is not None:
+        protocol['architecture_ablation']=experiment_config
+        protocol['source_sha256'].update({path:sha(ROOT/path) for path in experiment_config['extra_source_files']})
     protocol_path=REPORT/'protocol.json'
     if protocol_path.exists():assert json.loads(protocol_path.read_text())==protocol,'Run protocol changed'
     else:write(protocol_path,protocol)
@@ -294,7 +299,7 @@ def main():
         del original_train
         reference=float(np.median(np.sqrt(np.mean(waves[train_idx[targets[train_idx]!=10]].astype(np.float64)**2,axis=1)))**2)
         units=validation_units(frontend,frame,waves,targets,val_idx,noises['evaluation'],mean,std,reference,1)
-        models={k:v.cuda() for k,v in matched_models(42).items() if k in NAMES}
+        models={k:v.cuda() for k,v in (model_factory or matched_models)(42).items() if k in NAMES}
         # The classifier also starts identically; only readout-specific tensors differ.
         for name in NAMES[1:]:models[name].classifier.load_state_dict(models[NAMES[0]].classifier.state_dict())
         torch.manual_seed(4242)
@@ -339,7 +344,7 @@ def main():
                         logits=models[name](batch);loss=F.cross_entropy(logits,label)
                     else:
                         loss,logits,_,_=paired_loss(models[name],projectors.get(name),paired_x[offset:offset+32],batch,label,
-                                                  weight=args.supcon_weight,temperature=args.temperature)
+                                                  weight=args.supcon_weight,temperature=args.temperature,positive_mode=args.positive_mode)
                     assert torch.isfinite(loss)
                     loss.backward();torch.nn.utils.clip_grad_norm_(list(models[name].parameters())+(list(projectors[name].parameters()) if name in projectors else []),5.)
                     optimizer.step()
@@ -408,13 +413,13 @@ def main():
         torch.cuda.empty_cache()
     write(REPORT/'summary.json',summaries)
     lines=['# 공통 CNN · 집계 방식 비교 · 증강 적용','',f'학습 목적: {args.objective}', '',
-           '검출기/발화확률/사전학습 없이 전체 1.5초를 입력한다. 화자02·03 각각 홀드아웃하는 두 개발 분할이다.',
+           f'검출기/발화확률/사전학습 없이 전체 1.5초를 입력한다. 검증 화자: {args.folds}. 각 분할은 나머지 개발화자3명만 학습한다.',
            f'소음 p={0.5 if args.objective=="ce" else 1.0}, SNR [-5,20]dB + 약한 포먼트 p=0.5. 모델은 같은 CNN·분류기 초기값과 같은 증강 입력을 사용하고 독립 학습한다.','',
            '| 모델 | 파라미터 | 화자 | 선택 epoch | 원본 F1 | 0dB F1 (3draw) | 마지막 epoch 0dB F1 | 잡음 단독 오반응률 |',
            '|---|---:|---|---:|---:|---:|---:|---:|']
     for row in summaries:
         lines.append(f"| {row['model']} | {row['parameters']:,} | {row['speaker']} | {row['best_epoch']} | {row['best']['original_f1']*100:.2f}% | {row['best']['zero_f1']*100:.2f}% | {row['last']['zero_f1']*100:.2f}% | {row['noise_only_fpr']*100:.2f}% |")
-    lines+=['','한 seed·개발 2분할의 선별 결과다. 0dB draw0로 체크포인트를 선택했고, 최종 3draw에도 draw0가 포함된다. 독립 test 성능이나 검출기 효과를 의미하지 않는다.',
+    lines+=['',f'한 seed·개발 {len(args.folds)}분할의 선별 결과다. 0dB draw0로 체크포인트를 선택했고, 최종 3draw에도 draw0가 포함된다. 독립 test 성능이나 검출기 효과를 의미하지 않는다.',
             '기존 4분할 Conformer 결과와는 모델·학습 초기화·전처리·검증 분할이 달라 직접적인 개선 수치로 해석할 수 없다.','',
             f'상세 설정: protocol.json. 전체 epoch 기록·증강 추적·선택/최종 체크포인트·예측값은 {OUT.relative_to(ROOT)} 아래에 보존한다.']
     (REPORT/'README.md').write_text('\n'.join(lines)+'\n')

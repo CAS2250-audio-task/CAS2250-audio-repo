@@ -1,0 +1,10 @@
+condition,model,clean_wrong_files,always_correct_files,any_error_files,always_wrong_files,at_least_half_wrong_files,top10_share_of_errors,noisy_errors,new_noisy_errors_from_clean_correct
+ce,cnn_mean,15,49,154,1,25,0.23458149779735682,908,656
+ce,cnn_pooled_query,13,53,150,2,30,0.22033898305084745,1003,798
+ce,cnn_self_cls,13,65,138,1,22,0.24625,800,623
+noise,cnn_mean,13,91,112,8,24,0.3167785234899329,745,499
+noise,cnn_pooled_query,11,74,129,2,21,0.28,800,605
+noise,cnn_self_cls,9,75,128,1,25,0.27236315086782376,749,592
+noise-speaker,cnn_mean,9,101,102,0,23,0.30486008836524303,679,516
+noise-speaker,cnn_pooled_query,16,79,124,2,21,0.28969359331476324,718,467
+noise-speaker,cnn_self_cls,12,76,127,1,21,0.2636363636363636,770,576

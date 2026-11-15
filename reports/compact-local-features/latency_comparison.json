@@ -1,0 +1,172 @@
+{
+  "time_utc": "2026-11-15T15:11:04.310988+00:00",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "torch": "2.6.0+cu124",
+  "cpu_threads": 2,
+  "batch": 1,
+  "input_seconds": 1.5,
+  "input_path": "audio/\ub300\uae30/spk03_001.wav",
+  "warmup_per_measurement": 20,
+  "timed_runs": 200,
+  "training_pause_seconds": 15.994319427991286,
+  "training_resumed": true,
+  "paused_training_pids": [
+    21874
+  ],
+  "excludes": "WAV decoding, model loading,1.5s audio acquisition, endpoint detection,communications",
+  "gpu_pipeline": "Decoded CPU waveform -> GPU mel+normalization+classifier -> CPU class index",
+  "cpu_pipeline": "Decoded CPU waveform -> CPU mel+normalization+classifier",
+  "note": "Same session for all12model architectures; trained selected checkpoint weights. Both variant is still training; timings measure architecture only. SupCon projection4192parameters is training-only and excluded.",
+  "results": [
+    {
+      "variant": "baseline",
+      "model": "cnn_mean",
+      "parameters": 77835,
+      "checkpoint_epoch": 585,
+      "gpu_model_median_ms": 0.9968290105462074,
+      "gpu_model_p95_ms": 1.0184385580942035,
+      "gpu_frontend_model_median_ms": 1.3231548946350813,
+      "gpu_frontend_model_p95_ms": 1.3987513724714518,
+      "cpu_frontend_model_median_ms": 2.289624186232686,
+      "cpu_frontend_model_p95_ms": 2.3193806409835815
+    },
+    {
+      "variant": "baseline",
+      "model": "cnn_pooled_query",
+      "parameters": 78859,
+      "checkpoint_epoch": 895,
+      "gpu_model_median_ms": 1.1458595981821418,
+      "gpu_model_p95_ms": 1.1699184775352478,
+      "gpu_frontend_model_median_ms": 1.4525649603456259,
+      "gpu_frontend_model_p95_ms": 1.4785725506953895,
+      "cpu_frontend_model_median_ms": 2.367023495025933,
+      "cpu_frontend_model_p95_ms": 2.4046913953498006
+    },
+    {
+      "variant": "baseline",
+      "model": "cnn_self_cls",
+      "parameters": 86315,
+      "checkpoint_epoch": 331,
+      "gpu_model_median_ms": 1.5438960399478674,
+      "gpu_model_p95_ms": 1.5629855217412114,
+      "gpu_frontend_model_median_ms": 1.8607719102874398,
+      "gpu_frontend_model_p95_ms": 1.8836944364011288,
+      "cpu_frontend_model_median_ms": 2.796040498651564,
+      "cpu_frontend_model_p95_ms": 2.8394534601829946
+    },
+    {
+      "variant": "short",
+      "model": "cnn_mean",
+      "parameters": 76555,
+      "checkpoint_epoch": 579,
+      "gpu_model_median_ms": 1.015618909150362,
+      "gpu_model_p95_ms": 1.0355840669944882,
+      "gpu_frontend_model_median_ms": 1.3438354944810271,
+      "gpu_frontend_model_p95_ms": 1.3676140806637704,
+      "cpu_frontend_model_median_ms": 2.217802917584777,
+      "cpu_frontend_model_p95_ms": 2.254438865929842
+    },
+    {
+      "variant": "short",
+      "model": "cnn_pooled_query",
+      "parameters": 77579,
+      "checkpoint_epoch": 436,
+      "gpu_model_median_ms": 1.13911391235888,
+      "gpu_model_p95_ms": 1.163535169325769,
+      "gpu_frontend_model_median_ms": 1.4567860634997487,
+      "gpu_frontend_model_p95_ms": 1.4828289742581546,
+      "cpu_frontend_model_median_ms": 2.305238973349333,
+      "cpu_frontend_model_p95_ms": 2.339559968095273
+    },
+    {
+      "variant": "short",
+      "model": "cnn_self_cls",
+      "parameters": 85035,
+      "checkpoint_epoch": 538,
+      "gpu_model_median_ms": 1.5458109555765986,
+      "gpu_model_p95_ms": 1.5701159951277077,
+      "gpu_frontend_model_median_ms": 1.8655775347724557,
+      "gpu_frontend_model_p95_ms": 1.885126088745892,
+      "cpu_frontend_model_median_ms": 2.724775578826666,
+      "cpu_frontend_model_p95_ms": 2.774944982957095
+    },
+    {
+      "variant": "local",
+      "model": "cnn_mean",
+      "parameters": 79915,
+      "checkpoint_epoch": 806,
+      "gpu_model_median_ms": 1.0814839042723179,
+      "gpu_model_p95_ms": 1.1018779245205224,
+      "gpu_frontend_model_median_ms": 1.3960249489173293,
+      "gpu_frontend_model_p95_ms": 1.4179209480062127,
+      "cpu_frontend_model_median_ms": 2.8865860076621175,
+      "cpu_frontend_model_p95_ms": 3.0373835121281445
+    },
+    {
+      "variant": "local",
+      "model": "cnn_pooled_query",
+      "parameters": 80939,
+      "checkpoint_epoch": 565,
+      "gpu_model_median_ms": 1.2089944211766124,
+      "gpu_model_p95_ms": 1.2339975335635245,
+      "gpu_frontend_model_median_ms": 1.5249710995703936,
+      "gpu_frontend_model_p95_ms": 1.5468121273443103,
+      "cpu_frontend_model_median_ms": 2.943875966593623,
+      "cpu_frontend_model_p95_ms": 2.986758085899055
+    },
+    {
+      "variant": "local",
+      "model": "cnn_self_cls",
+      "parameters": 88395,
+      "checkpoint_epoch": 508,
+      "gpu_model_median_ms": 1.6113759484142065,
+      "gpu_model_p95_ms": 1.6327675664797425,
+      "gpu_frontend_model_median_ms": 1.9325169268995523,
+      "gpu_frontend_model_p95_ms": 1.9565895083360374,
+      "cpu_frontend_model_median_ms": 3.480832907371223,
+      "cpu_frontend_model_p95_ms": 3.631485963705927
+    },
+    {
+      "variant": "both",
+      "model": "cnn_mean",
+      "parameters": 78635,
+      "checkpoint_epoch": 174,
+      "gpu_model_median_ms": 1.0737039847299457,
+      "gpu_model_p95_ms": 1.0947635513730347,
+      "gpu_frontend_model_median_ms": 1.3973154127597809,
+      "gpu_frontend_model_p95_ms": 1.4153865864500403,
+      "cpu_frontend_model_median_ms": 2.8614909388124943,
+      "cpu_frontend_model_p95_ms": 2.9563347343355417
+    },
+    {
+      "variant": "both",
+      "model": "cnn_pooled_query",
+      "parameters": 79659,
+      "checkpoint_epoch": 105,
+      "gpu_model_median_ms": 1.2813450302928686,
+      "gpu_model_p95_ms": 1.3120364397764206,
+      "gpu_frontend_model_median_ms": 1.5242198714986444,
+      "gpu_frontend_model_p95_ms": 1.545578136574477,
+      "cpu_frontend_model_median_ms": 2.8895060531795025,
+      "cpu_frontend_model_p95_ms": 2.974276931490749
+    },
+    {
+      "variant": "both",
+      "model": "cnn_self_cls",
+      "parameters": 87115,
+      "checkpoint_epoch": 156,
+      "gpu_model_median_ms": 1.6215614741668105,
+      "gpu_model_p95_ms": 1.6435059951618314,
+      "gpu_frontend_model_median_ms": 1.9356620032340288,
+      "gpu_frontend_model_p95_ms": 1.9592884695157409,
+      "cpu_frontend_model_median_ms": 3.4158185590058565,
+      "cpu_frontend_model_p95_ms": 3.5223275306634605
+    }
+  ],
+  "resume_verified": [
+    {
+      "pid": 21874,
+      "state": "State:\tR (running)"
+    }
+  ]
+}

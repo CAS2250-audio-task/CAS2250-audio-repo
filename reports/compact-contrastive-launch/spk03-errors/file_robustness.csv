@@ -1,0 +1,1828 @@
+condition,model,path,true_label,wrong_conditions,conditions,original_pred,wrong_prediction_counts
+noise,cnn_mean,audio/전진/spk03_142.wav,전진,24,24,정지,"{""복귀"": 10, ""정지"": 9, ""후진"": 4, ""silence"": 1}"
+noise,cnn_mean,audio/후진/spk03_187.wav,후진,24,24,출발,"{""대기"": 13, ""출발"": 5, ""silence"": 4, ""왼쪽"": 1, ""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_076.wav,오른쪽,24,24,왼쪽,"{""왼쪽"": 24}"
+noise,cnn_mean,audio/대기/spk03_020.wav,대기,24,24,정지,"{""정지"": 16, ""오른쪽"": 5, ""출발"": 2, ""전진"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_113.wav,재시작,24,24,재시작,"{""시작"": 24}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_188.wav,후진,24,24,복귀,"{""복귀"": 10, ""출발"": 4, ""오른쪽"": 4, ""silence"": 2, ""재시작"": 2, ""전진"": 1, ""정지"": 1}"
+noise,cnn_mean,audio/재시작/spk03_109.wav,재시작,24,24,시작,"{""시작"": 24}"
+noise,cnn_mean,audio/재시작/spk03_113.wav,재시작,24,24,시작,"{""시작"": 24}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_132.wav,전진,24,24,정지,"{""정지"": 23, ""대기"": 1}"
+noise,cnn_self_cls,audio/대기/spk03_003.wav,대기,24,24,출발,"{""출발"": 10, ""오른쪽"": 7, ""전진"": 5, ""재시작"": 2}"
+noise,cnn_mean,audio/후진/spk03_188.wav,후진,24,24,복귀,"{""복귀"": 8, ""silence"": 7, ""출발"": 3, ""재시작"": 3, ""전진"": 1, ""오른쪽"": 1, ""대기"": 1}"
+ce,cnn_mean,audio/후진/spk03_187.wav,후진,24,24,silence,"{""silence"": 15, ""대기"": 7, ""왼쪽"": 2}"
+ce,cnn_self_cls,audio/전진/spk03_132.wav,전진,24,24,정지,"{""정지"": 23, ""대기"": 1}"
+noise,cnn_pooled_query,audio/후진/spk03_187.wav,후진,24,24,출발,"{""출발"": 16, ""대기"": 4, ""silence"": 3, ""복귀"": 1}"
+noise,cnn_mean,audio/재시작/spk03_116.wav,재시작,24,24,시작,"{""시작"": 24}"
+noise,cnn_pooled_query,audio/후진/spk03_193.wav,후진,24,24,왼쪽,"{""대기"": 17, ""왼쪽"": 7}"
+noise,cnn_mean,audio/전진/spk03_143.wav,전진,24,24,전진,"{""silence"": 8, ""후진"": 5, ""대기"": 3, ""왼쪽"": 3, ""재시작"": 2, ""오른쪽"": 1, ""정지"": 1, ""복귀"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_081.wav,오른쪽,24,24,왼쪽,"{""왼쪽"": 21, ""시작"": 1, ""대기"": 1, ""정지"": 1}"
+ce,cnn_self_cls,audio/재시작/spk03_116.wav,재시작,23,24,재시작,"{""시작"": 23}"
+ce,cnn_mean,audio/전진/spk03_143.wav,전진,23,24,전진,"{""silence"": 9, ""후진"": 7, ""대기"": 6, ""왼쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_106.wav,재시작,23,24,복귀,"{""복귀"": 18, ""왼쪽"": 2, ""후진"": 1, ""전진"": 1, ""대기"": 1}"
+noise,cnn_self_cls,audio/재시작/spk03_116.wav,재시작,23,24,시작,"{""시작"": 23}"
+noise,cnn_pooled_query,audio/후진/spk03_188.wav,후진,23,24,대기,"{""대기"": 14, ""출발"": 3, ""정지"": 2, ""silence"": 2, ""재시작"": 1, ""전진"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_116.wav,재시작,23,24,재시작,"{""시작"": 23}"
+noise,cnn_pooled_query,audio/재시작/spk03_116.wav,재시작,23,24,재시작,"{""시작"": 23}"
+noise-speaker,cnn_mean,audio/전진/spk03_142.wav,전진,23,24,정지,"{""정지"": 11, ""복귀"": 7, ""후진"": 3, ""silence"": 2}"
+ce,cnn_pooled_query,audio/전진/spk03_132.wav,전진,23,24,정지,"{""정지"": 21, ""오른쪽"": 2}"
+noise-speaker,cnn_mean,audio/재시작/spk03_116.wav,재시작,23,24,재시작,"{""시작"": 23}"
+noise-speaker,cnn_mean,audio/후진/spk03_187.wav,후진,23,24,출발,"{""대기"": 10, ""출발"": 6, ""silence"": 5, ""복귀"": 2}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_143.wav,전진,23,24,정지,"{""오른쪽"": 9, ""정지"": 9, ""silence"": 2, ""재시작"": 1, ""후진"": 1, ""출발"": 1}"
+noise-speaker,cnn_mean,audio/재시작/spk03_106.wav,재시작,23,24,후진,"{""복귀"": 11, ""후진"": 9, ""대기"": 1, ""시작"": 1, ""출발"": 1}"
+noise,cnn_self_cls,audio/복귀/spk03_028.wav,복귀,23,24,대기,"{""대기"": 18, ""출발"": 2, ""시작"": 2, ""silence"": 1}"
+noise,cnn_self_cls,audio/재시작/spk03_106.wav,재시작,23,24,재시작,"{""복귀"": 22, ""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_160.wav,정지,23,24,전진,"{""전진"": 23}"
+noise,cnn_pooled_query,audio/후진/spk03_197.wav,후진,23,24,대기,"{""대기"": 21, ""왼쪽"": 1, ""복귀"": 1}"
+ce,cnn_pooled_query,audio/대기/spk03_003.wav,대기,23,24,전진,"{""전진"": 13, ""왼쪽"": 4, ""정지"": 4, ""후진"": 1, ""오른쪽"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_143.wav,전진,23,24,전진,"{""복귀"": 8, ""오른쪽"": 4, ""후진"": 3, ""대기"": 2, ""재시작"": 2, ""silence"": 2, ""왼쪽"": 1, ""정지"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_082.wav,오른쪽,23,24,후진,"{""후진"": 11, ""정지"": 8, ""출발"": 1, ""전진"": 1, ""재시작"": 1, ""대기"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_135.wav,전진,23,24,전진,"{""정지"": 13, ""복귀"": 5, ""후진"": 2, ""대기"": 2, ""오른쪽"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_133.wav,전진,22,24,정지,"{""정지"": 17, ""복귀"": 3, ""대기"": 2}"
+ce,cnn_mean,audio/재시작/spk03_116.wav,재시작,22,24,시작,"{""시작"": 21, ""대기"": 1}"
+ce,cnn_mean,audio/대기/spk03_020.wav,대기,22,24,정지,"{""후진"": 6, ""silence"": 5, ""정지"": 5, ""전진"": 3, ""왼쪽"": 2, ""복귀"": 1}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_142.wav,전진,22,24,정지,"{""정지"": 14, ""복귀"": 4, ""대기"": 2, ""오른쪽"": 1, ""후진"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_130.wav,전진,22,24,정지,"{""정지"": 22}"
+noise-speaker,cnn_mean,audio/대기/spk03_020.wav,대기,22,24,복귀,"{""복귀"": 12, ""정지"": 6, ""오른쪽"": 2, ""후진"": 1, ""전진"": 1}"
+noise,cnn_mean,audio/재시작/spk03_107.wav,재시작,22,24,시작,"{""시작"": 21, ""출발"": 1}"
+noise,cnn_mean,audio/전진/spk03_133.wav,전진,22,24,전진,"{""정지"": 20, ""오른쪽"": 1, ""복귀"": 1}"
+ce,cnn_self_cls,audio/대기/spk03_003.wav,대기,21,24,대기,"{""전진"": 10, ""정지"": 4, ""왼쪽"": 3, ""오른쪽"": 3, ""출발"": 1}"
+noise-speaker,cnn_mean,audio/전진/spk03_135.wav,전진,21,24,정지,"{""정지"": 11, ""복귀"": 8, ""후진"": 2}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_155.wav,정지,21,24,정지,"{""복귀"": 19, ""후진"": 1, ""오른쪽"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_137.wav,전진,21,24,전진,"{""대기"": 15, ""출발"": 2, ""후진"": 2, ""왼쪽"": 1, ""오른쪽"": 1}"
+ce,cnn_mean,audio/재시작/spk03_109.wav,재시작,21,24,재시작,"{""시작"": 19, ""대기"": 1, ""정지"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_132.wav,전진,21,24,전진,"{""정지"": 17, ""대기"": 3, ""출발"": 1}"
+ce,cnn_mean,audio/전진/spk03_133.wav,전진,21,24,정지,"{""정지"": 20, ""대기"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_188.wav,후진,21,24,대기,"{""대기"": 15, ""silence"": 3, ""전진"": 1, ""출발"": 1, ""재시작"": 1}"
+ce,cnn_mean,audio/대기/spk03_013.wav,대기,21,24,복귀,"{""복귀"": 18, ""왼쪽"": 3}"
+ce,cnn_pooled_query,audio/정지/spk03_155.wav,정지,21,24,정지,"{""복귀"": 21}"
+noise,cnn_mean,audio/후진/spk03_189.wav,후진,21,24,오른쪽,"{""오른쪽"": 10, ""정지"": 3, ""복귀"": 3, ""대기"": 2, ""왼쪽"": 1, ""출발"": 1, ""전진"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_142.wav,전진,21,24,정지,"{""정지"": 16, ""복귀"": 4, ""대기"": 1}"
+ce,cnn_mean,audio/복귀/spk03_042.wav,복귀,20,24,후진,"{""후진"": 14, ""대기"": 5, ""왼쪽"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_124.wav,전진,20,24,정지,"{""정지"": 15, ""대기"": 3, ""후진"": 2}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_081.wav,오른쪽,20,24,왼쪽,"{""왼쪽"": 19, ""후진"": 1}"
+ce,cnn_self_cls,audio/전진/spk03_124.wav,전진,20,24,정지,"{""정지"": 20}"
+noise-speaker,cnn_mean,audio/전진/spk03_143.wav,전진,20,24,전진,"{""대기"": 7, ""silence"": 6, ""후진"": 3, ""정지"": 2, ""재시작"": 1, ""복귀"": 1}"
+ce,cnn_mean,audio/후진/spk03_189.wav,후진,20,24,오른쪽,"{""오른쪽"": 14, ""복귀"": 4, ""재시작"": 1, ""전진"": 1}"
+noise,cnn_pooled_query,audio/후진/spk03_195.wav,후진,20,24,전진,"{""전진"": 12, ""대기"": 8}"
+ce,cnn_self_cls,audio/오른쪽/spk03_066.wav,오른쪽,20,24,오른쪽,"{""복귀"": 8, ""정지"": 7, ""후진"": 2, ""전진"": 2, ""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_109.wav,재시작,19,24,재시작,"{""시작"": 18, ""정지"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_189.wav,후진,19,24,후진,"{""정지"": 15, ""전진"": 2, ""오른쪽"": 1, ""재시작"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_066.wav,오른쪽,19,24,오른쪽,"{""복귀"": 9, ""silence"": 4, ""전진"": 3, ""왼쪽"": 2, ""후진"": 1}"
+noise,cnn_mean,audio/대기/spk03_003.wav,대기,19,24,왼쪽,"{""왼쪽"": 6, ""오른쪽"": 3, ""재시작"": 3, ""복귀"": 3, ""후진"": 2, ""정지"": 1, ""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_143.wav,전진,19,24,전진,"{""후진"": 5, ""오른쪽"": 4, ""정지"": 4, ""재시작"": 3, ""silence"": 2, ""왼쪽"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_155.wav,정지,19,24,복귀,"{""복귀"": 19}"
+ce,cnn_self_cls,audio/대기/spk03_019.wav,대기,19,24,전진,"{""전진"": 18, ""정지"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_082.wav,오른쪽,19,24,후진,"{""정지"": 9, ""전진"": 4, ""대기"": 3, ""왼쪽"": 2, ""출발"": 1}"
+ce,cnn_mean,audio/전진/spk03_124.wav,전진,19,24,정지,"{""정지"": 19}"
+ce,cnn_mean,audio/재시작/spk03_107.wav,재시작,19,24,시작,"{""시작"": 19}"
+noise,cnn_mean,audio/정지/spk03_155.wav,정지,19,24,정지,"{""복귀"": 19}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_135.wav,전진,18,24,전진,"{""후진"": 16, ""왼쪽"": 2}"
+ce,cnn_mean,audio/재시작/spk03_113.wav,재시작,18,24,재시작,"{""시작"": 18}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_159.wav,정지,18,24,전진,"{""전진"": 16, ""대기"": 2}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_155.wav,정지,18,24,정지,"{""대기"": 13, ""복귀"": 5}"
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_116.wav,재시작,18,24,재시작,"{""시작"": 18}"
+ce,cnn_self_cls,audio/복귀/spk03_043.wav,복귀,18,24,복귀,"{""후진"": 8, ""silence"": 7, ""출발"": 1, ""전진"": 1, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_076.wav,오른쪽,18,24,왼쪽,"{""왼쪽"": 17, ""정지"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_142.wav,전진,18,24,전진,"{""대기"": 14, ""후진"": 4}"
+ce,cnn_pooled_query,audio/재시작/spk03_107.wav,재시작,18,24,시작,"{""시작"": 18}"
+ce,cnn_mean,audio/후진/spk03_188.wav,후진,18,24,후진,"{""silence"": 11, ""대기"": 3, ""출발"": 2, ""왼쪽"": 1, ""재시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_066.wav,오른쪽,18,24,왼쪽,"{""전진"": 5, ""정지"": 5, ""출발"": 4, ""silence"": 2, ""시작"": 1, ""대기"": 1}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_028.wav,복귀,18,24,복귀,"{""대기"": 16, ""후진"": 1, ""왼쪽"": 1}"
+noise,cnn_mean,audio/전진/spk03_135.wav,전진,18,24,전진,"{""오른쪽"": 6, ""후진"": 5, ""정지"": 4, ""복귀"": 3}"
+noise,cnn_self_cls,audio/왼쪽/spk03_102.wav,왼쪽,18,24,왼쪽,"{""silence"": 7, ""대기"": 3, ""후진"": 2, ""복귀"": 2, ""오른쪽"": 2, ""출발"": 2}"
+ce,cnn_pooled_query,audio/대기/spk03_020.wav,대기,18,24,대기,"{""복귀"": 9, ""오른쪽"": 4, ""후진"": 3, ""전진"": 1, ""정지"": 1}"
+noise-speaker,cnn_mean,audio/전진/spk03_132.wav,전진,18,24,전진,"{""정지"": 18}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_019.wav,대기,18,24,후진,"{""전진"": 6, ""정지"": 4, ""오른쪽"": 4, ""후진"": 3, ""출발"": 1}"
+noise,cnn_self_cls,audio/재시작/spk03_109.wav,재시작,18,24,재시작,"{""시작"": 18}"
+noise,cnn_self_cls,audio/재시작/spk03_113.wav,재시작,18,24,재시작,"{""시작"": 18}"
+ce,cnn_mean,audio/재시작/spk03_106.wav,재시작,17,24,재시작,"{""후진"": 4, ""대기"": 4, ""복귀"": 3, ""오른쪽"": 2, ""왼쪽"": 2, ""정지"": 1, ""시작"": 1}"
+noise,cnn_self_cls,audio/후진/spk03_188.wav,후진,17,24,후진,"{""silence"": 8, ""대기"": 5, ""오른쪽"": 2, ""출발"": 1, ""재시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_003.wav,대기,17,24,대기,"{""정지"": 11, ""전진"": 4, ""출발"": 1, ""시작"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_159.wav,정지,17,24,전진,"{""전진"": 14, ""후진"": 2, ""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_043.wav,복귀,17,24,복귀,"{""오른쪽"": 8, ""silence"": 3, ""후진"": 2, ""전진"": 1, ""출발"": 1, ""시작"": 1, ""대기"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_141.wav,전진,17,24,전진,"{""후진"": 12, ""정지"": 5}"
+noise,cnn_self_cls,audio/재시작/spk03_123.wav,재시작,17,24,재시작,"{""시작"": 17}"
+noise-speaker,cnn_mean,audio/재시작/spk03_115.wav,재시작,17,24,재시작,"{""시작"": 17}"
+ce,cnn_pooled_query,audio/후진/spk03_193.wav,후진,17,24,전진,"{""왼쪽"": 7, ""출발"": 4, ""전진"": 3, ""정지"": 2, ""오른쪽"": 1}"
+noise-speaker,cnn_mean,audio/전진/spk03_137.wav,전진,17,24,전진,"{""후진"": 9, ""대기"": 3, ""정지"": 2, ""왼쪽"": 1, ""복귀"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_073.wav,오른쪽,17,24,오른쪽,"{""왼쪽"": 17}"
+ce,cnn_self_cls,audio/재시작/spk03_113.wav,재시작,17,24,재시작,"{""시작"": 17}"
+noise,cnn_pooled_query,audio/전진/spk03_143.wav,전진,17,24,전진,"{""대기"": 9, ""오른쪽"": 4, ""정지"": 3, ""silence"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_102.wav,왼쪽,17,24,왼쪽,"{""출발"": 8, ""대기"": 3, ""복귀"": 2, ""silence"": 2, ""전진"": 1, ""후진"": 1}"
+noise,cnn_pooled_query,audio/복귀/spk03_043.wav,복귀,17,24,복귀,"{""대기"": 7, ""출발"": 3, ""오른쪽"": 2, ""후진"": 1, ""왼쪽"": 1, ""정지"": 1, ""재시작"": 1, ""silence"": 1}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_116.wav,재시작,17,24,시작,"{""시작"": 17}"
+noise-speaker,cnn_mean,audio/재시작/spk03_113.wav,재시작,17,24,재시작,"{""시작"": 17}"
+ce,cnn_pooled_query,audio/복귀/spk03_043.wav,복귀,17,24,복귀,"{""오른쪽"": 9, ""재시작"": 4, ""정지"": 2, ""후진"": 2}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_142.wav,전진,17,24,전진,"{""대기"": 11, ""정지"": 6}"
+ce,cnn_self_cls,audio/재시작/spk03_106.wav,재시작,17,24,재시작,"{""후진"": 9, ""복귀"": 4, ""정지"": 4}"
+noise,cnn_self_cls,audio/전진/spk03_143.wav,전진,17,24,전진,"{""silence"": 5, ""오른쪽"": 4, ""재시작"": 3, ""대기"": 2, ""왼쪽"": 2, ""후진"": 1}"
+ce,cnn_pooled_query,audio/대기/spk03_014.wav,대기,16,24,대기,"{""복귀"": 9, ""후진"": 7}"
+noise-speaker,cnn_mean,audio/재시작/spk03_109.wav,재시작,16,24,재시작,"{""시작"": 16}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_020.wav,대기,16,24,오른쪽,"{""후진"": 8, ""오른쪽"": 4, ""silence"": 3, ""출발"": 1}"
+ce,cnn_self_cls,audio/전진/spk03_143.wav,전진,16,24,전진,"{""silence"": 8, ""후진"": 4, ""오른쪽"": 1, ""정지"": 1, ""재시작"": 1, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/재시작/spk03_123.wav,재시작,16,24,재시작,"{""시작"": 16}"
+noise,cnn_pooled_query,audio/후진/spk03_190.wav,후진,16,24,후진,"{""대기"": 14, ""전진"": 1, ""재시작"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_160.wav,정지,16,24,전진,"{""전진"": 16}"
+ce,cnn_self_cls,audio/대기/spk03_011.wav,대기,16,24,대기,"{""후진"": 14, ""전진"": 2}"
+noise-speaker,cnn_mean,audio/후진/spk03_188.wav,후진,16,24,후진,"{""silence"": 8, ""대기"": 3, ""복귀"": 3, ""출발"": 2}"
+noise,cnn_self_cls,audio/전진/spk03_133.wav,전진,16,24,전진,"{""정지"": 13, ""대기"": 2, ""복귀"": 1}"
+noise,cnn_self_cls,audio/재시작/spk03_115.wav,재시작,16,24,재시작,"{""시작"": 16}"
+noise,cnn_pooled_query,audio/정지/spk03_155.wav,정지,16,24,정지,"{""복귀"": 14, ""오른쪽"": 1, ""대기"": 1}"
+ce,cnn_self_cls,audio/대기/spk03_014.wav,대기,16,24,대기,"{""후진"": 16}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_141.wav,전진,16,24,전진,"{""정지"": 16}"
+ce,cnn_pooled_query,audio/정지/spk03_158.wav,정지,16,24,정지,"{""전진"": 16}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_076.wav,오른쪽,16,24,왼쪽,"{""왼쪽"": 16}"
+ce,cnn_pooled_query,audio/정지/spk03_148.wav,정지,16,24,전진,"{""전진"": 16}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_066.wav,오른쪽,16,24,오른쪽,"{""대기"": 6, ""정지"": 3, ""후진"": 2, ""전진"": 2, ""silence"": 2, ""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_137.wav,전진,16,24,전진,"{""정지"": 4, ""후진"": 4, ""복귀"": 4, ""오른쪽"": 3, ""왼쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_146.wav,정지,16,24,정지,"{""전진"": 16}"
+ce,cnn_self_cls,audio/재시작/spk03_107.wav,재시작,16,24,재시작,"{""시작"": 16}"
+ce,cnn_mean,audio/오른쪽/spk03_066.wav,오른쪽,16,24,오른쪽,"{""silence"": 8, ""전진"": 4, ""왼쪽"": 2, ""후진"": 1, ""정지"": 1}"
+noise,cnn_pooled_query,audio/재시작/spk03_115.wav,재시작,16,24,재시작,"{""시작"": 16}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_187.wav,후진,16,24,후진,"{""silence"": 7, ""복귀"": 3, ""대기"": 2, ""오른쪽"": 2, ""왼쪽"": 1, ""출발"": 1}"
+ce,cnn_mean,audio/대기/spk03_019.wav,대기,16,24,전진,"{""전진"": 8, ""후진"": 4, ""정지"": 2, ""복귀"": 1, ""출발"": 1}"
+noise,cnn_mean,audio/재시작/spk03_123.wav,재시작,16,24,재시작,"{""시작"": 16}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_076.wav,오른쪽,16,24,왼쪽,"{""왼쪽"": 16}"
+ce,cnn_self_cls,audio/전진/spk03_137.wav,전진,16,24,정지,"{""후진"": 11, ""정지"": 4, ""대기"": 1}"
+noise-speaker,cnn_self_cls,audio/대기/spk03_003.wav,대기,15,24,대기,"{""후진"": 6, ""오른쪽"": 5, ""왼쪽"": 3, ""재시작"": 1}"
+ce,cnn_self_cls,audio/전진/spk03_133.wav,전진,15,24,전진,"{""정지"": 13, ""시작"": 1, ""후진"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_042.wav,복귀,15,24,후진,"{""전진"": 5, ""후진"": 5, ""대기"": 4, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/대기/spk03_020.wav,대기,15,24,후진,"{""후진"": 10, ""정지"": 4, ""전진"": 1}"
+noise,cnn_mean,audio/재시작/spk03_115.wav,재시작,15,24,재시작,"{""시작"": 15}"
+ce,cnn_mean,audio/복귀/spk03_043.wav,복귀,15,24,복귀,"{""silence"": 5, ""후진"": 4, ""대기"": 4, ""재시작"": 1, ""왼쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_073.wav,오른쪽,15,24,왼쪽,"{""왼쪽"": 14, ""출발"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_142.wav,전진,15,24,전진,"{""정지"": 12, ""후진"": 3}"
+noise,cnn_self_cls,audio/전진/spk03_130.wav,전진,15,24,정지,"{""정지"": 15}"
+noise,cnn_self_cls,audio/전진/spk03_132.wav,전진,15,24,전진,"{""정지"": 14, ""재시작"": 1}"
+noise-speaker,cnn_mean,audio/재시작/spk03_107.wav,재시작,15,24,재시작,"{""시작"": 14, ""출발"": 1}"
+noise,cnn_mean,audio/후진/spk03_203.wav,후진,15,24,후진,"{""복귀"": 10, ""왼쪽"": 3, ""대기"": 2}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_133.wav,전진,15,24,전진,"{""정지"": 10, ""후진"": 3, ""대기"": 2}"
+ce,cnn_self_cls,audio/후진/spk03_187.wav,후진,15,24,출발,"{""대기"": 8, ""출발"": 5, ""왼쪽"": 1, ""정지"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_108.wav,재시작,15,24,재시작,"{""silence"": 8, ""시작"": 5, ""출발"": 1, ""오른쪽"": 1}"
+noise,cnn_self_cls,audio/오른쪽/spk03_066.wav,오른쪽,14,24,오른쪽,"{""복귀"": 5, ""정지"": 4, ""후진"": 2, ""전진"": 2, ""재시작"": 1}"
+ce,cnn_mean,audio/대기/spk03_014.wav,대기,14,24,대기,"{""후진"": 13, ""복귀"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_187.wav,후진,14,24,후진,"{""대기"": 11, ""복귀"": 1, ""전진"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_195.wav,후진,14,24,전진,"{""대기"": 9, ""전진"": 4, ""재시작"": 1}"
+noise-speaker,cnn_mean,audio/대기/spk03_003.wav,대기,14,24,복귀,"{""복귀"": 9, ""전진"": 1, ""후진"": 1, ""silence"": 1, ""정지"": 1, ""출발"": 1}"
+ce,cnn_mean,audio/전진/spk03_132.wav,전진,14,24,정지,"{""정지"": 10, ""대기"": 3, ""왼쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_137.wav,전진,14,24,전진,"{""후진"": 13, ""대기"": 1}"
+ce,cnn_self_cls,audio/전진/spk03_130.wav,전진,14,24,정지,"{""정지"": 14}"
+noise-speaker,cnn_mean,audio/재시작/spk03_122.wav,재시작,14,24,재시작,"{""시작"": 14}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_103.wav,왼쪽,14,24,왼쪽,"{""대기"": 9, ""재시작"": 2, ""출발"": 1, ""후진"": 1, ""전진"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_165.wav,출발,14,24,출발,"{""시작"": 10, ""전진"": 2, ""후진"": 1, ""정지"": 1}"
+noise,cnn_pooled_query,audio/재시작/spk03_106.wav,재시작,14,24,재시작,"{""왼쪽"": 6, ""복귀"": 4, ""대기"": 3, ""후진"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_195.wav,후진,14,24,전진,"{""전진"": 14}"
+ce,cnn_pooled_query,audio/후진/spk03_189.wav,후진,14,24,후진,"{""정지"": 7, ""전진"": 4, ""오른쪽"": 2, ""재시작"": 1}"
+noise,cnn_mean,audio/재시작/spk03_106.wav,재시작,14,24,재시작,"{""복귀"": 10, ""왼쪽"": 2, ""후진"": 1, ""대기"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_106.wav,재시작,14,24,재시작,"{""왼쪽"": 4, ""복귀"": 3, ""후진"": 2, ""오른쪽"": 2, ""시작"": 1, ""대기"": 1, ""정지"": 1}"
+noise,cnn_self_cls,audio/재시작/spk03_107.wav,재시작,13,24,재시작,"{""시작"": 13}"
+ce,cnn_mean,audio/후진/spk03_193.wav,후진,13,24,시작,"{""시작"": 6, ""왼쪽"": 4, ""출발"": 2, ""오른쪽"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_133.wav,전진,13,24,전진,"{""정지"": 6, ""대기"": 6, ""복귀"": 1}"
+ce,cnn_mean,audio/전진/spk03_135.wav,전진,13,24,정지,"{""오른쪽"": 6, ""후진"": 4, ""왼쪽"": 2, ""복귀"": 1}"
+noise,cnn_mean,audio/재시작/spk03_122.wav,재시작,13,24,재시작,"{""시작"": 13}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_087.wav,왼쪽,13,24,대기,"{""대기"": 7, ""출발"": 3, ""전진"": 2, ""재시작"": 1}"
+noise,cnn_self_cls,audio/복귀/spk03_043.wav,복귀,13,24,복귀,"{""왼쪽"": 3, ""오른쪽"": 3, ""출발"": 2, ""silence"": 2, ""대기"": 1, ""전진"": 1, ""후진"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_105.wav,재시작,13,24,재시작,"{""시작"": 12, ""전진"": 1}"
+noise,cnn_mean,audio/정지/spk03_160.wav,정지,13,24,정지,"{""전진"": 12, ""출발"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_103.wav,왼쪽,13,24,왼쪽,"{""대기"": 8, ""시작"": 2, ""후진"": 1, ""출발"": 1, ""재시작"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_082.wav,오른쪽,13,24,오른쪽,"{""대기"": 4, ""왼쪽"": 4, ""복귀"": 2, ""출발"": 1, ""재시작"": 1, ""silence"": 1}"
+ce,cnn_mean,audio/대기/spk03_003.wav,대기,13,24,대기,"{""silence"": 3, ""전진"": 2, ""정지"": 2, ""왼쪽"": 2, ""후진"": 1, ""재시작"": 1, ""복귀"": 1, ""출발"": 1}"
+noise,cnn_mean,audio/후진/spk03_185.wav,후진,13,24,후진,"{""대기"": 9, ""복귀"": 3, ""왼쪽"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_137.wav,전진,13,24,전진,"{""후진"": 9, ""대기"": 2, ""재시작"": 1, ""정지"": 1}"
+noise-speaker,cnn_mean,audio/대기/spk03_019.wav,대기,13,24,대기,"{""전진"": 9, ""정지"": 2, ""복귀"": 1, ""왼쪽"": 1}"
+noise,cnn_mean,audio/복귀/spk03_043.wav,복귀,13,24,복귀,"{""왼쪽"": 5, ""후진"": 4, ""대기"": 2, ""오른쪽"": 1, ""재시작"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_087.wav,왼쪽,13,24,왼쪽,"{""출발"": 6, ""대기"": 4, ""후진"": 2, ""전진"": 1}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_102.wav,왼쪽,13,24,왼쪽,"{""대기"": 8, ""전진"": 1, ""silence"": 1, ""출발"": 1, ""정지"": 1, ""시작"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_135.wav,전진,12,24,전진,"{""후진"": 8, ""정지"": 1, ""왼쪽"": 1, ""오른쪽"": 1, ""복귀"": 1}"
+noise,cnn_mean,audio/전진/spk03_137.wav,전진,12,24,전진,"{""후진"": 8, ""정지"": 2, ""오른쪽"": 1, ""silence"": 1}"
+ce,cnn_mean,audio/전진/spk03_130.wav,전진,12,24,전진,"{""정지"": 12}"
+ce,cnn_pooled_query,audio/정지/spk03_160.wav,정지,12,24,정지,"{""전진"": 12}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_082.wav,오른쪽,12,24,오른쪽,"{""대기"": 7, ""왼쪽"": 2, ""출발"": 1, ""후진"": 1, ""전진"": 1}"
+ce,cnn_mean,audio/전진/spk03_137.wav,전진,12,24,전진,"{""후진"": 8, ""대기"": 3, ""오른쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_081.wav,오른쪽,12,24,왼쪽,"{""왼쪽"": 10, ""전진"": 1, ""대기"": 1}"
+ce,cnn_pooled_query,audio/대기/spk03_019.wav,대기,12,24,대기,"{""전진"": 6, ""복귀"": 5, ""정지"": 1}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_103.wav,왼쪽,12,24,왼쪽,"{""대기"": 8, ""출발"": 2, ""정지"": 2}"
+noise-speaker,cnn_mean,audio/후진/spk03_189.wav,후진,12,24,오른쪽,"{""복귀"": 7, ""오른쪽"": 5}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_148.wav,정지,12,24,정지,"{""전진"": 11, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_155.wav,정지,12,24,정지,"{""복귀"": 12}"
+noise,cnn_self_cls,audio/왼쪽/spk03_087.wav,왼쪽,12,24,왼쪽,"{""전진"": 8, ""대기"": 3, ""출발"": 1}"
+noise,cnn_mean,audio/전진/spk03_132.wav,전진,12,24,전진,"{""정지"": 12}"
+ce,cnn_pooled_query,audio/전진/spk03_135.wav,전진,12,24,전진,"{""정지"": 9, ""후진"": 1, ""왼쪽"": 1, ""시작"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_094.wav,왼쪽,12,24,왼쪽,"{""복귀"": 7, ""출발"": 3, ""후진"": 2}"
+noise,cnn_self_cls,audio/재시작/spk03_108.wav,재시작,12,24,재시작,"{""복귀"": 6, ""silence"": 5, ""시작"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_124.wav,전진,11,24,전진,"{""정지"": 11}"
+noise,cnn_self_cls,audio/오른쪽/spk03_082.wav,오른쪽,11,24,오른쪽,"{""정지"": 7, ""왼쪽"": 2, ""전진"": 1, ""재시작"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_139.wav,전진,11,24,전진,"{""정지"": 10, ""오른쪽"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_136.wav,전진,11,24,전진,"{""정지"": 10, ""대기"": 1}"
+noise,cnn_mean,audio/재시작/spk03_121.wav,재시작,11,24,재시작,"{""시작"": 11}"
+noise,cnn_self_cls,audio/정지/spk03_160.wav,정지,11,24,정지,"{""전진"": 10, ""출발"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_079.wav,오른쪽,11,24,오른쪽,"{""왼쪽"": 7, ""출발"": 2, ""전진"": 1, ""정지"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_191.wav,후진,11,24,후진,"{""전진"": 9, ""정지"": 1, ""오른쪽"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_197.wav,후진,11,24,후진,"{""복귀"": 7, ""왼쪽"": 2, ""정지"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_203.wav,후진,11,24,후진,"{""대기"": 8, ""오른쪽"": 1, ""복귀"": 1, ""정지"": 1}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_135.wav,전진,11,24,전진,"{""후진"": 3, ""복귀"": 2, ""출발"": 2, ""대기"": 2, ""오른쪽"": 1, ""silence"": 1}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_040.wav,복귀,11,24,대기,"{""대기"": 10, ""후진"": 1}"
+ce,cnn_mean,audio/정지/spk03_152.wav,정지,11,24,정지,"{""대기"": 7, ""복귀"": 4}"
+ce,cnn_mean,audio/전진/spk03_142.wav,전진,11,24,전진,"{""정지"": 5, ""후진"": 5, ""복귀"": 1}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_016.wav,대기,11,24,전진,"{""후진"": 7, ""오른쪽"": 4}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_066.wav,오른쪽,11,24,오른쪽,"{""silence"": 7, ""정지"": 2, ""전진"": 1, ""출발"": 1}"
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_115.wav,재시작,11,24,재시작,"{""시작"": 11}"
+noise-speaker,cnn_mean,audio/복귀/spk03_043.wav,복귀,11,24,복귀,"{""후진"": 9, ""대기"": 2}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_137.wav,전진,11,24,전진,"{""후진"": 6, ""재시작"": 2, ""정지"": 1, ""대기"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_082.wav,오른쪽,11,24,오른쪽,"{""전진"": 4, ""대기"": 4, ""정지"": 3}"
+noise,cnn_self_cls,audio/후진/spk03_189.wav,후진,11,24,후진,"{""정지"": 6, ""재시작"": 3, ""대기"": 1, ""전진"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_073.wav,오른쪽,11,24,오른쪽,"{""왼쪽"": 11}"
+ce,cnn_self_cls,audio/왼쪽/spk03_103.wav,왼쪽,10,24,왼쪽,"{""대기"": 6, ""출발"": 2, ""전진"": 1, ""정지"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_152.wav,정지,10,24,정지,"{""대기"": 8, ""후진"": 2}"
+noise,cnn_self_cls,audio/복귀/spk03_040.wav,복귀,10,24,복귀,"{""후진"": 8, ""대기"": 2}"
+ce,cnn_pooled_query,audio/후진/spk03_185.wav,후진,10,24,후진,"{""복귀"": 5, ""정지"": 4, ""왼쪽"": 1}"
+noise-speaker,cnn_mean,audio/후진/spk03_203.wav,후진,10,24,후진,"{""복귀"": 8, ""대기"": 2}"
+ce,cnn_mean,audio/대기/spk03_016.wav,대기,10,24,대기,"{""silence"": 3, ""전진"": 3, ""후진"": 2, ""왼쪽"": 1, ""복귀"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_141.wav,전진,10,24,전진,"{""대기"": 5, ""정지"": 5}"
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_106.wav,재시작,10,24,재시작,"{""복귀"": 3, ""정지"": 3, ""후진"": 1, ""전진"": 1, ""오른쪽"": 1, ""왼쪽"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_064.wav,오른쪽,10,24,오른쪽,"{""복귀"": 7, ""왼쪽"": 3}"
+noise,cnn_pooled_query,audio/대기/spk03_020.wav,대기,10,24,오른쪽,"{""오른쪽"": 9, ""복귀"": 1}"
+noise,cnn_mean,audio/전진/spk03_139.wav,전진,10,24,전진,"{""정지"": 9, ""후진"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_196.wav,후진,10,24,후진,"{""전진"": 8, ""복귀"": 2}"
+ce,cnn_self_cls,audio/재시작/spk03_109.wav,재시작,10,24,재시작,"{""시작"": 10}"
+noise,cnn_self_cls,audio/오른쪽/spk03_081.wav,오른쪽,10,24,왼쪽,"{""왼쪽"": 5, ""정지"": 2, ""시작"": 1, ""재시작"": 1, ""전진"": 1}"
+noise,cnn_self_cls,audio/후진/spk03_186.wav,후진,10,24,후진,"{""정지"": 5, ""전진"": 3, ""재시작"": 1, ""복귀"": 1}"
+noise,cnn_self_cls,audio/재시작/spk03_119.wav,재시작,10,24,재시작,"{""시작"": 10}"
+ce,cnn_pooled_query,audio/재시작/spk03_115.wav,재시작,9,24,재시작,"{""시작"": 9}"
+ce,cnn_pooled_query,audio/정지/spk03_156.wav,정지,9,24,정지,"{""복귀"": 6, ""전진"": 1, ""오른쪽"": 1, ""시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_193.wav,후진,9,24,후진,"{""전진"": 6, ""출발"": 2, ""시작"": 1}"
+noise,cnn_mean,audio/왼쪽/spk03_103.wav,왼쪽,9,24,왼쪽,"{""대기"": 8, ""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_072.wav,오른쪽,9,24,왼쪽,"{""왼쪽"": 9}"
+ce,cnn_self_cls,audio/전진/spk03_141.wav,전진,9,24,전진,"{""후진"": 6, ""정지"": 3}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_027.wav,복귀,9,24,복귀,"{""정지"": 4, ""대기"": 3, ""후진"": 2}"
+noise,cnn_pooled_query,audio/후진/spk03_189.wav,후진,9,24,후진,"{""대기"": 4, ""오른쪽"": 2, ""재시작"": 2, ""복귀"": 1}"
+ce,cnn_mean,audio/재시작/spk03_122.wav,재시작,9,24,재시작,"{""시작"": 9}"
+noise-speaker,cnn_self_cls,audio/대기/spk03_019.wav,대기,9,24,전진,"{""전진"": 9}"
+ce,cnn_mean,audio/재시작/spk03_115.wav,재시작,9,24,재시작,"{""시작"": 9}"
+noise,cnn_self_cls,audio/정지/spk03_148.wav,정지,9,24,정지,"{""전진"": 9}"
+ce,cnn_pooled_query,audio/전진/spk03_130.wav,전진,9,24,정지,"{""정지"": 9}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_094.wav,왼쪽,9,24,왼쪽,"{""출발"": 4, ""대기"": 2, ""시작"": 1, ""정지"": 1, ""복귀"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_096.wav,왼쪽,9,24,왼쪽,"{""출발"": 9}"
+ce,cnn_mean,audio/재시작/spk03_105.wav,재시작,9,24,재시작,"{""시작"": 8, ""대기"": 1}"
+noise,cnn_self_cls,audio/후진/spk03_203.wav,후진,9,24,후진,"{""오른쪽"": 3, ""silence"": 2, ""출발"": 2, ""재시작"": 1, ""복귀"": 1}"
+ce,cnn_mean,audio/후진/spk03_203.wav,후진,9,24,후진,"{""대기"": 4, ""복귀"": 3, ""정지"": 2}"
+ce,cnn_pooled_query,audio/재시작/spk03_121.wav,재시작,9,24,재시작,"{""시작"": 7, ""후진"": 1, ""출발"": 1}"
+noise,cnn_mean,audio/전진/spk03_124.wav,전진,9,24,정지,"{""정지"": 9}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_133.wav,전진,9,24,전진,"{""정지"": 7, ""출발"": 1, ""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_203.wav,후진,9,24,후진,"{""정지"": 2, ""대기"": 2, ""오른쪽"": 2, ""전진"": 2, ""시작"": 1}"
+noise,cnn_pooled_query,audio/후진/spk03_203.wav,후진,9,24,후진,"{""대기"": 6, ""시작"": 1, ""복귀"": 1, ""전진"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_083.wav,오른쪽,9,24,오른쪽,"{""왼쪽"": 9}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_066.wav,오른쪽,9,24,오른쪽,"{""대기"": 3, ""silence"": 3, ""출발"": 1, ""후진"": 1, ""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_188.wav,후진,9,24,후진,"{""전진"": 3, ""정지"": 2, ""출발"": 1, ""오른쪽"": 1, ""복귀"": 1, ""재시작"": 1}"
+noise,cnn_mean,audio/오른쪽/spk03_082.wav,오른쪽,9,24,오른쪽,"{""대기"": 3, ""재시작"": 2, ""왼쪽"": 2, ""출발"": 1, ""전진"": 1}"
+noise,cnn_mean,audio/대기/spk03_014.wav,대기,9,24,대기,"{""silence"": 6, ""후진"": 3}"
+ce,cnn_pooled_query,audio/시작/spk03_052.wav,시작,9,24,시작,"{""출발"": 7, ""재시작"": 2}"
+ce,cnn_self_cls,audio/오른쪽/spk03_082.wav,오른쪽,9,24,오른쪽,"{""전진"": 3, ""정지"": 3, ""출발"": 1, ""왼쪽"": 1, ""대기"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_099.wav,왼쪽,9,24,왼쪽,"{""출발"": 6, ""대기"": 3}"
+noise,cnn_mean,audio/오른쪽/spk03_081.wav,오른쪽,9,24,오른쪽,"{""왼쪽"": 9}"
+noise,cnn_pooled_query,audio/대기/spk03_014.wav,대기,9,24,대기,"{""후진"": 6, ""복귀"": 3}"
+noise-speaker,cnn_mean,audio/대기/spk03_016.wav,대기,9,24,복귀,"{""복귀"": 7, ""왼쪽"": 1, ""전진"": 1}"
+ce,cnn_mean,audio/정지/spk03_155.wav,정지,9,24,정지,"{""복귀"": 9}"
+ce,cnn_pooled_query,audio/출발/spk03_173.wav,출발,8,24,출발,"{""시작"": 5, ""재시작"": 1, ""대기"": 1, ""전진"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_202.wav,후진,8,24,후진,"{""대기"": 8}"
+noise,cnn_pooled_query,audio/재시작/spk03_122.wav,재시작,8,24,재시작,"{""시작"": 8}"
+ce,cnn_mean,audio/후진/spk03_190.wav,후진,8,24,후진,"{""대기"": 3, ""오른쪽"": 2, ""전진"": 1, ""왼쪽"": 1, ""복귀"": 1}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_102.wav,왼쪽,8,24,왼쪽,"{""대기"": 5, ""전진"": 2, ""후진"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_073.wav,오른쪽,8,24,오른쪽,"{""왼쪽"": 7, ""후진"": 1}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_069.wav,오른쪽,8,24,오른쪽,"{""출발"": 4, ""왼쪽"": 3, ""복귀"": 1}"
+ce,cnn_mean,audio/복귀/spk03_038.wav,복귀,8,24,복귀,"{""대기"": 3, ""왼쪽"": 3, ""후진"": 2}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_103.wav,왼쪽,8,24,왼쪽,"{""재시작"": 3, ""정지"": 2, ""대기"": 2, ""출발"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_068.wav,오른쪽,8,24,오른쪽,"{""왼쪽"": 4, ""복귀"": 3, ""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_185.wav,후진,8,24,후진,"{""대기"": 8}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_081.wav,오른쪽,8,24,오른쪽,"{""왼쪽"": 5, ""출발"": 1, ""대기"": 1, ""후진"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_087.wav,왼쪽,8,24,왼쪽,"{""대기"": 6, ""출발"": 1, ""오른쪽"": 1}"
+noise,cnn_mean,audio/후진/spk03_190.wav,후진,8,24,후진,"{""대기"": 5, ""복귀"": 1, ""전진"": 1, ""출발"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_025.wav,복귀,8,24,복귀,"{""대기"": 3, ""후진"": 3, ""정지"": 1, ""왼쪽"": 1}"
+noise,cnn_pooled_query,audio/대기/spk03_004.wav,대기,8,24,대기,"{""전진"": 5, ""재시작"": 1, ""후진"": 1, ""출발"": 1}"
+ce,cnn_mean,audio/복귀/spk03_040.wav,복귀,8,24,복귀,"{""대기"": 6, ""silence"": 1, ""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_187.wav,후진,8,24,후진,"{""전진"": 5, ""정지"": 2, ""대기"": 1}"
+noise-speaker,cnn_self_cls,audio/대기/spk03_020.wav,대기,8,24,대기,"{""후진"": 6, ""오른쪽"": 2}"
+ce,cnn_self_cls,audio/오른쪽/spk03_067.wav,오른쪽,8,24,오른쪽,"{""왼쪽"": 7, ""정지"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_134.wav,전진,8,24,정지,"{""오른쪽"": 3, ""정지"": 3, ""왼쪽"": 1, ""재시작"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_101.wav,왼쪽,8,24,왼쪽,"{""출발"": 4, ""대기"": 4}"
+ce,cnn_pooled_query,audio/대기/spk03_011.wav,대기,8,24,대기,"{""후진"": 6, ""왼쪽"": 1, ""시작"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_087.wav,왼쪽,8,24,왼쪽,"{""대기"": 7, ""출발"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_157.wav,정지,8,24,전진,"{""전진"": 7, ""대기"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_190.wav,후진,8,24,후진,"{""대기"": 4, ""정지"": 3, ""전진"": 1}"
+noise,cnn_mean,audio/대기/spk03_019.wav,대기,8,24,대기,"{""전진"": 3, ""후진"": 2, ""출발"": 2, ""정지"": 1}"
+ce,cnn_mean,audio/후진/spk03_185.wav,후진,8,24,후진,"{""왼쪽"": 4, ""정지"": 2, ""복귀"": 1, ""대기"": 1}"
+ce,cnn_self_cls,audio/복귀/spk03_040.wav,복귀,8,24,복귀,"{""후진"": 8}"
+ce,cnn_self_cls,audio/재시작/spk03_123.wav,재시작,8,24,재시작,"{""시작"": 8}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_103.wav,왼쪽,8,24,왼쪽,"{""대기"": 4, ""출발"": 1, ""전진"": 1, ""정지"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_069.wav,오른쪽,8,24,오른쪽,"{""복귀"": 5, ""왼쪽"": 2, ""출발"": 1}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_014.wav,대기,8,24,대기,"{""silence"": 8}"
+ce,cnn_self_cls,audio/후진/spk03_185.wav,후진,8,24,후진,"{""대기"": 5, ""왼쪽"": 2, ""정지"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_159.wav,정지,8,24,정지,"{""대기"": 6, ""후진"": 2}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_081.wav,오른쪽,8,24,오른쪽,"{""왼쪽"": 5, ""정지"": 1, ""재시작"": 1, ""전진"": 1}"
+noise,cnn_self_cls,audio/대기/spk03_006.wav,대기,8,24,대기,"{""출발"": 5, ""재시작"": 1, ""시작"": 1, ""silence"": 1}"
+ce,cnn_self_cls,audio/복귀/spk03_042.wav,복귀,8,24,전진,"{""후진"": 3, ""대기"": 3, ""전진"": 2}"
+noise,cnn_pooled_query,audio/시작/spk03_045.wav,시작,7,24,시작,"{""출발"": 7}"
+ce,cnn_mean,audio/후진/spk03_197.wav,후진,7,24,후진,"{""대기"": 7}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_189.wav,후진,7,24,후진,"{""오른쪽"": 5, ""정지"": 2}"
+noise,cnn_mean,audio/오른쪽/spk03_066.wav,오른쪽,7,24,오른쪽,"{""출발"": 3, ""silence"": 2, ""후진"": 1, ""전진"": 1}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_067.wav,오른쪽,7,24,오른쪽,"{""출발"": 4, ""왼쪽"": 3}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_075.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 7}"
+ce,cnn_pooled_query,audio/후진/spk03_190.wav,후진,7,24,후진,"{""오른쪽"": 3, ""정지"": 3, ""전진"": 1}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_073.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 6, ""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_094.wav,왼쪽,7,24,왼쪽,"{""출발"": 6, ""재시작"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_072.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 7}"
+ce,cnn_self_cls,audio/대기/spk03_004.wav,대기,7,24,대기,"{""후진"": 3, ""전진"": 2, ""출발"": 1, ""정지"": 1}"
+noise-speaker,cnn_mean,audio/후진/spk03_185.wav,후진,7,24,후진,"{""복귀"": 7}"
+ce,cnn_self_cls,audio/후진/spk03_188.wav,후진,7,24,정지,"{""대기"": 2, ""정지"": 1, ""출발"": 1, ""재시작"": 1, ""전진"": 1, ""silence"": 1}"
+noise,cnn_self_cls,audio/오른쪽/spk03_073.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 5, ""출발"": 1, ""시작"": 1}"
+noise,cnn_mean,audio/재시작/spk03_105.wav,재시작,7,24,시작,"{""시작"": 7}"
+ce,cnn_self_cls,audio/오른쪽/spk03_083.wav,오른쪽,7,24,오른쪽,"{""정지"": 5, ""전진"": 2}"
+noise-speaker,cnn_mean,audio/전진/spk03_139.wav,전진,7,24,전진,"{""정지"": 6, ""후진"": 1}"
+noise-speaker,cnn_mean,audio/전진/spk03_133.wav,전진,7,24,전진,"{""정지"": 7}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_161.wav,정지,7,24,정지,"{""전진"": 7}"
+ce,cnn_self_cls,audio/후진/spk03_203.wav,후진,7,24,후진,"{""silence"": 3, ""왼쪽"": 1, ""재시작"": 1, ""대기"": 1, ""정지"": 1}"
+noise,cnn_mean,audio/정지/spk03_156.wav,정지,7,24,정지,"{""후진"": 1, ""왼쪽"": 1, ""전진"": 1, ""시작"": 1, ""silence"": 1, ""복귀"": 1, ""대기"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_079.wav,오른쪽,7,24,오른쪽,"{""전진"": 3, ""정지"": 3, ""출발"": 1}"
+noise,cnn_mean,audio/정지/spk03_152.wav,정지,7,24,정지,"{""대기"": 5, ""후진"": 2}"
+ce,cnn_self_cls,audio/전진/spk03_142.wav,전진,7,24,전진,"{""정지"": 5, ""후진"": 2}"
+noise,cnn_self_cls,audio/재시작/spk03_122.wav,재시작,7,24,재시작,"{""시작"": 7}"
+ce,cnn_self_cls,audio/재시작/spk03_122.wav,재시작,7,24,재시작,"{""시작"": 7}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_072.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 7}"
+ce,cnn_mean,audio/오른쪽/spk03_081.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 6, ""대기"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_080.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 4, ""복귀"": 1, ""대기"": 1, ""출발"": 1}"
+ce,cnn_mean,audio/왼쪽/spk03_087.wav,왼쪽,7,24,왼쪽,"{""출발"": 3, ""대기"": 3, ""전진"": 1}"
+ce,cnn_self_cls,audio/재시작/spk03_115.wav,재시작,7,24,재시작,"{""시작"": 7}"
+noise,cnn_pooled_query,audio/전진/spk03_136.wav,전진,7,24,전진,"{""정지"": 5, ""오른쪽"": 1, ""대기"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_072.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 6, ""전진"": 1}"
+ce,cnn_pooled_query,audio/silence/spk03_022.wav,silence,7,24,silence,"{""오른쪽"": 3, ""정지"": 1, ""전진"": 1, ""대기"": 1, ""재시작"": 1}"
+noise,cnn_pooled_query,audio/재시작/spk03_107.wav,재시작,7,24,재시작,"{""시작"": 6, ""출발"": 1}"
+ce,cnn_mean,audio/왼쪽/spk03_102.wav,왼쪽,7,24,왼쪽,"{""silence"": 2, ""출발"": 2, ""전진"": 1, ""오른쪽"": 1, ""대기"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_071.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 7}"
+ce,cnn_mean,audio/오른쪽/spk03_070.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 6, ""복귀"": 1}"
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_113.wav,재시작,7,24,재시작,"{""시작"": 7}"
+noise-speaker,cnn_self_cls,audio/대기/spk03_016.wav,대기,7,24,대기,"{""후진"": 5, ""정지"": 1, ""전진"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_125.wav,전진,7,24,전진,"{""정지"": 6, ""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_078.wav,오른쪽,7,24,오른쪽,"{""후진"": 4, ""출발"": 2, ""대기"": 1}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_042.wav,복귀,7,24,복귀,"{""대기"": 7}"
+noise,cnn_mean,audio/오른쪽/spk03_073.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 6, ""복귀"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_067.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 7}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_043.wav,복귀,7,24,복귀,"{""정지"": 5, ""전진"": 1, ""오른쪽"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_195.wav,후진,7,24,전진,"{""전진"": 3, ""복귀"": 2, ""정지"": 1, ""오른쪽"": 1}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_082.wav,오른쪽,7,24,오른쪽,"{""대기"": 5, ""재시작"": 1, ""출발"": 1}"
+noise,cnn_mean,audio/왼쪽/spk03_087.wav,왼쪽,7,24,왼쪽,"{""대기"": 5, ""전진"": 2}"
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_042.wav,복귀,7,24,복귀,"{""대기"": 5, ""후진"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_067.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 5, ""후진"": 1, ""출발"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_083.wav,오른쪽,7,24,오른쪽,"{""왼쪽"": 4, ""전진"": 2, ""대기"": 1}"
+noise,cnn_mean,audio/전진/spk03_130.wav,전진,6,24,전진,"{""정지"": 6}"
+ce,cnn_self_cls,audio/전진/spk03_138.wav,전진,6,24,전진,"{""정지"": 6}"
+ce,cnn_self_cls,audio/silence/spk03_022.wav,silence,6,24,silence,"{""후진"": 3, ""재시작"": 2, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_189.wav,후진,6,24,후진,"{""정지"": 3, ""전진"": 2, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_197.wav,후진,6,24,후진,"{""대기"": 6}"
+ce,cnn_pooled_query,audio/후진/spk03_192.wav,후진,6,24,후진,"{""정지"": 3, ""전진"": 2, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_078.wav,오른쪽,6,24,오른쪽,"{""전진"": 3, ""정지"": 3}"
+noise,cnn_mean,audio/오른쪽/spk03_083.wav,오른쪽,6,24,오른쪽,"{""왼쪽"": 6}"
+noise,cnn_mean,audio/왼쪽/spk03_094.wav,왼쪽,6,24,왼쪽,"{""복귀"": 5, ""출발"": 1}"
+ce,cnn_self_cls,audio/전진/spk03_139.wav,전진,6,24,전진,"{""정지"": 5, ""대기"": 1}"
+ce,cnn_self_cls,audio/대기/spk03_016.wav,대기,6,24,대기,"{""후진"": 5, ""정지"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_041.wav,복귀,6,24,복귀,"{""대기"": 5, ""전진"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_181.wav,출발,6,24,출발,"{""시작"": 5, ""재시작"": 1}"
+ce,cnn_mean,audio/전진/spk03_139.wav,전진,6,24,전진,"{""정지"": 5, ""복귀"": 1}"
+ce,cnn_pooled_query,audio/대기/spk03_016.wav,대기,6,24,대기,"{""왼쪽"": 2, ""전진"": 2, ""후진"": 1, ""오른쪽"": 1}"
+noise,cnn_self_cls,audio/후진/spk03_187.wav,후진,6,24,후진,"{""silence"": 4, ""왼쪽"": 1, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_080.wav,오른쪽,6,24,오른쪽,"{""출발"": 3, ""복귀"": 2, ""정지"": 1}"
+ce,cnn_mean,audio/후진/spk03_186.wav,후진,6,24,후진,"{""정지"": 2, ""전진"": 1, ""복귀"": 1, ""대기"": 1, ""오른쪽"": 1}"
+noise,cnn_mean,audio/후진/spk03_202.wav,후진,6,24,후진,"{""복귀"": 4, ""정지"": 1, ""시작"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_103.wav,왼쪽,6,24,왼쪽,"{""대기"": 4, ""출발"": 1, ""정지"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_157.wav,정지,6,24,정지,"{""전진"": 5, ""대기"": 1}"
+ce,cnn_mean,audio/정지/spk03_160.wav,정지,6,24,정지,"{""전진"": 5, ""출발"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_159.wav,정지,6,24,정지,"{""후진"": 3, ""전진"": 3}"
+ce,cnn_mean,audio/정지/spk03_156.wav,정지,6,24,정지,"{""복귀"": 3, ""전진"": 1, ""출발"": 1, ""silence"": 1}"
+ce,cnn_mean,audio/정지/spk03_148.wav,정지,6,24,정지,"{""전진"": 5, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/후진/spk03_197.wav,후진,6,24,후진,"{""복귀"": 5, ""대기"": 1}"
+ce,cnn_mean,audio/전진/spk03_134.wav,전진,6,24,전진,"{""왼쪽"": 5, ""대기"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_141.wav,전진,6,24,전진,"{""후진"": 4, ""재시작"": 1, ""정지"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_080.wav,오른쪽,6,24,오른쪽,"{""전진"": 3, ""정지"": 1, ""대기"": 1, ""출발"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_083.wav,오른쪽,6,24,오른쪽,"{""전진"": 4, ""정지"": 2}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_163.wav,정지,6,24,정지,"{""후진"": 2, ""대기"": 2, ""오른쪽"": 1, ""전진"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_185.wav,후진,6,24,후진,"{""대기"": 3, ""오른쪽"": 1, ""복귀"": 1, ""정지"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_195.wav,후진,6,24,대기,"{""대기"": 5, ""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_029.wav,복귀,6,24,복귀,"{""대기"": 5, ""재시작"": 1}"
+ce,cnn_mean,audio/시작/spk03_052.wav,시작,6,24,시작,"{""재시작"": 4, ""출발"": 2}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_151.wav,정지,6,24,정지,"{""전진"": 6}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_158.wav,정지,6,24,정지,"{""전진"": 6}"
+ce,cnn_mean,audio/대기/spk03_004.wav,대기,6,24,대기,"{""왼쪽"": 4, ""후진"": 1, ""silence"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_196.wav,후진,6,24,후진,"{""대기"": 6}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_197.wav,후진,6,24,후진,"{""대기"": 3, ""왼쪽"": 2, ""오른쪽"": 1}"
+noise,cnn_self_cls,audio/후진/spk03_185.wav,후진,6,24,후진,"{""대기"": 4, ""재시작"": 1, ""왼쪽"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_102.wav,왼쪽,6,24,왼쪽,"{""복귀"": 4, ""전진"": 1, ""대기"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_080.wav,오른쪽,6,24,오른쪽,"{""정지"": 5, ""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_065.wav,오른쪽,6,24,오른쪽,"{""왼쪽"": 3, ""시작"": 1, ""출발"": 1, ""대기"": 1}"
+noise,cnn_pooled_query,audio/재시작/spk03_113.wav,재시작,6,24,재시작,"{""시작"": 6}"
+noise,cnn_pooled_query,audio/정지/spk03_148.wav,정지,6,24,정지,"{""전진"": 5, ""대기"": 1}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_083.wav,오른쪽,6,24,오른쪽,"{""왼쪽"": 6}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_080.wav,오른쪽,6,24,오른쪽,"{""대기"": 4, ""출발"": 1, ""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_087.wav,왼쪽,6,24,왼쪽,"{""전진"": 4, ""대기"": 1, ""정지"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_083.wav,오른쪽,6,24,오른쪽,"{""정지"": 3, ""왼쪽"": 2, ""대기"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_146.wav,정지,6,24,정지,"{""전진"": 6}"
+noise,cnn_self_cls,audio/대기/spk03_020.wav,대기,6,24,대기,"{""후진"": 5, ""오른쪽"": 1}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_078.wav,오른쪽,6,24,오른쪽,"{""후진"": 2, ""재시작"": 2, ""대기"": 2}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_069.wav,오른쪽,6,24,오른쪽,"{""왼쪽"": 3, ""전진"": 2, ""시작"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_122.wav,재시작,6,24,재시작,"{""시작"": 6}"
+noise,cnn_pooled_query,audio/대기/spk03_019.wav,대기,6,24,대기,"{""전진"": 4, ""출발"": 2}"
+noise,cnn_self_cls,audio/오른쪽/spk03_072.wav,오른쪽,6,24,오른쪽,"{""왼쪽"": 6}"
+noise-speaker,cnn_self_cls,audio/silence/spk03_022.wav,silence,5,24,silence,"{""오른쪽"": 2, ""재시작"": 2, ""대기"": 1}"
+ce,cnn_mean,audio/silence/spk03_022.wav,silence,5,24,silence,"{""대기"": 3, ""왼쪽"": 1, ""재시작"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_099.wav,왼쪽,5,24,왼쪽,"{""출발"": 5}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_093.wav,왼쪽,5,24,왼쪽,"{""출발"": 3, ""대기"": 2}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_134.wav,전진,5,24,왼쪽,"{""재시작"": 2, ""시작"": 1, ""왼쪽"": 1, ""대기"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_094.wav,왼쪽,5,24,왼쪽,"{""출발"": 3, ""후진"": 2}"
+noise,cnn_pooled_query,audio/복귀/spk03_041.wav,복귀,5,24,복귀,"{""대기"": 5}"
+noise,cnn_pooled_query,audio/시작/spk03_053.wav,시작,5,24,시작,"{""출발"": 4, ""재시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_190.wav,후진,5,24,후진,"{""출발"": 2, ""대기"": 1, ""재시작"": 1, ""전진"": 1}"
+noise-speaker,cnn_self_cls,audio/silence/spk03_021.wav,silence,5,24,silence,"{""후진"": 2, ""복귀"": 1, ""대기"": 1, ""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_150.wav,정지,5,24,정지,"{""전진"": 5}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_115.wav,재시작,5,24,재시작,"{""시작"": 5}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_071.wav,오른쪽,5,24,오른쪽,"{""왼쪽"": 5}"
+noise-speaker,cnn_self_cls,audio/대기/spk03_004.wav,대기,5,24,대기,"{""전진"": 4, ""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_153.wav,정지,5,24,전진,"{""전진"": 5}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_038.wav,복귀,5,24,복귀,"{""대기"": 5}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_075.wav,오른쪽,5,24,오른쪽,"{""왼쪽"": 5}"
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_029.wav,복귀,5,24,복귀,"{""대기"": 5}"
+ce,cnn_self_cls,audio/왼쪽/spk03_091.wav,왼쪽,5,24,왼쪽,"{""대기"": 4, ""정지"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_069.wav,오른쪽,5,24,오른쪽,"{""왼쪽"": 3, ""출발"": 1, ""정지"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_078.wav,오른쪽,5,24,오른쪽,"{""대기"": 5}"
+ce,cnn_self_cls,audio/왼쪽/spk03_097.wav,왼쪽,5,24,왼쪽,"{""출발"": 3, ""재시작"": 1, ""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_113.wav,재시작,5,24,재시작,"{""시작"": 4, ""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_193.wav,후진,5,24,후진,"{""왼쪽"": 5}"
+ce,cnn_self_cls,audio/오른쪽/spk03_081.wav,오른쪽,5,24,왼쪽,"{""정지"": 4, ""전진"": 1}"
+ce,cnn_self_cls,audio/전진/spk03_140.wav,전진,5,24,전진,"{""정지"": 5}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_096.wav,왼쪽,5,24,왼쪽,"{""출발"": 3, ""복귀"": 2}"
+noise,cnn_self_cls,audio/정지/spk03_156.wav,정지,5,24,정지,"{""전진"": 3, ""왼쪽"": 1, ""시작"": 1}"
+noise,cnn_self_cls,audio/오른쪽/spk03_080.wav,오른쪽,5,24,오른쪽,"{""정지"": 2, ""출발"": 2, ""왼쪽"": 1}"
+noise,cnn_self_cls,audio/오른쪽/spk03_079.wav,오른쪽,5,24,오른쪽,"{""정지"": 4, ""출발"": 1}"
+noise,cnn_self_cls,audio/후진/spk03_190.wav,후진,5,24,후진,"{""대기"": 4, ""출발"": 1}"
+noise,cnn_self_cls,audio/후진/spk03_195.wav,후진,5,24,대기,"{""대기"": 5}"
+noise,cnn_self_cls,audio/후진/spk03_197.wav,후진,5,24,후진,"{""대기"": 3, ""복귀"": 1, ""오른쪽"": 1}"
+noise,cnn_mean,audio/오른쪽/spk03_069.wav,오른쪽,5,24,오른쪽,"{""왼쪽"": 3, ""출발"": 2}"
+noise-speaker,cnn_mean,audio/대기/spk03_013.wav,대기,5,24,대기,"{""복귀"": 5}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_073.wav,오른쪽,5,24,오른쪽,"{""왼쪽"": 3, ""후진"": 1, ""출발"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_078.wav,오른쪽,5,24,오른쪽,"{""복귀"": 3, ""대기"": 1, ""후진"": 1}"
+noise,cnn_self_cls,audio/오른쪽/spk03_064.wav,오른쪽,5,24,오른쪽,"{""왼쪽"": 5}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_093.wav,왼쪽,5,24,왼쪽,"{""복귀"": 2, ""출발"": 1, ""재시작"": 1, ""대기"": 1}"
+noise,cnn_mean,audio/대기/spk03_011.wav,대기,5,24,대기,"{""후진"": 5}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_004.wav,대기,5,24,왼쪽,"{""전진"": 2, ""정지"": 1, ""후진"": 1, ""시작"": 1}"
+noise,cnn_mean,audio/대기/spk03_004.wav,대기,5,24,대기,"{""전진"": 2, ""정지"": 1, ""후진"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_mean,audio/재시작/spk03_121.wav,재시작,5,24,재시작,"{""시작"": 5}"
+noise-speaker,cnn_mean,audio/전진/spk03_141.wav,전진,5,24,전진,"{""정지"": 4, ""후진"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_152.wav,정지,5,24,정지,"{""후진"": 3, ""복귀"": 2}"
+noise,cnn_pooled_query,audio/정지/spk03_161.wav,정지,5,24,정지,"{""대기"": 3, ""전진"": 1, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_186.wav,후진,5,24,후진,"{""정지"": 4, ""대기"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_160.wav,정지,5,24,전진,"{""전진"": 4, ""후진"": 1}"
+noise-speaker,cnn_mean,audio/후진/spk03_190.wav,후진,5,24,후진,"{""정지"": 2, ""복귀"": 2, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/후진/spk03_193.wav,후진,5,24,후진,"{""대기"": 4, ""왼쪽"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_162.wav,정지,5,24,정지,"{""전진"": 5}"
+ce,cnn_self_cls,audio/정지/spk03_148.wav,정지,5,24,정지,"{""전진"": 4, ""대기"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_149.wav,정지,5,24,정지,"{""대기"": 3, ""재시작"": 1, ""전진"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_131.wav,전진,5,24,전진,"{""정지"": 5}"
+ce,cnn_mean,audio/silence/spk03_021.wav,silence,5,24,silence,"{""대기"": 2, ""재시작"": 1, ""왼쪽"": 1, ""복귀"": 1}"
+ce,cnn_mean,audio/복귀/spk03_041.wav,복귀,5,24,복귀,"{""왼쪽"": 3, ""전진"": 1, ""대기"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_123.wav,재시작,5,24,재시작,"{""시작"": 5}"
+ce,cnn_pooled_query,audio/정지/spk03_154.wav,정지,5,24,정지,"{""전진"": 5}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_073.wav,오른쪽,5,24,오른쪽,"{""왼쪽"": 4, ""후진"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_196.wav,후진,5,24,후진,"{""복귀"": 2, ""정지"": 1, ""전진"": 1, ""시작"": 1}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_096.wav,왼쪽,5,24,왼쪽,"{""출발"": 4, ""시작"": 1}"
+ce,cnn_pooled_query,audio/silence/spk03_021.wav,silence,5,24,silence,"{""후진"": 2, ""오른쪽"": 2, ""시작"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_139.wav,전진,5,24,전진,"{""정지"": 4, ""재시작"": 1}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_102.wav,왼쪽,5,24,왼쪽,"{""출발"": 1, ""오른쪽"": 1, ""대기"": 1, ""전진"": 1, ""시작"": 1}"
+ce,cnn_pooled_query,audio/silence/spk03_023.wav,silence,5,24,silence,"{""오른쪽"": 3, ""출발"": 1, ""시작"": 1}"
+ce,cnn_mean,audio/전진/spk03_136.wav,전진,5,24,정지,"{""정지"": 4, ""왼쪽"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_079.wav,오른쪽,5,24,오른쪽,"{""정지"": 2, ""왼쪽"": 2, ""출발"": 1}"
+ce,cnn_mean,audio/정지/spk03_163.wav,정지,5,24,정지,"{""대기"": 2, ""복귀"": 2, ""오른쪽"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_172.wav,출발,5,24,출발,"{""시작"": 2, ""왼쪽"": 2, ""재시작"": 1}"
+ce,cnn_mean,audio/후진/spk03_202.wav,후진,5,24,후진,"{""대기"": 2, ""복귀"": 2, ""왼쪽"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_072.wav,오른쪽,5,24,오른쪽,"{""정지"": 3, ""출발"": 1, ""전진"": 1}"
+ce,cnn_mean,audio/복귀/spk03_030.wav,복귀,5,24,복귀,"{""왼쪽"": 3, ""대기"": 2}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_080.wav,오른쪽,5,24,오른쪽,"{""전진"": 3, ""정지"": 2}"
+ce,cnn_pooled_query,audio/후진/spk03_203.wav,후진,5,24,후진,"{""정지"": 2, ""전진"": 1, ""대기"": 1, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/복귀/spk03_038.wav,복귀,5,24,복귀,"{""후진"": 3, ""대기"": 2}"
+ce,cnn_self_cls,audio/복귀/spk03_041.wav,복귀,5,24,복귀,"{""대기"": 3, ""정지"": 2}"
+ce,cnn_mean,audio/silence/spk03_023.wav,silence,5,24,silence,"{""왼쪽"": 3, ""재시작"": 1, ""정지"": 1}"
+ce,cnn_self_cls,audio/출발/spk03_173.wav,출발,4,24,출발,"{""시작"": 4}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_139.wav,전진,4,24,전진,"{""정지"": 3, ""오른쪽"": 1}"
+ce,cnn_mean,audio/왼쪽/spk03_094.wav,왼쪽,4,24,왼쪽,"{""복귀"": 3, ""오른쪽"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_038.wav,복귀,4,24,대기,"{""재시작"": 3, ""대기"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_138.wav,전진,4,24,전진,"{""정지"": 4}"
+noise,cnn_self_cls,audio/전진/spk03_134.wav,전진,4,24,전진,"{""왼쪽"": 3, ""재시작"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_102.wav,왼쪽,4,24,왼쪽,"{""대기"": 2, ""출발"": 1, ""시작"": 1}"
+ce,cnn_mean,audio/후진/spk03_199.wav,후진,4,24,후진,"{""왼쪽"": 1, ""오른쪽"": 1, ""복귀"": 1, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_079.wav,오른쪽,4,24,오른쪽,"{""정지"": 3, ""출발"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_163.wav,정지,4,24,정지,"{""대기"": 4}"
+ce,cnn_mean,audio/후진/spk03_195.wav,후진,4,24,후진,"{""왼쪽"": 2, ""대기"": 1, ""전진"": 1}"
+noise,cnn_self_cls,audio/재시작/spk03_105.wav,재시작,4,24,재시작,"{""시작"": 4}"
+ce,cnn_pooled_query,audio/정지/spk03_159.wav,정지,4,24,정지,"{""전진"": 3, ""대기"": 1}"
+ce,cnn_mean,audio/재시작/spk03_108.wav,재시작,4,24,재시작,"{""시작"": 4}"
+noise,cnn_pooled_query,audio/시작/spk03_049.wav,시작,4,24,시작,"{""출발"": 4}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_097.wav,왼쪽,4,24,왼쪽,"{""대기"": 3, ""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_132.wav,전진,4,24,전진,"{""정지"": 3, ""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_075.wav,오른쪽,4,24,오른쪽,"{""왼쪽"": 4}"
+ce,cnn_self_cls,audio/대기/spk03_017.wav,대기,4,24,대기,"{""후진"": 3, ""왼쪽"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_097.wav,왼쪽,4,24,왼쪽,"{""출발"": 3, ""대기"": 1}"
+noise-speaker,cnn_self_cls,audio/대기/spk03_013.wav,대기,4,24,대기,"{""후진"": 2, ""왼쪽"": 2}"
+noise-speaker,cnn_mean,audio/대기/spk03_006.wav,대기,4,24,대기,"{""복귀"": 4}"
+noise-speaker,cnn_mean,audio/대기/spk03_017.wav,대기,4,24,대기,"{""후진"": 4}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_041.wav,복귀,4,24,복귀,"{""대기"": 4}"
+noise,cnn_mean,audio/대기/spk03_016.wav,대기,4,24,대기,"{""후진"": 2, ""복귀"": 1, ""전진"": 1}"
+ce,cnn_self_cls,audio/복귀/spk03_028.wav,복귀,4,24,복귀,"{""대기"": 2, ""silence"": 1, ""후진"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_197.wav,후진,4,24,후진,"{""대기"": 1, ""복귀"": 1, ""출발"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_mean,audio/복귀/spk03_040.wav,복귀,4,24,복귀,"{""대기"": 3, ""왼쪽"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_078.wav,오른쪽,4,24,오른쪽,"{""왼쪽"": 2, ""복귀"": 1, ""정지"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_134.wav,전진,4,24,전진,"{""왼쪽"": 2, ""출발"": 1, ""대기"": 1}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_087.wav,왼쪽,4,24,왼쪽,"{""전진"": 4}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_093.wav,왼쪽,4,24,왼쪽,"{""출발"": 3, ""재시작"": 1}"
+ce,cnn_mean,audio/시작/spk03_054.wav,시작,4,24,시작,"{""재시작"": 3, ""출발"": 1}"
+noise-speaker,cnn_pooled_query,audio/출발/spk03_173.wav,출발,4,24,출발,"{""시작"": 4}"
+ce,cnn_pooled_query,audio/복귀/spk03_027.wav,복귀,4,24,복귀,"{""정지"": 4}"
+noise,cnn_mean,audio/오른쪽/spk03_064.wav,오른쪽,4,24,오른쪽,"{""왼쪽"": 2, ""복귀"": 1, ""재시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_161.wav,정지,4,24,정지,"{""전진"": 3, ""대기"": 1}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_093.wav,왼쪽,4,24,왼쪽,"{""출발"": 1, ""복귀"": 1, ""시작"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_091.wav,왼쪽,4,24,왼쪽,"{""대기"": 4}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_079.wav,오른쪽,4,24,오른쪽,"{""정지"": 2, ""전진"": 1, ""왼쪽"": 1}"
+ce,cnn_self_cls,audio/silence/spk03_021.wav,silence,4,24,silence,"{""후진"": 3, ""정지"": 1}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_025.wav,복귀,4,24,복귀,"{""대기"": 2, ""후진"": 2}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_149.wav,정지,4,24,정지,"{""전진"": 2, ""대기"": 1, ""재시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_069.wav,오른쪽,4,24,오른쪽,"{""출발"": 1, ""대기"": 1, ""왼쪽"": 1, ""시작"": 1}"
+ce,cnn_mean,audio/전진/spk03_141.wav,전진,4,24,전진,"{""대기"": 2, ""정지"": 2}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_190.wav,후진,4,24,후진,"{""정지"": 2, ""전진"": 1, ""대기"": 1}"
+noise,cnn_mean,audio/후진/spk03_193.wav,후진,4,24,후진,"{""출발"": 2, ""오른쪽"": 2}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_163.wav,정지,4,24,정지,"{""전진"": 3, ""대기"": 1}"
+ce,cnn_mean,audio/전진/spk03_138.wav,전진,4,24,전진,"{""정지"": 2, ""대기"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_027.wav,복귀,4,24,복귀,"{""대기"": 3, ""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_186.wav,후진,4,24,후진,"{""복귀"": 2, ""정지"": 1, ""재시작"": 1}"
+noise,cnn_mean,audio/전진/spk03_141.wav,전진,4,24,전진,"{""정지"": 2, ""재시작"": 1, ""후진"": 1}"
+noise,cnn_mean,audio/정지/spk03_145.wav,정지,4,24,정지,"{""복귀"": 2, ""대기"": 2}"
+ce,cnn_self_cls,audio/재시작/spk03_119.wav,재시작,4,24,재시작,"{""시작"": 4}"
+noise,cnn_pooled_query,audio/대기/spk03_003.wav,대기,4,24,대기,"{""오른쪽"": 2, ""출발"": 1, ""정지"": 1}"
+noise,cnn_self_cls,audio/오른쪽/spk03_069.wav,오른쪽,4,24,오른쪽,"{""왼쪽"": 2, ""출발"": 1, ""시작"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_167.wav,출발,4,24,출발,"{""시작"": 4}"
+ce,cnn_pooled_query,audio/출발/spk03_178.wav,출발,4,24,출발,"{""시작"": 3, ""재시작"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_148.wav,정지,4,24,정지,"{""전진"": 4}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_176.wav,출발,4,24,출발,"{""시작"": 2, ""재시작"": 2}"
+noise-speaker,cnn_pooled_query,audio/시작/spk03_053.wav,시작,4,24,시작,"{""재시작"": 4}"
+ce,cnn_self_cls,audio/왼쪽/spk03_090.wav,왼쪽,4,24,왼쪽,"{""출발"": 1, ""오른쪽"": 1, ""재시작"": 1, ""정지"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_096.wav,왼쪽,4,24,왼쪽,"{""출발"": 4}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_178.wav,출발,4,24,출발,"{""재시작"": 4}"
+ce,cnn_mean,audio/출발/spk03_173.wav,출발,4,24,출발,"{""시작"": 2, ""대기"": 2}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_156.wav,정지,4,24,정지,"{""후진"": 2, ""왼쪽"": 1, ""전진"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_089.wav,왼쪽,4,24,왼쪽,"{""출발"": 3, ""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_079.wav,오른쪽,4,24,오른쪽,"{""전진"": 3, ""출발"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_163.wav,정지,4,24,정지,"{""오른쪽"": 2, ""대기"": 2}"
+noise,cnn_mean,audio/전진/spk03_129.wav,전진,4,24,전진,"{""정지"": 3, ""오른쪽"": 1}"
+ce,cnn_mean,audio/정지/spk03_145.wav,정지,4,24,정지,"{""대기"": 2, ""복귀"": 1, ""오른쪽"": 1}"
+ce,cnn_mean,audio/전진/spk03_125.wav,전진,4,24,전진,"{""정지"": 3, ""대기"": 1}"
+noise,cnn_mean,audio/후진/spk03_186.wav,후진,4,24,후진,"{""복귀"": 3, ""오른쪽"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_068.wav,오른쪽,3,24,오른쪽,"{""왼쪽"": 2, ""복귀"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_067.wav,오른쪽,3,24,오른쪽,"{""복귀"": 2, ""왼쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/출발/spk03_172.wav,출발,3,24,출발,"{""시작"": 1, ""복귀"": 1, ""대기"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_168.wav,출발,3,24,출발,"{""시작"": 3}"
+ce,cnn_pooled_query,audio/대기/spk03_004.wav,대기,3,24,대기,"{""왼쪽"": 2, ""전진"": 1}"
+noise-speaker,cnn_pooled_query,audio/silence/spk03_021.wav,silence,3,24,silence,"{""전진"": 1, ""정지"": 1, ""시작"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_067.wav,오른쪽,3,24,오른쪽,"{""왼쪽"": 3}"
+ce,cnn_pooled_query,audio/대기/spk03_005.wav,대기,3,24,대기,"{""왼쪽"": 1, ""복귀"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_156.wav,정지,3,24,정지,"{""전진"": 2, ""시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_202.wav,후진,3,24,후진,"{""전진"": 2, ""정지"": 1}"
+ce,cnn_mean,audio/정지/spk03_158.wav,정지,3,24,정지,"{""전진"": 2, ""대기"": 1}"
+noise,cnn_mean,audio/복귀/spk03_040.wav,복귀,3,24,복귀,"{""왼쪽"": 2, ""후진"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_064.wav,오른쪽,3,24,오른쪽,"{""후진"": 2, ""복귀"": 1}"
+noise-speaker,cnn_self_cls,audio/silence/spk03_023.wav,silence,3,24,silence,"{""후진"": 3}"
+ce,cnn_mean,audio/오른쪽/spk03_083.wav,오른쪽,3,24,오른쪽,"{""대기"": 1, ""복귀"": 1, ""정지"": 1}"
+noise,cnn_mean,audio/후진/spk03_196.wav,후진,3,24,후진,"{""복귀"": 2, ""시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_025.wav,복귀,3,24,복귀,"{""후진"": 2, ""대기"": 1}"
+noise,cnn_mean,audio/복귀/spk03_042.wav,복귀,3,24,복귀,"{""후진"": 2, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_149.wav,정지,3,24,정지,"{""대기"": 3}"
+noise-speaker,cnn_mean,audio/후진/spk03_202.wav,후진,3,24,후진,"{""복귀"": 2, ""정지"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_076.wav,오른쪽,3,24,왼쪽,"{""왼쪽"": 3}"
+noise,cnn_mean,audio/후진/spk03_197.wav,후진,3,24,후진,"{""대기"": 1, ""복귀"": 1, ""재시작"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_145.wav,정지,3,24,정지,"{""대기"": 2, ""복귀"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_160.wav,정지,3,24,정지,"{""전진"": 3}"
+noise-speaker,cnn_mean,audio/재시작/spk03_119.wav,재시작,3,24,재시작,"{""시작"": 3}"
+noise,cnn_mean,audio/전진/spk03_136.wav,전진,3,24,전진,"{""정지"": 2, ""오른쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_136.wav,전진,3,24,전진,"{""대기"": 1, ""출발"": 1, ""정지"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_157.wav,정지,3,24,정지,"{""전진"": 1, ""후진"": 1, ""재시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_130.wav,전진,3,24,전진,"{""정지"": 3}"
+noise,cnn_mean,audio/전진/spk03_131.wav,전진,3,24,전진,"{""정지"": 3}"
+ce,cnn_mean,audio/후진/spk03_196.wav,후진,3,24,후진,"{""오른쪽"": 2, ""왼쪽"": 1}"
+ce,cnn_mean,audio/후진/spk03_192.wav,후진,3,24,후진,"{""오른쪽"": 2, ""복귀"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_186.wav,후진,3,24,후진,"{""대기"": 1, ""전진"": 1, ""오른쪽"": 1}"
+ce,cnn_mean,audio/출발/spk03_181.wav,출발,3,24,출발,"{""시작"": 3}"
+noise,cnn_mean,audio/전진/spk03_125.wav,전진,3,24,전진,"{""정지"": 1, ""대기"": 1, ""출발"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_202.wav,후진,3,24,후진,"{""정지"": 2, ""오른쪽"": 1}"
+noise,cnn_pooled_query,audio/시작/spk03_050.wav,시작,3,24,시작,"{""재시작"": 3}"
+noise,cnn_pooled_query,audio/복귀/spk03_042.wav,복귀,3,24,복귀,"{""대기"": 3}"
+ce,cnn_mean,audio/후진/spk03_191.wav,후진,3,24,후진,"{""전진"": 1, ""왼쪽"": 1, ""복귀"": 1}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_140.wav,전진,3,24,전진,"{""정지"": 3}"
+noise-speaker,cnn_mean,audio/전진/spk03_131.wav,전진,3,24,전진,"{""정지"": 2, ""오른쪽"": 1}"
+noise,cnn_mean,audio/오른쪽/spk03_068.wav,오른쪽,3,24,오른쪽,"{""복귀"": 2, ""왼쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_156.wav,정지,3,24,정지,"{""왼쪽"": 1, ""전진"": 1, ""시작"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_140.wav,전진,3,24,전진,"{""정지"": 3}"
+noise,cnn_mean,audio/오른쪽/spk03_071.wav,오른쪽,3,24,오른쪽,"{""왼쪽"": 3}"
+ce,cnn_self_cls,audio/silence/spk03_023.wav,silence,3,24,silence,"{""시작"": 1, ""오른쪽"": 1, ""후진"": 1}"
+ce,cnn_mean,audio/출발/spk03_165.wav,출발,3,24,출발,"{""시작"": 2, ""전진"": 1}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_079.wav,오른쪽,3,24,오른쪽,"{""왼쪽"": 2, ""출발"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_157.wav,정지,3,24,정지,"{""전진"": 2, ""대기"": 1}"
+noise,cnn_mean,audio/오른쪽/spk03_078.wav,오른쪽,3,24,오른쪽,"{""복귀"": 2, ""재시작"": 1}"
+noise,cnn_pooled_query,audio/복귀/spk03_025.wav,복귀,3,24,복귀,"{""후진"": 2, ""대기"": 1}"
+noise,cnn_mean,audio/오른쪽/spk03_080.wav,오른쪽,3,24,오른쪽,"{""출발"": 2, ""정지"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_151.wav,정지,3,24,정지,"{""전진"": 3}"
+noise,cnn_mean,audio/전진/spk03_140.wav,전진,3,24,전진,"{""정지"": 3}"
+ce,cnn_pooled_query,audio/정지/spk03_151.wav,정지,3,24,정지,"{""전진"": 2, ""대기"": 1}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_072.wav,오른쪽,3,24,오른쪽,"{""왼쪽"": 2, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_077.wav,오른쪽,3,24,오른쪽,"{""왼쪽"": 2, ""복귀"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_085.wav,왼쪽,3,24,왼쪽,"{""전진"": 2, ""후진"": 1}"
+ce,cnn_mean,audio/시작/spk03_061.wav,시작,3,24,시작,"{""대기"": 1, ""출발"": 1, ""재시작"": 1}"
+noise-speaker,cnn_mean,audio/대기/spk03_010.wav,대기,3,24,대기,"{""복귀"": 2, ""후진"": 1}"
+ce,cnn_mean,audio/복귀/spk03_039.wav,복귀,3,24,복귀,"{""왼쪽"": 3}"
+ce,cnn_self_cls,audio/전진/spk03_135.wav,전진,3,24,전진,"{""정지"": 2, ""후진"": 1}"
+noise,cnn_pooled_query,audio/후진/spk03_202.wav,후진,3,24,후진,"{""왼쪽"": 2, ""대기"": 1}"
+ce,cnn_self_cls,audio/시작/spk03_052.wav,시작,3,24,시작,"{""재시작"": 3}"
+noise,cnn_pooled_query,audio/후진/spk03_199.wav,후진,3,24,후진,"{""시작"": 1, ""출발"": 1, ""대기"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_096.wav,왼쪽,3,24,왼쪽,"{""오른쪽"": 1, ""출발"": 1, ""시작"": 1}"
+ce,cnn_mean,audio/복귀/spk03_025.wav,복귀,3,24,복귀,"{""정지"": 1, ""왼쪽"": 1, ""대기"": 1}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_148.wav,정지,3,24,정지,"{""전진"": 3}"
+ce,cnn_self_cls,audio/정지/spk03_146.wav,정지,3,24,정지,"{""전진"": 3}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_078.wav,오른쪽,3,24,오른쪽,"{""출발"": 1, ""복귀"": 1, ""정지"": 1}"
+ce,cnn_mean,audio/복귀/spk03_028.wav,복귀,3,24,복귀,"{""대기"": 2, ""후진"": 1}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_141.wav,전진,3,24,전진,"{""대기"": 3}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_085.wav,왼쪽,3,24,왼쪽,"{""오른쪽"": 2, ""전진"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_157.wav,정지,3,24,정지,"{""전진"": 3}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_125.wav,전진,3,24,전진,"{""정지"": 3}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_123.wav,재시작,3,24,재시작,"{""시작"": 3}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_122.wav,재시작,3,24,재시작,"{""시작"": 3}"
+ce,cnn_self_cls,audio/출발/spk03_165.wav,출발,3,24,출발,"{""시작"": 3}"
+noise,cnn_self_cls,audio/재시작/spk03_121.wav,재시작,3,24,재시작,"{""시작"": 3}"
+ce,cnn_pooled_query,audio/복귀/spk03_039.wav,복귀,3,24,복귀,"{""대기"": 3}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_109.wav,재시작,3,24,재시작,"{""시작"": 3}"
+ce,cnn_pooled_query,audio/복귀/spk03_035.wav,복귀,3,24,복귀,"{""대기"": 3}"
+noise,cnn_self_cls,audio/왼쪽/spk03_091.wav,왼쪽,3,24,왼쪽,"{""재시작"": 3}"
+ce,cnn_self_cls,audio/전진/spk03_131.wav,전진,3,24,전진,"{""정지"": 2, ""시작"": 1}"
+noise,cnn_self_cls,audio/대기/spk03_004.wav,대기,3,24,대기,"{""재시작"": 2, ""출발"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_065.wav,오른쪽,3,24,오른쪽,"{""정지"": 2, ""전진"": 1}"
+ce,cnn_mean,audio/대기/spk03_005.wav,대기,3,24,대기,"{""왼쪽"": 2, ""복귀"": 1}"
+ce,cnn_mean,audio/대기/spk03_006.wav,대기,3,24,대기,"{""복귀"": 2, ""왼쪽"": 1}"
+noise,cnn_self_cls,audio/시작/spk03_052.wav,시작,3,24,시작,"{""출발"": 2, ""재시작"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_093.wav,왼쪽,3,24,왼쪽,"{""출발"": 1, ""후진"": 1, ""오른쪽"": 1}"
+noise,cnn_self_cls,audio/복귀/spk03_029.wav,복귀,3,24,복귀,"{""대기"": 1, ""후진"": 1, ""재시작"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_068.wav,오른쪽,3,24,오른쪽,"{""재시작"": 2, ""왼쪽"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_098.wav,왼쪽,3,24,왼쪽,"{""오른쪽"": 2, ""재시작"": 1}"
+noise,cnn_self_cls,audio/복귀/spk03_025.wav,복귀,3,24,복귀,"{""후진"": 3}"
+ce,cnn_self_cls,audio/오른쪽/spk03_069.wav,오른쪽,3,24,오른쪽,"{""정지"": 2, ""출발"": 1}"
+ce,cnn_mean,audio/대기/spk03_010.wav,대기,3,24,대기,"{""왼쪽"": 2, ""재시작"": 1}"
+noise,cnn_self_cls,audio/오른쪽/spk03_083.wav,오른쪽,3,24,오른쪽,"{""정지"": 2, ""시작"": 1}"
+ce,cnn_self_cls,audio/재시작/spk03_105.wav,재시작,3,24,재시작,"{""시작"": 3}"
+noise,cnn_self_cls,audio/오른쪽/spk03_067.wav,오른쪽,3,24,오른쪽,"{""왼쪽"": 2, ""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_174.wav,출발,3,24,출발,"{""시작"": 2, ""오른쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_173.wav,출발,3,24,출발,"{""재시작"": 2, ""시작"": 1}"
+noise,cnn_self_cls,audio/대기/spk03_014.wav,대기,3,24,대기,"{""후진"": 2, ""복귀"": 1}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_168.wav,출발,3,24,출발,"{""오른쪽"": 2, ""후진"": 1}"
+ce,cnn_self_cls,audio/재시작/spk03_121.wav,재시작,3,24,재시작,"{""시작"": 3}"
+noise,cnn_self_cls,audio/오른쪽/spk03_071.wav,오른쪽,3,24,오른쪽,"{""왼쪽"": 3}"
+noise,cnn_self_cls,audio/오른쪽/spk03_076.wav,오른쪽,3,24,오른쪽,"{""시작"": 2, ""왼쪽"": 1}"
+ce,cnn_mean,audio/복귀/spk03_036.wav,복귀,3,24,복귀,"{""대기"": 2, ""왼쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/silence/spk03_022.wav,silence,3,24,silence,"{""전진"": 1, ""재시작"": 1, ""시작"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_024.wav,복귀,3,24,복귀,"{""대기"": 2, ""재시작"": 1}"
+noise-speaker,cnn_mean,audio/silence/spk03_023.wav,silence,3,24,silence,"{""후진"": 3}"
+ce,cnn_mean,audio/시작/spk03_051.wav,시작,3,24,시작,"{""재시작"": 3}"
+noise,cnn_self_cls,audio/출발/spk03_181.wav,출발,3,24,출발,"{""시작"": 3}"
+ce,cnn_pooled_query,audio/복귀/spk03_030.wav,복귀,3,24,복귀,"{""대기"": 2, ""왼쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_080.wav,오른쪽,3,24,오른쪽,"{""대기"": 2, ""출발"": 1}"
+noise,cnn_self_cls,audio/출발/spk03_173.wav,출발,3,24,출발,"{""시작"": 3}"
+noise,cnn_mean,audio/silence/spk03_021.wav,silence,3,24,silence,"{""오른쪽"": 2, ""대기"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_146.wav,정지,3,24,정지,"{""전진"": 3}"
+noise,cnn_pooled_query,audio/전진/spk03_140.wav,전진,3,24,전진,"{""정지"": 3}"
+ce,cnn_self_cls,audio/복귀/spk03_027.wav,복귀,3,24,복귀,"{""정지"": 3}"
+noise,cnn_self_cls,audio/정지/spk03_145.wav,정지,3,24,정지,"{""전진"": 1, ""대기"": 1, ""출발"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_156.wav,정지,3,24,정지,"{""복귀"": 1, ""전진"": 1, ""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_071.wav,오른쪽,3,24,오른쪽,"{""왼쪽"": 3}"
+noise,cnn_self_cls,audio/정지/spk03_158.wav,정지,3,24,정지,"{""전진"": 3}"
+noise,cnn_pooled_query,audio/재시작/spk03_109.wav,재시작,3,24,재시작,"{""시작"": 3}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_101.wav,왼쪽,3,24,왼쪽,"{""출발"": 2, ""전진"": 1}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_099.wav,왼쪽,3,24,왼쪽,"{""출발"": 2, ""대기"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_139.wav,전진,3,24,전진,"{""정지"": 3}"
+noise-speaker,cnn_mean,audio/대기/spk03_004.wav,대기,3,24,대기,"{""전진"": 1, ""후진"": 1, ""복귀"": 1}"
+noise,cnn_mean,audio/복귀/spk03_028.wav,복귀,3,24,복귀,"{""대기"": 3}"
+ce,cnn_mean,audio/시작/spk03_059.wav,시작,3,24,시작,"{""재시작"": 2, ""복귀"": 1}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_093.wav,왼쪽,3,24,왼쪽,"{""출발"": 3}"
+noise,cnn_self_cls,audio/정지/spk03_163.wav,정지,2,24,정지,"{""재시작"": 2}"
+noise,cnn_self_cls,audio/오른쪽/spk03_070.wav,오른쪽,2,24,오른쪽,"{""정지"": 1, ""왼쪽"": 1}"
+noise-speaker,cnn_mean,audio/복귀/spk03_042.wav,복귀,2,24,복귀,"{""대기"": 1, ""후진"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_128.wav,전진,2,24,전진,"{""정지"": 2}"
+ce,cnn_mean,audio/출발/spk03_171.wav,출발,2,24,출발,"{""재시작"": 1, ""시작"": 1}"
+noise,cnn_self_cls,audio/오른쪽/spk03_068.wav,오른쪽,2,24,오른쪽,"{""시작"": 2}"
+noise,cnn_self_cls,audio/대기/spk03_016.wav,대기,2,24,대기,"{""재시작"": 1, ""시작"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_162.wav,정지,2,24,정지,"{""시작"": 2}"
+noise,cnn_self_cls,audio/오른쪽/spk03_065.wav,오른쪽,2,24,오른쪽,"{""정지"": 1, ""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_164.wav,출발,2,24,출발,"{""대기"": 1, ""전진"": 1}"
+ce,cnn_mean,audio/정지/spk03_162.wav,정지,2,24,정지,"{""대기"": 2}"
+noise-speaker,cnn_mean,audio/전진/spk03_134.wav,전진,2,24,전진,"{""왼쪽"": 2}"
+ce,cnn_mean,audio/후진/spk03_201.wav,후진,2,24,후진,"{""왼쪽"": 1, ""대기"": 1}"
+noise,cnn_self_cls,audio/대기/spk03_019.wav,대기,2,24,대기,"{""출발"": 1, ""정지"": 1}"
+noise,cnn_self_cls,audio/시작/spk03_059.wav,시작,2,24,시작,"{""오른쪽"": 1, ""재시작"": 1}"
+noise,cnn_self_cls,audio/복귀/spk03_041.wav,복귀,2,24,복귀,"{""정지"": 2}"
+noise,cnn_self_cls,audio/복귀/spk03_042.wav,복귀,2,24,복귀,"{""재시작"": 2}"
+ce,cnn_pooled_query,audio/출발/spk03_176.wav,출발,2,24,출발,"{""대기"": 1, ""시작"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_174.wav,출발,2,24,출발,"{""시작"": 2}"
+ce,cnn_pooled_query,audio/대기/spk03_002.wav,대기,2,24,대기,"{""전진"": 1, ""정지"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_119.wav,재시작,2,24,재시작,"{""시작"": 2}"
+noise,cnn_self_cls,audio/복귀/spk03_027.wav,복귀,2,24,복귀,"{""정지"": 1, ""후진"": 1}"
+ce,cnn_mean,audio/정지/spk03_150.wav,정지,2,24,정지,"{""대기"": 1, ""전진"": 1}"
+noise,cnn_mean,audio/후진/spk03_195.wav,후진,2,24,후진,"{""전진"": 2}"
+ce,cnn_pooled_query,audio/대기/spk03_001.wav,대기,2,24,대기,"{""전진"": 1, ""후진"": 1}"
+noise,cnn_self_cls,audio/후진/spk03_202.wav,후진,2,24,후진,"{""대기"": 1, ""왼쪽"": 1}"
+ce,cnn_mean,audio/정지/spk03_157.wav,정지,2,24,정지,"{""전진"": 1, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_163.wav,정지,2,24,정지,"{""대기"": 2}"
+noise,cnn_self_cls,audio/오른쪽/spk03_078.wav,오른쪽,2,24,오른쪽,"{""정지"": 1, ""대기"": 1}"
+noise,cnn_pooled_query,audio/silence/spk03_023.wav,silence,2,24,silence,"{""대기"": 1, ""정지"": 1}"
+ce,cnn_mean,audio/정지/spk03_159.wav,정지,2,24,정지,"{""대기"": 2}"
+ce,cnn_pooled_query,audio/대기/spk03_013.wav,대기,2,24,대기,"{""왼쪽"": 2}"
+ce,cnn_pooled_query,audio/대기/spk03_008.wav,대기,2,24,대기,"{""전진"": 1, ""오른쪽"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_138.wav,전진,2,24,전진,"{""정지"": 2}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_071.wav,오른쪽,2,24,오른쪽,"{""왼쪽"": 2}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_065.wav,오른쪽,2,24,오른쪽,"{""왼쪽"": 2}"
+noise-speaker,cnn_pooled_query,audio/silence/spk03_023.wav,silence,2,24,silence,"{""대기"": 1, ""전진"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_144.wav,정지,2,24,정지,"{""전진"": 2}"
+noise,cnn_pooled_query,audio/후진/spk03_186.wav,후진,2,24,후진,"{""출발"": 1, ""전진"": 1}"
+noise,cnn_pooled_query,audio/시작/spk03_056.wav,시작,2,24,시작,"{""silence"": 1, ""출발"": 1}"
+noise,cnn_pooled_query,audio/시작/spk03_057.wav,시작,2,24,시작,"{""출발"": 2}"
+noise,cnn_pooled_query,audio/시작/spk03_059.wav,시작,2,24,시작,"{""출발"": 1, ""복귀"": 1}"
+noise,cnn_pooled_query,audio/후진/spk03_185.wav,후진,2,24,후진,"{""전진"": 1, ""출발"": 1}"
+ce,cnn_pooled_query,audio/시작/spk03_051.wav,시작,2,24,시작,"{""재시작"": 2}"
+noise,cnn_pooled_query,audio/정지/spk03_158.wav,정지,2,24,정지,"{""전진"": 1, ""대기"": 1}"
+noise-speaker,cnn_mean,audio/시작/spk03_052.wav,시작,2,24,시작,"{""재시작"": 2}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_070.wav,오른쪽,2,24,오른쪽,"{""재시작"": 1, ""복귀"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_162.wav,정지,2,24,정지,"{""전진"": 2}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_068.wav,오른쪽,2,24,오른쪽,"{""왼쪽"": 1, ""복귀"": 1}"
+noise,cnn_pooled_query,audio/출발/spk03_173.wav,출발,2,24,출발,"{""대기"": 1, ""시작"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_129.wav,전진,2,24,전진,"{""정지"": 2}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_071.wav,오른쪽,2,24,오른쪽,"{""복귀"": 1, ""왼쪽"": 1}"
+noise,cnn_pooled_query,audio/오른쪽/spk03_070.wav,오른쪽,2,24,오른쪽,"{""출발"": 1, ""왼쪽"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_136.wav,전진,2,24,전진,"{""정지"": 2}"
+ce,cnn_pooled_query,audio/시작/spk03_054.wav,시작,2,24,시작,"{""재시작"": 2}"
+noise,cnn_pooled_query,audio/후진/spk03_191.wav,후진,2,24,후진,"{""출발"": 1, ""대기"": 1}"
+noise,cnn_pooled_query,audio/시작/spk03_048.wav,시작,2,24,시작,"{""출발"": 1, ""재시작"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_091.wav,왼쪽,2,24,왼쪽,"{""대기"": 2}"
+noise,cnn_pooled_query,audio/복귀/spk03_029.wav,복귀,2,24,복귀,"{""대기"": 2}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_091.wav,왼쪽,2,24,왼쪽,"{""대기"": 2}"
+noise,cnn_self_cls,audio/silence/spk03_023.wav,silence,2,24,silence,"{""출발"": 1, ""후진"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_150.wav,정지,2,24,정지,"{""대기"": 1, ""전진"": 1}"
+noise,cnn_self_cls,audio/silence/spk03_021.wav,silence,2,24,silence,"{""출발"": 1, ""재시작"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_093.wav,왼쪽,2,24,왼쪽,"{""출발"": 2}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_097.wav,왼쪽,2,24,왼쪽,"{""재시작"": 1, ""출발"": 1}"
+noise,cnn_pooled_query,audio/후진/spk03_201.wav,후진,2,24,후진,"{""대기"": 1, ""출발"": 1}"
+ce,cnn_mean,audio/출발/spk03_183.wav,출발,2,24,출발,"{""시작"": 2}"
+noise,cnn_pooled_query,audio/복귀/spk03_040.wav,복귀,2,24,복귀,"{""대기"": 1, ""후진"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_145.wav,정지,2,24,정지,"{""오른쪽"": 1, ""대기"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_095.wav,왼쪽,2,24,왼쪽,"{""재시작"": 2}"
+noise,cnn_self_cls,audio/정지/spk03_152.wav,정지,2,24,정지,"{""대기"": 1, ""후진"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_161.wav,정지,2,24,정지,"{""복귀"": 1, ""대기"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_150.wav,정지,2,24,정지,"{""재시작"": 1, ""전진"": 1}"
+noise,cnn_pooled_query,audio/후진/spk03_196.wav,후진,2,24,후진,"{""복귀"": 1, ""대기"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_029.wav,복귀,2,24,복귀,"{""재시작"": 1, ""후진"": 1}"
+noise,cnn_pooled_query,audio/시작/spk03_052.wav,시작,2,24,시작,"{""출발"": 2}"
+ce,cnn_mean,audio/전진/spk03_129.wav,전진,2,24,전진,"{""대기"": 1, ""정지"": 1}"
+noise,cnn_mean,audio/복귀/spk03_027.wav,복귀,2,24,복귀,"{""대기"": 1, ""후진"": 1}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_085.wav,왼쪽,2,24,왼쪽,"{""전진"": 2}"
+noise,cnn_mean,audio/오른쪽/spk03_070.wav,오른쪽,2,24,오른쪽,"{""재시작"": 1, ""복귀"": 1}"
+noise,cnn_mean,audio/오른쪽/spk03_072.wav,오른쪽,2,24,오른쪽,"{""복귀"": 1, ""왼쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_159.wav,정지,2,24,정지,"{""전진"": 2}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_158.wav,정지,2,24,정지,"{""전진"": 2}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_120.wav,재시작,2,24,재시작,"{""왼쪽"": 2}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_145.wav,정지,2,24,정지,"{""대기"": 2}"
+ce,cnn_mean,audio/복귀/spk03_032.wav,복귀,2,24,복귀,"{""왼쪽"": 1, ""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_138.wav,전진,2,24,전진,"{""정지"": 2}"
+ce,cnn_mean,audio/복귀/spk03_031.wav,복귀,2,24,복귀,"{""왼쪽"": 2}"
+noise,cnn_mean,audio/왼쪽/spk03_096.wav,왼쪽,2,24,왼쪽,"{""출발"": 2}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_129.wav,전진,2,24,전진,"{""정지"": 1, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_155.wav,정지,2,24,정지,"{""복귀"": 2}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_124.wav,전진,2,24,전진,"{""정지"": 2}"
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_122.wav,재시작,2,24,재시작,"{""시작"": 2}"
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_119.wav,재시작,2,24,재시작,"{""시작"": 2}"
+noise,cnn_mean,audio/왼쪽/spk03_102.wav,왼쪽,2,24,왼쪽,"{""대기"": 2}"
+ce,cnn_mean,audio/왼쪽/spk03_103.wav,왼쪽,2,24,왼쪽,"{""대기"": 2}"
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_109.wav,재시작,2,24,재시작,"{""시작"": 2}"
+ce,cnn_self_cls,audio/대기/spk03_005.wav,대기,2,24,대기,"{""전진"": 1, ""오른쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_144.wav,정지,2,24,정지,"{""전진"": 2}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_099.wav,왼쪽,2,24,왼쪽,"{""출발"": 2}"
+ce,cnn_self_cls,audio/대기/spk03_001.wav,대기,2,24,대기,"{""전진"": 2}"
+ce,cnn_mean,audio/복귀/spk03_027.wav,복귀,2,24,복귀,"{""후진"": 1, ""정지"": 1}"
+ce,cnn_mean,audio/복귀/spk03_024.wav,복귀,2,24,복귀,"{""왼쪽"": 2}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_154.wav,정지,2,24,정지,"{""전진"": 2}"
+noise,cnn_mean,audio/재시작/spk03_119.wav,재시작,2,24,재시작,"{""시작"": 2}"
+noise,cnn_mean,audio/재시작/spk03_120.wav,재시작,2,24,재시작,"{""전진"": 1, ""왼쪽"": 1}"
+ce,cnn_self_cls,audio/대기/spk03_018.wav,대기,2,24,대기,"{""후진"": 1, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/복귀/spk03_024.wav,복귀,2,24,복귀,"{""정지"": 1, ""후진"": 1}"
+noise-speaker,cnn_pooled_query,audio/출발/spk03_171.wav,출발,2,24,출발,"{""재시작"": 1, ""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_089.wav,왼쪽,2,24,왼쪽,"{""출발"": 2}"
+noise,cnn_mean,audio/silence/spk03_023.wav,silence,2,24,silence,"{""재시작"": 1, ""후진"": 1}"
+noise,cnn_mean,audio/silence/spk03_022.wav,silence,2,24,silence,"{""재시작"": 2}"
+noise-speaker,cnn_self_cls,audio/시작/spk03_054.wav,시작,2,24,시작,"{""재시작"": 2}"
+ce,cnn_self_cls,audio/후진/spk03_202.wav,후진,2,24,후진,"{""정지"": 2}"
+noise-speaker,cnn_self_cls,audio/시작/spk03_052.wav,시작,2,24,시작,"{""재시작"": 2}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_070.wav,오른쪽,2,24,오른쪽,"{""재시작"": 2}"
+noise-speaker,cnn_self_cls,audio/시작/spk03_048.wav,시작,2,24,시작,"{""재시작"": 2}"
+ce,cnn_mean,audio/시작/spk03_050.wav,시작,2,24,시작,"{""재시작"": 2}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_074.wav,오른쪽,2,24,오른쪽,"{""왼쪽"": 2}"
+noise,cnn_mean,audio/대기/spk03_013.wav,대기,2,24,대기,"{""복귀"": 2}"
+noise-speaker,cnn_self_cls,audio/시작/spk03_046.wav,시작,2,24,시작,"{""재시작"": 2}"
+ce,cnn_mean,audio/시작/spk03_056.wav,시작,2,24,시작,"{""오른쪽"": 1, ""출발"": 1}"
+ce,cnn_mean,audio/시작/spk03_058.wav,시작,2,24,시작,"{""재시작"": 2}"
+noise-speaker,cnn_pooled_query,audio/출발/spk03_176.wav,출발,2,24,출발,"{""시작"": 2}"
+ce,cnn_self_cls,audio/복귀/spk03_039.wav,복귀,2,24,복귀,"{""대기"": 2}"
+ce,cnn_mean,audio/시작/spk03_063.wav,시작,2,24,시작,"{""대기"": 1, ""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/대기/spk03_018.wav,대기,2,24,대기,"{""오른쪽"": 2}"
+ce,cnn_self_cls,audio/출발/spk03_181.wav,출발,2,24,출발,"{""시작"": 1, ""재시작"": 1}"
+noise,cnn_mean,audio/복귀/spk03_038.wav,복귀,2,24,복귀,"{""후진"": 2}"
+ce,cnn_self_cls,audio/복귀/spk03_025.wav,복귀,2,24,복귀,"{""대기"": 2}"
+ce,cnn_self_cls,audio/출발/spk03_176.wav,출발,2,24,출발,"{""시작"": 1, ""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_108.wav,재시작,2,24,재시작,"{""왼쪽"": 2}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_192.wav,후진,2,24,후진,"{""전진"": 2}"
+ce,cnn_mean,audio/복귀/spk03_033.wav,복귀,2,24,복귀,"{""대기"": 2}"
+ce,cnn_self_cls,audio/출발/spk03_168.wav,출발,2,24,출발,"{""시작"": 1, ""복귀"": 1}"
+noise-speaker,cnn_pooled_query,audio/출발/spk03_181.wav,출발,2,24,출발,"{""시작"": 2}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_088.wav,왼쪽,2,24,왼쪽,"{""대기"": 1, ""재시작"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_152.wav,정지,2,24,정지,"{""대기"": 2}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_065.wav,오른쪽,2,24,오른쪽,"{""왼쪽"": 2}"
+noise-speaker,cnn_pooled_query,audio/시작/spk03_048.wav,시작,2,24,시작,"{""재시작"": 2}"
+noise-speaker,cnn_self_cls,audio/후진/spk03_191.wav,후진,2,24,후진,"{""대기"": 2}"
+ce,cnn_self_cls,audio/전진/spk03_125.wav,전진,2,24,전진,"{""정지"": 2}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_064.wav,오른쪽,2,24,오른쪽,"{""후진"": 2}"
+ce,cnn_self_cls,audio/시작/spk03_063.wav,시작,2,24,시작,"{""재시작"": 2}"
+ce,cnn_self_cls,audio/오른쪽/spk03_071.wav,오른쪽,2,24,왼쪽,"{""왼쪽"": 2}"
+ce,cnn_mean,audio/대기/spk03_007.wav,대기,2,24,대기,"{""왼쪽"": 2}"
+ce,cnn_mean,audio/전진/spk03_131.wav,전진,2,24,전진,"{""정지"": 2}"
+noise-speaker,cnn_pooled_query,audio/시작/spk03_051.wav,시작,2,24,시작,"{""재시작"": 2}"
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_040.wav,복귀,2,24,복귀,"{""대기"": 1, ""왼쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_172.wav,출발,2,24,출발,"{""재시작"": 1, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/전진/spk03_127.wav,전진,2,24,전진,"{""정지"": 2}"
+noise,cnn_mean,audio/정지/spk03_163.wav,정지,2,24,정지,"{""복귀"": 1, ""대기"": 1}"
+ce,cnn_mean,audio/전진/spk03_128.wav,전진,2,24,전진,"{""왼쪽"": 1, ""정지"": 1}"
+noise,cnn_mean,audio/정지/spk03_157.wav,정지,2,24,정지,"{""전진"": 2}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_182.wav,출발,2,24,출발,"{""재시작"": 2}"
+noise,cnn_mean,audio/정지/spk03_158.wav,정지,2,24,정지,"{""오른쪽"": 1, ""전진"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_064.wav,오른쪽,2,24,오른쪽,"{""왼쪽"": 1, ""후진"": 1}"
+noise,cnn_mean,audio/정지/spk03_159.wav,정지,2,24,정지,"{""대기"": 2}"
+noise,cnn_mean,audio/정지/spk03_162.wav,정지,2,24,정지,"{""전진"": 2}"
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_041.wav,복귀,2,24,복귀,"{""대기"": 2}"
+ce,cnn_mean,audio/대기/spk03_011.wav,대기,2,24,대기,"{""후진"": 1, ""왼쪽"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_095.wav,왼쪽,2,24,왼쪽,"{""출발"": 2}"
+ce,cnn_self_cls,audio/전진/spk03_128.wav,전진,2,24,전진,"{""시작"": 1, ""정지"": 1}"
+noise,cnn_mean,audio/출발/spk03_173.wav,출발,2,24,출발,"{""시작"": 2}"
+ce,cnn_self_cls,audio/전진/spk03_136.wav,전진,2,24,전진,"{""정지"": 2}"
+ce,cnn_mean,audio/대기/spk03_017.wav,대기,2,24,대기,"{""후진"": 1, ""왼쪽"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_085.wav,왼쪽,2,24,왼쪽,"{""전진"": 2}"
+ce,cnn_mean,audio/대기/spk03_015.wav,대기,2,24,대기,"{""왼쪽"": 2}"
+ce,cnn_mean,audio/재시작/spk03_123.wav,재시작,2,24,재시작,"{""시작"": 2}"
+ce,cnn_pooled_query,audio/후진/spk03_199.wav,후진,2,24,후진,"{""전진"": 1, ""정지"": 1}"
+ce,cnn_mean,audio/전진/spk03_140.wav,전진,2,24,전진,"{""정지"": 2}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_010.wav,대기,2,24,대기,"{""오른쪽"": 2}"
+ce,cnn_pooled_query,audio/후진/spk03_194.wav,후진,2,24,후진,"{""왼쪽"": 1, ""오른쪽"": 1}"
+ce,cnn_self_cls,audio/재시작/spk03_108.wav,재시작,2,24,재시작,"{""시작"": 1, ""복귀"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_182.wav,출발,2,24,출발,"{""재시작"": 1, ""시작"": 1}"
+ce,cnn_mean,audio/전진/spk03_127.wav,전진,2,24,전진,"{""대기"": 2}"
+ce,cnn_self_cls,audio/전진/spk03_129.wav,전진,2,24,전진,"{""정지"": 2}"
+ce,cnn_mean,audio/전진/spk03_126.wav,전진,2,24,전진,"{""정지"": 2}"
+ce,cnn_pooled_query,audio/복귀/spk03_033.wav,복귀,1,24,복귀,"{""대기"": 1}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_095.wav,왼쪽,1,24,왼쪽,"{""출발"": 1}"
+ce,cnn_mean,audio/시작/spk03_053.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_090.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+noise,cnn_self_cls,audio/시작/spk03_063.wav,시작,1,24,시작,"{""출발"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_151.wav,정지,1,24,정지,"{""전진"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_153.wav,정지,1,24,정지,"{""전진"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_140.wav,전진,1,24,전진,"{""정지"": 1}"
+ce,cnn_mean,audio/시작/spk03_045.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_077.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_032.wav,복귀,1,24,복귀,"{""대기"": 1}"
+ce,cnn_mean,audio/대기/spk03_001.wav,대기,1,24,대기,"{""왼쪽"": 1}"
+ce,cnn_mean,audio/대기/spk03_008.wav,대기,1,24,대기,"{""왼쪽"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_157.wav,정지,1,24,정지,"{""전진"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_068.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_075.wav,오른쪽,1,24,오른쪽,"{""정지"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_154.wav,정지,1,24,정지,"{""전진"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_064.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_088.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+noise,cnn_self_cls,audio/시작/spk03_053.wav,시작,1,24,시작,"{""재시작"": 1}"
+ce,cnn_mean,audio/시작/spk03_049.wav,시작,1,24,시작,"{""출발"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_094.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_105.wav,재시작,1,24,재시작,"{""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_107.wav,재시작,1,24,재시작,"{""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_129.wav,전진,1,24,전진,"{""왼쪽"": 1}"
+noise,cnn_self_cls,audio/오른쪽/spk03_075.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_162.wav,정지,1,24,정지,"{""전진"": 1}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_136.wav,전진,1,24,전진,"{""정지"": 1}"
+noise-speaker,cnn_self_cls,audio/전진/spk03_139.wav,전진,1,24,전진,"{""정지"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_026.wav,복귀,1,24,복귀,"{""대기"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_085.wav,왼쪽,1,24,왼쪽,"{""전진"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_089.wav,왼쪽,1,24,왼쪽,"{""시작"": 1}"
+ce,cnn_mean,audio/복귀/spk03_029.wav,복귀,1,24,복귀,"{""대기"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_099.wav,왼쪽,1,24,왼쪽,"{""출발"": 1}"
+ce,cnn_mean,audio/대기/spk03_012.wav,대기,1,24,대기,"{""왼쪽"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_098.wav,왼쪽,1,24,왼쪽,"{""재시작"": 1}"
+noise,cnn_self_cls,audio/왼쪽/spk03_097.wav,왼쪽,1,24,왼쪽,"{""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_152.wav,정지,1,24,정지,"{""후진"": 1}"
+noise-speaker,cnn_self_cls,audio/정지/spk03_157.wav,정지,1,24,정지,"{""재시작"": 1}"
+noise,cnn_self_cls,audio/재시작/spk03_112.wav,재시작,1,24,재시작,"{""시작"": 1}"
+ce,cnn_pooled_query,audio/시작/spk03_046.wav,시작,1,24,시작,"{""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/시작/spk03_044.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_124.wav,전진,1,24,전진,"{""정지"": 1}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_183.wav,출발,1,24,출발,"{""시작"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_036.wav,복귀,1,24,복귀,"{""대기"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_131.wav,전진,1,24,전진,"{""정지"": 1}"
+ce,cnn_mean,audio/복귀/spk03_035.wav,복귀,1,24,복귀,"{""대기"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_126.wav,전진,1,24,전진,"{""정지"": 1}"
+ce,cnn_mean,audio/대기/spk03_018.wav,대기,1,24,대기,"{""왼쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/재시작/spk03_119.wav,재시작,1,24,재시작,"{""시작"": 1}"
+noise,cnn_self_cls,audio/재시작/spk03_120.wav,재시작,1,24,재시작,"{""출발"": 1}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_177.wav,출발,1,24,출발,"{""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_171.wav,출발,1,24,출발,"{""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_169.wav,출발,1,24,출발,"{""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/출발/spk03_165.wav,출발,1,24,출발,"{""재시작"": 1}"
+ce,cnn_pooled_query,audio/복귀/spk03_040.wav,복귀,1,24,복귀,"{""전진"": 1}"
+ce,cnn_pooled_query,audio/시작/spk03_061.wav,시작,1,24,시작,"{""전진"": 1}"
+noise,cnn_self_cls,audio/전진/spk03_125.wav,전진,1,24,전진,"{""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_002.wav,대기,1,24,대기,"{""전진"": 1}"
+noise-speaker,cnn_self_cls,audio/오른쪽/spk03_064.wav,오른쪽,1,24,오른쪽,"{""재시작"": 1}"
+noise-speaker,cnn_mean,audio/전진/spk03_140.wav,전진,1,24,전진,"{""정지"": 1}"
+noise-speaker,cnn_mean,audio/전진/spk03_136.wav,전진,1,24,전진,"{""정지"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_065.wav,오른쪽,1,24,오른쪽,"{""전진"": 1}"
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_068.wav,오른쪽,1,24,오른쪽,"{""재시작"": 1}"
+noise-speaker,cnn_mean,audio/전진/spk03_129.wav,전진,1,24,전진,"{""정지"": 1}"
+noise-speaker,cnn_mean,audio/전진/spk03_128.wav,전진,1,24,전진,"{""정지"": 1}"
+ce,cnn_mean,audio/출발/spk03_172.wav,출발,1,24,출발,"{""재시작"": 1}"
+ce,cnn_mean,audio/출발/spk03_176.wav,출발,1,24,출발,"{""대기"": 1}"
+ce,cnn_mean,audio/출발/spk03_177.wav,출발,1,24,출발,"{""재시작"": 1}"
+noise-speaker,cnn_mean,audio/재시작/spk03_105.wav,재시작,1,24,재시작,"{""시작"": 1}"
+ce,cnn_mean,audio/재시작/spk03_119.wav,재시작,1,24,재시작,"{""시작"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_099.wav,왼쪽,1,24,왼쪽,"{""복귀"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_097.wav,왼쪽,1,24,왼쪽,"{""대기"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_095.wav,왼쪽,1,24,왼쪽,"{""출발"": 1}"
+ce,cnn_mean,audio/후진/spk03_184.wav,후진,1,24,후진,"{""복귀"": 1}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_092.wav,왼쪽,1,24,왼쪽,"{""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_096.wav,왼쪽,1,24,왼쪽,"{""복귀"": 1}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_100.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_101.wav,왼쪽,1,24,왼쪽,"{""대기"": 1}"
+noise-speaker,cnn_mean,audio/왼쪽/spk03_088.wav,왼쪽,1,24,왼쪽,"{""복귀"": 1}"
+ce,cnn_mean,audio/재시작/spk03_104.wav,재시작,1,24,재시작,"{""후진"": 1}"
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_107.wav,재시작,1,24,재시작,"{""시작"": 1}"
+ce,cnn_mean,audio/출발/spk03_167.wav,출발,1,24,출발,"{""시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/시작/spk03_059.wav,시작,1,24,시작,"{""재시작"": 1}"
+ce,cnn_mean,audio/후진/spk03_198.wav,후진,1,24,후진,"{""대기"": 1}"
+ce,cnn_mean,audio/출발/spk03_164.wav,출발,1,24,출발,"{""대기"": 1}"
+ce,cnn_mean,audio/정지/spk03_146.wav,정지,1,24,정지,"{""전진"": 1}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_006.wav,대기,1,24,대기,"{""오른쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_013.wav,대기,1,24,대기,"{""왼쪽"": 1}"
+noise-speaker,cnn_mean,audio/후진/spk03_201.wav,후진,1,24,후진,"{""복귀"": 1}"
+ce,cnn_mean,audio/정지/spk03_147.wav,정지,1,24,정지,"{""복귀"": 1}"
+noise-speaker,cnn_mean,audio/후진/spk03_196.wav,후진,1,24,후진,"{""복귀"": 1}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_018.wav,대기,1,24,대기,"{""오른쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_038.wav,복귀,1,24,복귀,"{""후진"": 1}"
+ce,cnn_mean,audio/정지/spk03_151.wav,정지,1,24,정지,"{""대기"": 1}"
+ce,cnn_mean,audio/정지/spk03_153.wav,정지,1,24,정지,"{""대기"": 1}"
+ce,cnn_mean,audio/정지/spk03_154.wav,정지,1,24,정지,"{""전진"": 1}"
+noise-speaker,cnn_mean,audio/출발/spk03_173.wav,출발,1,24,출발,"{""시작"": 1}"
+noise-speaker,cnn_mean,audio/출발/spk03_165.wav,출발,1,24,출발,"{""시작"": 1}"
+noise,cnn_self_cls,audio/복귀/spk03_036.wav,복귀,1,24,복귀,"{""재시작"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_158.wav,정지,1,24,정지,"{""전진"": 1}"
+ce,cnn_mean,audio/정지/spk03_161.wav,정지,1,24,정지,"{""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/시작/spk03_045.wav,시작,1,24,시작,"{""출발"": 1}"
+noise-speaker,cnn_mean,audio/정지/spk03_154.wav,정지,1,24,정지,"{""전진"": 1}"
+noise-speaker,cnn_pooled_query,audio/시작/spk03_049.wav,시작,1,24,시작,"{""출발"": 1}"
+noise-speaker,cnn_pooled_query,audio/시작/spk03_054.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/시작/spk03_058.wav,시작,1,24,시작,"{""재시작"": 1}"
+ce,cnn_mean,audio/후진/spk03_194.wav,후진,1,24,후진,"{""전진"": 1}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_125.wav,전진,1,24,전진,"{""정지"": 1}"
+noise,cnn_self_cls,audio/정지/spk03_161.wav,정지,1,24,정지,"{""전진"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_065.wav,오른쪽,1,24,오른쪽,"{""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/대기/spk03_005.wav,대기,1,24,대기,"{""오른쪽"": 1}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_030.wav,복귀,1,24,복귀,"{""정지"": 1}"
+noise-speaker,cnn_self_cls,audio/복귀/spk03_033.wav,복귀,1,24,복귀,"{""대기"": 1}"
+noise-speaker,cnn_mean,audio/대기/spk03_001.wav,대기,1,24,대기,"{""왼쪽"": 1}"
+ce,cnn_mean,audio/시작/spk03_057.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise-speaker,cnn_mean,audio/silence/spk03_022.wav,silence,1,24,silence,"{""후진"": 1}"
+noise-speaker,cnn_mean,audio/silence/spk03_021.wav,silence,1,24,silence,"{""대기"": 1}"
+noise,cnn_self_cls,audio/후진/spk03_196.wav,후진,1,24,후진,"{""대기"": 1}"
+ce,cnn_pooled_query,audio/대기/spk03_009.wav,대기,1,24,대기,"{""후진"": 1}"
+ce,cnn_pooled_query,audio/대기/spk03_015.wav,대기,1,24,대기,"{""전진"": 1}"
+ce,cnn_pooled_query,audio/대기/spk03_017.wav,대기,1,24,대기,"{""전진"": 1}"
+ce,cnn_pooled_query,audio/대기/spk03_018.wav,대기,1,24,대기,"{""왼쪽"": 1}"
+noise,cnn_self_cls,audio/출발/spk03_183.wav,출발,1,24,출발,"{""시작"": 1}"
+noise,cnn_self_cls,audio/출발/spk03_177.wav,출발,1,24,출발,"{""시작"": 1}"
+noise,cnn_self_cls,audio/출발/spk03_176.wav,출발,1,24,출발,"{""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/시작/spk03_051.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise,cnn_self_cls,audio/출발/spk03_165.wav,출발,1,24,출발,"{""시작"": 1}"
+noise-speaker,cnn_self_cls,audio/시작/spk03_057.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/시작/spk03_058.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/시작/spk03_059.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise-speaker,cnn_self_cls,audio/시작/spk03_063.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise-speaker,cnn_mean,audio/대기/spk03_011.wav,대기,1,24,대기,"{""후진"": 1}"
+noise-speaker,cnn_self_cls,audio/대기/spk03_006.wav,대기,1,24,대기,"{""재시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/전진/spk03_131.wav,전진,1,24,전진,"{""정지"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_069.wav,오른쪽,1,24,오른쪽,"{""대기"": 1}"
+ce,cnn_mean,audio/왼쪽/spk03_097.wav,왼쪽,1,24,왼쪽,"{""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_144.wav,정지,1,24,정지,"{""전진"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_076.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_146.wav,정지,1,24,정지,"{""전진"": 1}"
+ce,cnn_mean,audio/왼쪽/spk03_091.wav,왼쪽,1,24,왼쪽,"{""대기"": 1}"
+noise-speaker,cnn_mean,audio/오른쪽/spk03_074.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_150.wav,정지,1,24,정지,"{""대기"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_152.wav,정지,1,24,정지,"{""후진"": 1}"
+noise-speaker,cnn_pooled_query,audio/정지/spk03_154.wav,정지,1,24,정지,"{""전진"": 1}"
+noise-speaker,cnn_pooled_query,audio/출발/spk03_174.wav,출발,1,24,출발,"{""시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/출발/spk03_178.wav,출발,1,24,출발,"{""시작"": 1}"
+noise-speaker,cnn_mean,audio/시작/spk03_059.wav,시작,1,24,시작,"{""출발"": 1}"
+noise-speaker,cnn_mean,audio/시작/spk03_058.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/출발/spk03_182.wav,출발,1,24,출발,"{""시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/출발/spk03_183.wav,출발,1,24,출발,"{""시작"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_186.wav,후진,1,24,후진,"{""복귀"": 1}"
+noise-speaker,cnn_mean,audio/시작/spk03_045.wav,시작,1,24,시작,"{""출발"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_191.wav,후진,1,24,후진,"{""전진"": 1}"
+noise-speaker,cnn_pooled_query,audio/후진/spk03_194.wav,후진,1,24,후진,"{""전진"": 1}"
+ce,cnn_mean,audio/오른쪽/spk03_077.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+noise-speaker,cnn_mean,audio/복귀/spk03_024.wav,복귀,1,24,복귀,"{""대기"": 1}"
+noise,cnn_self_cls,audio/복귀/spk03_038.wav,복귀,1,24,복귀,"{""재시작"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_077.wav,오른쪽,1,24,오른쪽,"{""정지"": 1}"
+noise,cnn_mean,audio/정지/spk03_153.wav,정지,1,24,정지,"{""전진"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_191.wav,후진,1,24,후진,"{""정지"": 1}"
+noise,cnn_pooled_query,audio/silence/spk03_021.wav,silence,1,24,silence,"{""후진"": 1}"
+noise,cnn_mean,audio/왼쪽/spk03_097.wav,왼쪽,1,24,왼쪽,"{""대기"": 1}"
+noise,cnn_pooled_query,audio/silence/spk03_022.wav,silence,1,24,silence,"{""출발"": 1}"
+noise,cnn_pooled_query,audio/대기/spk03_002.wav,대기,1,24,대기,"{""전진"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_184.wav,후진,1,24,후진,"{""재시작"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_127.wav,전진,1,24,전진,"{""출발"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_126.wav,전진,1,24,전진,"{""오른쪽"": 1}"
+noise,cnn_mean,audio/왼쪽/spk03_091.wav,왼쪽,1,24,왼쪽,"{""재시작"": 1}"
+noise,cnn_pooled_query,audio/대기/spk03_013.wav,대기,1,24,대기,"{""왼쪽"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_125.wav,전진,1,24,전진,"{""출발"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_193.wav,후진,1,24,후진,"{""출발"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_112.wav,재시작,1,24,재시작,"{""시작"": 1}"
+noise,cnn_mean,audio/왼쪽/spk03_089.wav,왼쪽,1,24,왼쪽,"{""출발"": 1}"
+noise,cnn_mean,audio/왼쪽/spk03_088.wav,왼쪽,1,24,왼쪽,"{""복귀"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_196.wav,후진,1,24,후진,"{""재시작"": 1}"
+ce,cnn_self_cls,audio/대기/spk03_010.wav,대기,1,24,대기,"{""정지"": 1}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_100.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+noise,cnn_pooled_query,audio/전진/spk03_138.wav,전진,1,24,전진,"{""정지"": 1}"
+noise,cnn_pooled_query,audio/시작/spk03_063.wav,시작,1,24,시작,"{""출발"": 1}"
+noise,cnn_mean,audio/왼쪽/spk03_099.wav,왼쪽,1,24,왼쪽,"{""복귀"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_160.wav,정지,1,24,정지,"{""전진"": 1}"
+ce,cnn_self_cls,audio/대기/spk03_006.wav,대기,1,24,대기,"{""silence"": 1}"
+noise,cnn_pooled_query,audio/출발/spk03_174.wav,출발,1,24,출발,"{""시작"": 1}"
+ce,cnn_self_cls,audio/출발/spk03_164.wav,출발,1,24,출발,"{""재시작"": 1}"
+noise,cnn_pooled_query,audio/출발/spk03_172.wav,출발,1,24,출발,"{""silence"": 1}"
+ce,cnn_self_cls,audio/출발/spk03_166.wav,출발,1,24,출발,"{""시작"": 1}"
+ce,cnn_self_cls,audio/출발/spk03_167.wav,출발,1,24,출발,"{""시작"": 1}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_088.wav,왼쪽,1,24,왼쪽,"{""재시작"": 1}"
+ce,cnn_pooled_query,audio/왼쪽/spk03_091.wav,왼쪽,1,24,왼쪽,"{""전진"": 1}"
+ce,cnn_self_cls,audio/출발/spk03_172.wav,출발,1,24,출발,"{""시작"": 1}"
+ce,cnn_self_cls,audio/출발/spk03_174.wav,출발,1,24,출발,"{""시작"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_153.wav,정지,1,24,정지,"{""전진"": 1}"
+ce,cnn_self_cls,audio/출발/spk03_177.wav,출발,1,24,출발,"{""시작"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_149.wav,정지,1,24,정지,"{""재시작"": 1}"
+noise,cnn_pooled_query,audio/정지/spk03_146.wav,정지,1,24,정지,"{""전진"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_198.wav,후진,1,24,후진,"{""재시작"": 1}"
+ce,cnn_self_cls,audio/후진/spk03_201.wav,후진,1,24,후진,"{""출발"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_156.wav,정지,1,24,정지,"{""시작"": 1}"
+noise,cnn_mean,audio/시작/spk03_049.wav,시작,1,24,시작,"{""출발"": 1}"
+noise,cnn_mean,audio/복귀/spk03_025.wav,복귀,1,24,복귀,"{""후진"": 1}"
+noise,cnn_mean,audio/복귀/spk03_029.wav,복귀,1,24,복귀,"{""후진"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_095.wav,왼쪽,1,24,왼쪽,"{""출발"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_092.wav,왼쪽,1,24,왼쪽,"{""대기"": 1}"
+noise,cnn_pooled_query,audio/복귀/spk03_039.wav,복귀,1,24,복귀,"{""대기"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_162.wav,정지,1,24,정지,"{""전진"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_089.wav,왼쪽,1,24,왼쪽,"{""출발"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_088.wav,왼쪽,1,24,왼쪽,"{""재시작"": 1}"
+ce,cnn_self_cls,audio/복귀/spk03_032.wav,복귀,1,24,복귀,"{""대기"": 1}"
+noise,cnn_pooled_query,audio/시작/spk03_054.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_085.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+noise,cnn_mean,audio/복귀/spk03_041.wav,복귀,1,24,복귀,"{""후진"": 1}"
+noise,cnn_pooled_query,audio/시작/spk03_058.wav,시작,1,24,시작,"{""재시작"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_149.wav,정지,1,24,정지,"{""복귀"": 1}"
+noise,cnn_pooled_query,audio/시작/spk03_061.wav,시작,1,24,시작,"{""출발"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_152.wav,정지,1,24,정지,"{""대기"": 1}"
+noise,cnn_mean,audio/대기/spk03_018.wav,대기,1,24,대기,"{""왼쪽"": 1}"
+noise,cnn_mean,audio/대기/spk03_017.wav,대기,1,24,대기,"{""후진"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_128.wav,전진,1,24,전진,"{""정지"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_100.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+noise,cnn_pooled_query,audio/재시작/spk03_119.wav,재시작,1,24,재시작,"{""시작"": 1}"
+noise,cnn_mean,audio/왼쪽/spk03_085.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+noise,cnn_pooled_query,audio/대기/spk03_016.wav,대기,1,24,대기,"{""오른쪽"": 1}"
+ce,cnn_self_cls,audio/복귀/spk03_030.wav,복귀,1,24,복귀,"{""대기"": 1}"
+noise,cnn_pooled_query,audio/복귀/spk03_027.wav,복귀,1,24,복귀,"{""시작"": 1}"
+noise,cnn_pooled_query,audio/복귀/spk03_028.wav,복귀,1,24,복귀,"{""silence"": 1}"
+noise,cnn_mean,audio/대기/spk03_010.wav,대기,1,24,대기,"{""후진"": 1}"
+noise,cnn_pooled_query,audio/재시작/spk03_108.wav,재시작,1,24,재시작,"{""silence"": 1}"
+ce,cnn_self_cls,audio/복귀/spk03_029.wav,복귀,1,24,복귀,"{""후진"": 1}"
+ce,cnn_pooled_query,audio/재시작/spk03_120.wav,재시작,1,24,재시작,"{""후진"": 1}"
+noise,cnn_pooled_query,audio/재시작/spk03_105.wav,재시작,1,24,재시작,"{""시작"": 1}"
+noise,cnn_mean,audio/오른쪽/spk03_074.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+noise,cnn_mean,audio/오른쪽/spk03_067.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/전진/spk03_127.wav,전진,1,24,전진,"{""대기"": 1}"
+noise,cnn_pooled_query,audio/왼쪽/spk03_101.wav,왼쪽,1,24,왼쪽,"{""대기"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_158.wav,정지,1,24,정지,"{""전진"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_169.wav,출발,1,24,출발,"{""재시작"": 1}"
+noise,cnn_mean,audio/재시작/spk03_112.wav,재시작,1,24,재시작,"{""시작"": 1}"
+noise,cnn_self_cls,audio/대기/spk03_011.wav,대기,1,24,대기,"{""시작"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_201.wav,후진,1,24,후진,"{""전진"": 1}"
+ce,cnn_pooled_query,audio/오른쪽/spk03_076.wav,오른쪽,1,24,오른쪽,"{""왼쪽"": 1}"
+ce,cnn_self_cls,audio/시작/spk03_049.wav,시작,1,24,시작,"{""출발"": 1}"
+noise,cnn_self_cls,audio/silence/spk03_022.wav,silence,1,24,silence,"{""재시작"": 1}"
+ce,cnn_self_cls,audio/전진/spk03_134.wav,전진,1,24,전진,"{""정지"": 1}"
+noise,cnn_mean,audio/출발/spk03_178.wav,출발,1,24,출발,"{""재시작"": 1}"
+noise,cnn_self_cls,audio/대기/spk03_002.wav,대기,1,24,대기,"{""전진"": 1}"
+ce,cnn_self_cls,audio/전진/spk03_126.wav,전진,1,24,전진,"{""정지"": 1}"
+noise,cnn_mean,audio/전진/spk03_128.wav,전진,1,24,전진,"{""정지"": 1}"
+noise,cnn_mean,audio/출발/spk03_174.wav,출발,1,24,출발,"{""시작"": 1}"
+noise,cnn_self_cls,audio/대기/spk03_008.wav,대기,1,24,대기,"{""출발"": 1}"
+ce,cnn_pooled_query,audio/후진/spk03_198.wav,후진,1,24,후진,"{""대기"": 1}"
+noise,cnn_mean,audio/출발/spk03_171.wav,출발,1,24,출발,"{""시작"": 1}"
+noise,cnn_mean,audio/출발/spk03_169.wav,출발,1,24,출발,"{""재시작"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_144.wav,정지,1,24,정지,"{""전진"": 1}"
+noise,cnn_self_cls,audio/대기/spk03_015.wav,대기,1,24,대기,"{""출발"": 1}"
+ce,cnn_self_cls,audio/시작/spk03_061.wav,시작,1,24,시작,"{""재시작"": 1}"
+noise,cnn_mean,audio/전진/spk03_134.wav,전진,1,24,전진,"{""왼쪽"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_183.wav,출발,1,24,출발,"{""시작"": 1}"
+noise,cnn_self_cls,audio/복귀/spk03_024.wav,복귀,1,24,복귀,"{""재시작"": 1}"
+ce,cnn_self_cls,audio/오른쪽/spk03_068.wav,오른쪽,1,24,오른쪽,"{""대기"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_100.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+ce,cnn_self_cls,audio/왼쪽/spk03_094.wav,왼쪽,1,24,왼쪽,"{""오른쪽"": 1}"
+noise,cnn_mean,audio/정지/spk03_148.wav,정지,1,24,정지,"{""대기"": 1}"
+noise,cnn_mean,audio/출발/spk03_165.wav,출발,1,24,출발,"{""시작"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_177.wav,출발,1,24,출발,"{""재시작"": 1}"
+noise,cnn_mean,audio/정지/spk03_149.wav,정지,1,24,정지,"{""대기"": 1}"
+noise,cnn_self_cls,audio/복귀/spk03_033.wav,복귀,1,24,복귀,"{""재시작"": 1}"
+noise,cnn_pooled_query,audio/후진/spk03_194.wav,후진,1,24,후진,"{""오른쪽"": 1}"
+ce,cnn_pooled_query,audio/정지/spk03_153.wav,정지,1,24,정지,"{""대기"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_150.wav,정지,1,24,정지,"{""대기"": 1}"
+noise,cnn_mean,audio/후진/spk03_184.wav,후진,1,24,후진,"{""재시작"": 1}"
+ce,cnn_self_cls,audio/정지/spk03_149.wav,정지,1,24,정지,"{""대기"": 1}"
+ce,cnn_pooled_query,audio/출발/spk03_171.wav,출발,1,24,출발,"{""시작"": 1}"
+noise,cnn_mean,audio/시작/spk03_062.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_168.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_169.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_170.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/시작/spk03_063.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_104.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/시작/spk03_061.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/시작/spk03_060.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_060.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_175.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/시작/spk03_059.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_177.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/시작/spk03_058.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_167.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_090.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_179.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_166.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_165.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_061.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_105.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_062.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_063.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/정지/spk03_146.wav,정지,0,24,정지,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_164.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_095.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/왼쪽/spk03_089.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/정지/spk03_162.wav,정지,0,24,정지,{}
+noise,cnn_mean,audio/오른쪽/spk03_065.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_mean,audio/정지/spk03_144.wav,정지,0,24,정지,{}
+ce,cnn_self_cls,audio/대기/spk03_007.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/재시작/spk03_108.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/시작/spk03_057.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/출발/spk03_180.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/시작/spk03_050.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_050.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/후진/spk03_199.wav,후진,0,24,후진,{}
+noise,cnn_mean,audio/정지/spk03_151.wav,정지,0,24,정지,{}
+noise-speaker,cnn_pooled_query,audio/후진/spk03_198.wav,후진,0,24,후진,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_052.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/재시작/spk03_111.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/시작/spk03_046.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/정지/spk03_150.wav,정지,0,24,정지,{}
+noise,cnn_mean,audio/시작/spk03_047.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/재시작/spk03_114.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/시작/spk03_048.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/재시작/spk03_110.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_055.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_056.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/시작/spk03_051.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/전진/spk03_138.wav,전진,0,24,전진,{}
+noise,cnn_mean,audio/시작/spk03_052.wav,시작,0,24,시작,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_057.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/시작/spk03_053.wav,시작,0,24,시작,{}
+ce,cnn_mean,audio/왼쪽/spk03_084.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/왼쪽/spk03_085.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_self_cls,audio/대기/spk03_002.wav,대기,0,24,대기,{}
+ce,cnn_mean,audio/재시작/spk03_110.wav,재시작,0,24,재시작,{}
+ce,cnn_mean,audio/왼쪽/spk03_086.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_mean,audio/정지/spk03_147.wav,정지,0,24,정지,{}
+noise,cnn_mean,audio/시작/spk03_054.wav,시작,0,24,시작,{}
+ce,cnn_mean,audio/왼쪽/spk03_088.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/후진/spk03_184.wav,후진,0,24,후진,{}
+noise,cnn_mean,audio/시작/spk03_055.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/시작/spk03_056.wav,시작,0,24,시작,{}
+ce,cnn_pooled_query,audio/후진/spk03_184.wav,후진,0,24,후진,{}
+ce,cnn_mean,audio/재시작/spk03_111.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/오른쪽/spk03_075.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_mean,audio/왼쪽/spk03_090.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_114.wav,재시작,0,24,재시작,{}
+ce,cnn_mean,audio/재시작/spk03_118.wav,재시작,0,24,재시작,{}
+ce,cnn_mean,audio/재시작/spk03_117.wav,재시작,0,24,재시작,{}
+ce,cnn_mean,audio/왼쪽/spk03_095.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_mean,audio/왼쪽/spk03_092.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/왼쪽/spk03_096.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_mean,audio/왼쪽/spk03_093.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/왼쪽/spk03_098.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/왼쪽/spk03_099.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_self_cls,audio/대기/spk03_009.wav,대기,0,24,대기,{}
+ce,cnn_mean,audio/왼쪽/spk03_101.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/왼쪽/spk03_100.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_mean,audio/왼쪽/spk03_095.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_084.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/전진/spk03_128.wav,전진,0,24,전진,{}
+ce,cnn_pooled_query,audio/후진/spk03_200.wav,후진,0,24,후진,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_117.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/전진/spk03_127.wav,전진,0,24,전진,{}
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_086.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/재시작/spk03_114.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/전진/spk03_126.wav,전진,0,24,전진,{}
+noise,cnn_mean,audio/왼쪽/spk03_098.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_118.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/재시작/spk03_118.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_123.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/왼쪽/spk03_100.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_mean,audio/왼쪽/spk03_101.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_121.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_089.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_self_cls,audio/대기/spk03_008.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/전진/spk03_126.wav,전진,0,24,전진,{}
+noise,cnn_mean,audio/오른쪽/spk03_076.wav,오른쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/재시작/spk03_120.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_120.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_070.wav,오른쪽,0,24,오른쪽,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_108.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_071.wav,오른쪽,0,24,오른쪽,{}
+ce,cnn_mean,audio/재시작/spk03_112.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/오른쪽/spk03_077.wav,오른쪽,0,24,오른쪽,{}
+ce,cnn_mean,audio/왼쪽/spk03_090.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_mean,audio/오른쪽/spk03_079.wav,오른쪽,0,24,오른쪽,{}
+noise-speaker,cnn_pooled_query,audio/정지/spk03_153.wav,정지,0,24,정지,{}
+ce,cnn_self_cls,audio/대기/spk03_015.wav,대기,0,24,대기,{}
+ce,cnn_self_cls,audio/대기/spk03_013.wav,대기,0,24,대기,{}
+ce,cnn_self_cls,audio/대기/spk03_012.wav,대기,0,24,대기,{}
+noise-speaker,cnn_pooled_query,audio/정지/spk03_149.wav,정지,0,24,정지,{}
+noise,cnn_mean,audio/왼쪽/spk03_084.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/정지/spk03_147.wav,정지,0,24,정지,{}
+noise-speaker,cnn_pooled_query,audio/왼쪽/spk03_098.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_mean,audio/재시작/spk03_104.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/재시작/spk03_117.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_074.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_mean,audio/왼쪽/spk03_086.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_075.wav,오른쪽,0,24,오른쪽,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_110.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_111.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_pooled_query,audio/재시작/spk03_112.wav,재시작,0,24,재시작,{}
+ce,cnn_mean,audio/왼쪽/spk03_092.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/왼쪽/spk03_093.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_077.wav,오른쪽,0,24,오른쪽,{}
+ce,cnn_mean,audio/재시작/spk03_121.wav,재시작,0,24,재시작,{}
+noise,cnn_mean,audio/전진/spk03_127.wav,전진,0,24,전진,{}
+noise-speaker,cnn_pooled_query,audio/오른쪽/spk03_072.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_self_cls,audio/복귀/spk03_035.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/후진/spk03_200.wav,후진,0,24,후진,{}
+noise-speaker,cnn_self_cls,audio/전진/spk03_140.wav,전진,0,24,전진,{}
+ce,cnn_self_cls,audio/정지/spk03_161.wav,정지,0,24,정지,{}
+noise-speaker,cnn_self_cls,audio/전진/spk03_130.wav,전진,0,24,전진,{}
+noise-speaker,cnn_self_cls,audio/전진/spk03_131.wav,전진,0,24,전진,{}
+ce,cnn_self_cls,audio/정지/spk03_159.wav,정지,0,24,정지,{}
+noise-speaker,cnn_self_cls,audio/전진/spk03_134.wav,전진,0,24,전진,{}
+ce,cnn_self_cls,audio/정지/spk03_154.wav,정지,0,24,정지,{}
+noise-speaker,cnn_self_cls,audio/전진/spk03_138.wav,전진,0,24,전진,{}
+ce,cnn_self_cls,audio/정지/spk03_153.wav,정지,0,24,정지,{}
+ce,cnn_self_cls,audio/정지/spk03_151.wav,정지,0,24,정지,{}
+noise-speaker,cnn_self_cls,audio/전진/spk03_127.wav,전진,0,24,전진,{}
+ce,cnn_self_cls,audio/시작/spk03_045.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/정지/spk03_145.wav,정지,0,24,정지,{}
+ce,cnn_self_cls,audio/정지/spk03_147.wav,정지,0,24,정지,{}
+noise-speaker,cnn_self_cls,audio/정지/spk03_147.wav,정지,0,24,정지,{}
+ce,cnn_self_cls,audio/정지/spk03_145.wav,정지,0,24,정지,{}
+ce,cnn_mean,audio/복귀/spk03_026.wav,복귀,0,24,복귀,{}
+ce,cnn_self_cls,audio/시작/spk03_046.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/시작/spk03_047.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/전진/spk03_128.wav,전진,0,24,전진,{}
+noise-speaker,cnn_self_cls,audio/전진/spk03_126.wav,전진,0,24,전진,{}
+ce,cnn_self_cls,audio/출발/spk03_179.wav,출발,0,24,출발,{}
+noise-speaker,cnn_self_cls,audio/재시작/spk03_112.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_101.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_self_cls,audio/출발/spk03_178.wav,출발,0,24,출발,{}
+ce,cnn_mean,audio/복귀/spk03_037.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/재시작/spk03_104.wav,재시작,0,24,재시작,{}
+ce,cnn_self_cls,audio/출발/spk03_175.wav,출발,0,24,출발,{}
+ce,cnn_self_cls,audio/출발/spk03_171.wav,출발,0,24,출발,{}
+noise-speaker,cnn_self_cls,audio/재시작/spk03_110.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_self_cls,audio/재시작/spk03_111.wav,재시작,0,24,재시작,{}
+ce,cnn_self_cls,audio/출발/spk03_170.wav,출발,0,24,출발,{}
+ce,cnn_self_cls,audio/시작/spk03_044.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/재시작/spk03_114.wav,재시작,0,24,재시작,{}
+ce,cnn_mean,audio/복귀/spk03_034.wav,복귀,0,24,복귀,{}
+ce,cnn_self_cls,audio/출발/spk03_169.wav,출발,0,24,출발,{}
+noise-speaker,cnn_self_cls,audio/재시작/spk03_117.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_self_cls,audio/재시작/spk03_118.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_self_cls,audio/재시작/spk03_121.wav,재시작,0,24,재시작,{}
+ce,cnn_self_cls,audio/정지/spk03_163.wav,정지,0,24,정지,{}
+noise-speaker,cnn_self_cls,audio/전진/spk03_124.wav,전진,0,24,전진,{}
+ce,cnn_self_cls,audio/시작/spk03_048.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/시작/spk03_050.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/시작/spk03_051.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/왼쪽/spk03_088.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_self_cls,audio/재시작/spk03_110.wav,재시작,0,24,재시작,{}
+ce,cnn_self_cls,audio/시작/spk03_062.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/후진/spk03_184.wav,후진,0,24,후진,{}
+ce,cnn_self_cls,audio/재시작/spk03_104.wav,재시작,0,24,재시작,{}
+ce,cnn_mean,audio/대기/spk03_009.wav,대기,0,24,대기,{}
+ce,cnn_self_cls,audio/오른쪽/spk03_070.wav,오른쪽,0,24,오른쪽,{}
+ce,cnn_self_cls,audio/왼쪽/spk03_092.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_self_cls,audio/후진/spk03_192.wav,후진,0,24,후진,{}
+noise-speaker,cnn_self_cls,audio/후진/spk03_194.wav,후진,0,24,후진,{}
+ce,cnn_self_cls,audio/시작/spk03_053.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/오른쪽/spk03_074.wav,오른쪽,0,24,오른쪽,{}
+ce,cnn_mean,audio/대기/spk03_002.wav,대기,0,24,대기,{}
+ce,cnn_self_cls,audio/왼쪽/spk03_086.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_self_cls,audio/후진/spk03_198.wav,후진,0,24,후진,{}
+noise-speaker,cnn_self_cls,audio/후진/spk03_199.wav,후진,0,24,후진,{}
+noise-speaker,cnn_self_cls,audio/후진/spk03_200.wav,후진,0,24,후진,{}
+noise-speaker,cnn_self_cls,audio/후진/spk03_201.wav,후진,0,24,후진,{}
+ce,cnn_self_cls,audio/왼쪽/spk03_084.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_self_cls,audio/출발/spk03_181.wav,출발,0,24,출발,{}
+noise-speaker,cnn_self_cls,audio/출발/spk03_180.wav,출발,0,24,출발,{}
+noise-speaker,cnn_self_cls,audio/출발/spk03_179.wav,출발,0,24,출발,{}
+ce,cnn_self_cls,audio/재시작/spk03_111.wav,재시작,0,24,재시작,{}
+ce,cnn_self_cls,audio/시작/spk03_054.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/시작/spk03_055.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/시작/spk03_056.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/시작/spk03_057.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/출발/spk03_164.wav,출발,0,24,출발,{}
+ce,cnn_self_cls,audio/시작/spk03_058.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/출발/spk03_166.wav,출발,0,24,출발,{}
+noise-speaker,cnn_self_cls,audio/출발/spk03_167.wav,출발,0,24,출발,{}
+ce,cnn_self_cls,audio/재시작/spk03_120.wav,재시작,0,24,재시작,{}
+ce,cnn_self_cls,audio/재시작/spk03_118.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_self_cls,audio/출발/spk03_170.wav,출발,0,24,출발,{}
+ce,cnn_self_cls,audio/재시작/spk03_117.wav,재시작,0,24,재시작,{}
+ce,cnn_self_cls,audio/시작/spk03_059.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/시작/spk03_060.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/재시작/spk03_114.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_self_cls,audio/출발/spk03_175.wav,출발,0,24,출발,{}
+ce,cnn_self_cls,audio/재시작/spk03_112.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_100.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_098.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_pooled_query,audio/후진/spk03_201.wav,후진,0,24,후진,{}
+noise-speaker,cnn_self_cls,audio/복귀/spk03_031.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/복귀/spk03_032.wav,복귀,0,24,복귀,{}
+ce,cnn_mean,audio/시작/spk03_062.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/복귀/spk03_024.wav,복귀,0,24,복귀,{}
+ce,cnn_pooled_query,audio/출발/spk03_180.wav,출발,0,24,출발,{}
+noise-speaker,cnn_self_cls,audio/복귀/spk03_026.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/복귀/spk03_030.wav,복귀,0,24,복귀,{}
+ce,cnn_mean,audio/시작/spk03_060.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/복귀/spk03_026.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/복귀/spk03_032.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_017.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/복귀/spk03_034.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/복귀/spk03_035.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/복귀/spk03_036.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/복귀/spk03_037.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/복귀/spk03_024.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/복귀/spk03_039.wav,복귀,0,24,복귀,{}
+ce,cnn_self_cls,audio/복귀/spk03_026.wav,복귀,0,24,복귀,{}
+ce,cnn_mean,audio/시작/spk03_055.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/복귀/spk03_033.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/복귀/spk03_034.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_097.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_005.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/시작/spk03_045.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/시작/spk03_044.wav,시작,0,24,시작,{}
+ce,cnn_mean,audio/오른쪽/spk03_075.wav,오른쪽,0,24,오른쪽,{}
+ce,cnn_mean,audio/오른쪽/spk03_074.wav,오른쪽,0,24,오른쪽,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_001.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_002.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/복귀/spk03_039.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/복귀/spk03_037.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/복귀/spk03_036.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_015.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_007.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_008.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_009.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_010.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_011.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_012.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/복귀/spk03_035.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/대기/spk03_014.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_044.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_045.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/대기/spk03_015.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_086.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/시작/spk03_048.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/후진/spk03_194.wav,후진,0,24,후진,{}
+ce,cnn_mean,audio/시작/spk03_047.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/후진/spk03_192.wav,후진,0,24,후진,{}
+ce,cnn_mean,audio/시작/spk03_046.wav,시작,0,24,시작,{}
+ce,cnn_mean,audio/시작/spk03_044.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_084.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_085.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_self_cls,audio/복귀/spk03_035.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_047.wav,시작,0,24,시작,{}
+ce,cnn_self_cls,audio/복귀/spk03_036.wav,복귀,0,24,복귀,{}
+ce,cnn_self_cls,audio/복귀/spk03_037.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_091.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_092.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_self_cls,audio/출발/spk03_183.wav,출발,0,24,출발,{}
+ce,cnn_self_cls,audio/출발/spk03_182.wav,출발,0,24,출발,{}
+ce,cnn_self_cls,audio/출발/spk03_180.wav,출발,0,24,출발,{}
+noise-speaker,cnn_self_cls,audio/왼쪽/spk03_096.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_self_cls,audio/복귀/spk03_034.wav,복귀,0,24,복귀,{}
+ce,cnn_self_cls,audio/복귀/spk03_033.wav,복귀,0,24,복귀,{}
+ce,cnn_self_cls,audio/후진/spk03_199.wav,후진,0,24,후진,{}
+ce,cnn_self_cls,audio/후진/spk03_200.wav,후진,0,24,후진,{}
+noise,cnn_mean,audio/대기/spk03_012.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_049.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_050.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_053.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/대기/spk03_009.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_055.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_056.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/대기/spk03_008.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/대기/spk03_007.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/대기/spk03_006.wav,대기,0,24,대기,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_060.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_061.wav,시작,0,24,시작,{}
+noise-speaker,cnn_self_cls,audio/시작/spk03_062.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/대기/spk03_005.wav,대기,0,24,대기,{}
+ce,cnn_self_cls,audio/복귀/spk03_031.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/대기/spk03_002.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/대기/spk03_001.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/복귀/spk03_031.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/대기/spk03_015.wav,대기,0,24,대기,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_047.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/후진/spk03_191.wav,후진,0,24,후진,{}
+noise,cnn_self_cls,audio/출발/spk03_167.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_168.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_169.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_170.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_171.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_172.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/전진/spk03_129.wav,전진,0,24,전진,{}
+noise,cnn_self_cls,audio/출발/spk03_174.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_175.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_178.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_179.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_180.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/출발/spk03_182.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/후진/spk03_184.wav,후진,0,24,후진,{}
+noise,cnn_pooled_query,audio/재시작/spk03_123.wav,재시작,0,24,재시작,{}
+ce,cnn_pooled_query,audio/재시작/spk03_114.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/재시작/spk03_121.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/재시작/spk03_120.wav,재시작,0,24,재시작,{}
+ce,cnn_pooled_query,audio/대기/spk03_012.wav,대기,0,24,대기,{}
+noise,cnn_self_cls,audio/출발/spk03_166.wav,출발,0,24,출발,{}
+ce,cnn_pooled_query,audio/재시작/spk03_111.wav,재시작,0,24,재시작,{}
+noise,cnn_self_cls,audio/출발/spk03_164.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/정지/spk03_151.wav,정지,0,24,정지,{}
+noise,cnn_pooled_query,audio/출발/spk03_165.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_164.wav,출발,0,24,출발,{}
+ce,cnn_pooled_query,audio/왼쪽/spk03_089.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_pooled_query,audio/왼쪽/spk03_090.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_self_cls,audio/정지/spk03_144.wav,정지,0,24,정지,{}
+ce,cnn_pooled_query,audio/왼쪽/spk03_092.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_pooled_query,audio/정지/spk03_154.wav,정지,0,24,정지,{}
+noise,cnn_self_cls,audio/정지/spk03_147.wav,정지,0,24,정지,{}
+noise,cnn_pooled_query,audio/정지/spk03_150.wav,정지,0,24,정지,{}
+ce,cnn_pooled_query,audio/재시작/spk03_110.wav,재시작,0,24,재시작,{}
+ce,cnn_pooled_query,audio/왼쪽/spk03_094.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_pooled_query,audio/정지/spk03_147.wav,정지,0,24,정지,{}
+ce,cnn_pooled_query,audio/복귀/spk03_028.wav,복귀,0,24,복귀,{}
+noise,cnn_pooled_query,audio/정지/spk03_144.wav,정지,0,24,정지,{}
+ce,cnn_pooled_query,audio/왼쪽/spk03_095.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_pooled_query,audio/왼쪽/spk03_098.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_pooled_query,audio/왼쪽/spk03_099.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_pooled_query,audio/재시작/spk03_104.wav,재시작,0,24,재시작,{}
+ce,cnn_pooled_query,audio/대기/spk03_010.wav,대기,0,24,대기,{}
+noise,cnn_self_cls,audio/후진/spk03_192.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_041.wav,복귀,0,24,복귀,{}
+noise,cnn_self_cls,audio/후진/spk03_193.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/대기/spk03_014.wav,대기,0,24,대기,{}
+noise-speaker,cnn_mean,audio/대기/spk03_015.wav,대기,0,24,대기,{}
+ce,cnn_pooled_query,audio/전진/spk03_126.wav,전진,0,24,전진,{}
+noise-speaker,cnn_mean,audio/대기/spk03_018.wav,대기,0,24,대기,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_025.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_026.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_027.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_028.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_029.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_030.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_031.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_032.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_033.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_034.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_035.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_036.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_037.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_038.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/복귀/spk03_039.wav,복귀,0,24,복귀,{}
+noise,cnn_pooled_query,audio/재시작/spk03_104.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_mean,audio/대기/spk03_012.wav,대기,0,24,대기,{}
+noise-speaker,cnn_mean,audio/대기/spk03_009.wav,대기,0,24,대기,{}
+ce,cnn_pooled_query,audio/대기/spk03_007.wav,대기,0,24,대기,{}
+noise,cnn_self_cls,audio/후진/spk03_194.wav,후진,0,24,후진,{}
+noise,cnn_pooled_query,audio/재시작/spk03_118.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/재시작/spk03_117.wav,재시작,0,24,재시작,{}
+noise,cnn_self_cls,audio/후진/spk03_198.wav,후진,0,24,후진,{}
+noise,cnn_self_cls,audio/후진/spk03_199.wav,후진,0,24,후진,{}
+noise,cnn_self_cls,audio/후진/spk03_200.wav,후진,0,24,후진,{}
+noise,cnn_self_cls,audio/후진/spk03_201.wav,후진,0,24,후진,{}
+ce,cnn_pooled_query,audio/재시작/spk03_117.wav,재시작,0,24,재시작,{}
+ce,cnn_pooled_query,audio/재시작/spk03_118.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_mean,audio/대기/spk03_008.wav,대기,0,24,대기,{}
+noise,cnn_pooled_query,audio/재시작/spk03_114.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/재시작/spk03_112.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/재시작/spk03_111.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_mean,audio/대기/spk03_002.wav,대기,0,24,대기,{}
+ce,cnn_pooled_query,audio/대기/spk03_006.wav,대기,0,24,대기,{}
+noise,cnn_pooled_query,audio/재시작/spk03_110.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_mean,audio/대기/spk03_005.wav,대기,0,24,대기,{}
+noise-speaker,cnn_mean,audio/대기/spk03_007.wav,대기,0,24,대기,{}
+ce,cnn_pooled_query,audio/복귀/spk03_034.wav,복귀,0,24,복귀,{}
+noise,cnn_pooled_query,audio/출발/spk03_166.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_167.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_168.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/시작/spk03_062.wav,시작,0,24,시작,{}
+ce,cnn_pooled_query,audio/오른쪽/spk03_070.wav,오른쪽,0,24,오른쪽,{}
+ce,cnn_pooled_query,audio/시작/spk03_063.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/대기/spk03_018.wav,대기,0,24,대기,{}
+ce,cnn_pooled_query,audio/시작/spk03_062.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/대기/spk03_017.wav,대기,0,24,대기,{}
+noise,cnn_self_cls,audio/대기/spk03_013.wav,대기,0,24,대기,{}
+noise,cnn_self_cls,audio/대기/spk03_012.wav,대기,0,24,대기,{}
+noise,cnn_self_cls,audio/대기/spk03_010.wav,대기,0,24,대기,{}
+ce,cnn_pooled_query,audio/시작/spk03_060.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/오른쪽/spk03_074.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_self_cls,audio/대기/spk03_009.wav,대기,0,24,대기,{}
+noise,cnn_self_cls,audio/오른쪽/spk03_077.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_self_cls,audio/대기/spk03_007.wav,대기,0,24,대기,{}
+ce,cnn_pooled_query,audio/시작/spk03_059.wav,시작,0,24,시작,{}
+ce,cnn_pooled_query,audio/시작/spk03_058.wav,시작,0,24,시작,{}
+ce,cnn_pooled_query,audio/시작/spk03_057.wav,시작,0,24,시작,{}
+ce,cnn_pooled_query,audio/시작/spk03_056.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/대기/spk03_005.wav,대기,0,24,대기,{}
+noise,cnn_self_cls,audio/시작/spk03_061.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_060.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_058.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_047.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/복귀/spk03_034.wav,복귀,0,24,복귀,{}
+noise,cnn_self_cls,audio/복귀/spk03_039.wav,복귀,0,24,복귀,{}
+ce,cnn_pooled_query,audio/오른쪽/spk03_067.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_self_cls,audio/복귀/spk03_032.wav,복귀,0,24,복귀,{}
+noise,cnn_self_cls,audio/복귀/spk03_031.wav,복귀,0,24,복귀,{}
+noise,cnn_self_cls,audio/시작/spk03_044.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_045.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_046.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_048.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_057.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_049.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_050.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_051.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/복귀/spk03_030.wav,복귀,0,24,복귀,{}
+noise,cnn_self_cls,audio/복귀/spk03_026.wav,복귀,0,24,복귀,{}
+noise,cnn_self_cls,audio/시작/spk03_054.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_055.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/시작/spk03_056.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/왼쪽/spk03_084.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_self_cls,audio/왼쪽/spk03_086.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_pooled_query,audio/시작/spk03_055.wav,시작,0,24,시작,{}
+noise,cnn_pooled_query,audio/출발/spk03_178.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/재시작/spk03_114.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/출발/spk03_182.wav,출발,0,24,출발,{}
+ce,cnn_pooled_query,audio/시작/spk03_045.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/재시작/spk03_117.wav,재시작,0,24,재시작,{}
+noise,cnn_self_cls,audio/재시작/spk03_118.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/출발/spk03_181.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_180.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_179.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_177.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_183.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_176.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_175.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/전진/spk03_127.wav,전진,0,24,전진,{}
+noise,cnn_self_cls,audio/전진/spk03_128.wav,전진,0,24,전진,{}
+noise,cnn_pooled_query,audio/출발/spk03_171.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/출발/spk03_170.wav,출발,0,24,출발,{}
+ce,cnn_pooled_query,audio/복귀/spk03_037.wav,복귀,0,24,복귀,{}
+noise,cnn_pooled_query,audio/출발/spk03_169.wav,출발,0,24,출발,{}
+ce,cnn_pooled_query,audio/시작/spk03_047.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/재시작/spk03_111.wav,재시작,0,24,재시작,{}
+noise,cnn_self_cls,audio/왼쪽/spk03_088.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_self_cls,audio/왼쪽/spk03_100.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_self_cls,audio/대기/spk03_001.wav,대기,0,24,대기,{}
+noise,cnn_self_cls,audio/왼쪽/spk03_090.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_self_cls,audio/왼쪽/spk03_092.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_pooled_query,audio/오른쪽/spk03_074.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_pooled_query,audio/후진/spk03_200.wav,후진,0,24,후진,{}
+noise,cnn_pooled_query,audio/후진/spk03_198.wav,후진,0,24,후진,{}
+ce,cnn_pooled_query,audio/오른쪽/spk03_077.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_pooled_query,audio/후진/spk03_192.wav,후진,0,24,후진,{}
+noise,cnn_self_cls,audio/왼쪽/spk03_101.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_self_cls,audio/재시작/spk03_110.wav,재시작,0,24,재시작,{}
+ce,cnn_pooled_query,audio/왼쪽/spk03_084.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_pooled_query,audio/시작/spk03_053.wav,시작,0,24,시작,{}
+noise,cnn_self_cls,audio/재시작/spk03_104.wav,재시작,0,24,재시작,{}
+ce,cnn_pooled_query,audio/왼쪽/spk03_086.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_pooled_query,audio/후진/spk03_184.wav,후진,0,24,후진,{}
+ce,cnn_pooled_query,audio/시작/spk03_050.wav,시작,0,24,시작,{}
+ce,cnn_pooled_query,audio/시작/spk03_049.wav,시작,0,24,시작,{}
+ce,cnn_pooled_query,audio/시작/spk03_048.wav,시작,0,24,시작,{}
+noise,cnn_pooled_query,audio/왼쪽/spk03_098.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_pooled_query,audio/전진/spk03_129.wav,전진,0,24,전진,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_046.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/후진/spk03_191.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/출발/spk03_177.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_178.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_179.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_180.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_181.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_182.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_183.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/후진/spk03_184.wav,후진,0,24,후진,{}
+noise,cnn_mean,audio/후진/spk03_201.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/후진/spk03_186.wav,후진,0,24,후진,{}
+noise,cnn_mean,audio/후진/spk03_200.wav,후진,0,24,후진,{}
+noise,cnn_mean,audio/후진/spk03_199.wav,후진,0,24,후진,{}
+noise,cnn_mean,audio/후진/spk03_198.wav,후진,0,24,후진,{}
+noise,cnn_mean,audio/후진/spk03_194.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/후진/spk03_191.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/후진/spk03_192.wav,후진,0,24,후진,{}
+ce,cnn_mean,audio/정지/spk03_149.wav,정지,0,24,정지,{}
+noise-speaker,cnn_mean,audio/후진/spk03_194.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/후진/spk03_195.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/출발/spk03_176.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_175.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_174.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/정지/spk03_161.wav,정지,0,24,정지,{}
+noise-speaker,cnn_mean,audio/정지/spk03_151.wav,정지,0,24,정지,{}
+noise,cnn_pooled_query,audio/대기/spk03_009.wav,대기,0,24,대기,{}
+noise-speaker,cnn_mean,audio/정지/spk03_153.wav,정지,0,24,정지,{}
+noise,cnn_pooled_query,audio/대기/spk03_008.wav,대기,0,24,대기,{}
+noise,cnn_pooled_query,audio/대기/spk03_007.wav,대기,0,24,대기,{}
+noise,cnn_pooled_query,audio/대기/spk03_006.wav,대기,0,24,대기,{}
+noise,cnn_pooled_query,audio/대기/spk03_005.wav,대기,0,24,대기,{}
+noise,cnn_pooled_query,audio/대기/spk03_001.wav,대기,0,24,대기,{}
+noise-speaker,cnn_mean,audio/정지/spk03_162.wav,정지,0,24,정지,{}
+ce,cnn_pooled_query,audio/출발/spk03_170.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_164.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_166.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_167.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_168.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_169.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_170.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_171.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/출발/spk03_172.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/후진/spk03_192.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/후진/spk03_198.wav,후진,0,24,후진,{}
+noise-speaker,cnn_mean,audio/시작/spk03_044.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/후진/spk03_199.wav,후진,0,24,후진,{}
+noise,cnn_mean,audio/출발/spk03_168.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_026.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/출발/spk03_167.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_028.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/출발/spk03_166.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_030.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_031.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_032.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_033.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_034.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_035.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_036.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_037.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_039.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/출발/spk03_164.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/정지/spk03_161.wav,정지,0,24,정지,{}
+ce,cnn_pooled_query,audio/출발/spk03_179.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/시작/spk03_044.wav,시작,0,24,시작,{}
+noise,cnn_mean,audio/정지/spk03_154.wav,정지,0,24,정지,{}
+noise-speaker,cnn_pooled_query,audio/복귀/spk03_024.wav,복귀,0,24,복귀,{}
+noise,cnn_mean,audio/출발/spk03_170.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/대기/spk03_017.wav,대기,0,24,대기,{}
+ce,cnn_mean,audio/정지/spk03_144.wav,정지,0,24,정지,{}
+noise-speaker,cnn_mean,audio/후진/spk03_200.wav,후진,0,24,후진,{}
+ce,cnn_pooled_query,audio/출발/spk03_175.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/출발/spk03_183.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/출발/spk03_182.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/출발/spk03_181.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/대기/spk03_001.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/출발/spk03_180.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/출발/spk03_179.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/출발/spk03_177.wav,출발,0,24,출발,{}
+noise,cnn_mean,audio/출발/spk03_172.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/대기/spk03_007.wav,대기,0,24,대기,{}
+noise-speaker,cnn_pooled_query,audio/대기/spk03_008.wav,대기,0,24,대기,{}
+noise-speaker,cnn_pooled_query,audio/대기/spk03_009.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/출발/spk03_176.wav,출발,0,24,출발,{}
+noise-speaker,cnn_pooled_query,audio/대기/spk03_011.wav,대기,0,24,대기,{}
+noise-speaker,cnn_pooled_query,audio/대기/spk03_012.wav,대기,0,24,대기,{}
+noise,cnn_mean,audio/출발/spk03_175.wav,출발,0,24,출발,{}
+noise,cnn_self_cls,audio/복귀/spk03_037.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/정지/spk03_150.wav,정지,0,24,정지,{}
+noise,cnn_pooled_query,audio/대기/spk03_010.wav,대기,0,24,대기,{}
+noise,cnn_pooled_query,audio/대기/spk03_011.wav,대기,0,24,대기,{}
+noise-speaker,cnn_mean,audio/정지/spk03_147.wav,정지,0,24,정지,{}
+noise,cnn_pooled_query,audio/오른쪽/spk03_077.wav,오른쪽,0,24,오른쪽,{}
+ce,cnn_mean,audio/후진/spk03_200.wav,후진,0,24,후진,{}
+noise,cnn_pooled_query,audio/오른쪽/spk03_074.wav,오른쪽,0,24,오른쪽,{}
+noise-speaker,cnn_mean,audio/오른쪽/spk03_075.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_pooled_query,audio/오른쪽/spk03_064.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_pooled_query,audio/시작/spk03_062.wav,시작,0,24,시작,{}
+noise,cnn_pooled_query,audio/시작/spk03_060.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/왼쪽/spk03_084.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_pooled_query,audio/시작/spk03_055.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/왼쪽/spk03_086.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_pooled_query,audio/시작/spk03_051.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/왼쪽/spk03_089.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_mean,audio/왼쪽/spk03_090.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_pooled_query,audio/시작/spk03_047.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/왼쪽/spk03_092.wav,왼쪽,0,24,왼쪽,{}
+noise,cnn_pooled_query,audio/시작/spk03_046.wav,시작,0,24,시작,{}
+noise,cnn_pooled_query,audio/시작/spk03_044.wav,시작,0,24,시작,{}
+noise,cnn_pooled_query,audio/복귀/spk03_038.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/왼쪽/spk03_098.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_pooled_query,audio/정지/spk03_147.wav,정지,0,24,정지,{}
+ce,cnn_pooled_query,audio/정지/spk03_145.wav,정지,0,24,정지,{}
+noise,cnn_pooled_query,audio/왼쪽/spk03_084.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_mean,audio/시작/spk03_054.wav,시작,0,24,시작,{}
+ce,cnn_pooled_query,audio/전진/spk03_131.wav,전진,0,24,전진,{}
+noise-speaker,cnn_mean,audio/시작/spk03_046.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_047.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_048.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_049.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_050.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_051.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_053.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_055.wav,시작,0,24,시작,{}
+noise,cnn_pooled_query,audio/왼쪽/spk03_086.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_mean,audio/시작/spk03_056.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_057.wav,시작,0,24,시작,{}
+noise,cnn_pooled_query,audio/왼쪽/spk03_090.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_mean,audio/시작/spk03_060.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_061.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_062.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/시작/spk03_063.wav,시작,0,24,시작,{}
+noise-speaker,cnn_mean,audio/오른쪽/spk03_065.wav,오른쪽,0,24,오른쪽,{}
+noise,cnn_pooled_query,audio/복귀/spk03_037.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/왼쪽/spk03_100.wav,왼쪽,0,24,왼쪽,{}
+noise-speaker,cnn_mean,audio/왼쪽/spk03_101.wav,왼쪽,0,24,왼쪽,{}
+ce,cnn_mean,audio/출발/spk03_169.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/전진/spk03_125.wav,전진,0,24,전진,{}
+noise-speaker,cnn_mean,audio/전진/spk03_126.wav,전진,0,24,전진,{}
+noise-speaker,cnn_mean,audio/전진/spk03_127.wav,전진,0,24,전진,{}
+noise-speaker,cnn_mean,audio/전진/spk03_130.wav,전진,0,24,전진,{}
+noise,cnn_pooled_query,audio/복귀/spk03_026.wav,복귀,0,24,복귀,{}
+noise,cnn_pooled_query,audio/복귀/spk03_024.wav,복귀,0,24,복귀,{}
+ce,cnn_mean,audio/출발/spk03_170.wav,출발,0,24,출발,{}
+ce,cnn_pooled_query,audio/출발/spk03_166.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/대기/spk03_018.wav,대기,0,24,대기,{}
+noise,cnn_pooled_query,audio/복귀/spk03_030.wav,복귀,0,24,복귀,{}
+ce,cnn_mean,audio/출발/spk03_168.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/전진/spk03_138.wav,전진,0,24,전진,{}
+noise,cnn_pooled_query,audio/대기/spk03_017.wav,대기,0,24,대기,{}
+ce,cnn_mean,audio/출발/spk03_166.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/대기/spk03_015.wav,대기,0,24,대기,{}
+noise-speaker,cnn_mean,audio/정지/spk03_144.wav,정지,0,24,정지,{}
+noise,cnn_pooled_query,audio/대기/spk03_012.wav,대기,0,24,대기,{}
+noise-speaker,cnn_mean,audio/정지/spk03_146.wav,정지,0,24,정지,{}
+noise-speaker,cnn_mean,audio/전진/spk03_124.wav,전진,0,24,전진,{}
+noise,cnn_pooled_query,audio/복귀/spk03_031.wav,복귀,0,24,복귀,{}
+ce,cnn_mean,audio/출발/spk03_182.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/재시작/spk03_111.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/복귀/spk03_036.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/재시작/spk03_104.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/복귀/spk03_035.wav,복귀,0,24,복귀,{}
+ce,cnn_mean,audio/출발/spk03_180.wav,출발,0,24,출발,{}
+ce,cnn_mean,audio/출발/spk03_179.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/재시작/spk03_108.wav,재시작,0,24,재시작,{}
+ce,cnn_mean,audio/출발/spk03_178.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/재시작/spk03_110.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_mean,audio/재시작/spk03_112.wav,재시작,0,24,재시작,{}
+ce,cnn_mean,audio/출발/spk03_174.wav,출발,0,24,출발,{}
+noise,cnn_pooled_query,audio/복귀/spk03_034.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/재시작/spk03_114.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/복귀/spk03_033.wav,복귀,0,24,복귀,{}
+ce,cnn_mean,audio/출발/spk03_175.wav,출발,0,24,출발,{}
+noise-speaker,cnn_mean,audio/재시작/spk03_117.wav,재시작,0,24,재시작,{}
+noise-speaker,cnn_mean,audio/재시작/spk03_118.wav,재시작,0,24,재시작,{}
+noise,cnn_pooled_query,audio/복귀/spk03_032.wav,복귀,0,24,복귀,{}
+noise-speaker,cnn_mean,audio/재시작/spk03_120.wav,재시작,0,24,재시작,{}
+ce,cnn_pooled_query,audio/복귀/spk03_031.wav,복귀,0,24,복귀,{}

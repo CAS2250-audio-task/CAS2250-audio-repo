@@ -1,0 +1,14 @@
+{
+  "stored_predictions_replayed": 10150,
+  "expected_replays": 10150,
+  "actual_manual_readout_matches_native": true,
+  "reference_only_diagnostic_not_deployable": true,
+  "pretrained_weights": false,
+  "new_training": false,
+  "test01_audio_read": false,
+  "analysis_source_sha256": "35f3688a19ece0b569a9ed916df762ac5786be635064e40d5db748ef450736a3",
+  "checkpoints": {
+    "cnn_pooled_query": "2d2a934eb35d49ef2589b403e087ec8fc55bde873a71243d909f64bb79e092df",
+    "cnn_self_cls": "801bd5f654891a880acf5ed281717bf94b50f8a994c21f4a3dcd34b4813337bd"
+  }
+}

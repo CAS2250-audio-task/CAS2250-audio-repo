@@ -1,0 +1,24 @@
+{
+  "time_utc": "2026-11-15T14:34:17.914102+00:00",
+  "running": {
+    "short": {
+      "stage": "training",
+      "epoch": 44,
+      "epochs": 1000,
+      "epoch_seconds": 1.9627648580353707,
+      "estimated_training_minutes_remaining": 32.114993549974734
+    },
+    "local": {
+      "stage": "training",
+      "epoch": 42,
+      "epochs": 1000,
+      "epoch_seconds": 1.9308930998668075,
+      "estimated_training_minutes_remaining": 33.74451879207267
+    }
+  },
+  "paired_trace_checks": 20,
+  "eta_minutes": [
+    50,
+    60
+  ]
+}

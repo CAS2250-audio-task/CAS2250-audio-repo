@@ -1,0 +1,425 @@
+{
+  "summary": {
+    "speaker": "spk03",
+    "model": "cnn_self_cls",
+    "parameters": 87115,
+    "best_epoch": 573,
+    "best": {
+      "zero_f1": 0.8349007243911425,
+      "zero_loss": 0.7391884922981262,
+      "original_f1": 0.944850504398346
+    },
+    "last": {
+      "zero_f1": 0.8054961214462916,
+      "zero_loss": 0.8177291018267473,
+      "original_f1": 0.9069812297821045
+    },
+    "noise_only_fpr": 0.08958333333333333,
+    "objective": "paired_supcon",
+    "training_only_projection_parameters": 4192
+  },
+  "best_units": [
+    {
+      "kind": "original",
+      "noise_id": "none",
+      "draw": -1,
+      "macro_f1": 0.944850504398346,
+      "accuracy": 0.9408866763114929,
+      "loss": 0.23904721438884735
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "cafeteria",
+      "draw": 0,
+      "macro_f1": 0.7941495776176453,
+      "accuracy": 0.807881772518158,
+      "loss": 0.94551682472229
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "cafeteria",
+      "draw": 1,
+      "macro_f1": 0.7905560731887817,
+      "accuracy": 0.8029556274414062,
+      "loss": 0.9706777930259705
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "cafeteria",
+      "draw": 2,
+      "macro_f1": 0.7430732250213623,
+      "accuracy": 0.743842363357544,
+      "loss": 1.0735385417938232
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "car",
+      "draw": 0,
+      "macro_f1": 0.9266633987426758,
+      "accuracy": 0.9211822748184204,
+      "loss": 0.33856356143951416
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "car",
+      "draw": 1,
+      "macro_f1": 0.9215221405029297,
+      "accuracy": 0.9162561297416687,
+      "loss": 0.3918841481208801
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "car",
+      "draw": 2,
+      "macro_f1": 0.9357804656028748,
+      "accuracy": 0.9310344457626343,
+      "loss": 0.32985299825668335
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "compressor",
+      "draw": 0,
+      "macro_f1": 0.7675723433494568,
+      "accuracy": 0.7487684488296509,
+      "loss": 1.0072067975997925
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "compressor",
+      "draw": 1,
+      "macro_f1": 0.7691388130187988,
+      "accuracy": 0.7684729099273682,
+      "loss": 0.9023457169532776
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "compressor",
+      "draw": 2,
+      "macro_f1": 0.7889262437820435,
+      "accuracy": 0.7881773114204407,
+      "loss": 0.8541423082351685
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "fan",
+      "draw": 0,
+      "macro_f1": 0.8316712975502014,
+      "accuracy": 0.8472906351089478,
+      "loss": 0.7574477791786194
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "fan",
+      "draw": 1,
+      "macro_f1": 0.8321932554244995,
+      "accuracy": 0.8472906351089478,
+      "loss": 0.7464487552642822
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "fan",
+      "draw": 2,
+      "macro_f1": 0.8349854350090027,
+      "accuracy": 0.842364490032196,
+      "loss": 0.61610347032547
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "restaurant",
+      "draw": 0,
+      "macro_f1": 0.729823648929596,
+      "accuracy": 0.7142857313156128,
+      "loss": 1.246971845626831
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "restaurant",
+      "draw": 1,
+      "macro_f1": 0.7302812337875366,
+      "accuracy": 0.7142857313156128,
+      "loss": 1.1951905488967896
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "restaurant",
+      "draw": 2,
+      "macro_f1": 0.7111976742744446,
+      "accuracy": 0.7093595862388611,
+      "loss": 1.1695783138275146
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "station",
+      "draw": 0,
+      "macro_f1": 0.846470832824707,
+      "accuracy": 0.8571428656578064,
+      "loss": 0.7985231280326843
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "station",
+      "draw": 1,
+      "macro_f1": 0.8358039855957031,
+      "accuracy": 0.8374384045600891,
+      "loss": 0.8618776202201843
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "station",
+      "draw": 2,
+      "macro_f1": 0.8460463285446167,
+      "accuracy": 0.8472906351089478,
+      "loss": 0.7388633489608765
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "traffic",
+      "draw": 0,
+      "macro_f1": 0.860682487487793,
+      "accuracy": 0.8620689511299133,
+      "loss": 0.6232259273529053
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "traffic",
+      "draw": 1,
+      "macro_f1": 0.8998164534568787,
+      "accuracy": 0.8916255831718445,
+      "loss": 0.5366060137748718
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "traffic",
+      "draw": 2,
+      "macro_f1": 0.8785945177078247,
+      "accuracy": 0.8817734122276306,
+      "loss": 0.6036981344223022
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "washing",
+      "draw": 0,
+      "macro_f1": 0.9180152416229248,
+      "accuracy": 0.9113300442695618,
+      "loss": 0.3665381669998169
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "washing",
+      "draw": 1,
+      "macro_f1": 0.9175510406494141,
+      "accuracy": 0.9113300442695618,
+      "loss": 0.3413148820400238
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "washing",
+      "draw": 2,
+      "macro_f1": 0.9271016716957092,
+      "accuracy": 0.9211822748184204,
+      "loss": 0.3244071900844574
+    }
+  ],
+  "last_units": [
+    {
+      "kind": "original",
+      "noise_id": "none",
+      "draw": -1,
+      "macro_f1": 0.9069812297821045,
+      "accuracy": 0.9211822748184204,
+      "loss": 0.3954537808895111
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "cafeteria",
+      "draw": 0,
+      "macro_f1": 0.7717422246932983,
+      "accuracy": 0.7980295419692993,
+      "loss": 1.0253630876541138
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "cafeteria",
+      "draw": 1,
+      "macro_f1": 0.7231689095497131,
+      "accuracy": 0.7635467648506165,
+      "loss": 1.0087716579437256
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "cafeteria",
+      "draw": 2,
+      "macro_f1": 0.7728210091590881,
+      "accuracy": 0.7832512259483337,
+      "loss": 1.0409424304962158
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "car",
+      "draw": 0,
+      "macro_f1": 0.8670012354850769,
+      "accuracy": 0.8866994976997375,
+      "loss": 0.5492992401123047
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "car",
+      "draw": 1,
+      "macro_f1": 0.868377685546875,
+      "accuracy": 0.8916255831718445,
+      "loss": 0.5824500918388367
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "car",
+      "draw": 2,
+      "macro_f1": 0.8579273223876953,
+      "accuracy": 0.8817734122276306,
+      "loss": 0.5625053644180298
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "compressor",
+      "draw": 0,
+      "macro_f1": 0.7145646214485168,
+      "accuracy": 0.7142857313156128,
+      "loss": 1.183016061782837
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "compressor",
+      "draw": 1,
+      "macro_f1": 0.723914384841919,
+      "accuracy": 0.7389162182807922,
+      "loss": 1.00186288356781
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "compressor",
+      "draw": 2,
+      "macro_f1": 0.7424127459526062,
+      "accuracy": 0.7684729099273682,
+      "loss": 1.0461856126785278
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "fan",
+      "draw": 0,
+      "macro_f1": 0.7932977676391602,
+      "accuracy": 0.8128078579902649,
+      "loss": 0.915883481502533
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "fan",
+      "draw": 1,
+      "macro_f1": 0.8163167238235474,
+      "accuracy": 0.842364490032196,
+      "loss": 0.7896074652671814
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "fan",
+      "draw": 2,
+      "macro_f1": 0.8112251162528992,
+      "accuracy": 0.8374384045600891,
+      "loss": 0.7799901962280273
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "restaurant",
+      "draw": 0,
+      "macro_f1": 0.7228104472160339,
+      "accuracy": 0.7290640473365784,
+      "loss": 1.17935049533844
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "restaurant",
+      "draw": 1,
+      "macro_f1": 0.6852718591690063,
+      "accuracy": 0.6995073556900024,
+      "loss": 1.2763640880584717
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "restaurant",
+      "draw": 2,
+      "macro_f1": 0.7537160515785217,
+      "accuracy": 0.7536945939064026,
+      "loss": 1.071313500404358
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "station",
+      "draw": 0,
+      "macro_f1": 0.8234046697616577,
+      "accuracy": 0.842364490032196,
+      "loss": 0.7878031730651855
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "station",
+      "draw": 1,
+      "macro_f1": 0.8114511370658875,
+      "accuracy": 0.8374384045600891,
+      "loss": 0.8274768590927124
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "station",
+      "draw": 2,
+      "macro_f1": 0.8250696063041687,
+      "accuracy": 0.8374384045600891,
+      "loss": 0.7627034783363342
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "traffic",
+      "draw": 0,
+      "macro_f1": 0.8483209609985352,
+      "accuracy": 0.8571428656578064,
+      "loss": 0.6558559536933899
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "traffic",
+      "draw": 1,
+      "macro_f1": 0.8634223937988281,
+      "accuracy": 0.8817734122276306,
+      "loss": 0.5648307800292969
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "traffic",
+      "draw": 2,
+      "macro_f1": 0.8633362650871277,
+      "accuracy": 0.8817734122276306,
+      "loss": 0.5748077630996704
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "washing",
+      "draw": 0,
+      "macro_f1": 0.8872525691986084,
+      "accuracy": 0.9014778137207031,
+      "loss": 0.4941403865814209
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "washing",
+      "draw": 1,
+      "macro_f1": 0.8949866890907288,
+      "accuracy": 0.9014778137207031,
+      "loss": 0.48793619871139526
+    },
+    {
+      "kind": "mixed_0db",
+      "noise_id": "washing",
+      "draw": 2,
+      "macro_f1": 0.890094518661499,
+      "accuracy": 0.8965517282485962,
+      "loss": 0.45703819394111633
+    }
+  ]
+}

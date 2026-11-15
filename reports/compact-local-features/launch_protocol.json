@@ -1,0 +1,73 @@
+{
+  "seed": 42,
+  "speaker": "spk03",
+  "epochs": 1000,
+  "new_variants": [
+    "short",
+    "local",
+    "both"
+  ],
+  "all_variants": [
+    {
+      "name": "baseline",
+      "global_receptive_field_frames": 109,
+      "global_receptive_field_ms": 1105,
+      "local_receptive_field_frames": null,
+      "local_receptive_field_ms": null,
+      "local_connection": null,
+      "short_change": null,
+      "kernel_initialization": "Identical common weights; shortened kernel uses center9 taps of the original29, rescaled sqrt(29/9)",
+      "output_width": 32,
+      "baseline": "Previously completed same_command/paired_supcon spk03 1000epoch; reused after input/init checks"
+    },
+    {
+      "name": "short",
+      "global_receptive_field_frames": 61,
+      "global_receptive_field_ms": 625,
+      "local_receptive_field_frames": null,
+      "local_receptive_field_ms": null,
+      "local_connection": null,
+      "short_change": "Only block5 depthwise kernel29,dilation2,padding28 -> kernel9,dilation1,padding4",
+      "kernel_initialization": "Identical common weights; shortened kernel uses center9 taps of the original29, rescaled sqrt(29/9)",
+      "output_width": 32,
+      "baseline": "Previously completed same_command/paired_supcon spk03 1000epoch; reused after input/init checks"
+    },
+    {
+      "name": "local",
+      "global_receptive_field_frames": 109,
+      "global_receptive_field_ms": 1105,
+      "local_receptive_field_frames": 23,
+      "local_receptive_field_ms": 245,
+      "local_connection": "after CNN block2,64->32, add to final32D features before readout; projection initialized to zero",
+      "short_change": null,
+      "kernel_initialization": "Identical common weights; shortened kernel uses center9 taps of the original29, rescaled sqrt(29/9)",
+      "output_width": 32,
+      "baseline": "Previously completed same_command/paired_supcon spk03 1000epoch; reused after input/init checks"
+    },
+    {
+      "name": "both",
+      "global_receptive_field_frames": 61,
+      "global_receptive_field_ms": 625,
+      "local_receptive_field_frames": 23,
+      "local_receptive_field_ms": 245,
+      "local_connection": "after CNN block2,64->32, add to final32D features before readout; projection initialized to zero",
+      "short_change": "Only block5 depthwise kernel29,dilation2,padding28 -> kernel9,dilation1,padding4",
+      "kernel_initialization": "Identical common weights; shortened kernel uses center9 taps of the original29, rescaled sqrt(29/9)",
+      "output_width": 32,
+      "baseline": "Previously completed same_command/paired_supcon spk03 1000epoch; reused after input/init checks"
+    }
+  ],
+  "objective": "CE+0.1SupCon,same_command positive mode,temperature0.1; no other training changes",
+  "baseline_root": "/root/CAS2250-compact-contrastive-100",
+  "baseline_protocol_sha256": "b2fadd4ad5a23ec82d0f69b2a14972ea6ea4149365734ddb751b87a53d53a626",
+  "baseline_summary_sha256": "84a2e6e72d19eaba6b5a5dbcb4ee9d9650d27a59521eb99f453ff552360b2347",
+  "baseline_git_commit": "1e35fa9808b3fe7a35fe0684a6188177101c5777",
+  "new_source_sha256": {
+    "experiments/local_features/__init__.py": "00f37e26a80894dc1db29c425c02a3675118b5e7f0b54d032fedee89a07d2dc9",
+    "experiments/local_features/models.py": "df2ed5f7b3926e676cdbf09c482651a05dd0309cea3bb9477a677d1197b12701",
+    "experiments/local_features/run.py": "9235edf1652b3834cf798818c6c941e650395affbc73873f68496a4da22552c7"
+  },
+  "workers": 2,
+  "planned_new_model_epochs": 9000,
+  "reused_baseline_model_epochs": 3000
+}

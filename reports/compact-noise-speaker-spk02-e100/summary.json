@@ -1,0 +1,59 @@
+[
+  {
+    "speaker": "spk02",
+    "model": "cnn_mean",
+    "parameters": 77835,
+    "best_epoch": 78,
+    "best": {
+      "zero_f1": 0.4440311634292205,
+      "zero_loss": 1.960391824444135,
+      "original_f1": 0.7053617835044861
+    },
+    "last": {
+      "zero_f1": 0.39006405013302964,
+      "zero_loss": 2.2669828087091446,
+      "original_f1": 0.6601555943489075
+    },
+    "noise_only_fpr": 0.24375,
+    "objective": "paired_supcon",
+    "training_only_projection_parameters": 4192
+  },
+  {
+    "speaker": "spk02",
+    "model": "cnn_pooled_query",
+    "parameters": 78859,
+    "best_epoch": 62,
+    "best": {
+      "zero_f1": 0.4221396738042434,
+      "zero_loss": 2.1731791694959006,
+      "original_f1": 0.6169157028198242
+    },
+    "last": {
+      "zero_f1": 0.3751818376282851,
+      "zero_loss": 2.2143332858880362,
+      "original_f1": 0.619476318359375
+    },
+    "noise_only_fpr": 0.33125,
+    "objective": "paired_supcon",
+    "training_only_projection_parameters": 4192
+  },
+  {
+    "speaker": "spk02",
+    "model": "cnn_self_cls",
+    "parameters": 86315,
+    "best_epoch": 62,
+    "best": {
+      "zero_f1": 0.5081094987690449,
+      "zero_loss": 1.7294755925734837,
+      "original_f1": 0.7230170965194702
+    },
+    "last": {
+      "zero_f1": 0.41825370614727336,
+      "zero_loss": 2.064518635471662,
+      "original_f1": 0.6649722456932068
+    },
+    "noise_only_fpr": 0.3541666666666667,
+    "objective": "paired_supcon",
+    "training_only_projection_parameters": 4192
+  }
+]

@@ -1,0 +1,4 @@
+model_a,model_b,a_wrong_b_correct,b_wrong_a_correct,both_wrong,error_jaccard
+cnn_mean,cnn_pooled_query,302,341,377,0.3696078431372549
+cnn_mean,cnn_self_cls,313,404,366,0.3379501385041551
+cnn_pooled_query,cnn_self_cls,319,371,399,0.36639118457300274
