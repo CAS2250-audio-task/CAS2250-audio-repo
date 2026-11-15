@@ -1,0 +1,31 @@
+{
+  "initial_outputs_match": true,
+  "finite_paired_gradients": true,
+  "variable_length_shapes": true,
+  "models": [
+    {
+      "variant": "low8",
+      "parameters": 81187
+    },
+    {
+      "variant": "low16",
+      "parameters": 81563
+    },
+    {
+      "variant": "low_axis8",
+      "parameters": 81107
+    },
+    {
+      "variant": "freq_avg",
+      "parameters": 82315
+    },
+    {
+      "variant": "freq_band2",
+      "parameters": 87947
+    },
+    {
+      "variant": "freq_capacity",
+      "parameters": 87937
+    }
+  ]
+}
