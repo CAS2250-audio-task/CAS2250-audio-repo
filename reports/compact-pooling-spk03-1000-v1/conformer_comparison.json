@@ -1,0 +1,157 @@
+{
+  "speaker": "spk03",
+  "conformer_source": "reports/overnight-v1/folds/formant_B/spk03.json",
+  "canonical_noise_only": "8 sources x20 crops, crop_noise(recording, noise-only, noise_id, index0..19), 0dB with training median keyword RMS",
+  "results": [
+    {
+      "model": "cnn_mean",
+      "original_accuracy": 0.9261083743842364,
+      "mixed_accuracy": 0.8136288998357963,
+      "canonical_noise_only_false_positives": 31,
+      "canonical_noise_only_n": 160,
+      "canonical_noise_only_fpr": 0.19375,
+      "units": [
+        {
+          "noise_id": "cafeteria",
+          "false_positives": 6,
+          "n": 20
+        },
+        {
+          "noise_id": "car",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "compressor",
+          "false_positives": 14,
+          "n": 20
+        },
+        {
+          "noise_id": "fan",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "restaurant",
+          "false_positives": 11,
+          "n": 20
+        },
+        {
+          "noise_id": "station",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "traffic",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "washing",
+          "false_positives": 0,
+          "n": 20
+        }
+      ]
+    },
+    {
+      "model": "cnn_pooled_query",
+      "original_accuracy": 0.9359605911330049,
+      "mixed_accuracy": 0.7941297208538588,
+      "canonical_noise_only_false_positives": 38,
+      "canonical_noise_only_n": 160,
+      "canonical_noise_only_fpr": 0.2375,
+      "units": [
+        {
+          "noise_id": "cafeteria",
+          "false_positives": 14,
+          "n": 20
+        },
+        {
+          "noise_id": "car",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "compressor",
+          "false_positives": 7,
+          "n": 20
+        },
+        {
+          "noise_id": "fan",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "restaurant",
+          "false_positives": 17,
+          "n": 20
+        },
+        {
+          "noise_id": "station",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "traffic",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "washing",
+          "false_positives": 0,
+          "n": 20
+        }
+      ]
+    },
+    {
+      "model": "cnn_self_cls",
+      "original_accuracy": 0.9359605911330049,
+      "mixed_accuracy": 0.8357963875205254,
+      "canonical_noise_only_false_positives": 34,
+      "canonical_noise_only_n": 160,
+      "canonical_noise_only_fpr": 0.2125,
+      "units": [
+        {
+          "noise_id": "cafeteria",
+          "false_positives": 9,
+          "n": 20
+        },
+        {
+          "noise_id": "car",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "compressor",
+          "false_positives": 13,
+          "n": 20
+        },
+        {
+          "noise_id": "fan",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "restaurant",
+          "false_positives": 12,
+          "n": 20
+        },
+        {
+          "noise_id": "station",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "traffic",
+          "false_positives": 0,
+          "n": 20
+        },
+        {
+          "noise_id": "washing",
+          "false_positives": 0,
+          "n": 20
+        }
+      ]
+    }
+  ]
+}
