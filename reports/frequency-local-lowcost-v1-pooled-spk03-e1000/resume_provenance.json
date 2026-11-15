@@ -1,0 +1,13 @@
+{
+  "source": "frequency-local-lowcost-v1-teamPS-spk03-e1000",
+  "source_protocol_sha256": "983c0c128fc04452c528e2a87111c7b66ece4746c7cc6c5f793b8f105a2150ae",
+  "source_last_sha256": "b28f51132db96140c1a56b1a6935d3f44e55c1868de9684b5e1cb8b92683677a",
+  "head": "cnn_pooled_query",
+  "resume_epoch": 670,
+  "optimizer_and_schedule_preserved": true,
+  "changed_metadata": [
+    "study output name",
+    "current GPU environment"
+  ],
+  "destination_protocol_sha256": "21dde5f8b41c66daa5b29f4b1996c79b20377b6f8c3ff313be22dddf4dd67c9b"
+}

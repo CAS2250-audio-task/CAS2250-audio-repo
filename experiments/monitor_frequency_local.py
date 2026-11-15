@@ -46,12 +46,15 @@ def show(status_path):
             if minutes is not None:
                 remaining = minutes*60
         elif status == 'queued':
+            run_name = Path(group.get('progress', '')).parent.name
+            provenance = read(ROOT/'reports'/run_name/'resume_provenance.json')
+            epoch = provenance.get('resume_epoch', epoch)
             cnn, vertical = key.rsplit('-v', 1)
             row = next((r for r in preflight.get('rows', [])
                         if r['cnn'] == cnn and r['vertical'] == bool(int(vertical))), {})
             cost = row.get('estimated_group_epoch_compute_seconds')
             if cost is not None:
-                remaining = epochs*cost*len(group.get('models', [None]*3))/3
+                remaining = (epochs-epoch)*cost*len(group.get('models', [None]*3))/3
                 estimated = True
         if remaining is not None:
             total += remaining
@@ -63,7 +66,16 @@ def show(status_path):
             updated = dt.datetime.fromisoformat(progress['updated_utc'].replace('Z', '+00:00'))
             age = (dt.datetime.now(dt.timezone.utc)-updated).total_seconds()
             print(f'  기록 갱신 {age:.0f}초 전')
-    active = state.get('status') == 'running'
+    active = state.get('status') in ('running', 'waiting_for_host5')
+    if state.get('status') == 'waiting_for_host5':
+        host = read(ROOT/'runs/frequency-attention-host5/status.json')
+        ahead = 0.
+        for group in host.get('groups', {}).values():
+            if group.get('status') == 'running':
+                progress = read(Path(group['progress']))
+                ahead += 60*progress.get('estimated_training_minutes_remaining', 0.)
+        total += ahead
+        print(f'선행 작업 남음: 약 {duration(ahead)}')
     if active:
         print(f'전체 남은 시간: 약 {duration(total)}' + (' (대기 그룹은 사전 측정치)' if estimated else ''))
         print('최종 평가·저장 시간은 추가될 수 있음.')

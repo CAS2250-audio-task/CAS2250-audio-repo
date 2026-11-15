@@ -1,0 +1,59 @@
+[
+  {
+    "speaker": "spk03",
+    "model": "cnn_mean",
+    "parameters": 82140,
+    "best_epoch": 382,
+    "best": {
+      "zero_f1": 0.7982634007930756,
+      "zero_loss": 0.7338064536452293,
+      "original_f1": 0.8944911956787109
+    },
+    "last": {
+      "zero_f1": 0.7638629203041395,
+      "zero_loss": 0.9837728962302208,
+      "original_f1": 0.8298426866531372
+    },
+    "noise_only_fpr": 0.10833333333333334,
+    "objective": "paired_supcon",
+    "training_only_projection_parameters": 4192
+  },
+  {
+    "speaker": "spk03",
+    "model": "cnn_pooled_query",
+    "parameters": 83164,
+    "best_epoch": 249,
+    "best": {
+      "zero_f1": 0.8554363697767258,
+      "zero_loss": 0.5891283911963304,
+      "original_f1": 0.9407080411911011
+    },
+    "last": {
+      "zero_f1": 0.7970454742511114,
+      "zero_loss": 0.803654707968235,
+      "original_f1": 0.8675925135612488
+    },
+    "noise_only_fpr": 0.09583333333333334,
+    "objective": "paired_supcon",
+    "training_only_projection_parameters": 4192
+  },
+  {
+    "speaker": "spk03",
+    "model": "cnn_self_cls",
+    "parameters": 90620,
+    "best_epoch": 352,
+    "best": {
+      "zero_f1": 0.8612851177652677,
+      "zero_loss": 0.6835589135686556,
+      "original_f1": 0.9502987861633301
+    },
+    "last": {
+      "zero_f1": 0.8040618772308031,
+      "zero_loss": 0.7904710061848164,
+      "original_f1": 0.9360781908035278
+    },
+    "noise_only_fpr": 0.07291666666666667,
+    "objective": "paired_supcon",
+    "training_only_projection_parameters": 4192
+  }
+]

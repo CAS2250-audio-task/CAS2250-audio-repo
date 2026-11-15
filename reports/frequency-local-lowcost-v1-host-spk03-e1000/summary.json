@@ -1,0 +1,21 @@
+[
+  {
+    "speaker": "spk03",
+    "model": "cnn_mean",
+    "parameters": 82388,
+    "best_epoch": 589,
+    "best": {
+      "zero_f1": 0.8099009419480959,
+      "zero_loss": 0.7830269560217857,
+      "original_f1": 0.8639460802078247
+    },
+    "last": {
+      "zero_f1": 0.7654527773459753,
+      "zero_loss": 0.8852842325965563,
+      "original_f1": 0.8300170302391052
+    },
+    "noise_only_fpr": 0.075,
+    "objective": "paired_supcon",
+    "training_only_projection_parameters": 4192
+  }
+]
