@@ -1,0 +1,50 @@
+{
+  "release": "team4-partial-20261115T192001Z",
+  "resume_epoch": 670,
+  "history_rows": 1340,
+  "manifest": {
+    "status": "PARTIAL_NOT_FINAL",
+    "source_commit": "76a72777a6d117ad97c202058ecc3db40949ed7f",
+    "checkpoints": [
+      {
+        "job": "frequency-local-lowcost-v1-teamPS-spk03-e1000",
+        "file": "last.pt",
+        "epoch": 670
+      },
+      {
+        "job": "frequency-local-lowcost-v1-teamPS-spk03-e1000",
+        "file": "cnn_pooled_query_best.pt",
+        "epoch": 327
+      },
+      {
+        "job": "frequency-local-lowcost-v1-teamPS-spk03-e1000",
+        "file": "cnn_self_cls_best.pt",
+        "epoch": 236
+      }
+    ],
+    "files": [
+      {
+        "path": "runs/frequency-local-lowcost-v1-teamPS-spk03-e1000/spk03/last.pt",
+        "sha256": "b28f51132db96140c1a56b1a6935d3f44e55c1868de9684b5e1cb8b92683677a"
+      },
+      {
+        "path": "runs/frequency-local-lowcost-v1-teamPS-spk03-e1000/spk03/cnn_pooled_query_best.pt",
+        "sha256": "c0ed92a0bc5ef4dc090020b87e1495923a3611128dbcdff3fd8da5e77da91b7e"
+      },
+      {
+        "path": "runs/frequency-local-lowcost-v1-teamPS-spk03-e1000/spk03/cnn_self_cls_best.pt",
+        "sha256": "40fcd3f76c262bff194489197ec579c6563d07d590ce7ff72c2109bc0ebc615a"
+      },
+      {
+        "path": "runs/frequency-local-lowcost-v1-teamPS-spk03-e1000/spk03/history.json",
+        "sha256": "525a2e224f92fb3c2b9da8d18e63c3064b754be865793c506d3363fae6c24cdd"
+      },
+      {
+        "path": "reports/frequency-local-lowcost-v1-teamPS-spk03-e1000/protocol.json",
+        "sha256": "983c0c128fc04452c528e2a87111c7b66ece4746c7cc6c5f793b8f105a2150ae"
+      }
+    ]
+  },
+  "source_inputs_and_environment_match": true,
+  "strict_model_load": true
+}
