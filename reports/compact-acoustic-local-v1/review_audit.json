@@ -1,0 +1,8 @@
+{
+  "histories_checked": 3,
+  "model_epochs": 3000,
+  "prediction_sets_recomputed": 6,
+  "paired_rows": 15225,
+  "source_hashes_matched": 18,
+  "augmentation_epochs_matched": 1000
+}

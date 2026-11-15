@@ -1,4 +1,4 @@
-# local + 보조 음향 set3 (진행 중)
+# local + 보조 음향 set3 (완료)
 
 기준 origin/compact-pooling-v1 @b00956b에서 분기한 experiment/compact-local-acoustic-aux. 병합된 local 구조의 Mean/Pooled/Self에 예전 F1/F2/F3/B1/B2/B3 보조 입력을 추가한다. 주파수축 ablation은 이 실험에서 켜지 않는다.
 
@@ -18,3 +18,5 @@
 [구현/재현](../../experiments/acoustic_local/README.md) · [사전검사](preflight.json)
 
 [병합 전달: 평균/어텐션 비교, 주파수축 기대와 보조경로의 관계](../../docs/COMPACT_MODEL_DESIGN_HANDOFF.md)
+
+**완료:** 세 모델 각1000epoch 정상 종료. [결과 검토](RESULTS.md)를 확인한다. Mean은0dB F1이개선됐으나잡음단독오반응이증가했고Pooled/Self는0dB F1이하락했다.

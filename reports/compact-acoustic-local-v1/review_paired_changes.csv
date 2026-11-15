@@ -1,0 +1,7 @@
+model,kind,fixed,new_errors
+cnn_mean,mixed_0db,255,221
+cnn_mean,original,8,2
+cnn_pooled_query,mixed_0db,266,343
+cnn_pooled_query,original,7,5
+cnn_self_cls,mixed_0db,289,387
+cnn_self_cls,original,5,6
