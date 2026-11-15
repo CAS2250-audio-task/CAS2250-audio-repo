@@ -1,0 +1,7 @@
+{
+  "three_models_both_modes_backward": true,
+  "silence_excluded": true,
+  "same_command_false_negatives_excluded": true,
+  "distinct_label_modes_equal": true,
+  "all_silence_finite": true
+}
