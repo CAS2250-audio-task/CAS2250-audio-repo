@@ -1,0 +1,4 @@
+cnn,vertical,model,parameters,best_epoch,original_f1,zero_f1,noise_only_fpr,reused
+basic,False,cnn_mean,79915,806,0.9196855425834656,0.8543575207392374,0.04583333333333333,True
+basic,False,cnn_pooled_query,80939,565,0.9541844725608826,0.867709256708622,0.11875,True
+basic,False,cnn_self_cls,88395,508,0.9629560112953186,0.8555437500278155,0.12083333333333333,True

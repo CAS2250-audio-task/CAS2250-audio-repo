@@ -1,0 +1,171 @@
+{
+  "common_backbones_identical": true,
+  "identity_frontends_match_local": true,
+  "paired_loss_finite": true,
+  "vertical_q_gradient_verified": true,
+  "cost_estimate": "Conservative: self head step cost used for all three heads; excludes augmentation and I/O",
+  "rows": [
+    {
+      "cnn": "basic",
+      "vertical": false,
+      "model": "cnn_mean",
+      "parameters": 79915,
+      "self_train_step_seconds": 0.016858454948912065,
+      "self_eval_step_seconds": 0.0018170552793890238,
+      "estimated_group_epoch_compute_seconds": 1.3549307447392493
+    },
+    {
+      "cnn": "basic",
+      "vertical": false,
+      "model": "cnn_pooled_query",
+      "parameters": 80939,
+      "self_train_step_seconds": 0.016858454948912065,
+      "self_eval_step_seconds": 0.0018170552793890238,
+      "estimated_group_epoch_compute_seconds": 1.3549307447392493
+    },
+    {
+      "cnn": "basic",
+      "vertical": false,
+      "model": "cnn_self_cls",
+      "parameters": 88395,
+      "self_train_step_seconds": 0.016858454948912065,
+      "self_eval_step_seconds": 0.0018170552793890238,
+      "estimated_group_epoch_compute_seconds": 1.3549307447392493
+    },
+    {
+      "cnn": "basic",
+      "vertical": true,
+      "model": "cnn_mean",
+      "parameters": 82140,
+      "self_train_step_seconds": 0.04078164005962511,
+      "self_eval_step_seconds": 0.00566252222051844,
+      "estimated_group_epoch_compute_seconds": 3.5171151032554913
+    },
+    {
+      "cnn": "basic",
+      "vertical": true,
+      "model": "cnn_pooled_query",
+      "parameters": 83164,
+      "self_train_step_seconds": 0.04078164005962511,
+      "self_eval_step_seconds": 0.00566252222051844,
+      "estimated_group_epoch_compute_seconds": 3.5171151032554913
+    },
+    {
+      "cnn": "basic",
+      "vertical": true,
+      "model": "cnn_self_cls",
+      "parameters": 90620,
+      "self_train_step_seconds": 0.04078164005962511,
+      "self_eval_step_seconds": 0.00566252222051844,
+      "estimated_group_epoch_compute_seconds": 3.5171151032554913
+    },
+    {
+      "cnn": "lowcost",
+      "vertical": false,
+      "model": "cnn_mean",
+      "parameters": 80163,
+      "self_train_step_seconds": 0.023902508663013577,
+      "self_eval_step_seconds": 0.0021621417836286128,
+      "estimated_group_epoch_compute_seconds": 1.8427953168866225
+    },
+    {
+      "cnn": "lowcost",
+      "vertical": false,
+      "model": "cnn_pooled_query",
+      "parameters": 81187,
+      "self_train_step_seconds": 0.023902508663013577,
+      "self_eval_step_seconds": 0.0021621417836286128,
+      "estimated_group_epoch_compute_seconds": 1.8427953168866225
+    },
+    {
+      "cnn": "lowcost",
+      "vertical": false,
+      "model": "cnn_self_cls",
+      "parameters": 88643,
+      "self_train_step_seconds": 0.023902508663013577,
+      "self_eval_step_seconds": 0.0021621417836286128,
+      "estimated_group_epoch_compute_seconds": 1.8427953168866225
+    },
+    {
+      "cnn": "lowcost",
+      "vertical": true,
+      "model": "cnn_mean",
+      "parameters": 82388,
+      "self_train_step_seconds": 0.043502529695009194,
+      "self_eval_step_seconds": 0.005286475759930909,
+      "estimated_group_epoch_compute_seconds": 3.609295700327493
+    },
+    {
+      "cnn": "lowcost",
+      "vertical": true,
+      "model": "cnn_pooled_query",
+      "parameters": 83412,
+      "self_train_step_seconds": 0.043502529695009194,
+      "self_eval_step_seconds": 0.005286475759930909,
+      "estimated_group_epoch_compute_seconds": 3.609295700327493
+    },
+    {
+      "cnn": "lowcost",
+      "vertical": true,
+      "model": "cnn_self_cls",
+      "parameters": 90868,
+      "self_train_step_seconds": 0.043502529695009194,
+      "self_eval_step_seconds": 0.005286475759930909,
+      "estimated_group_epoch_compute_seconds": 3.609295700327493
+    },
+    {
+      "cnn": "frequency",
+      "vertical": false,
+      "model": "cnn_mean",
+      "parameters": 81291,
+      "self_train_step_seconds": 0.03322678393063446,
+      "self_eval_step_seconds": 0.0029404970118775964,
+      "estimated_group_epoch_compute_seconds": 2.5493609710829332
+    },
+    {
+      "cnn": "frequency",
+      "vertical": false,
+      "model": "cnn_pooled_query",
+      "parameters": 82315,
+      "self_train_step_seconds": 0.03322678393063446,
+      "self_eval_step_seconds": 0.0029404970118775964,
+      "estimated_group_epoch_compute_seconds": 2.5493609710829332
+    },
+    {
+      "cnn": "frequency",
+      "vertical": false,
+      "model": "cnn_self_cls",
+      "parameters": 89771,
+      "self_train_step_seconds": 0.03322678393063446,
+      "self_eval_step_seconds": 0.0029404970118775964,
+      "estimated_group_epoch_compute_seconds": 2.5493609710829332
+    },
+    {
+      "cnn": "frequency",
+      "vertical": true,
+      "model": "cnn_mean",
+      "parameters": 83516,
+      "self_train_step_seconds": 0.056787741060058274,
+      "self_eval_step_seconds": 0.0075000274810008705,
+      "estimated_group_epoch_compute_seconds": 4.824769657512661
+    },
+    {
+      "cnn": "frequency",
+      "vertical": true,
+      "model": "cnn_pooled_query",
+      "parameters": 84540,
+      "self_train_step_seconds": 0.056787741060058274,
+      "self_eval_step_seconds": 0.0075000274810008705,
+      "estimated_group_epoch_compute_seconds": 4.824769657512661
+    },
+    {
+      "cnn": "frequency",
+      "vertical": true,
+      "model": "cnn_self_cls",
+      "parameters": 91996,
+      "self_train_step_seconds": 0.056787741060058274,
+      "self_eval_step_seconds": 0.0075000274810008705,
+      "estimated_group_epoch_compute_seconds": 4.824769657512661
+    }
+  ]
+}
