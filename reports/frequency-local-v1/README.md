@@ -31,3 +31,7 @@
 위 정리 문서의 당시 실행중 상태는 과거 기록이다. 주파수18조건은 현재 완료됐으며 새 연속 증강 계획은 실행하지 않았다.
 
 [전체 비교표](all18_comparison.csv) · [예측 재계산 검사](all18_audit.json) · [팀원 복원 검사](self2_import_audit.json)
+
+## 원격 보관과 분석
+
+[13개 모델 가중치·전체 기록](https://github.com/CAS2250-audio-task/CAS2250-audio-repo/releases/tag/frequency-local-spk03-1000-v1-results) · [18조건 상세 분석](ANALYSIS.md). 기존3개 및 팀원2개 릴리스와 함께 모든18조건 가중치가 원격에 보관돼 있다.

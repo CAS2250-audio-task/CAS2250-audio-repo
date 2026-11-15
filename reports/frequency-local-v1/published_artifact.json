@@ -1,0 +1,11 @@
+{
+  "release_url": "https://github.com/CAS2250-audio-task/CAS2250-audio-repo/releases/tag/frequency-local-spk03-1000-v1-results",
+  "asset": "frequency-local-spk03-1000-v1-results.tar.gz",
+  "bytes": 133889862,
+  "sha256": "d739b501642531c4336e5d8bc0d0e4ed6839c251ae46b3f497f1938045ce4618",
+  "models": 13,
+  "files": 6439,
+  "remote_digest_verified": true,
+  "baseline_release": "compact-local-features-selected-v1",
+  "team_release": "frequency-attention-balanced-self2-results-v1"
+}
