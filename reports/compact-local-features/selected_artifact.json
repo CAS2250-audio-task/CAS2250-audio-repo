@@ -1,0 +1,14 @@
+{
+  "asset": "compact-local-features-selected-v1.tar.gz",
+  "bytes": 1095476,
+  "sha256": "d5968905d297177cb9e46c9dc12a7b1a9c58ecd13d852412e9ef89b4048e17d8",
+  "files": 16,
+  "code_commit": "0a284a5a30f76ba3b8fccfe6bd22740631a3f264",
+  "release_tag": "compact-local-features-selected-v1",
+  "publication_status": "Prepared locally; verify GitHub release for publication",
+  "best_epochs": {
+    "cnn_mean": 806,
+    "cnn_pooled_query": 565,
+    "cnn_self_cls": 508
+  }
+}
