@@ -1,0 +1,10 @@
+{
+  "reference_commit": "f7514137e0f83bd37b5d9a71889f6bd6c5d2731b",
+  "rows_compared": 6,
+  "audio_sha256_equal": 812,
+  "noise_sources_manifest_equal": true,
+  "frontend_equal": true,
+  "model_source_hash_equal": true,
+  "controlled_loss_only_comparison": false,
+  "baseline_1000_results_available": false
+}

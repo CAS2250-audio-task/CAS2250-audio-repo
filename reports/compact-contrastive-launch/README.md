@@ -110,3 +110,6 @@ WAV읽기·모델로딩·1.5초음성을모으는시간·발화종료판단·통
 [화자·모델별CSV](comparison.csv) · [전체epoch기록](epoch_histories.csv.gz) · [학습예산진단](epoch_budget_diagnostics.csv) · [전체감사](summary_audit.json) · [추론시간](inference_latency.json) · [기존예측검증](result_checks.json)
 
 실행별 protocol.json·summary.json·선택 예측·최종 지표는 reports/compact-{noise,noise-speaker}-{spk03-e1000,spk02-e100}/ 아래에 보존했다. 체크포인트와 증강 기록은 대응하는 runs/에 보관한다. 이번 정리에서는 추가 학습 없이 기존 기록 재집계와 추론 시간 측정만 수행했다.
+
+
+[분류 로스만 쓴 다른 브랜치와 비교](CE_BRANCH_COMPARISON.md)
