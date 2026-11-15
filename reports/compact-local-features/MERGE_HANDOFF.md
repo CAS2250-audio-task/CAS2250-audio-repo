@@ -64,10 +64,25 @@ python -m experiments.local_features.run \
 - 학습률AdamW1e-3→1e-5 cosine1000,WD1e-4,batch32원본/64paired views,clip5. 소음SNR[-5,20],formant p0.5. train-only per-band normalization,64mel,16kHz,1.5초,noVAD.
 - 이 서버의 선택 가중치: `runs/compact-local-local-spk03-e1000/spk03/{cnn_mean,cnn_pooled_query,cnn_self_cls}_best.pt`. 각각806/565/508epoch. model/mean/std와protocol hash가 포함된다.
 - `runs/`는gitignore이므로 branch push에는 가중치·cache·raw audio가 포함되지 않는다. 다른 서버에서 재학습 없이 사용할 때는 아래 선택 가중치 패키지를 별도로 받아야 한다.
-- 선택 가중치 패키지 예정 자산명: `compact-local-features-selected-v1.tar.gz`,릴리스 태그 `compact-local-features-selected-v1`. 실제 게시 여부는 원격 릴리스에서 확인한다. archive manifest와SHA256을 함께 제공한다.
+- 게시된 선택 가중치 패키지 자산명: `compact-local-features-selected-v1.tar.gz`,릴리스 태그 `compact-local-features-selected-v1`. 게시 완료. 원격 asset digest와 로컬SHA256 일치 확인. archive manifest와SHA256을 함께 제공한다.
 - `reports/compact-local-features/`:12조건 비교표,전체epoch압축CSV,학습곡선,latency,독립 검토,선택 결정/본 문서.
 - `reports/compact-local-{short,local,both}-spk03-e1000/`:각 protocol/summary.
 - 검토:12개1000epoch기록,60,900개예측,12개최종점수재계산,현재소스해시39개,baseline과새조건3000개증강trace일치.
 - `launch_local_features.py`,benchmark/check 스크립트 일부는 당시 worktree의 절대경로를 사용한다. 이들을 이식용 기본 launcher로 사용하지 않는다.
 
 후속 작업은 다른 검증 화자에서 세 head를 비교하는 것과 LR/batch 탐색이다. 아직 추가 실행하지 않았다.
+
+선택 가중치 다운로드: https://github.com/CAS2250-audio-task/CAS2250-audio-repo/releases/tag/compact-local-features-selected-v1
+
+다른 서버의 해당 checkout 루트에서 아래 명령으로 다운로드·검증·복원한다. `gh`는 해당 서버에서 설치/인증되어 있어야 한다.
+
+```bash
+mkdir -p /tmp/compact-local-selected
+gh release download compact-local-features-selected-v1 \
+  --repo CAS2250-audio-task/CAS2250-audio-repo \
+  --dir /tmp/compact-local-selected
+(cd /tmp/compact-local-selected && sha256sum -c compact-local-features-selected-v1.tar.gz.sha256)
+python -m experiments.compact_pooling.bundle restore /tmp/compact-local-selected/compact-local-features-selected-v1.tar.gz
+```
+
+릴리스의 보고서는 패키지 제작 당시 스냅샷이다. 최신 병합 전달 문서는 브랜치의 이 파일을 따른다.
