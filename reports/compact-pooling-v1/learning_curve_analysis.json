@@ -1,0 +1,80 @@
+[
+  {
+    "speaker": "spk02",
+    "model": "cnn_mean",
+    "selected_epoch": 71,
+    "selected_original_f1": 0.7053496241569519,
+    "maximum_original_f1": 0.7607883214950562,
+    "maximum_original_epoch": 57,
+    "mean_train_accuracy_last20": 0.9839901477832512,
+    "zero_f1_last20": 0.4313685273751616,
+    "zero_f1_previous20": 0.4217411384917796,
+    "original_f1_last20": 0.6725554317235947,
+    "original_f1_previous20": 0.6868540942668915
+  },
+  {
+    "speaker": "spk02",
+    "model": "cnn_pooled_query",
+    "selected_epoch": 90,
+    "selected_original_f1": 0.6014304161071777,
+    "maximum_original_f1": 0.6742821931838989,
+    "maximum_original_epoch": 42,
+    "mean_train_accuracy_last20": 0.9876847290640395,
+    "zero_f1_last20": 0.3990286597982049,
+    "zero_f1_previous20": 0.38510357844643295,
+    "original_f1_last20": 0.6141463875770569,
+    "original_f1_previous20": 0.6116656810045242
+  },
+  {
+    "speaker": "spk02",
+    "model": "cnn_self_cls",
+    "selected_epoch": 53,
+    "selected_original_f1": 0.66996169090271,
+    "maximum_original_f1": 0.6854198575019836,
+    "maximum_original_epoch": 44,
+    "mean_train_accuracy_last20": 0.9920361247947455,
+    "zero_f1_last20": 0.4406981707550585,
+    "zero_f1_previous20": 0.4150738278403878,
+    "original_f1_last20": 0.6533871561288833,
+    "original_f1_previous20": 0.6306329667568207
+  },
+  {
+    "speaker": "spk03",
+    "model": "cnn_mean",
+    "selected_epoch": 95,
+    "selected_original_f1": 0.8592971563339233,
+    "maximum_original_f1": 0.9078599810600281,
+    "maximum_original_epoch": 56,
+    "mean_train_accuracy_last20": 0.9829228243021347,
+    "zero_f1_last20": 0.7478606201708317,
+    "zero_f1_previous20": 0.720657791569829,
+    "original_f1_last20": 0.8645882844924927,
+    "original_f1_previous20": 0.8527613162994385
+  },
+  {
+    "speaker": "spk03",
+    "model": "cnn_pooled_query",
+    "selected_epoch": 98,
+    "selected_original_f1": 0.9267510175704956,
+    "maximum_original_f1": 0.9369120597839355,
+    "maximum_original_epoch": 71,
+    "mean_train_accuracy_last20": 0.9846469622331689,
+    "zero_f1_last20": 0.7483492365106941,
+    "zero_f1_previous20": 0.7333819754421711,
+    "original_f1_last20": 0.9101509779691697,
+    "original_f1_previous20": 0.9061763942241668
+  },
+  {
+    "speaker": "spk03",
+    "model": "cnn_self_cls",
+    "selected_epoch": 78,
+    "selected_original_f1": 0.9314402937889099,
+    "maximum_original_f1": 0.9412486553192139,
+    "maximum_original_epoch": 48,
+    "mean_train_accuracy_last20": 0.9885878489326764,
+    "zero_f1_last20": 0.7856994446367025,
+    "zero_f1_previous20": 0.753805772587657,
+    "original_f1_last20": 0.9157015234231949,
+    "original_f1_previous20": 0.9115824282169342
+  }
+]
