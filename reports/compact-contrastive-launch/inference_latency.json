@@ -1,0 +1,59 @@
+{
+  "results": [
+    {
+      "model": "cnn_mean",
+      "gpu_model": {
+        "median_ms": 0.9952590335160494,
+        "p95_ms": 1.017694582697004
+      },
+      "gpu_frontend_model_transfer": {
+        "median_ms": 1.3114899629727006,
+        "p95_ms": 1.338846585713327
+      },
+      "cpu_frontend_model": {
+        "median_ms": 2.82825599424541,
+        "p95_ms": 2.9386221431195723
+      }
+    },
+    {
+      "model": "cnn_pooled_query",
+      "gpu_model": {
+        "median_ms": 1.1270688846707344,
+        "p95_ms": 1.1516064871102571
+      },
+      "gpu_frontend_model_transfer": {
+        "median_ms": 1.4397258637472987,
+        "p95_ms": 1.4640061068348587
+      },
+      "cpu_frontend_model": {
+        "median_ms": 2.903096377849579,
+        "p95_ms": 3.014525573235005
+      }
+    },
+    {
+      "model": "cnn_self_cls",
+      "gpu_model": {
+        "median_ms": 1.5477959532290697,
+        "p95_ms": 1.5997758251614869
+      },
+      "gpu_frontend_model_transfer": {
+        "median_ms": 1.8599319737404585,
+        "p95_ms": 1.8813508446328342
+      },
+      "cpu_frontend_model": {
+        "median_ms": 3.547118976712227,
+        "p95_ms": 3.6475289263762534
+      }
+    }
+  ],
+  "batch": 1,
+  "cpu_threads": 2,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "warmup": 20,
+  "measurements": 100,
+  "input_path": "audio/대기/spk03_001.wav",
+  "input_seconds": 1.5,
+  "weights": "noise-speaker/spk03 selected best checkpoints, projection head excluded",
+  "excludes": "WAV decode, model loading, 1.5s audio acquisition, endpoint detection and communications",
+  "note": "GPU end-to-end starts with decoded CPU waveform, includes GPU frontend+normalization+classifier and CPU class output; CPU starts with decoded waveform."
+}
