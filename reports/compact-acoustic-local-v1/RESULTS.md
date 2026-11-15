@@ -35,3 +35,7 @@
 세1000epoch history의유한손실/최고epoch선택,6개예측세트의최종점수,15,225개짝지은입력비교,18개현재소스해시,기존local과1000개epoch증강trace 일치를확인했다. 원본학습mel정규화의동일성은smoke_audit.json에기록돼있다. test01음성은읽지않았다.
 
 [전체점수](review_metrics.csv) · [클래스별F1/recall/오답](review_classes.csv) · [오답수정/새오답](review_paired_changes.csv) · [검토기록](review_audit.json) · [학습기록](epoch_histories.csv.gz)
+
+## 원격 가중치/재현 상태
+
+[완료 결과 릴리스](https://github.com/CAS2250-audio-task/CAS2250-audio-repo/releases/tag/compact-local-acoustic-aux-spk03-results-v1)에 세 모델best,1000epoch last/optimizer/projector,전체history,1000개증강trace,예측/보고서를 올렸다. raw/test01음성은포함하지않았다. 패키지SHA256은 `e80e43982e56f7f36bcd7b545cc4e94b90fc03c1242f30da3d18901695f44bdf`다. 새500epoch 증강선별실험은사용자요청으로취소했으며학습을시작하지않았다.
