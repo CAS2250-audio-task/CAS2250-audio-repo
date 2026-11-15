@@ -116,3 +116,6 @@ WAV읽기·모델로딩·1.5초음성을모으는시간·발화종료판단·통
 
 
 [최신 CE1000과 비교](CE_1000_COMPARISON.md) · [세 모델의 화자03 오답 분석](spk03-errors/README.md)
+
+
+[세 모델 오답 심층 분석](spk03-errors/deep/README.md)

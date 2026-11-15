@@ -115,3 +115,6 @@
 [CE 예측 출처·해시](ce_reference/provenance.json) · [분석 검사](analysis_audit.json)
 
 추가학습·새test평가는하지않고, 저장된선택checkpoint예측을재분석했다. 음성을청취완료했다고주장하지않는다.
+
+
+[세 모델 오답 심층 분석](deep/README.md)

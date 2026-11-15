@@ -1,0 +1,16 @@
+{
+  "fixed_primary_objective": "noise-speaker",
+  "unique_originals": 203,
+  "noisy_conditions": 4872,
+  "error_models_histogram": {
+    "0": 3593,
+    "1": 645,
+    "2": 380,
+    "3": 254
+  },
+  "common_all_three_wrong": 254,
+  "common_cnn_receptive_field_frames": 109,
+  "approximate_receptive_field_seconds": 1.105,
+  "additional_training": false,
+  "additional_model_inference": false
+}
