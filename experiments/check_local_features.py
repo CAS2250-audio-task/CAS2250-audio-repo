@@ -53,9 +53,11 @@ def main():
             assert torch.equal(fresh_short[name](x),fresh_both[name](x))
     old=Path('/root/CAS2250-compact-contrastive-100/reports/compact-noise-speaker-spk03-e1000/protocol.json')
     prior=json.loads(old.read_text())
-    for path in ['experiments/compact_pooling/models.py','experiments/compact_pooling/objectives.py',
-                 'experiments/overnight/data.py','experiments/overnight/waveforms.py']:
-        assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==prior['source_sha256'].get(path,hashlib.sha256((ROOT/path).read_bytes()).hexdigest())
+    for path in ['experiments/compact_pooling/models.py','experiments/compact_pooling/objectives.py']:
+        assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==prior['source_sha256'][path]
+    identity=json.loads((ROOT/'runs/compact-pooling-v1/formants.json').read_text())['identity']
+    assert hashlib.sha256((ROOT/'experiments/overnight/data.py').read_bytes()).hexdigest()==identity['transform_source_sha256']
+    assert hashlib.sha256((ROOT/'experiments/overnight/waveforms.py').read_bytes()).hexdigest()==identity['settings_source_sha256']
     value=dict(global_rf_frames={'baseline':109,'short':61,'local':109,'both':61},local_rf_frames=23,
         shared_initial_tensors_equal=True,local_initial_output_equals_baseline=True,both_initial_output_equals_short=True,
         local_projection_has_nonzero_finite_gradient=True,output_shape_3_151_32=True,parameter_counts=counts,
