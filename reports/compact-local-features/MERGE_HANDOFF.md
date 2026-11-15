@@ -86,3 +86,7 @@ python -m experiments.compact_pooling.bundle restore /tmp/compact-local-selected
 ```
 
 릴리스의 보고서는 패키지 제작 당시 스냅샷이다. 최신 병합 전달 문서는 브랜치의 이 파일을 따른다.
+
+## 풀링·주파수축·보조 음향의 설계 맥락
+
+[병합 시 함께 전달할 설계/분석 문서](../../docs/COMPACT_MODEL_DESIGN_HANDOFF.md)를 함께 읽는다. 원본/소음 정답률과macro F1의 순위가 다르고, 전체F1 상승의silence 의존성을 확인했다. 주파수축 도입은 이웃 대역/대역 간 관계를 보완하려는 가설이며 특정 음절 구별 개선이 증명된 결과는 아니다. 보조음향set3는 그와 별도로 실행 중인 실험이다.

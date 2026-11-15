@@ -1,0 +1,6 @@
+{
+  "prediction_sets_recomputed": 6,
+  "model_epochs": 3000,
+  "baseline_reused": true,
+  "test01_audio_read": false
+}
