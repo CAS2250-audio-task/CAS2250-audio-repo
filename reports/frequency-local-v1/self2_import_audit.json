@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "7e65392cd82aeb0174ad8234af9cc6abfca9eb9f76c1d1e243c8c4f958cf2831",
+  "verified_files": 1353,
+  "models": [
+    {
+      "cnn": "lowcost",
+      "best_epoch": 236,
+      "last_epoch": 1000,
+      "history_rows": 1000
+    },
+    {
+      "cnn": "frequency",
+      "best_epoch": 479,
+      "last_epoch": 1000,
+      "history_rows": 1000
+    }
+  ],
+  "trace_pairs": 1330,
+  "utf8_recovery_preserved_training_and_predictions": true
+}

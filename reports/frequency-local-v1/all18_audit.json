@@ -1,0 +1,7 @@
+{
+  "conditions": 18,
+  "predictions_per_condition": 5075,
+  "total_predictions_recomputed": 91350,
+  "source": "selected checkpoint prediction CSVs; each noisy macro F1 is mean of 24 noise/draw macro F1 values",
+  "original_and_zero_f1_match_reported": true
+}
