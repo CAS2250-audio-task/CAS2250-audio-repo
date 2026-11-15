@@ -113,3 +113,6 @@ WAV읽기·모델로딩·1.5초음성을모으는시간·발화종료판단·통
 
 
 [분류 로스만 쓴 다른 브랜치와 비교](CE_BRANCH_COMPARISON.md)
+
+
+[최신 CE1000과 비교](CE_1000_COMPARISON.md) · [세 모델의 화자03 오답 분석](spk03-errors/README.md)

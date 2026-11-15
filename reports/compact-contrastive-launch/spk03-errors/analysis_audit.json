@@ -1,0 +1,25 @@
+{
+  "models": 3,
+  "objectives": 3,
+  "combinations": 9,
+  "unique_original_clips": 203,
+  "original_predictions": 1827,
+  "noisy_predictions": 43848,
+  "paired_comparisons": 9,
+  "one_to_one_pairing_verified": true,
+  "nine_original_and_noise_f1_scores_recomputed": true,
+  "source_prediction_sha256": {
+    "ce/cnn_mean": "29f7fb204ed63a94a37392bbef088d7a41cb18ea5281fec32e1c544933192706",
+    "ce/cnn_pooled_query": "aba365143527a9abd6937eecb7171c05a1e8728fd51bbdea526933c2ebe267da",
+    "ce/cnn_self_cls": "794fc8281376af829794a0a79707242bcba82d3db337a0a625d997a5cde9fc60",
+    "noise/cnn_mean": "7398a763b67a48f349448f70370a8d7a3bbcf70bee1c8dacec006b5ec792630b",
+    "noise/cnn_pooled_query": "ea96dc2b827e238238ae121b9b1372dbb38e59265f57dcabc107cac7418d3b2d",
+    "noise/cnn_self_cls": "2f8d84b7cc704602726872c2ec723f8c57848eb832ca00302143c8255c2c5210",
+    "noise-speaker/cnn_mean": "887a3dcc139ae4856c055ed4ed546077676418788900d493141bfdc615c6acda",
+    "noise-speaker/cnn_pooled_query": "05d88f0a787ab4f317da1271c3c4a69b3636068eed8232fa8707870263055d63",
+    "noise-speaker/cnn_self_cls": "78889971f55454c17fefd99c0c83b29cad7c80c2d233e37b7f5accf2a453a445"
+  },
+  "common_original_wrong_all9": [],
+  "new_training": false,
+  "new_test": false
+}

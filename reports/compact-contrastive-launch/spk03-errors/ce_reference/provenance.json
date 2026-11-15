@@ -1,0 +1,41 @@
+{
+  "archive_sha256": "b1b66a6ef75ccaa126487357ac8c24c20b81f40e8c5179c710dc7e58d0209e9e",
+  "manifest_commit": "56cfb504afa5fe768cb7c35f5e09ea3fe67bd649",
+  "files": [
+    {
+      "path": "reports/compact-pooling-spk03-1000-v1/summary.json",
+      "sha256": "78776810b60b3ffa38911703ff92092b34bb665c9462873125cf7dc858d73bdf",
+      "local": "summary.json"
+    },
+    {
+      "path": "runs/compact-pooling-spk03-1000-v1/spk03/cnn_mean_best_predictions.csv.gz",
+      "sha256": "29f7fb204ed63a94a37392bbef088d7a41cb18ea5281fec32e1c544933192706",
+      "local": "cnn_mean_best_predictions.csv.gz"
+    },
+    {
+      "path": "runs/compact-pooling-spk03-1000-v1/spk03/cnn_mean_final_metrics.json",
+      "sha256": "49672536885da50421154c6b91c804b7674901da12139ed13188b90fbd6a217d",
+      "local": "cnn_mean_final_metrics.json"
+    },
+    {
+      "path": "runs/compact-pooling-spk03-1000-v1/spk03/cnn_pooled_query_best_predictions.csv.gz",
+      "sha256": "aba365143527a9abd6937eecb7171c05a1e8728fd51bbdea526933c2ebe267da",
+      "local": "cnn_pooled_query_best_predictions.csv.gz"
+    },
+    {
+      "path": "runs/compact-pooling-spk03-1000-v1/spk03/cnn_pooled_query_final_metrics.json",
+      "sha256": "0feb29ac638d4153b18cab7473f23e3d182055785f8b1135a72211a7dbe8ea99",
+      "local": "cnn_pooled_query_final_metrics.json"
+    },
+    {
+      "path": "runs/compact-pooling-spk03-1000-v1/spk03/cnn_self_cls_best_predictions.csv.gz",
+      "sha256": "794fc8281376af829794a0a79707242bcba82d3db337a0a625d997a5cde9fc60",
+      "local": "cnn_self_cls_best_predictions.csv.gz"
+    },
+    {
+      "path": "runs/compact-pooling-spk03-1000-v1/spk03/cnn_self_cls_final_metrics.json",
+      "sha256": "b1aaf84ba50bba384e95fa5bfd9b7fa660ad1865ea1cef91124297b175098bee",
+      "local": "cnn_self_cls_final_metrics.json"
+    }
+  ]
+}
