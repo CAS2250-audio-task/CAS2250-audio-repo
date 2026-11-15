@@ -43,16 +43,19 @@ def summarize():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--cnns', choices=['lowcost', 'frequency'], nargs='+', default=['lowcost', 'frequency'])
+    parser.add_argument('--models', choices=HEADS, nargs='+', default=HEADS)
     args = parser.parse_args()
     assert len(set(args.cnns)) == len(args.cnns)
+    heads=args.models
+    suffix='teamPS' if len(heads)==2 else ('pooled' if heads[0]=='cnn_pooled_query' else 'self')
     OUT.mkdir(exist_ok=True, parents=True);REPORT.mkdir(exist_ok=True, parents=True)
     assert not (OUT/'status.json').exists(), 'Inspect existing supervisor before duplicate launch'
     state = dict(status='waiting_for_host5', supervisor_pid=os.getpid(), started_utc=now(),
         epochs=1000, imported_release='team4-partial-20261115T192001Z', groups={},
         externally_assigned_cnns=[c for c in ['lowcost', 'frequency'] if c not in args.cnns])
     for cnn in args.cnns:
-        name = f'frequency-local-{cnn}-v1-teamPS-spk03-e1000'
-        state['groups'][cnn+'-v1'] = dict(status='queued', models=HEADS,
+        name = f'frequency-local-{cnn}-v1-{suffix}-spk03-e1000'
+        state['groups'][cnn+'-v1'] = dict(status='queued', models=heads,
             progress=str(ROOT/'runs'/name/'progress.json'))
     state['source_sha256'] = {str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
         for folder in ['frequency_local','local_features','compact_pooling']
@@ -72,9 +75,9 @@ def main():
         for cnn in args.cnns:
             for path, digest in state['source_sha256'].items():
                 assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest, path
-            key = cnn+'-v1';name = f'frequency-local-{cnn}-v1-teamPS-spk03-e1000'
+            key = cnn+'-v1';name = f'frequency-local-{cnn}-v1-{suffix}-spk03-e1000'
             command = [sys.executable,'-u','-m','experiments.frequency_local_subset',
-                '--cnn',cnn,'--vertical','--models',*HEADS,
+                '--cnn',cnn,'--vertical','--models',*heads,
                 '--objective','paired_supcon','--positive-mode','same_command',
                 '--supcon-weight','0.1','--temperature','0.1','--folds','spk03',
                 '--epochs','1000','--output',str(ROOT/'runs'/name)]
