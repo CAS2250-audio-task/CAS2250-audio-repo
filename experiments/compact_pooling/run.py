@@ -199,7 +199,7 @@ def evaluate(model, units):
                 original_f1=rows[0]['macro_f1']),rows
 
 
-def main():
+def main(argv=None, model_factory=None, experiment_config=None):
     global OUT,REPORT,NAMES
     parser=argparse.ArgumentParser()
     parser.add_argument('--epochs',type=int,default=100)
@@ -211,7 +211,7 @@ def main():
     parser.add_argument('--supcon-weight',type=float,default=.1)
     parser.add_argument('--temperature',type=float,default=.1)
     parser.add_argument('--positive-mode',choices=['same_recording','same_command'],default='same_command')
-    args=parser.parse_args()
+    args=parser.parse_args(argv)
     assert args.epochs>0 and args.temperature>0 and args.supcon_weight>=0
     assert len(set(args.models))==len(args.models)
     assert args.objective=='ce' or args.output.resolve()!=OUT.resolve(), 'Paired runs require a separate --output folder'
@@ -275,6 +275,9 @@ def main():
         test_audio_read=False,test_evaluated=False,labels=LABELS,sources=source_manifest,
         audio_sha256={p:sha(DATA/p) for p in frame.path},
         source_sha256={str(p.relative_to(ROOT)):sha(p) for p in Path(__file__).parent.glob('*.py')})
+    if experiment_config is not None:
+        protocol['architecture_ablation']=experiment_config
+        protocol['source_sha256'].update({path:sha(ROOT/path) for path in experiment_config['extra_source_files']})
     protocol_path=REPORT/'protocol.json'
     if protocol_path.exists():assert json.loads(protocol_path.read_text())==protocol,'Run protocol changed'
     else:write(protocol_path,protocol)
@@ -296,7 +299,7 @@ def main():
         del original_train
         reference=float(np.median(np.sqrt(np.mean(waves[train_idx[targets[train_idx]!=10]].astype(np.float64)**2,axis=1)))**2)
         units=validation_units(frontend,frame,waves,targets,val_idx,noises['evaluation'],mean,std,reference,1)
-        models={k:v.cuda() for k,v in matched_models(42).items() if k in NAMES}
+        models={k:v.cuda() for k,v in (model_factory or matched_models)(42).items() if k in NAMES}
         # The classifier also starts identically; only readout-specific tensors differ.
         for name in NAMES[1:]:models[name].classifier.load_state_dict(models[NAMES[0]].classifier.state_dict())
         torch.manual_seed(4242)

@@ -1,0 +1,37 @@
+{
+  "global_rf_frames": {
+    "baseline": 109,
+    "short": 61,
+    "local": 109,
+    "both": 61
+  },
+  "local_rf_frames": 23,
+  "shared_initial_tensors_equal": true,
+  "local_initial_output_equals_baseline": true,
+  "both_initial_output_equals_short": true,
+  "local_projection_has_nonzero_finite_gradient": true,
+  "output_shape_3_151_32": true,
+  "parameter_counts": {
+    "baseline": {
+      "cnn_mean": 77835,
+      "cnn_pooled_query": 78859,
+      "cnn_self_cls": 86315
+    },
+    "short": {
+      "cnn_mean": 76555,
+      "cnn_pooled_query": 77579,
+      "cnn_self_cls": 85035
+    },
+    "local": {
+      "cnn_mean": 79915,
+      "cnn_pooled_query": 80939,
+      "cnn_self_cls": 88395
+    },
+    "both": {
+      "cnn_mean": 78635,
+      "cnn_pooled_query": 79659,
+      "cnn_self_cls": 87115
+    }
+  },
+  "original_model_objective_sources_unchanged": true
+}
