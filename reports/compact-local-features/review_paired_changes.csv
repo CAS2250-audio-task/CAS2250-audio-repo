@@ -1,0 +1,4 @@
+model,fixed,new_errors,net_fewer_errors
+cnn_mean,257,189,68
+cnn_pooled_query,355,288,67
+cnn_self_cls,401,306,95

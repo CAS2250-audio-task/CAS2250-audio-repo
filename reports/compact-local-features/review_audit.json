@@ -1,0 +1,9 @@
+{
+  "histories_checked": 12,
+  "epochs_per_history": 1000,
+  "best_epoch_matches_earliest_validation_max": true,
+  "finite_losses": true,
+  "prediction_rows_checked": 60900,
+  "final_scores_recomputed": 12,
+  "current_source_hashes_checked": 39
+}
