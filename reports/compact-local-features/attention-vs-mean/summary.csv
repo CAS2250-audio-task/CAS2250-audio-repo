@@ -1,0 +1,5 @@
+attention,kind,n,mean_errors,attention_errors,fixed,new_errors,net_fewer_errors,mean_accuracy,attention_accuracy
+cnn_pooled_query,mixed_0db,4872,611,651,243,283,-40,0.8745894909688013,0.8663793103448276
+cnn_pooled_query,original,203,15,10,12,7,5,0.9261083743842364,0.9507389162561576
+cnn_self_cls,mixed_0db,4872,611,675,295,359,-64,0.8745894909688013,0.8614532019704434
+cnn_self_cls,original,203,15,8,12,5,7,0.9261083743842364,0.9605911330049262

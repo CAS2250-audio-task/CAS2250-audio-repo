@@ -1,0 +1,4 @@
+model,command_to_silence,silence_to_command,command_only_macro_f1_11class_context,silence_f1
+cnn_mean,98,1,0.8798563685906216,0.5993686868686867
+cnn_pooled_query,8,7,0.8649265739361628,0.8955357142857144
+cnn_self_cls,34,4,0.8614982323724325,0.7959986772486775

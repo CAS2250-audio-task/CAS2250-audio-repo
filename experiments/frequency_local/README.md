@@ -60,3 +60,7 @@ python -m experiments.frequency_local.run --cnn frequency --vertical \
 사전검사는18조건 shape, 동일CNN 초기값, zero-init 전처리의 local 출력 일치,
 paired-loss 유한 역전파와 세로Q projection까지 도달하는 실제 gradient를 확인한다.
 GPU step 비용은 `reports/frequency-local-v1/preflight.json`에 저장한다.
+
+## 설계 맥락과 해석
+
+[평균/어텐션 비교와 주파수축 도입의 검증 가설](../../docs/COMPACT_MODEL_DESIGN_HANDOFF.md)을 함께 전달한다. 전체macro F1뿐 아니라 명령어10종F1·silence·정답률·개별 혼동을 분리해 평가한다. 모델별CNN도 독립 학습됐고lowcost의시간support도 달라 순수어텐션/주파수축의 인과효과로 단정하지 않는다.

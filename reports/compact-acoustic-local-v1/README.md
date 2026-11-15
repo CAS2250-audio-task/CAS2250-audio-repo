@@ -16,3 +16,5 @@
 완료 후 comparison.csv와epoch_histories.csv.gz,completion_audit.json을 자동 생성한다.
 
 [구현/재현](../../experiments/acoustic_local/README.md) · [사전검사](preflight.json)
+
+[병합 전달: 평균/어텐션 비교, 주파수축 기대와 보조경로의 관계](../../docs/COMPACT_MODEL_DESIGN_HANDOFF.md)
