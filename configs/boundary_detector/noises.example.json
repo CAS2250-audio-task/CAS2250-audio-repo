@@ -1,0 +1,8 @@
+{
+  "train": [
+    {"path": "/path/to/train_noise.wav", "original_group": "recording_session_A"}
+  ],
+  "validation": [
+    {"path": "/path/to/validation_noise.wav", "original_group": "recording_session_B"}
+  ]
+}

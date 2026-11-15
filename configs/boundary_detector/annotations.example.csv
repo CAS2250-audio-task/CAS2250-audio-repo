@@ -1,0 +1,4 @@
+original_path,speaker_id,original_id,speech_start,speech_end,is_negative,boundary_source
+speakerA/001.wav,speakerA,recording_A001,0.42,1.07,false,manual
+speakerA/background.wav,speakerA,background_A001,,,true,manual
+speakerB/001.wav,speakerB,recording_B001,0.2,0.68,false,automatic_vad

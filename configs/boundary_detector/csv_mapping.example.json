@@ -1,0 +1,12 @@
+{
+  "path_col": "original_path",
+  "speaker_col": "speaker_id",
+  "id_col": "original_id",
+  "start_col": "speech_start",
+  "end_col": "speech_end",
+  "negative_col": "is_negative",
+  "annotation_source_col": "boundary_source",
+  "unit": "seconds",
+  "encoding": "utf-8-sig",
+  "delimiter": ","
+}

@@ -1,0 +1,11 @@
+{
+  "unit_checks": 4,
+  "synthetic_training_epochs": 2,
+  "resume_completed_run": true,
+  "inference_export": true,
+  "real_team_audio_used": false,
+  "real_boundary_accuracy_established": false,
+  "cuda_smoke_epochs": 2,
+  "cuda_width64_completed": true,
+  "validation_reports_original_and_noisy_separately": true
+}
