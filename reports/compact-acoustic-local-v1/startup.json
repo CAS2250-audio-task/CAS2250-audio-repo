@@ -1,0 +1,51 @@
+{
+  "base_remote": "origin/compact-pooling-v1",
+  "base_commit": "b00956b",
+  "branch": "experiment/compact-local-acoustic-aux",
+  "supervisor_pid": 37482,
+  "training_pid": 37486,
+  "training_progress": {
+    "updated_utc": "2026-11-15T17:12:21Z",
+    "pid": 37486,
+    "stage": "training",
+    "speaker": "spk03",
+    "epoch": 7,
+    "epochs": 1000,
+    "epoch_seconds": 4.276836124015972,
+    "estimated_training_minutes_remaining": 76.14115278218773,
+    "results": [
+      {
+        "epoch": 7,
+        "model": "cnn_mean",
+        "lr": 0.0009999118882984242,
+        "train_loss": 1.236777053286485,
+        "train_accuracy": 0.555008210180624,
+        "zero_f1": 0.1537561947479844,
+        "zero_loss": 2.367886036634445,
+        "original_f1": 0.36192935705184937
+      },
+      {
+        "epoch": 7,
+        "model": "cnn_pooled_query",
+        "lr": 0.0009999118882984242,
+        "train_loss": 0.8507009445152847,
+        "train_accuracy": 0.6962233169129721,
+        "zero_f1": 0.375180690549314,
+        "zero_loss": 1.8056688159704208,
+        "original_f1": 0.6757359504699707
+      },
+      {
+        "epoch": 7,
+        "model": "cnn_self_cls",
+        "lr": 0.0009999118882984242,
+        "train_loss": 1.164873841165126,
+        "train_accuracy": 0.6518883415435139,
+        "zero_f1": 0.498896561563015,
+        "zero_loss": 1.3636267110705376,
+        "original_f1": 0.7951194643974304
+      }
+    ]
+  },
+  "baseline_augmentation_epochs_verified": 7,
+  "note": "Startup snapshot only; live progress is under runs/. Both paths independently use their actual waveforms."
+}
