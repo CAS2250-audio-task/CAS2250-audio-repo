@@ -1,0 +1,14 @@
+{
+  "failure": "UnicodeEncodeError at final Korean README write; training/evaluation already complete",
+  "correction": "PYTHONUTF8=1 and PYTHONIOENCODING=utf-8 for notebook runner and inherited child processes; training source unchanged",
+  "archived_control": "/root/CAS2250-balanced-self2-work/balanced-self2-control-failed-ascii-20261115T202404Z",
+  "completed_epoch": 1000,
+  "files_sha256_before_recovery": {
+    "last.pt": "458e5004c84efe305246129a23637703fa220cabab9ee849c83b75057567015a",
+    "cnn_self_cls_best.pt": "e674e299d4461bf0b2e34e649842456ae5cc89ab684de89b48204fcfcb8a8ee4",
+    "history.json": "7d9f671b2c48477bfc3345169bb073b25f0627aac8475616c64589337e2d5b2d",
+    "summary.json": "676e65f08ec231f236b3e8a445cc193a2acd405854d2014fff1e8b71ef88cfc7",
+    "cnn_self_cls_best_predictions.csv.gz": "9854afc9b46a1f69e13115b167efcafd67fab2bdc4bccb6bb0bc582db98c00a4",
+    "cnn_self_cls_final_metrics.json": "94acd485545f9920d6939db517dffb515d6ace869f77d3ee049ec25704dbc0ec"
+  }
+}

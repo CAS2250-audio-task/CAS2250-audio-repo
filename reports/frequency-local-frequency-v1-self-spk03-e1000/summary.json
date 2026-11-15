@@ -1,0 +1,21 @@
+[
+  {
+    "speaker": "spk03",
+    "model": "cnn_self_cls",
+    "parameters": 91996,
+    "best_epoch": 479,
+    "best": {
+      "zero_f1": 0.8201160480578741,
+      "zero_loss": 0.8944086780150732,
+      "original_f1": 0.8938329219818115
+    },
+    "last": {
+      "zero_f1": 0.7801920647422472,
+      "zero_loss": 0.9773576582471529,
+      "original_f1": 0.8575516939163208
+    },
+    "noise_only_fpr": 0.0875,
+    "objective": "paired_supcon",
+    "training_only_projection_parameters": 4192
+  }
+]
