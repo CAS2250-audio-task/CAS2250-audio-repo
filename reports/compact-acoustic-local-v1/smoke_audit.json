@@ -1,0 +1,8 @@
+{
+  "smoke_epochs": 1,
+  "models_completed": 3,
+  "final_original_and_24_noise_evaluations_and_noise_only_completed": true,
+  "first_augmentation_trace_matches_existing_local": true,
+  "mel_training_normalization_equals_existing_local": true,
+  "test01_audio_read": false
+}

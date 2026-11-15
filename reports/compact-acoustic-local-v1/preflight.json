@@ -1,0 +1,21 @@
+{
+  "initial_output_equals_local": true,
+  "finite_nonzero_auxiliary_projection_gradients": true,
+  "shape": [
+    12,
+    151
+  ],
+  "silent_availability_zero": true,
+  "legacy_set3_values_and_masks_exact": true,
+  "parameters": {
+    "cnn_mean": 84635,
+    "cnn_pooled_query": 85659,
+    "cnn_self_cls": 93115
+  },
+  "extra_parameters": {
+    "cnn_mean": 4720,
+    "cnn_pooled_query": 4720,
+    "cnn_self_cls": 4720
+  },
+  "extraction_seconds_single_clip": 0.03852641605772078
+}
