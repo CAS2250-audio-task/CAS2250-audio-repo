@@ -18,3 +18,6 @@ short는 CNN의마지막큰depthwise커널만29/dilation2→9/dilation1로바꾼
 이번시험은0.245초가최적음절길이라는가정을검증하는것이아니라,기존중간층의짧은특징을직접전달하는효과를보는시험이다. 파라미터수가약1~3%달라지며단일개발화자·seed1개의선별실험이다.
 
 실행: `python -u -m experiments.launch_local_features`
+
+
+[파라미터·지연 실측 비교](LATENCY.md)
