@@ -1,0 +1,38 @@
+{
+  "models": [
+    {
+      "variant": "low8",
+      "epochs": 300,
+      "finite_losses": true
+    },
+    {
+      "variant": "low16",
+      "epochs": 300,
+      "finite_losses": true
+    },
+    {
+      "variant": "freq_avg",
+      "epochs": 300,
+      "finite_losses": true
+    },
+    {
+      "variant": "freq_band2",
+      "epochs": 300,
+      "finite_losses": true
+    },
+    {
+      "variant": "freq_capacity",
+      "epochs": 300,
+      "finite_losses": true
+    },
+    {
+      "variant": "low_axis8",
+      "epochs": 300,
+      "finite_losses": true
+    }
+  ],
+  "low8_old_first300_max_draw0_f1_difference": 0.0,
+  "freq_avg_old_first300_max_draw0_f1_difference": 0.0,
+  "shared_augmentation_files_checked": 1800,
+  "elapsed_minutes_from_preparation": 26.809829719861348
+}
