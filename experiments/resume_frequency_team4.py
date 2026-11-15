@@ -26,10 +26,10 @@ def save(state):
     temp.replace(OUT/'status.json')
 
 
-def summarize():
+def summarize(cnns=('lowcost', 'frequency'), suffix='teamPS'):
     rows = []
-    for cnn in ['lowcost', 'frequency']:
-        path = ROOT/'reports'/f'frequency-local-{cnn}-v1-teamPS-spk03-e1000/summary.json'
+    for cnn in cnns:
+        path = ROOT/'reports'/f'frequency-local-{cnn}-v1-{suffix}-spk03-e1000/summary.json'
         if path.exists():
             for row in json.loads(path.read_text()):
                 rows.append(dict(cnn=cnn, vertical=True, model=row['model'],
@@ -88,7 +88,7 @@ def main():
             state['groups'][key].update(status='complete' if code==0 else 'failed',returncode=code,finished_utc=now());save(state)
             if code:
                 raise RuntimeError(f'{key} failed; inspect {OUT/(key+".log")}')
-            summarize()
+            summarize(args.cnns, suffix)
         state.update(status='complete',finished_utc=now());save(state)
     except Exception as error:
         state.update(status='failed',error=str(error),finished_utc=now());save(state)
