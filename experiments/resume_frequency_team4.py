@@ -1,5 +1,6 @@
 """Wait for this GPU's host5 supervisor, then finish imported team4 checkpoints."""
 import csv
+import argparse
 import datetime as dt
 import hashlib
 import json
@@ -40,11 +41,16 @@ def summarize():
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--cnns', choices=['lowcost', 'frequency'], nargs='+', default=['lowcost', 'frequency'])
+    args = parser.parse_args()
+    assert len(set(args.cnns)) == len(args.cnns)
     OUT.mkdir(exist_ok=True, parents=True);REPORT.mkdir(exist_ok=True, parents=True)
     assert not (OUT/'status.json').exists(), 'Inspect existing supervisor before duplicate launch'
     state = dict(status='waiting_for_host5', supervisor_pid=os.getpid(), started_utc=now(),
-        epochs=1000, imported_release='team4-partial-20261115T192001Z', groups={})
-    for cnn in ['lowcost', 'frequency']:
+        epochs=1000, imported_release='team4-partial-20261115T192001Z', groups={},
+        externally_assigned_cnns=[c for c in ['lowcost', 'frequency'] if c not in args.cnns])
+    for cnn in args.cnns:
         name = f'frequency-local-{cnn}-v1-teamPS-spk03-e1000'
         state['groups'][cnn+'-v1'] = dict(status='queued', models=HEADS,
             progress=str(ROOT/'runs'/name/'progress.json'))
@@ -63,7 +69,7 @@ def main():
                 raise RuntimeError('Host5 did not complete: '+host['status'])
             time.sleep(15)
         state.update(status='running', training_started_utc=now());save(state)
-        for cnn in ['lowcost', 'frequency']:
+        for cnn in args.cnns:
             for path, digest in state['source_sha256'].items():
                 assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest, path
             key = cnn+'-v1';name = f'frequency-local-{cnn}-v1-teamPS-spk03-e1000'
