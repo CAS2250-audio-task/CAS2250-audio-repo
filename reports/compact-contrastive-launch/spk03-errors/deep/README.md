@@ -136,3 +136,6 @@
 [모든 조건의 공통오답](per_condition_shared_errors.csv.gz) · [파일별 세부 예측](all_file_cases.csv) · [감사](audit.json) · [전체9조합 원자료](../README.md)
 
 이번 분석에서는 추가 학습과 새 test 평가를 하지 않았다. 자동으로 청취 완료나 음성학적 원인 확정을 주장하지 않는다.
+
+
+[모델 구조·attention 교차 진단](../mechanisms/README.md)

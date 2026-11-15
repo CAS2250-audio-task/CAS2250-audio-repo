@@ -118,3 +118,6 @@
 
 
 [세 모델 오답 심층 분석](deep/README.md)
+
+
+[모델 구조·attention 교차 진단](mechanisms/README.md)
