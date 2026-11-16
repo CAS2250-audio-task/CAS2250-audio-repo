@@ -1,0 +1,69 @@
+{
+  "format": "sha256",
+  "files": {
+    "REPORT_KO.md": {
+      "sha256": "a2b71cf181b08a7dc52079644a4558da10339521bb193919bac0724ad04b2485",
+      "bytes": 4762
+    },
+    "VERIFICATION.json": {
+      "sha256": "b76f628344d67353efc94dd02145cf0dc39db972c6c8afdc709044dadc363c97",
+      "bytes": 415
+    },
+    "bank-commands.csv": {
+      "sha256": "c785f43c39191fb2762ba184313115c77ae8d0227cd97facb6808d6e66bec624",
+      "bytes": 3434
+    },
+    "bank-conditions.csv": {
+      "sha256": "922b3091262e45228722660422d28ecc6df915a2b47f9ec187bfeaad8ca5c1c2",
+      "bytes": 572
+    },
+    "compute-scale.pdf": {
+      "sha256": "5b4f6cb7a0dcec4234c8ee9a2608e6275c8698df5a01c43597a65f72819fa89a",
+      "bytes": 15907
+    },
+    "compute-scale.png": {
+      "sha256": "0cb5d5feb7b108ed999b37879ca91deea15e0f659a66f9ef11608c7794d69972",
+      "bytes": 108782
+    },
+    "deadline-sweep.pdf": {
+      "sha256": "e8b759f378709b7bd545cb34d0c047795d6520d8a178ee3696952f8eac2e7826",
+      "bytes": 17490
+    },
+    "deadline-sweep.png": {
+      "sha256": "432cff5b5ebecef786a9fb4429e283ffe813bdb4b564cacb072ba33cc989812b",
+      "bytes": 147412
+    },
+    "failure-flags.pdf": {
+      "sha256": "966f00a42fe5dc0f1fb5c49dfaa0ba7136f9679d77c37c9439c27f813c495145",
+      "bytes": 13653
+    },
+    "failure-flags.png": {
+      "sha256": "bb5468f9b7e9f2ddc223d8039df60e43b525ab5ec3c8397de9450b9f6161f21b",
+      "bytes": 153327
+    },
+    "games.csv.gz": {
+      "sha256": "135c373e06f9de60d3126fc280082c5956427b02f6ec6171cba9296c0594adf0",
+      "bytes": 2537397
+    },
+    "summary.csv": {
+      "sha256": "38adc7f74f8585c9fb1dd62a0a5caee461fd161fc73636a738530e05255a9d0e",
+      "bytes": 20604
+    },
+    "summary.json": {
+      "sha256": "30095edc9fe48ae5579c4bf2c81970edbd0b57efa860c2f7b6626b47d513c89d",
+      "bytes": 76595
+    },
+    "survival.pdf": {
+      "sha256": "c3cafceb675eac98af1582ee67eaa8e4371b430cb042e4930c246390cb1006fe",
+      "bytes": 17178
+    },
+    "survival.png": {
+      "sha256": "83fba1ce686cb3a945c89c641c4e23e7e3b865f3fe88b4eb584f5d1341d4d431",
+      "bytes": 113692
+    }
+  },
+  "games_csv_uncompressed_sha256": "05acfbc7c2b9a0925822aa458b2ce498a7f7cae59a12b8587eadae2c1eff6347",
+  "games_csv_encoding": "utf-8-sig",
+  "games_csv_rows": 600000,
+  "restore": "python -c \"import gzip,pathlib; p=pathlib.Path('games.csv.gz'); p.with_suffix('').write_bytes(gzip.decompress(p.read_bytes()))\""
+}

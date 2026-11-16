@@ -1,0 +1,11 @@
+{
+  "statistics_tests_passed": 3,
+  "game_rows_reconciled": 600000,
+  "summary_conditions": 60,
+  "code_hashes_verified": true,
+  "max_absolute_mc_analytic_difference": 0.003603689917483721,
+  "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+  "matplotlib": "3.9.2",
+  "numpy": "1.24.4",
+  "evaluation": "headless fixed-bank simulation using unchanged website core; no human gameplay measurements"
+}
