@@ -1,0 +1,276 @@
+{
+  "scores": [
+    {
+      "candidate": {
+        "id": "LS500_actual_mean_aux_eps0p1__front5",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 500,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+        "detector": {
+          "name": "front5",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/front5/best.pt",
+          "sha256": "5854349e9bf3137fca0f7f573864490711519c8c8b0bbb59c5f1d193e031302c"
+        }
+      },
+      "dev_f1": 0.762399211330373,
+      "noise_fp": 15,
+      "original_f1": 0.9749686834346655,
+      "selected_best_epoch": 475,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/LS500_actual_mean_aux_eps0p1__front5/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "LS500_actual_mean_aux_eps0p1__reference152",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 500,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+        "detector": {
+          "name": "reference152",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/reference_detector.pt",
+          "sha256": "0626b8c1573db6b68fb0adb4340c573238733cd4307939ee637f158e14452055"
+        }
+      },
+      "dev_f1": 0.7430981436318005,
+      "noise_fp": 20,
+      "original_f1": 0.9542245153220763,
+      "selected_best_epoch": 475,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/LS500_actual_mean_aux_eps0p1__reference152/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "LS500_actual_mean_aux_eps0p1__soft_time",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 500,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+        "detector": {
+          "name": "soft_time",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/soft_time/best.pt",
+          "sha256": "7b9fed0c8ed6358b963ce921bd54df3f5cd750c909597d5ce864b0e963715d69"
+        }
+      },
+      "dev_f1": 0.7751592909898264,
+      "noise_fp": 21,
+      "original_f1": 0.9749467477323703,
+      "selected_best_epoch": 475,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/LS500_actual_mean_aux_eps0p1__soft_time/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "LS500_actual_mean_aux_eps0p1__speaker_BCE",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 500,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+        "detector": {
+          "name": "speaker_BCE",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/detector-front-aux-speaker-v1/speaker/best.pt",
+          "sha256": "e641cfcdce36dd648a964aae3a8a2a1a2f235881859e2f9b9f114bc6a129d9ae"
+        }
+      },
+      "dev_f1": 0.7687609095047025,
+      "noise_fp": 15,
+      "original_f1": 0.9183206343618243,
+      "selected_best_epoch": 475,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/LS500_actual_mean_aux_eps0p1__speaker_BCE/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "baseline1000_actual_mean_aux__front5",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 1000,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e1000/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+        "detector": {
+          "name": "front5",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/front5/best.pt",
+          "sha256": "5854349e9bf3137fca0f7f573864490711519c8c8b0bbb59c5f1d193e031302c"
+        }
+      },
+      "dev_f1": 0.7519241875949996,
+      "noise_fp": 13,
+      "original_f1": 0.9749467477323703,
+      "selected_best_epoch": 196,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/baseline1000_actual_mean_aux__front5/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "baseline1000_actual_mean_aux__reference152",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 1000,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e1000/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+        "detector": {
+          "name": "reference152",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/reference_detector.pt",
+          "sha256": "0626b8c1573db6b68fb0adb4340c573238733cd4307939ee637f158e14452055"
+        }
+      },
+      "dev_f1": 0.7279187139049064,
+      "noise_fp": 19,
+      "original_f1": 0.9276253204160181,
+      "selected_best_epoch": 196,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/baseline1000_actual_mean_aux__reference152/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "baseline1000_actual_mean_aux__soft_time",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 1000,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e1000/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+        "detector": {
+          "name": "soft_time",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/soft_time/best.pt",
+          "sha256": "7b9fed0c8ed6358b963ce921bd54df3f5cd750c909597d5ce864b0e963715d69"
+        }
+      },
+      "dev_f1": 0.7469989739899012,
+      "noise_fp": 23,
+      "original_f1": 0.9749467477323703,
+      "selected_best_epoch": 196,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/baseline1000_actual_mean_aux__soft_time/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "baseline1000_actual_mean_aux__speaker_BCE",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 1000,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e1000/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+        "detector": {
+          "name": "speaker_BCE",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/detector-front-aux-speaker-v1/speaker/best.pt",
+          "sha256": "e641cfcdce36dd648a964aae3a8a2a1a2f235881859e2f9b9f114bc6a129d9ae"
+        }
+      },
+      "dev_f1": 0.7502573516712612,
+      "noise_fp": 16,
+      "original_f1": 0.907224557641759,
+      "selected_best_epoch": 196,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/baseline1000_actual_mean_aux__speaker_BCE/mean_aux_threeway.json"
+    }
+  ],
+  "matched500_effect_track": [
+    {
+      "candidate": {
+        "id": "LS500_actual_mean_aux_eps0p1__front5",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 500,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+        "detector": {
+          "name": "front5",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/front5/best.pt",
+          "sha256": "5854349e9bf3137fca0f7f573864490711519c8c8b0bbb59c5f1d193e031302c"
+        }
+      },
+      "dev_f1": 0.762399211330373,
+      "noise_fp": 15,
+      "original_f1": 0.9749686834346655,
+      "selected_best_epoch": 475,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/LS500_actual_mean_aux_eps0p1__front5/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "LS500_actual_mean_aux_eps0p1__reference152",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 500,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+        "detector": {
+          "name": "reference152",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/reference_detector.pt",
+          "sha256": "0626b8c1573db6b68fb0adb4340c573238733cd4307939ee637f158e14452055"
+        }
+      },
+      "dev_f1": 0.7430981436318005,
+      "noise_fp": 20,
+      "original_f1": 0.9542245153220763,
+      "selected_best_epoch": 475,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/LS500_actual_mean_aux_eps0p1__reference152/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "LS500_actual_mean_aux_eps0p1__soft_time",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 500,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+        "detector": {
+          "name": "soft_time",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/soft_time/best.pt",
+          "sha256": "7b9fed0c8ed6358b963ce921bd54df3f5cd750c909597d5ce864b0e963715d69"
+        }
+      },
+      "dev_f1": 0.7751592909898264,
+      "noise_fp": 21,
+      "original_f1": 0.9749467477323703,
+      "selected_best_epoch": 475,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/LS500_actual_mean_aux_eps0p1__soft_time/mean_aux_threeway.json"
+    },
+    {
+      "candidate": {
+        "id": "LS500_actual_mean_aux_eps0p1__speaker_BCE",
+        "condition": "mean_aux",
+        "mode": "actual",
+        "budget": 500,
+        "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+        "eligible": true,
+        "checkpoint_selection": "best_within_completed_budget",
+        "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+        "detector": {
+          "name": "speaker_BCE",
+          "path": "/root/CAS2250-detector-diversity-v2/runs/detector-front-aux-speaker-v1/speaker/best.pt",
+          "sha256": "e641cfcdce36dd648a964aae3a8a2a1a2f235881859e2f9b9f114bc6a129d9ae"
+        }
+      },
+      "dev_f1": 0.7687609095047025,
+      "noise_fp": 15,
+      "original_f1": 0.9183206343618243,
+      "selected_best_epoch": 475,
+      "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/LS500_actual_mean_aux_eps0p1__speaker_BCE/mean_aux_threeway.json"
+    }
+  ],
+  "failed": [],
+  "missing_detectors": [
+    "auxiliary",
+    "auxiliary_speaker",
+    "command_ce"
+  ]
+}

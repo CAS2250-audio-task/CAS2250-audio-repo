@@ -1,0 +1,273 @@
+{
+  "selector_source_sha256": "ccabe3b03cb1112fe86351c5497c7190f5b46018b8b05f21ad4935495bdaa9d9",
+  "rule": {
+    "primary": "maximum S02 dev active-power0dB mean command10F1",
+    "tie_tolerance": 1e-12,
+    "tie1": "minimum noise-only FP files",
+    "tie2": "maximum original command10F1",
+    "tie3": "lexicographic candidate_id",
+    "eligible": "completed baseline500/baseline1000 and LS500 deployment pool; diagnostic200 excluded; report budgets separately",
+    "global_selection": "same DEV rule across host-local winners; never use S01 results"
+  },
+  "development_speaker": "S02",
+  "development_snr_reference": "active",
+  "development_snr_db": 0,
+  "candidate_scope": "available same-host baseline500/1000 and LS500 deployment pool; no CV models; missing models explicit; no LS1000 claim",
+  "missing_detectors": [
+    "auxiliary",
+    "auxiliary_speaker",
+    "command_ce"
+  ],
+  "candidates": [
+    {
+      "id": "LS500_actual_mean_aux_eps0p1__front5",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 500,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+      "detector": {
+        "name": "front5",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/front5/best.pt",
+        "sha256": "5854349e9bf3137fca0f7f573864490711519c8c8b0bbb59c5f1d193e031302c"
+      }
+    },
+    {
+      "id": "LS500_actual_mean_aux_eps0p1__reference152",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 500,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+      "detector": {
+        "name": "reference152",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/reference_detector.pt",
+        "sha256": "0626b8c1573db6b68fb0adb4340c573238733cd4307939ee637f158e14452055"
+      }
+    },
+    {
+      "id": "LS500_actual_mean_aux_eps0p1__soft_time",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 500,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+      "detector": {
+        "name": "soft_time",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/soft_time/best.pt",
+        "sha256": "7b9fed0c8ed6358b963ce921bd54df3f5cd750c909597d5ce864b0e963715d69"
+      }
+    },
+    {
+      "id": "LS500_actual_mean_aux_eps0p1__speaker_BCE",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 500,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+      "detector": {
+        "name": "speaker_BCE",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-front-aux-speaker-v1/speaker/best.pt",
+        "sha256": "e641cfcdce36dd648a964aae3a8a2a1a2f235881859e2f9b9f114bc6a129d9ae"
+      }
+    },
+    {
+      "id": "baseline1000_actual_mean_aux__front5",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 1000,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e1000/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+      "detector": {
+        "name": "front5",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/front5/best.pt",
+        "sha256": "5854349e9bf3137fca0f7f573864490711519c8c8b0bbb59c5f1d193e031302c"
+      }
+    },
+    {
+      "id": "baseline1000_actual_mean_aux__reference152",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 1000,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e1000/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+      "detector": {
+        "name": "reference152",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/reference_detector.pt",
+        "sha256": "0626b8c1573db6b68fb0adb4340c573238733cd4307939ee637f158e14452055"
+      }
+    },
+    {
+      "id": "baseline1000_actual_mean_aux__soft_time",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 1000,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e1000/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+      "detector": {
+        "name": "soft_time",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/soft_time/best.pt",
+        "sha256": "7b9fed0c8ed6358b963ce921bd54df3f5cd750c909597d5ce864b0e963715d69"
+      }
+    },
+    {
+      "id": "baseline1000_actual_mean_aux__speaker_BCE",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 1000,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e1000/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+      "detector": {
+        "name": "speaker_BCE",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-front-aux-speaker-v1/speaker/best.pt",
+        "sha256": "e641cfcdce36dd648a964aae3a8a2a1a2f235881859e2f9b9f114bc6a129d9ae"
+      }
+    },
+    {
+      "id": "baseline500_actual_mean_aux__front5",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 500,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e500/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+      "detector": {
+        "name": "front5",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/front5/best.pt",
+        "sha256": "5854349e9bf3137fca0f7f573864490711519c8c8b0bbb59c5f1d193e031302c"
+      }
+    },
+    {
+      "id": "baseline500_actual_mean_aux__reference152",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 500,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e500/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+      "detector": {
+        "name": "reference152",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/reference_detector.pt",
+        "sha256": "0626b8c1573db6b68fb0adb4340c573238733cd4307939ee637f158e14452055"
+      }
+    },
+    {
+      "id": "baseline500_actual_mean_aux__soft_time",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 500,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e500/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+      "detector": {
+        "name": "soft_time",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/soft_time/best.pt",
+        "sha256": "7b9fed0c8ed6358b963ce921bd54df3f5cd750c909597d5ce864b0e963715d69"
+      }
+    },
+    {
+      "id": "baseline500_actual_mean_aux__speaker_BCE",
+      "condition": "mean_aux",
+      "mode": "actual",
+      "budget": 500,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/extended_actual/mean_aux/milestones/e500/best.pt",
+      "eligible": true,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "8f892ebff1b2c981e44679d7eca3db486ce713862508675e599a294be6e7bd16",
+      "detector": {
+        "name": "speaker_BCE",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-front-aux-speaker-v1/speaker/best.pt",
+        "sha256": "e641cfcdce36dd648a964aae3a8a2a1a2f235881859e2f9b9f114bc6a129d9ae"
+      }
+    },
+    {
+      "id": "diagnostic200_actual_mean__front5",
+      "condition": "mean",
+      "mode": "actual",
+      "budget": 200,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/frozen200/mean/best.pt",
+      "eligible": false,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "b6771be566873e1c488cc13ef8ed26929e3882e56b1a6150606cb9862ad2b447",
+      "detector": {
+        "name": "front5",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/front5/best.pt",
+        "sha256": "5854349e9bf3137fca0f7f573864490711519c8c8b0bbb59c5f1d193e031302c"
+      }
+    },
+    {
+      "id": "diagnostic200_actual_mean__reference152",
+      "condition": "mean",
+      "mode": "actual",
+      "budget": 200,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/frozen200/mean/best.pt",
+      "eligible": false,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "b6771be566873e1c488cc13ef8ed26929e3882e56b1a6150606cb9862ad2b447",
+      "detector": {
+        "name": "reference152",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/reference_detector.pt",
+        "sha256": "0626b8c1573db6b68fb0adb4340c573238733cd4307939ee637f158e14452055"
+      }
+    },
+    {
+      "id": "diagnostic200_actual_mean__soft_time",
+      "condition": "mean",
+      "mode": "actual",
+      "budget": 200,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/frozen200/mean/best.pt",
+      "eligible": false,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "b6771be566873e1c488cc13ef8ed26929e3882e56b1a6150606cb9862ad2b447",
+      "detector": {
+        "name": "soft_time",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/soft_time/best.pt",
+        "sha256": "7b9fed0c8ed6358b963ce921bd54df3f5cd750c909597d5ce864b0e963715d69"
+      }
+    },
+    {
+      "id": "diagnostic200_actual_mean__speaker_BCE",
+      "condition": "mean",
+      "mode": "actual",
+      "budget": 200,
+      "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/frozen200/mean/best.pt",
+      "eligible": false,
+      "checkpoint_selection": "best_within_completed_budget",
+      "checkpoint_sha256": "b6771be566873e1c488cc13ef8ed26929e3882e56b1a6150606cb9862ad2b447",
+      "detector": {
+        "name": "speaker_BCE",
+        "path": "/root/CAS2250-detector-diversity-v2/runs/detector-front-aux-speaker-v1/speaker/best.pt",
+        "sha256": "e641cfcdce36dd648a964aae3a8a2a1a2f235881859e2f9b9f114bc6a129d9ae"
+      }
+    }
+  ],
+  "bank_metadata_sha256": "b1b28da77b618b27cedf96a94d2d133af3c1c230c3d53c9c2a371612772e79a7",
+  "manifest_sha256": "a16077ab4be41e674409ed6ac011d595c4365e7d96a024a12d66b85c136d09c9",
+  "helpers": {
+    "pipeline_eval_extended.py": "7f1ca8bdda34efe54bd12a6615bee5cd51c8075856d69e2ccf2de118932a9268",
+    "EVAL_AMBIENT_TEST.py": "82f36e3c0272fa81204e792810342ad4b4a8651c78dccf473a19928c8a802839",
+    "EVAL_SNR_TEST.py": "d65cca75fe7aad77ea57a4e2818aedcd8a54ea79a5b0feea5fe17b3f96a7680d"
+  },
+  "checkpoint_selection_note": "Product selection may mix declared completed budgets; isolate budget500 baseline-vs-LS effects in matched500_effect_track; best-selection criterion identical; no fixed-last fallback",
+  "budget_rule": "deterministic eligible-first order; reserve8minutes for frozen S01 test; unfinished scope explicitly reported",
+  "S01_used_for_selection": false
+}

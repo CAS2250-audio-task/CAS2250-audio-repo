@@ -1,0 +1,42 @@
+{
+  "candidate": {
+    "id": "LS500_actual_mean_aux_eps0p1__soft_time",
+    "condition": "mean_aux",
+    "mode": "actual",
+    "budget": 500,
+    "checkpoint": "/root/CAS2250-detector-diversity-v2/runs/final-classifier-2215/classifier-study-20261116/results/label_smoothing/actual_mean_aux_eps0p1/best.pt",
+    "eligible": true,
+    "checkpoint_selection": "best_within_completed_budget",
+    "checkpoint_sha256": "e3cef2b75492201194ad3203e6c78199215a50bd8eae64bdf80a44dbc4587915",
+    "detector": {
+      "name": "soft_time",
+      "path": "/root/CAS2250-detector-diversity-v2/runs/detector-final-2215-v2/soft_time/best.pt",
+      "sha256": "7b9fed0c8ed6358b963ce921bd54df3f5cd750c909597d5ce864b0e963715d69"
+    }
+  },
+  "dev_f1": 0.7751592909898264,
+  "noise_fp": 21,
+  "original_f1": 0.9749467477323703,
+  "selected_best_epoch": 475,
+  "result": "/root/CAS2250-detector-diversity-v2/reports/final-selected-test/role0/dev/LS500_actual_mean_aux_eps0p1__soft_time/mean_aux_threeway.json",
+  "selection_rule": {
+    "primary": "maximum S02 dev active-power0dB mean command10F1",
+    "tie_tolerance": 1e-12,
+    "tie1": "minimum noise-only FP files",
+    "tie2": "maximum original command10F1",
+    "tie3": "lexicographic candidate_id",
+    "eligible": "completed baseline500/baseline1000 and LS500 deployment pool; diagnostic200 excluded; report budgets separately",
+    "global_selection": "same DEV rule across host-local winners; never use S01 results"
+  },
+  "selection_protocol_sha256": "eaca2b00529eeb399331a473fc63c9f86a60bb83e9bce14cc2d74d9ef86d93f9",
+  "selection_complete": true,
+  "unscored_candidates": [],
+  "failed_candidates": [],
+  "missing_detectors": [
+    "auxiliary",
+    "auxiliary_speaker",
+    "command_ce"
+  ],
+  "S01_used_for_selection": false,
+  "global_selection_instruction": "Parent selects among these local winners by the SAME DEV rule, never by test score"
+}

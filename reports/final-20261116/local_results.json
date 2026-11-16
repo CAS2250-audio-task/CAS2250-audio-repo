@@ -1,0 +1,181 @@
+[
+  {
+    "root": "/root/CAS2250-detector-diversity-v2",
+    "role": 0,
+    "training": "complete",
+    "evaluation": "complete",
+    "error": null,
+    "winner": {
+      "id": "LS500_actual_mean_aux_eps0p1__soft_time",
+      "budget": 500,
+      "dev_F1_pct": 77.51592909898264,
+      "noise_FP": 21,
+      "original_F1_pct": 97.49467477323704
+    },
+    "selection_complete": true,
+    "cases": [
+      {
+        "id": "LS500_actual_mean_aux_eps0p1__front5",
+        "budget": 500,
+        "dev_F1_pct": 76.2399211330373,
+        "noise_FP": 15,
+        "original_F1_pct": 97.49686834346655
+      },
+      {
+        "id": "LS500_actual_mean_aux_eps0p1__reference152",
+        "budget": 500,
+        "dev_F1_pct": 74.30981436318005,
+        "noise_FP": 20,
+        "original_F1_pct": 95.42245153220763
+      },
+      {
+        "id": "LS500_actual_mean_aux_eps0p1__soft_time",
+        "budget": 500,
+        "dev_F1_pct": 77.51592909898264,
+        "noise_FP": 21,
+        "original_F1_pct": 97.49467477323704
+      },
+      {
+        "id": "LS500_actual_mean_aux_eps0p1__speaker_BCE",
+        "budget": 500,
+        "dev_F1_pct": 76.87609095047026,
+        "noise_FP": 15,
+        "original_F1_pct": 91.83206343618244
+      },
+      {
+        "id": "baseline1000_actual_mean_aux__front5",
+        "budget": 1000,
+        "dev_F1_pct": 75.19241875949996,
+        "noise_FP": 13,
+        "original_F1_pct": 97.49467477323704
+      },
+      {
+        "id": "baseline1000_actual_mean_aux__reference152",
+        "budget": 1000,
+        "dev_F1_pct": 72.79187139049064,
+        "noise_FP": 19,
+        "original_F1_pct": 92.76253204160182
+      },
+      {
+        "id": "baseline1000_actual_mean_aux__soft_time",
+        "budget": 1000,
+        "dev_F1_pct": 74.69989739899012,
+        "noise_FP": 23,
+        "original_F1_pct": 97.49467477323704
+      },
+      {
+        "id": "baseline1000_actual_mean_aux__speaker_BCE",
+        "budget": 1000,
+        "dev_F1_pct": 75.02573516712611,
+        "noise_FP": 16,
+        "original_F1_pct": 90.7224557641759
+      },
+      {
+        "id": "baseline500_actual_mean_aux__front5",
+        "budget": 500,
+        "dev_F1_pct": 75.19241875949996,
+        "noise_FP": 13,
+        "original_F1_pct": 97.49467477323704
+      },
+      {
+        "id": "baseline500_actual_mean_aux__reference152",
+        "budget": 500,
+        "dev_F1_pct": 72.79187139049064,
+        "noise_FP": 19,
+        "original_F1_pct": 92.76253204160182
+      },
+      {
+        "id": "baseline500_actual_mean_aux__soft_time",
+        "budget": 500,
+        "dev_F1_pct": 74.69989739899012,
+        "noise_FP": 23,
+        "original_F1_pct": 97.49467477323704
+      },
+      {
+        "id": "baseline500_actual_mean_aux__speaker_BCE",
+        "budget": 500,
+        "dev_F1_pct": 75.02573516712611,
+        "noise_FP": 16,
+        "original_F1_pct": 90.7224557641759
+      }
+    ],
+    "test": [
+      {
+        "condition": "original_already_contains_background",
+        "F1_pct": 85.82898487528932,
+        "noise_FP": 21,
+        "latency": null,
+        "evaluated_files": null,
+        "unavailable_files": null
+      },
+      {
+        "condition": "ambient_mean",
+        "F1_pct": 82.15043483173656,
+        "noise_FP": 21,
+        "latency": {
+          "resident_pipeline_p50_ms": 21.957844961434603,
+          "resident_pipeline_p95_ms": 26.097198086790737,
+          "samples": 30,
+          "device": "NVIDIA GeForce RTX 3090",
+          "includes": "CPU mel+Burg ifaux, actual detector ifenabled, crop/gate,H2D,classifier,D2H",
+          "excludes": "file IO,model load,audio waiting",
+          "lookahead_ms": 80,
+          "detector_frontend_lookahead_ms": 12.5
+        },
+        "evaluated_files": 1600,
+        "unavailable_files": null
+      },
+      {
+        "condition": "background_p90_lower_snr",
+        "F1_pct": 80.69517786852605,
+        "noise_FP": 21,
+        "latency": {
+          "resident_pipeline_p50_ms": 15.821086475625634,
+          "resident_pipeline_p95_ms": 25.161820556968447,
+          "samples": 30,
+          "device": "NVIDIA GeForce RTX 3090",
+          "includes": "CPU mel+Burg ifaux, actual detector ifenabled, crop/gate,H2D,classifier,D2H",
+          "excludes": "file IO,model load,audio waiting",
+          "lookahead_ms": 80,
+          "detector_frontend_lookahead_ms": 12.5
+        },
+        "evaluated_files": 1600,
+        "unavailable_files": null
+      }
+    ],
+    "tail_and_LS": [
+      {
+        "label": "existing_tail",
+        "completed_epochs": 1000,
+        "selected_best_epoch": 196,
+        "noisy_F1_pct": 72.79187139049064,
+        "original_F1_pct": 92.76253204160182,
+        "noise_only_FPR_pct": 23.75,
+        "train_speakers": [
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "validation_speakers": [
+          "S02"
+        ]
+      },
+      {
+        "label": "label_smoothing_0.1",
+        "completed_epochs": 500,
+        "selected_best_epoch": 475,
+        "noisy_F1_pct": 74.30981436318005,
+        "original_F1_pct": 95.42245153220763,
+        "noise_only_FPR_pct": 25.0,
+        "train_speakers": [
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "validation_speakers": [
+          "S02"
+        ]
+      }
+    ]
+  }
+]

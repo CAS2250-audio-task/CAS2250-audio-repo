@@ -1,0 +1,45 @@
+record_type,role,candidate,budget,split,condition,F1_pct,original_F1_pct,noise_FP_files,resident_p50_ms,resident_p95_ms,provenance
+dev_winner,0,LS500_actual_mean_aux_eps0p1__soft_time,500,S02_dev,active0db,77.51592909898264,97.49467477323704,21,,,local evidence files
+dev_candidate,0,LS500_actual_mean_aux_eps0p1__front5,500,S02_dev,active0db,76.2399211330373,97.49686834346655,15,,,local evidence files
+dev_candidate,0,LS500_actual_mean_aux_eps0p1__reference152,500,S02_dev,active0db,74.30981436318005,95.42245153220763,20,,,local evidence files
+dev_candidate,0,LS500_actual_mean_aux_eps0p1__soft_time,500,S02_dev,active0db,77.51592909898264,97.49467477323704,21,,,local evidence files
+dev_candidate,0,LS500_actual_mean_aux_eps0p1__speaker_BCE,500,S02_dev,active0db,76.87609095047026,91.83206343618244,15,,,local evidence files
+dev_candidate,0,baseline1000_actual_mean_aux__front5,1000,S02_dev,active0db,75.19241875949996,97.49467477323704,13,,,local evidence files
+dev_candidate,0,baseline1000_actual_mean_aux__reference152,1000,S02_dev,active0db,72.79187139049064,92.76253204160182,19,,,local evidence files
+dev_candidate,0,baseline1000_actual_mean_aux__soft_time,1000,S02_dev,active0db,74.69989739899012,97.49467477323704,23,,,local evidence files
+dev_candidate,0,baseline1000_actual_mean_aux__speaker_BCE,1000,S02_dev,active0db,75.02573516712611,90.7224557641759,16,,,local evidence files
+dev_candidate,0,baseline500_actual_mean_aux__front5,500,S02_dev,active0db,75.19241875949996,97.49467477323704,13,,,local evidence files
+dev_candidate,0,baseline500_actual_mean_aux__reference152,500,S02_dev,active0db,72.79187139049064,92.76253204160182,19,,,local evidence files
+dev_candidate,0,baseline500_actual_mean_aux__soft_time,500,S02_dev,active0db,74.69989739899012,97.49467477323704,23,,,local evidence files
+dev_candidate,0,baseline500_actual_mean_aux__speaker_BCE,500,S02_dev,active0db,75.02573516712611,90.7224557641759,16,,,local evidence files
+test_frozen_winner,0,LS500_actual_mean_aux_eps0p1__soft_time,500,S01_test,original_already_contains_background,85.82898487528932,,21,,,local evidence files
+test_frozen_winner,0,LS500_actual_mean_aux_eps0p1__soft_time,500,S01_test,ambient_mean,82.15043483173656,,21,21.957844961434603,26.097198086790737,local evidence files
+test_frozen_winner,0,LS500_actual_mean_aux_eps0p1__soft_time,500,S01_test,background_p90_lower_snr,80.69517786852605,,21,15.821086475625634,25.161820556968447,local evidence files
+dev_winner,1,baseline1000_actual_mean__command_ce,1000,S02_dev,active0db,75.31040075489756,95.97885038308061,18,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,1,LS500_actual_mean_eps0p1__command_ce,500,S02_dev,active0db,74.95341794365169,,18,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,1,LS500_actual_mean_eps0p1__reference152,500,S02_dev,active0db,74.59103980997367,,19,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,1,baseline1000_actual_mean__command_ce,1000,S02_dev,active0db,75.31040075489756,,18,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,1,baseline1000_actual_mean__reference152,1000,S02_dev,active0db,74.77169583301195,,20,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,1,baseline500_actual_mean__command_ce,500,S02_dev,active0db,75.0825064466273,,19,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,1,baseline500_actual_mean__reference152,500,S02_dev,active0db,73.65481308765747,,19,,,user-pasted REPORT_SUMMARY_V2 output
+test_frozen_winner,1,baseline1000_actual_mean__command_ce,1000,S01_test,original_already_contains_background,87.46783553334772,,18,,,user-pasted REPORT_SUMMARY_V2 output
+test_frozen_winner,1,baseline1000_actual_mean__command_ce,1000,S01_test,ambient_mean,84.24103717592423,,18,15.124904573895037,15.684939560014755,user-pasted REPORT_SUMMARY_V2 output
+test_frozen_winner,1,baseline1000_actual_mean__command_ce,1000,S01_test,background_p90_lower_snr,82.26063544594098,,18,7.5372596038505435,14.971782127395272,user-pasted REPORT_SUMMARY_V2 output
+dev_winner,2,LS500_off_mean_eps0p1,500,S02_dev,active0db,73.49665207272919,98.16879597367402,6,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,2,LS500_off_mean_eps0p1,500,S02_dev,active0db,73.49665207272919,,6,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,2,baseline1000_off_mean,1000,S02_dev,active0db,65.9700212634604,,8,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,2,baseline500_off_mean,500,S02_dev,active0db,65.9700212634604,,8,,,user-pasted REPORT_SUMMARY_V2 output
+test_frozen_winner,2,LS500_off_mean_eps0p1,500,S01_test,original_already_contains_background,86.12752469408817,,6,,,user-pasted REPORT_SUMMARY_V2 output
+test_frozen_winner,2,LS500_off_mean_eps0p1,500,S01_test,ambient_mean,81.70801991084028,,6,8.187873056158423,10.59438152005896,user-pasted REPORT_SUMMARY_V2 output
+test_frozen_winner,2,LS500_off_mean_eps0p1,500,S01_test,background_p90_lower_snr,79.23481418480918,,6,5.712444894015789,5.9838864603079855,user-pasted REPORT_SUMMARY_V2 output
+dev_winner,3,LS500_off_mean_aux_eps0p1,500,S02_dev,active0db,71.06206685424911,93.74496848181059,16,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,3,LS500_off_mean_aux_eps0p1,500,S02_dev,active0db,71.06206685424911,,16,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,3,baseline1000_off_mean_aux,1000,S02_dev,active0db,69.75051059081616,,3,,,user-pasted REPORT_SUMMARY_V2 output
+dev_candidate,3,baseline500_off_mean_aux,500,S02_dev,active0db,69.75051059081616,,3,,,user-pasted REPORT_SUMMARY_V2 output
+test_frozen_winner,3,LS500_off_mean_aux_eps0p1,500,S01_test,original_already_contains_background,87.60470295643594,,16,,,user-pasted REPORT_SUMMARY_V2 output
+test_frozen_winner,3,LS500_off_mean_aux_eps0p1,500,S01_test,ambient_mean,82.44091744956273,,16,34.42920558154583,49.84188891248777,user-pasted REPORT_SUMMARY_V2 output
+test_frozen_winner,3,LS500_off_mean_aux_eps0p1,500,S01_test,background_p90_lower_snr,80.21355806118319,,16,28.701690607704222,35.55464894743636,user-pasted REPORT_SUMMARY_V2 output
+same_checkpoint_crop_diagnostic,0,LS500_actual_mean_aux_best475,500,S02_dev,off,20.15923118673601,10.493134020822808,79,,,same_classifier_crop_diagnostic.json
+same_checkpoint_crop_diagnostic,0,LS500_actual_mean_aux_best475,500,S02_dev,oracle,84.37817613557105,97.49088937971526,0,,,same_classifier_crop_diagnostic.json
+same_checkpoint_crop_diagnostic,0,LS500_actual_mean_aux_best475,500,S02_dev,actual,74.30981436318005,95.42245153220763,20,,,same_classifier_crop_diagnostic.json
+speaker_holdout_baseline,2,OFFMean1000,1000,S03_female_dev,active0db,27.172562404704482,56.914820177810135,,,,user-pasted remote summary; noise-only FPR15pct
