@@ -8,6 +8,7 @@ Selected by the same legacy validation asymmetric duration cost; no crop margins
 | lookahead | 18209 | 152 | 75.52% | 69.62% | 13.23% | 123.1 | 77.5% |
 | boundary | 18275 | 210 | 97.31% | 76.34% | 20.00% | 134.1 | 36.2% |
 | spectral | 23593 | 183 | 98.04% | 73.12% | 20.03% | 167.7 | 36.2% |
+| combined | 18275 | 94 | 64.46% | 61.12% | 13.91% | 105.5 | 93.8% |
 
 ## Fixed-checkpoint noise severity and new-environment audit
 
@@ -33,6 +34,10 @@ Selected by the same legacy validation asymmetric duration cost; no crop margins
 | boundary | new_environment_0db | 72.81% | 21.89% | 129.4 |
 | spectral | new_environment_0db | 71.96% | 21.37% | 99.4 |
 | v1_legacy_noise | new_environment_0db | 47.15% | 22.61% | 447.7 |
+| combined | legacy_0db | 61.12% | 13.91% | 105.5 |
+| combined | legacy_5db | 65.72% | 8.32% | 93.2 |
+| combined | legacy_10db | 66.86% | 6.90% | 83.7 |
+| combined | new_environment_0db | 58.50% | 16.73% | 119.8 |
 
 ## GPU latency
 
@@ -43,6 +48,7 @@ Selected by the same legacy validation asymmetric duration cost; no crop margins
 | boundary | 1.207 | 1.234 | 0.0 |
 | spectral | 1.283 | 1.302 | 0.0 |
 | v1_legacy_noise | 1.036 | 1.055 | 0.0 |
+| combined | 1.226 | 1.245 | 80.0 |
 
 Frontend adds nominal12.5ms analysis lookahead to all models. GPU timings include mel+model on1.5s audio, batch1, excluding IO; not per-frame streaming timing.
 

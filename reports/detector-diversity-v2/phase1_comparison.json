@@ -98,5 +98,30 @@
     "original_event_f1": 0.9803921568627451,
     "noisy_event_f1": 0.7311888111888112,
     "last_cost_ms": 567.7420545212765
+  },
+  {
+    "name": "combined",
+    "parameters": 18275,
+    "epoch": 94,
+    "cost_ms": 370.01542553191405,
+    "speech_missing_pct": 12.953352155697543,
+    "original": {
+      "missing_pct": 5.304875406541106,
+      "extra_ms_per_case": 110.80781249999997,
+      "noise_fp_rate": null
+    },
+    "noisy": {
+      "missing_pct": 13.90941174934212,
+      "extra_ms_per_case": 105.46742187499969,
+      "noise_fp_rate": null
+    },
+    "noise_only": {
+      "missing_pct": null,
+      "extra_ms_per_case": 120.0,
+      "noise_fp_rate": 0.9375
+    },
+    "original_event_f1": 0.6446280991735537,
+    "noisy_event_f1": 0.6111687772472493,
+    "last_cost_ms": 414.55681515957315
   }
 ]

@@ -43,5 +43,14 @@
     "lookahead_ms": 0,
     "frontend_lookahead_ms": 12.5,
     "note": "Whole-clip GPU inference plus mel, excluding audio IO; algorithmic waiting reported separately"
+  },
+  "combined": {
+    "gpu_frontend_model_median_ms": 1.2257280349731445,
+    "gpu_frontend_model_p95_ms": 1.245443159341812,
+    "input_seconds": 1.5,
+    "batch": 1,
+    "lookahead_ms": 80,
+    "frontend_lookahead_ms": 12.5,
+    "note": "Whole-clip GPU inference plus mel, excluding audio IO; algorithmic waiting reported separately"
   }
 }

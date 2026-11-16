@@ -1,0 +1,15 @@
+{
+  "stage": "complete",
+  "models": [
+    "baseline",
+    "lookahead",
+    "boundary",
+    "spectral",
+    "combined",
+    "v1_legacy_noise"
+  ],
+  "epochs_per_phase": 300,
+  "heldout_speech_S01_evaluated": false,
+  "noise_audit_used_for_selection": false,
+  "all_common_waveform_augmentations": true
+}
