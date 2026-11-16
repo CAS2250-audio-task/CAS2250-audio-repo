@@ -1,0 +1,33 @@
+{
+  "dataset_id": "5e4420af23aa3cae",
+  "backup_saved_at": "2026-11-16T02:11:49.698Z",
+  "confirmed": 1000,
+  "clips": 1000,
+  "trimmed_originals": 1000,
+  "original_trim_changed": 22,
+  "sample_rate_hz": 16000,
+  "channels": 1,
+  "sample_width_bytes": 2,
+  "default_pre_margin_ms": 30,
+  "default_post_margin_ms": 30,
+  "speakers": {
+    "강재훈": 200,
+    "노정민": 200,
+    "곽민채": 200,
+    "최환준": 200,
+    "이서준": 200
+  },
+  "checks": {
+    "archive_crc": "passed",
+    "archive_csvs_equal_export_csv": "passed",
+    "backup_csv_boundaries": "passed",
+    "wav_format_and_duration": "passed",
+    "clip_pcm_matches_trimmed_original": "passed (within one sample rounding)"
+  },
+  "uploaded_files_sha256": {
+    "clips_1000.zip": "a8e07e51524034252a4d52e0af70c567248ed5d4bc9d7b72bb9e8ec91e3c502b",
+    "trimmed_originals_1000.zip": "f06b3cdf9ce55e07dae151411437180fe18982de4bb65d47bb6a05d40631ce65",
+    "clipping_ranges_1000.csv": "312c77c2a2a755b167c34dbd4fac4a002bd5e0f0dae34b395aa908c6ac8b9861",
+    "clipping_work_backup.json": "1744f81f0b3c33366b989aa888d20f960311339166b62e60241cf5c10aabb7b4"
+  }
+}

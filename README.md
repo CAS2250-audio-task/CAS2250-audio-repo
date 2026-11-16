@@ -6,6 +6,8 @@
 현재 목표는 **출발 / 정지 / 전진 / 후진 / 왼쪽 / 오른쪽 / 시작 / 복귀 / 대기 / 재시작 + silence**입니다.
 단어 목록과 class ID 순서는 `configs/task2.json`의 `labels`로 관리합니다.
 실제 데이터의 원본과 실행법은 [데이터셋 안내](datasets/task2/README.md)를 참고하세요.
+수동 확정한 명령어 클립 1,000개와 정리 원본·구간표는
+[manual-clipped-v1](datasets/task2/manual-clipped-v1/README.md)에 있습니다.
 `configs/task2_real.json`과 `notebooks/task2_real_baseline.ipynb`가 실제 데이터용 진입점입니다.
 
 팀원 시작 절차는 [VESSL · GitHub 팀 가이드](documents/vessl_github_team_guide.md)를 참고하세요.

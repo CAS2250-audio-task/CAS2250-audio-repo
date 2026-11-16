@@ -1,5 +1,10 @@
 # 실제 녹음 원본 데이터와 공통 baseline
 
+전체 1,000개를 수동 확정한 최신 클립과 앞뒤 정리 원본은
+[manual-clipped-v1](manual-clipped-v1/README.md)에 있습니다.
+발화 앞뒤 기본 여유 30ms, 원본 정리 변경 22개이며 구간표와 복원 백업을 포함합니다.
+아래 원본 baseline과는 별도 데이터 버전입니다.
+
 `source/audio_real_dataset.zip`은 업로드 원본 그대로이며, 화자 5명 × 203개 = **1,015개 M4A**입니다.
 명령어별 100개씩 총 1,000개와 silence 15개를 포함합니다.
 `raw-v1/metadata.csv`와 `raw-v1/import_manifest.json`에 파일명, SHA-256, 화자, split을 기록했습니다.
