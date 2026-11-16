@@ -1,0 +1,13 @@
+model_detector,model_classifier,event_hit,mean,count
+cnn_gru,cnn_mean,False,0.6401384083044983,289
+cnn_gru,cnn_mean,True,0.8848207475209764,1311
+cnn_gru,cnn_pooled_query,False,0.7058823529411765,289
+cnn_gru,cnn_pooled_query,True,0.8703279938977879,1311
+cnn_gru,cnn_self_cls,False,0.6470588235294118,289
+cnn_gru,cnn_self_cls,True,0.8375286041189931,1311
+tcn,cnn_mean,False,0.6666666666666666,285
+tcn,cnn_mean,True,0.8783269961977186,1315
+tcn,cnn_pooled_query,False,0.7157894736842105,285
+tcn,cnn_pooled_query,True,0.867680608365019,1315
+tcn,cnn_self_cls,False,0.6947368421052632,285
+tcn,cnn_self_cls,True,0.8266159695817491,1315

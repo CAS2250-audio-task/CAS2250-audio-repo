@@ -1,0 +1,13 @@
+model,snr_db,correct
+cnn_mean,0,0.840625
+cnn_mean,5,0.946875
+cnn_mean,10,0.974375
+cnn_mean,99,0.985
+cnn_pooled_query,0,0.840625
+cnn_pooled_query,5,0.9175
+cnn_pooled_query,10,0.954375
+cnn_pooled_query,99,0.99
+cnn_self_cls,0,0.803125
+cnn_self_cls,5,0.885
+cnn_self_cls,10,0.924375
+cnn_self_cls,99,0.97

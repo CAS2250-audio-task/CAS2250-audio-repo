@@ -1,0 +1,18 @@
+{
+  "speech_to_oracle_1p5_power_gap_db_percentiles": {
+    "p10": 3.4961462502396046,
+    "p50": 4.703016766349659,
+    "p90": 5.734181185789467
+  },
+  "onset50ms_snr_db_percentiles": {
+    "p10": -23.867209901718432,
+    "p50": -13.655399267248853,
+    "p90": -0.879381169220035
+  },
+  "offset50ms_snr_db_percentiles": {
+    "p10": -30.636865243501962,
+    "p50": -20.412671638373887,
+    "p90": -8.856139354621277
+  },
+  "note": "Original waveform power includes any preexisting noise; boundary energy does not certify presence of essential phonemes. 1.5s energy gap is counterfactual on current oracle windows, not measured old training active SNR."
+}

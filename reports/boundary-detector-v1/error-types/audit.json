@@ -1,0 +1,40 @@
+{
+  "validation_speaker": "S02 / 노정민",
+  "holdout_read": false,
+  "training": false,
+  "thresholds_changed": false,
+  "levels": [
+    0,
+    5,
+    10
+  ],
+  "cases": 10000,
+  "classification_cases": 15000,
+  "replay_within10ms": true,
+  "replay_differences": [
+    {
+      "model": "cnn_gru",
+      "source_id": "S02-W01-12",
+      "condition": "noise1",
+      "max_endpoint_difference_ms": 10.000000000000009
+    }
+  ],
+  "oracle_crop": "1.5s window centered on manual speech midpoint, zero padding outside original, SAME noisy waveform, no extra loudness normalization",
+  "limitations": [
+    "classifiers evaluated on new recordings and gold-localized windows, not historical fixed1.5 dataset",
+    "SNR sweep is validation diagnosis, no checkpoint selection",
+    "Original speech itself may contain noise",
+    "Noise categories not manually listened/audited"
+  ],
+  "hashes": {
+    "/root/CAS2250-compact-local-features/runs/noise-stress-v1/sources/cafeteria_mono16k.wav": "4c558dc3f36d14de6d4c5ab2aea02d7c10b8768b322cf09db7c0c4dd222292e6",
+    "/root/CAS2250-compact-local-features/runs/noise-stress-v1/sources/car_mono16k.wav": "7554a1f1e8c53300f3dfc6a07b964c5102491cb69ac06c7c63d0839e68334304",
+    "/root/CAS2250-compact-local-features/runs/noise-stress-v1/sources/compressor_mono16k.wav": "a4403fd8b48e50f53fd2a7bdc6f6be61608e65ab6adbfeebe28d819e6fd90c57",
+    "/root/CAS2250-compact-local-features/runs/noise-stress-v1/sources/fan_mono16k.wav": "878fdf7ee6d149418464262fc1354511671ff058c53794aab51ea2bc14e56455",
+    "/root/CAS2250-compact-local-features/runs/noise-stress-v1/sources/restaurant_mono16k.wav": "96ac421d9b2b8b522a23b4f66264838534b3942cfc72d83b85648264bc9c87c5",
+    "/root/CAS2250-compact-local-features/runs/noise-stress-v1/sources/station_mono16k.wav": "9992f6a1f26423a7a0b0cff6755783d643a0b7dbdbcecc2b5b456a1401150d10",
+    "/root/CAS2250-compact-local-features/runs/noise-stress-v1/sources/traffic_mono16k.wav": "753a99ed09e5e2146dc9434938d8115ba835ebeed79ce45d5ac4f4e9191114c4",
+    "/root/CAS2250-compact-local-features/runs/noise-stress-v1/sources/washing_mono16k.wav": "c2ef8cb0ff00b7abe66ba3682b7faa05fcc0a385566ee76bd1a104d0259b73e1"
+  },
+  "elapsed_seconds": 42.572756866924465
+}
