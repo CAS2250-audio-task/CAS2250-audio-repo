@@ -1,0 +1,10 @@
+{
+  "unit_checks": 4,
+  "four_parallel_cuda_jobs_each_epochs": 3,
+  "matched_waveforms": true,
+  "matched_normalization": true,
+  "future_context_limit_verified": true,
+  "head_gradients_verified": true,
+  "region_metric_sanity": true,
+  "transient_noise_silence_resampling": true
+}

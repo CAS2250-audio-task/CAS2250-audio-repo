@@ -1,0 +1,6 @@
+{
+  "filename": "detector-diversity-v2-assets.tar.gz",
+  "sha256": "c9b3da1a210ea753af7ce451e3809bb66bbb6639492a58cadbb893b861631121",
+  "bytes": 840536809,
+  "note": "Extract in matching repo checkout then python -m experiments.detector_diversity.assets --rebase; audio uses upstream ESC-50 and legacy source licenses"
+}
