@@ -31,6 +31,7 @@ class Config:
     pre_emphasis: float = 0.0
     use_delta: bool = False
     label_smoothing: float = 0.0
+    backbone: str = "resnet18"
 
     def validate(self):
         if len(self.labels) != 11 or len(set(self.labels)) != 11 or "silence" not in self.labels:

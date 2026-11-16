@@ -149,7 +149,7 @@ def train(cfg, output):
         "seed": cfg.seed})
     loaders = {split: make_loader(frame, cfg, split, device) for split in ("train", "val")}
     in_ch = 3 if cfg.use_delta else 1
-    model = build_model(len(cfg.labels), cfg.use_pretrained, in_channels=in_ch).to(device)
+    model = build_model(len(cfg.labels), cfg.use_pretrained, in_channels=in_ch, backbone=cfg.backbone).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=cfg.learning_rate, weight_decay=cfg.weight_decay)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=cfg.epochs)
     history, best_f1, best_epoch = [], -1.0, None
@@ -205,7 +205,7 @@ def load_run(run, data_root=None, device=None):
     seed_all(cfg.seed)
     # Restoring a checkpoint must never download pretrained weights again.
     in_ch = 3 if cfg.use_delta else 1
-    model = build_model(len(cfg.labels), use_pretrained=False, in_channels=in_ch).to(selected)
+    model = build_model(len(cfg.labels), use_pretrained=False, in_channels=in_ch, backbone=cfg.backbone).to(selected)
     model.load_state_dict(checkpoint["model"])
     return run, cfg, model, selected
 
