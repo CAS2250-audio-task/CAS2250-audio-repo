@@ -63,7 +63,7 @@ def final_report():
     states={name:torch.load(OUT/name/'best.pt',map_location='cuda',weights_only=False) for name in names};refstate=states['baseline'];mean=refstate['mean'];std=refstate['std'];ref=refstate['reference_power']
     models={}
     for name,state in states.items():
-        torch.testing.assert_close(state['mean'],mean,rtol=0,atol=0);torch.testing.assert_close(state['std'],std,rtol=0,atol=0)
+        torch.testing.assert_close(state['mean'],mean,rtol=1e-5,atol=1e-5);torch.testing.assert_close(state['std'],std,rtol=1e-5,atol=1e-5)
         c=state['config'];m=make_model(c['variant'],c['width'],c['hop'],c.get('enabled')).cuda();m.load_state_dict(state['model']);m.eval();models[name]=m
     old_path=ROOT.parent/'CAS2250-speech-boundary-detector/runs/boundary-300-v1/cnn_gru/best.pt'
     if old_path.exists():
@@ -78,7 +78,9 @@ def final_report():
         if not todo:continue
         args.eval_snr=snr;validation,retries=cache(frontend,records,bank,ref,mean,std,args)
         for name,model in todo.items():
-            metrics,details=evaluate(model,validation,args);metrics.update(region_metrics(details));row=dict(name=name,suite=suite,epoch=states[name]['epoch'],noise_crop_retries=retries,**metrics);rows.append(row)
+            own=states[name]
+            model_cache=validation if torch.equal(own['mean'],mean) and torch.equal(own['std'],std) else [(r,d,c,(mel*std[0]+mean[0]-own['mean'][0])/own['std'][0]) for r,d,c,mel in validation]
+            metrics,details=evaluate(model,model_cache,args);metrics.update(region_metrics(details));row=dict(name=name,suite=suite,epoch=states[name]['epoch'],noise_crop_retries=retries,**metrics);rows.append(row)
             write(REPORT/f'{name}_{suite}_predictions.json',details)
             import pandas as pd
             from experiments.analyze_boundary_errors import classify_errors
@@ -92,7 +94,7 @@ def final_report():
             print(json.dumps(dict(stage='final_evaluation',name=name,suite=suite,missing_pct=metrics['region_by_condition']['noisy']['missing_pct'],cost_ms=metrics['asymmetric_cost_ms'])),flush=True)
         del validation
     timings=json.loads((REPORT/'latency.json').read_text()) if (REPORT/'latency.json').exists() else {}
-    timings.update({name:latency(model,frontend,mean,std) for name,model in models.items() if name not in timings});write(REPORT/'final_metrics.json',rows);write(REPORT/'latency.json',timings)
+    timings.update({name:latency(model,frontend,states[name]['mean'],states[name]['std']) for name,model in models.items() if name not in timings});write(REPORT/'final_metrics.json',rows);write(REPORT/'latency.json',timings)
     comparison=phase_comparison(names);write(REPORT/'completion.json',dict(stage='complete',models=list(models),epochs_per_phase=300,heldout_speech_S01_evaluated=False,noise_audit_used_for_selection=False,all_common_waveform_augmentations=True))
     lines=['# Detector diversity v2 results','','Selected by the same legacy validation asymmetric duration cost; no crop margins. New environmental sources evaluated only after checkpoint selection.','',
            '| Model | Params | Best epoch | Original event F1 | Legacy0dB event F1 | Noisy speech missing | Extra ms/case | Noise-only FP files |','|---|---:|---:|---:|---:|---:|---:|---:|']

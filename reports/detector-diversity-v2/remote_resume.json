@@ -1,0 +1,9 @@
+{
+  "epochs": {
+    "boundary": 20,
+    "spectral": 21
+  },
+  "sha256": "2dacc4a87b466871640c8eeac76171aa0c4512a2c4c9f4f8bec3da1d0d0b7a45",
+  "filename": "detector-diversity-v2-resume.tar.gz",
+  "contents": "model/optimizer tensors, scalers, config, metrics and predicted timestamps; no audio waveforms"
+}

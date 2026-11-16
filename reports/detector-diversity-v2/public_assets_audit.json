@@ -1,0 +1,10 @@
+{
+  "no_team_speech_audio_in_noise_archive": true,
+  "legacy_noise_count": 14,
+  "legacy_sha256_verified_against_public_Zenodo_download_metadata": true,
+  "new_noise_count": 110,
+  "new_noise_upstream": "https://github.com/karolpiczak/ESC-50/tree/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6",
+  "team_manifest_metadata_already_public_in_same_repo": "datasets/task2/manual-clipped-v1/clipping_ranges_1000.csv",
+  "checkpoints_contain_no_waveform_arrays": true,
+  "user_requested": "branch access, execution and remote upload in one terminal command"
+}
