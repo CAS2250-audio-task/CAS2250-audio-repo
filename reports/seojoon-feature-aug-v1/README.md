@@ -47,3 +47,18 @@
 
 - 학습: `python3 -m src train --config configs/seojoon/exp4_combo.json --output runs/seojoon-exp4_combo --device cuda`
 - 평가: `python3 -m src evaluate --run runs/seojoon-exp4_combo --split val`
+
+## 6. 백본 경량화 · 추론 Latency · 0dB 백색소음 스트레스 벤치마크 (`spk05` Val)
+
+실시간 데모(`command-rescue`) 및 경량 배포 적합성을 판단하기 위해, 1.5초 단일 클립 추론 시간(100회 중앙값)과 결정론적 0dB 백색소음 환경 성능을 비교함.
+
+| 모델 | 백본 | Params | Clean Acc | Clean F1 | 0dB Noise Acc | 0dB Noise F1 | CPU (ms) | GPU (ms) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| `baseline-v1` | ResNet-18 (1ch) | 11.18M | 92.12% | 92.58% | 1.48% | 0.26% | 93.23 | 1.98 |
+| **`exp4_combo`** | **ResNet-18 (3ch Δ)** | **11.18M** | **97.54%** | **97.72%** | **67.98%** | **68.09%** | 93.39 | **2.02** |
+| `exp5_mobilenet` (`lr=5e-4, 20ep`) | MobileNetV3-Small | 1.53M | 78.82% | 79.02% | 30.05% | 25.85% | **10.63** | 4.04 |
+| `exp5_mobilenet_tuned` (`lr=2e-3, 30ep`) | MobileNetV3-Small | **1.53M** | 92.12% | 92.76% | 43.35% | 41.92% | 51.26 | 4.07 |
+
+### 결론
+- **실시간 GPU 데모/서버 추론**: `exp4_combo`가 **2.02 ms**의 초저지연으로 Clean **97.54%**, 0dB 소음 **67.98%**를 달성해 가장 균형이 뛰어남 (기본 ResNet-18은 0dB 소음에서 1.48%로 붕괴).
+- **CPU·모바일 경량 배포**: `MobileNetV3-Small`은 파라미터를 **7.3배 절감(1.53M)**하면서도 학습률 튜닝(`lr=2e-3, 30ep`) 시 Clean F1 **92.76%**를 유지함.
