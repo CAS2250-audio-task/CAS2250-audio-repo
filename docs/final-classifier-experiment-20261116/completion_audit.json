@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "stages": {
+    "actual": {
+      "conditions": 8,
+      "completed_epochs_each": 200,
+      "predictions_each": 1880,
+      "bank_sha256": "b1b28da77b618b27cedf96a94d2d133af3c1c230c3d53c9c2a371612772e79a7",
+      "initialization_sha256": "ee7154506923adc04368d24761eb73c9db6a1d5791bc46f6fa2b4ac44bd860a2",
+      "common_code_verified": true,
+      "forced_silence_val": 64
+    },
+    "oracle": {
+      "conditions": 8,
+      "completed_epochs_each": 200,
+      "predictions_each": 1880,
+      "bank_sha256": "6c2acea20cd66744ef6733a5d7436f039731fc5e9df3f19745d25a045ab3af1b",
+      "initialization_sha256": "3bf87ea5409e29bb0abbd6b5097bc3fd739a669a0ab8f8d64c753ed23917c086",
+      "common_code_verified": true,
+      "forced_silence_val": 80
+    }
+  },
+  "models": 16,
+  "total_evaluated_prediction_rows": 30080,
+  "paired_case_identity_verified": true,
+  "all_f1_recalculated": true,
+  "cross_evaluations": 32,
+  "original_condition_replays_exact": 16,
+  "source_scalers_preserved_in_cross_evaluation": true
+}
