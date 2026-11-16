@@ -92,7 +92,7 @@ class AudioDataset(Dataset):
         self.samples = int(cfg.sample_rate * cfg.seconds)
         self.mel = torchaudio.transforms.MelSpectrogram(
             sample_rate=cfg.sample_rate, n_fft=cfg.n_fft, win_length=cfg.win_length,
-            hop_length=cfg.hop_length, n_mels=cfg.n_mels, f_min=40,
+            hop_length=cfg.hop_length, n_mels=cfg.n_mels, f_min=cfg.f_min,
             f_max=cfg.sample_rate // 2, power=2.0)
         self.to_db = torchaudio.transforms.AmplitudeToDB(stype="power", top_db=80)
         self.freq_mask = torchaudio.transforms.FrequencyMasking(12)
@@ -120,10 +120,17 @@ class AudioDataset(Dataset):
             if random.random() < 0.5:
                 wav = wav + torch.randn_like(wav) * random.uniform(0.001, 0.015)
             wav = wav.clamp(-1, 1)
+        if self.cfg.pre_emphasis > 0:
+            wav = torch.cat([wav[..., :1], wav[..., 1:] - self.cfg.pre_emphasis * wav[..., :-1]], dim=-1)
         spec = ((self.to_db(self.mel(wav)) + 80.0) / 80.0).clamp(0, 1)
         if self.train and self.cfg.use_augmentation:
             spec = self.time_mask(self.freq_mask(spec))
-        return (spec - 0.5) / 0.25
+        norm = (spec - 0.5) / 0.25
+        if self.cfg.use_delta:
+            d1 = torchaudio.functional.compute_deltas(norm)
+            d2 = torchaudio.functional.compute_deltas(d1)
+            norm = torch.cat([norm, d1 * 2.0, d2 * 4.0], dim=0)
+        return norm
 
     def __getitem__(self, index):
         row = self.frame.iloc[index]

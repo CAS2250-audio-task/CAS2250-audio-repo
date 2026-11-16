@@ -148,7 +148,8 @@ def train(cfg, output):
         "device": str(device), "gpu": torch.cuda.get_device_name(device) if device.type == "cuda" else None,
         "seed": cfg.seed})
     loaders = {split: make_loader(frame, cfg, split, device) for split in ("train", "val")}
-    model = build_model(len(cfg.labels), cfg.use_pretrained).to(device)
+    in_ch = 3 if cfg.use_delta else 1
+    model = build_model(len(cfg.labels), cfg.use_pretrained, in_channels=in_ch).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=cfg.learning_rate, weight_decay=cfg.weight_decay)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=cfg.epochs)
     history, best_f1, best_epoch = [], -1.0, None
@@ -161,7 +162,7 @@ def train(cfg, output):
         for x, y, _ in loaders["train"]:
             x, y = x.to(device), y.to(device)
             optimizer.zero_grad(set_to_none=True)
-            loss = F.cross_entropy(model(x), y)
+            loss = F.cross_entropy(model(x), y, label_smoothing=cfg.label_smoothing)
             if not torch.isfinite(loss):
                 raise ValueError("Training loss is nonfinite.")
             loss.backward()
@@ -203,7 +204,8 @@ def load_run(run, data_root=None, device=None):
     selected = choose_device(cfg.device)
     seed_all(cfg.seed)
     # Restoring a checkpoint must never download pretrained weights again.
-    model = build_model(len(cfg.labels), use_pretrained=False).to(selected)
+    in_ch = 3 if cfg.use_delta else 1
+    model = build_model(len(cfg.labels), use_pretrained=False, in_channels=in_ch).to(selected)
     model.load_state_dict(checkpoint["model"])
     return run, cfg, model, selected
 

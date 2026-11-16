@@ -27,6 +27,10 @@ class Config:
     use_augmentation: bool = False
     seed: int = 42
     device: str = "auto"
+    f_min: int = 40
+    pre_emphasis: float = 0.0
+    use_delta: bool = False
+    label_smoothing: float = 0.0
 
     def validate(self):
         if len(self.labels) != 11 or len(set(self.labels)) != 11 or "silence" not in self.labels:
