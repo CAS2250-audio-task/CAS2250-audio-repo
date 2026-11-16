@@ -1,0 +1,69 @@
+{
+  "original_frontend_exact_match": true,
+  "lowfocus_has_no_empty_filters": true,
+  "finite_paired_gradients": true,
+  "rows": [
+    {
+      "architecture": "basic",
+      "parameters": 80939,
+      "train_step_seconds": 0.015677192791675527,
+      "eval_step_seconds": 0.0012974000070244073,
+      "estimated_epoch_compute_seconds": 0.3952800562760482
+    },
+    {
+      "architecture": "axis",
+      "parameters": 81107,
+      "train_step_seconds": 0.018856426933780313,
+      "eval_step_seconds": 0.0015879553044214844,
+      "estimated_epoch_compute_seconds": 0.47716972285415976
+    },
+    {
+      "architecture": "frequency",
+      "parameters": 87947,
+      "train_step_seconds": 0.03143919872430464,
+      "eval_step_seconds": 0.0029427592176944017,
+      "estimated_epoch_compute_seconds": 0.8141778052008402
+    },
+    {
+      "architecture": "frequency_attn",
+      "parameters": 90172,
+      "train_step_seconds": 0.055725205301617585,
+      "eval_step_seconds": 0.00733575988560915,
+      "estimated_epoch_compute_seconds": 1.5766569788257283
+    },
+    {
+      "architecture": "axis_attn",
+      "parameters": 83332,
+      "train_step_seconds": 0.039868719332541026,
+      "eval_step_seconds": 0.005108143598772585,
+      "estimated_epoch_compute_seconds": 1.1191874333734932
+    }
+  ],
+  "previous_measured_epochs": [
+    {
+      "variant": "low8",
+      "epoch_seconds": 0.6815933563415024
+    },
+    {
+      "variant": "low_axis8",
+      "epoch_seconds": 0.6791549434474969
+    },
+    {
+      "variant": "freq_avg",
+      "epoch_seconds": 0.9318630798522509
+    },
+    {
+      "variant": "freq_band2",
+      "epoch_seconds": 0.9442415750017232
+    }
+  ],
+  "estimated_actual_epoch_seconds": {
+    "basic": 0.5613045514731583,
+    "axis": 0.6791549434474969,
+    "frequency": 0.9442415750017232,
+    "frequency_attn": 1.7067207486266114,
+    "axis_attn": 1.3211726539668305
+  },
+  "staged_resume_smoke": "1->2 epochs verified: protocol hash unchanged, optimizer preserved, cosine1000 LR, spk02 heldout",
+  "scope": "10 spk03 structure/frontend conditions + original local Pooled standard-mel spk02 benchmark"
+}
