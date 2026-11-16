@@ -1,0 +1,6 @@
+{
+  "same_waveform_fingerprint": true,
+  "same_noise_contents": true,
+  "actual_gpu_allocation": "local baseline/lookahead; Jupyter boundary/spectral",
+  "normalization_note": "Inference uses each checkpoint own statistics, with tolerance1e-5 cross-hardware equality check"
+}

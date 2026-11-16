@@ -7,8 +7,8 @@
 - 브랜치: experiment/detector-diversity-v2. 로컬 경로 /root/CAS2250-detector-diversity-v2.
 - Python: /root/CAS2250-resnet18-pretrain-100/.venv/bin/python.
 - 로컬 baseline/lookahead 각각300epoch 완료. best163/152. 0dB 발화 내부 손실21.88%/13.23%, eventF1 75.59%/69.62%, noise-only 오반응26/80 vs62/80. 원본eventF1 96.60%/75.52%. 단순히 미래문맥을 채택하기에는 추가오검출 문제가 남는다.
-- Jupyter boundary/spectral는 각각20/21epoch 체크포인트를 전달했다. 현재 로컬에 보이는20/21은 중단 시점이며 Jupyter 실시간 상태가 아니다. 확인 시점에 원격 완료 결과는 미수신이었다.
-- 공개 릴리스 detector-diversity-v2-distributed-assets-v1에서 jupyter-boundary-spectral-results.tar.gz(.sha256) 업로드 여부부터 확인한다.
+- Jupyter boundary/spectral의300epoch 결과 수신 완료. best210/183. 0dB 발화내부손실20.00%/20.03%, 검출F1 76.34%/73.12%, noise-only오반응29/80으로동일. 각모델checkpoint와결과가로컬에수집됐다.
+- 공개 릴리스 detector-diversity-v2-distributed-assets-v1에 jupyter-boundary-spectral-results.tar.gz(.sha256)가업로드됐다. 미래문맥+경계헤드조합300epoch 재검증이자동진행중이다. 현재진행은 distributed.json 및 combined/progress.json을확인한다. 4종비교와새환경audit는 RESULTS.md 참조.
 - scripts/detector_diversity_collect.py가 runs/detector-diversity-v2/distributed.json을 갱신하며 결과를 기다린다. 수신 후 전체비교→유용한변경 조합/재검증→보고서업로드가 자동설정돼 있다. 유용함은 baseline보다 기존검증 비대칭시간비용1% 이상 개선. 새환경audit를 선택에 쓰지 않는다.
 - 새 학습 전 distributed.json, collector.log, 실제 프로세스를 확인하고 수집기와 중복 실행하지 않는다.
 

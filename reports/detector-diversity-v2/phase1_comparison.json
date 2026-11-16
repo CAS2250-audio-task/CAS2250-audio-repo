@@ -1,0 +1,102 @@
+[
+  {
+    "name": "baseline",
+    "parameters": 18209,
+    "epoch": 163,
+    "cost_ms": 479.442054521276,
+    "speech_missing_pct": 20.02687552380982,
+    "original": {
+      "missing_pct": 5.211205486754137,
+      "extra_ms_per_case": 33.584687500000015,
+      "noise_fp_rate": null
+    },
+    "noisy": {
+      "missing_pct": 21.8788342784418,
+      "extra_ms_per_case": 120.35199218749999,
+      "noise_fp_rate": null
+    },
+    "noise_only": {
+      "missing_pct": null,
+      "extra_ms_per_case": 137.06250000000003,
+      "noise_fp_rate": 0.325
+    },
+    "original_event_f1": 0.9660194174757282,
+    "noisy_event_f1": 0.7559055118110236,
+    "last_cost_ms": 538.4270279255325
+  },
+  {
+    "name": "lookahead",
+    "parameters": 18209,
+    "epoch": 152,
+    "cost_ms": 358.5060172872334,
+    "speech_missing_pct": 12.23319127190518,
+    "original": {
+      "missing_pct": 4.253611604622713,
+      "extra_ms_per_case": 70.43718749999998,
+      "noise_fp_rate": null
+    },
+    "noisy": {
+      "missing_pct": 13.230638730315476,
+      "extra_ms_per_case": 123.09320312500006,
+      "noise_fp_rate": null
+    },
+    "noise_only": {
+      "missing_pct": null,
+      "extra_ms_per_case": 147.93749999999994,
+      "noise_fp_rate": 0.775
+    },
+    "original_event_f1": 0.7552182163187856,
+    "noisy_event_f1": 0.6962327134000954,
+    "last_cost_ms": 399.4007313829788
+  },
+  {
+    "name": "boundary",
+    "parameters": 18275,
+    "epoch": 210,
+    "cost_ms": 459.8562832446823,
+    "speech_missing_pct": 18.30815583239689,
+    "original": {
+      "missing_pct": 4.788563009641829,
+      "extra_ms_per_case": 33.44968750000001,
+      "noise_fp_rate": null
+    },
+    "noisy": {
+      "missing_pct": 19.998104935241297,
+      "extra_ms_per_case": 134.06152343749991,
+      "noise_fp_rate": null
+    },
+    "noise_only": {
+      "missing_pct": null,
+      "extra_ms_per_case": 151.74999999999997,
+      "noise_fp_rate": 0.3625
+    },
+    "original_event_f1": 0.9731051344743277,
+    "noisy_event_f1": 0.7634379263301501,
+    "last_cost_ms": 497.916422872341
+  },
+  {
+    "name": "spectral",
+    "parameters": 23593,
+    "epoch": 183,
+    "cost_ms": 505.117752659575,
+    "speech_missing_pct": 18.645418988875324,
+    "original": {
+      "missing_pct": 7.546898771784341,
+      "extra_ms_per_case": 22.75593750000001,
+      "noise_fp_rate": null
+    },
+    "noisy": {
+      "missing_pct": 20.032734016011645,
+      "extra_ms_per_case": 167.74480468749982,
+      "noise_fp_rate": null
+    },
+    "noise_only": {
+      "missing_pct": null,
+      "extra_ms_per_case": 187.68749999999997,
+      "noise_fp_rate": 0.3625
+    },
+    "original_event_f1": 0.9803921568627451,
+    "noisy_event_f1": 0.7311888111888112,
+    "last_cost_ms": 567.7420545212765
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "baseline": {
+    "gpu_frontend_model_median_ms": 1.0536960363388062,
+    "gpu_frontend_model_p95_ms": 1.0867200434207915,
+    "input_seconds": 1.5,
+    "batch": 1,
+    "lookahead_ms": 0,
+    "frontend_lookahead_ms": 12.5,
+    "note": "Whole-clip GPU inference plus mel, excluding audio IO; algorithmic waiting reported separately"
+  },
+  "lookahead": {
+    "gpu_frontend_model_median_ms": 1.0680320262908936,
+    "gpu_frontend_model_p95_ms": 1.0864640474319458,
+    "input_seconds": 1.5,
+    "batch": 1,
+    "lookahead_ms": 80,
+    "frontend_lookahead_ms": 12.5,
+    "note": "Whole-clip GPU inference plus mel, excluding audio IO; algorithmic waiting reported separately"
+  },
+  "boundary": {
+    "gpu_frontend_model_median_ms": 1.2072960138320923,
+    "gpu_frontend_model_p95_ms": 1.2339679777622223,
+    "input_seconds": 1.5,
+    "batch": 1,
+    "lookahead_ms": 0,
+    "frontend_lookahead_ms": 12.5,
+    "note": "Whole-clip GPU inference plus mel, excluding audio IO; algorithmic waiting reported separately"
+  },
+  "spectral": {
+    "gpu_frontend_model_median_ms": 1.2825440168380737,
+    "gpu_frontend_model_p95_ms": 1.3016463816165924,
+    "input_seconds": 1.5,
+    "batch": 1,
+    "lookahead_ms": 0,
+    "frontend_lookahead_ms": 12.5,
+    "note": "Whole-clip GPU inference plus mel, excluding audio IO; algorithmic waiting reported separately"
+  },
+  "v1_legacy_noise": {
+    "gpu_frontend_model_median_ms": 1.0357919931411743,
+    "gpu_frontend_model_p95_ms": 1.0547200441360474,
+    "input_seconds": 1.5,
+    "batch": 1,
+    "lookahead_ms": 0,
+    "frontend_lookahead_ms": 12.5,
+    "note": "Whole-clip GPU inference plus mel, excluding audio IO; algorithmic waiting reported separately"
+  }
+}
