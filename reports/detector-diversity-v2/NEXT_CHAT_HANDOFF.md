@@ -8,7 +8,7 @@
 - Python: /root/CAS2250-resnet18-pretrain-100/.venv/bin/python.
 - 로컬 baseline/lookahead 각각300epoch 완료. best163/152. 0dB 발화 내부 손실21.88%/13.23%, eventF1 75.59%/69.62%, noise-only 오반응26/80 vs62/80. 원본eventF1 96.60%/75.52%. 단순히 미래문맥을 채택하기에는 추가오검출 문제가 남는다.
 - Jupyter boundary/spectral의300epoch 결과 수신 완료. best210/183. 0dB 발화내부손실20.00%/20.03%, 검출F1 76.34%/73.12%, noise-only오반응29/80으로동일. 각모델checkpoint와결과가로컬에수집됐다.
-- 공개 릴리스 detector-diversity-v2-distributed-assets-v1에 jupyter-boundary-spectral-results.tar.gz(.sha256)가업로드됐다. 미래문맥+경계헤드조합300epoch 재검증이자동진행중이다. 현재진행은 distributed.json 및 combined/progress.json을확인한다. 4종비교와새환경audit는 RESULTS.md 참조.
+- 공개 릴리스 detector-diversity-v2-distributed-assets-v1에 jupyter-boundary-spectral-results.tar.gz(.sha256)가업로드됐다. 미래문맥+경계헤드조합300epoch와최종평가/업로드까지모두완료됐다. 조합best94: 0dB발화손실13.91%, 검출F1 61.12%, noise-only오반응75/80. 미래문맥단독보다전반개선이없다. 새환경audit조합손실16.73%, F1 58.50%로발화보존은더좋으나오검출문제가크다. 추가조합학습은돌고있지않다. 4종비교와새환경audit는 RESULTS.md 참조.
 - scripts/detector_diversity_collect.py가 runs/detector-diversity-v2/distributed.json을 갱신하며 결과를 기다린다. 수신 후 전체비교→유용한변경 조합/재검증→보고서업로드가 자동설정돼 있다. 유용함은 baseline보다 기존검증 비대칭시간비용1% 이상 개선. 새환경audit를 선택에 쓰지 않는다.
 - 새 학습 전 distributed.json, collector.log, 실제 프로세스를 확인하고 수집기와 중복 실행하지 않는다.
 
@@ -39,3 +39,5 @@ v1 predict.py는v2체크포인트와호환되지않으며margin옵션을줘도JS
 5. 발화내시간손실의정의/통계: https://github.com/CAS2250-audio-task/CAS2250-audio-repo/blob/experiment/speech-boundary-detector/reports/boundary-detector-v1/error-types/SPEECH_REGION_LOSS.md
 
 보조입력은기존F1/F2/F3/BW를무조건추가하지않는다. 배경대비대역에너지,시간差分/flux/고주파비율을분리대조한다. 정답경계로배경만골라주는oracle입력은배포에서재현되지않는다. 마스킹은약한감쇠/완전가림을분리하고경계핵심단서를통째로지우지않도록검토한다. 시간변형시주석과보조availability까지정렬한다. 기존녹음은추가소음전일뿐무잡음이보장되지않는다.
+
+최종 권고: 균형있는후속실험기준선은boundary head 모델(best210) 또는기본GRU(best163). lookahead/combined는발화손실을줄이지만짧은배경이벤트오검출을해결해야한다. 외부포함시간과오검출빈도가다르게움직이므로둘다기록한다. 완료된검출기의v2exporter/여유margin정책은아직구현·확정하지않았고기본평가margin0이다.
