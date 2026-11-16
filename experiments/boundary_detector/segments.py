@@ -32,3 +32,25 @@ def boundary_metrics(gold,pred,iou_threshold=.5,tolerance_ms=10.):
         for j,(c,d) in enumerate(pred):iou[i,j]=max(0,min(b,d)-max(a,c))/(max(b,d)-min(a,c))
     ii,jj=linear_sum_assignment(-iou);pairs=[(gold[i],pred[j]) for i,j in zip(ii,jj) if iou[i,j]>=iou_threshold]
     return dict(gold=len(gold),pred=len(pred),matched=len(pairs),start_errors=[abs(p[0]-g[0]) for g,p in pairs],end_errors=[abs(p[1]-g[1]) for g,p in pairs],start_cuts=sum(p[0]-g[0]>tolerance_ms/1000 for g,p in pairs),end_cuts=sum(g[1]-p[1]>tolerance_ms/1000 for g,p in pairs))
+
+
+def asymmetric_cost(gold,pred,start_weight=3.,end_weight=5.,extra_weight=1.):
+    """Duration cost in seconds; complete misses and internal gaps cost end_weight.
+
+    Intervals from decode are disjoint. Account for ALL gold and predicted time,
+    including cases that fail IoU matching.
+    """
+    leading=trailing=internal=missed=covered=0.
+    for a,b in gold:
+        overlaps=sorted((max(a,c),min(b,d)) for c,d in pred if min(b,d)>max(a,c))
+        if not overlaps:
+            missed+=b-a
+            continue
+        leading+=overlaps[0][0]-a;trailing+=b-overlaps[-1][1]
+        cursor=overlaps[0][0]
+        for c,d in overlaps:
+            internal+=max(0.,c-cursor);covered+=max(0.,d-max(c,cursor));cursor=max(cursor,d)
+    extra=max(0.,sum(d-c for c,d in pred)-covered)
+    return dict(cost_seconds=start_weight*leading+end_weight*(trailing+internal+missed)+extra_weight*extra,
+                leading_missing_seconds=leading,trailing_missing_seconds=trailing,
+                internal_missing_seconds=internal,missed_speech_seconds=missed,extra_seconds=extra)

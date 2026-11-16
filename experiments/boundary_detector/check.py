@@ -6,8 +6,8 @@ import soundfile as sf
 import torch
 from .prepare import prepare
 from .data import frame_labels
-from .model import Detector
-from .segments import decode,boundary_metrics
+from .model import Detector,make_detector
+from .segments import decode,boundary_metrics,asymmetric_cost
 from .train import mix,Windows
 
 
@@ -20,6 +20,19 @@ class Checks(unittest.TestCase):
             self.assertTrue(torch.equal(m(x)[:,:40],m(y)[:,:40]))
             output=m(x);self.assertEqual(tuple(output.shape),(2,70));output.square().mean().backward()
             self.assertTrue(all(p.grad is not None and torch.isfinite(p.grad).all() for p in m.parameters()))
+
+    def test_gru_and_asymmetric_cost(self):
+        torch.set_num_threads(2)
+        m=make_detector('cnn_gru');x=torch.randn(2,64,70);z=x.clone();z[:,:,40:]+=100
+        torch.testing.assert_close(m(x)[:,:40],m(z)[:,:40],rtol=0,atol=0)
+        m(x).square().mean().backward()
+        self.assertTrue(all(p.grad is not None and torch.isfinite(p.grad).all() for p in m.parameters()))
+        start=asymmetric_cost([[.2,.8]],[[.3,.8]])['cost_seconds']
+        end=asymmetric_cost([[.2,.8]],[[.2,.7]])['cost_seconds']
+        extra=asymmetric_cost([[.2,.8]],[[.1,.8]])['cost_seconds']
+        self.assertGreater(end,start);self.assertGreater(start,extra)
+        self.assertAlmostEqual(asymmetric_cost([[.2,.8]],[])['cost_seconds'],3.)
+        self.assertEqual(asymmetric_cost([],[[0,1]])['cost_seconds'],1.)
 
     def test_confirmation_backdating_and_no_margin(self):
         p=np.zeros(100);p[20:60]=1
@@ -41,7 +54,7 @@ class Checks(unittest.TestCase):
             np.testing.assert_array_equal(frame_labels(records[0],np.array([.09,.1,.29,.3])),[0,1,1,0])
             data=Windows([(records[0],np.ones(8000,np.float32)*.1)],[],.01)
             for index in range(4):
-                x,y,valid=data[index];self.assertTrue(torch.isfinite(x).all());self.assertTrue((~valid).any());self.assertEqual(len(y),151)
+                x,y,valid,weights=data[index];self.assertTrue(torch.isfinite(x).all());self.assertTrue((~valid).any());self.assertEqual(len(y),151)
             # An invalid boundary is rejected rather than silently clipped.
             with (root/'table.csv').open('a') as f:f.write('short.wav,dev,3000,5000,\n')
             with self.assertRaises(ValueError):prepare(root/'table.csv',root/'mapping.json',root/'bad.jsonl',root,['dev'])
@@ -79,7 +92,7 @@ def smoke(output=None):
     subprocess.run([sys.executable,'-m','experiments.boundary_detector.predict','--checkpoint',str(out/'model/best.pt'),'--audio',str(out/'validation.wav'),'--output',str(out/'inference')],cwd=root,check=True)
     assert json.loads((out/'model/progress.json').read_text())['stage']=='complete'
     report=root/'reports/boundary-detector-v1';report.mkdir(parents=True,exist_ok=True)
-    (report/'synthetic_checks.json').write_text(json.dumps(dict(unit_checks=4,synthetic_training_epochs=2,resume_completed_run=True,inference_export=True,real_team_audio_used=False,real_boundary_accuracy_established=False),indent=2)+'\n')
+    (report/'synthetic_checks.json').write_text(json.dumps(dict(unit_checks=5,synthetic_training_epochs=2,resume_completed_run=True,inference_export=True,real_team_audio_used=False,real_boundary_accuracy_established=False),indent=2)+'\n')
 
 
 if __name__=='__main__':

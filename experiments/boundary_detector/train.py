@@ -6,8 +6,8 @@ import torch
 from torch.nn import functional as F
 from torch.utils.data import Dataset,DataLoader
 from .data import SR,sha,read_manifest,load_audio,frame_labels,noise_manifest
-from .model import Detector,Frontend
-from .segments import decode,boundary_metrics
+from .model import make_detector,Frontend
+from .segments import decode,boundary_metrics,asymmetric_cost
 
 
 def write(path,value):
@@ -15,9 +15,9 @@ def write(path,value):
 
 
 def mix(wave,noise,segments,rng,snr,reference_power):
-    noise=np.asarray(noise,np.float64)
+    noise=np.asarray(noise)
     if len(noise)<len(wave):noise=np.tile(noise,math.ceil(len(wave)/len(noise)))
-    offset=int(rng.integers(len(noise)-len(wave)+1));noise=noise[offset:offset+len(wave)].copy();noise-=noise.mean()
+    offset=int(rng.integers(len(noise)-len(wave)+1));noise=noise[offset:offset+len(wave)].astype(np.float64,copy=True);noise-=noise.mean()
     mask=np.zeros(len(wave),bool)
     for a,b in segments:mask[max(0,round(a*SR)):min(len(wave),round(b*SR))]=True
     power=float(np.mean(wave[mask].astype(np.float64)**2)) if mask.any() else reference_power
@@ -73,29 +73,57 @@ class Windows(Dataset):
         centers=(start+np.arange(self.samples//self.hop+1)*self.hop)/SR
         labels=frame_labels(dict(segments=segments),centers)
         valid=(centers>=0)&(centers<len(wave)/SR)
-        return torch.from_numpy(x),torch.from_numpy(labels),torch.from_numpy(valid)
+        weights=np.ones(len(centers),np.float32)
+        for a,b in segments:
+            weights[(centers>=a)&(centers<min(b,a+.05))]=3.
+            weights[(centers>=max(a,b-.05))&(centers<b)]=5.
+        return torch.from_numpy(x),torch.from_numpy(labels),torch.from_numpy(valid),torch.from_numpy(weights)
 
 
 @torch.no_grad()
-def evaluate(model,frontend,records,noises,reference,mean,std,args):
-    model.eval();tot_loss=0.;frames=0;tp=fp=fn=0;details=[];boundary=[];condition_totals={}
+def validation_cache(frontend,records,noises,reference,mean,std,args):
+    cache=[]
     for record,wave in records:
         for n,noise in enumerate([None]+noises):
             key=f'{record["source_id"]}|{n}|{args.seed}'
             rng=np.random.default_rng(int.from_bytes(hashlib.sha256(key.encode()).digest()[:8],'little'))
             x=wave if noise is None else mix(wave,noise,record['segments'],rng,args.eval_snr,reference)
-            mel=frontend(torch.as_tensor(x,device=args.device)[None]);logits=model((mel-mean)/std)[0]
-            centers=np.arange(len(logits))*args.hop/SR;valid=centers<len(x)/SR
+            mel=(frontend(torch.as_tensor(x,device=args.device)[None])-mean)/std
+            cache.append((record,len(x)/SR,'original' if noise is None else f'noise{n-1}',mel[0]))
+    # Independent noise-only validation windows: fixed offsets and amplitude,
+    # scaled to training median speech power, never to validation speech.
+    for n,noise in enumerate(noises):
+        for j in range(10):
+            rng=np.random.default_rng(args.seed+10000+n*100+j)
+            x=mix(np.zeros(round(1.5*SR),np.float32),noise,[],rng,args.eval_snr,reference)
+            record=dict(source_id=f'negative_{n}_{j}',speaker='external',segments=[],annotation_source='external_noise')
+            mel=(frontend(torch.as_tensor(x,device=args.device)[None])-mean)/std
+            cache.append((record,len(x)/SR,'noise_only',mel[0]))
+    return cache
+
+
+@torch.no_grad()
+def evaluate(model,cache,args):
+    model.eval();tot_loss=0.;frames=0;tp=fp=fn=0;details=[];boundary=[];condition_totals={};costs=[]
+    for offset in range(0,len(cache),args.batch):
+        batch=cache[offset:offset+args.batch]
+        length=max(m.shape[-1] for _,_,_,m in batch)
+        x=torch.stack([F.pad(m,(0,length-m.shape[-1])) for _,_,_,m in batch])
+        outputs=model(x)
+        for (record,duration,condition,mel),output in zip(batch,outputs):
+            logits=output[:mel.shape[-1]]
+            centers=np.arange(len(logits))*args.hop/SR;valid=centers<duration
             y=torch.tensor(frame_labels(record,centers),device=args.device);mask=torch.tensor(valid,device=args.device)
             tot_loss+=float(F.binary_cross_entropy_with_logits(logits[mask],y[mask],reduction='sum'));frames+=int(mask.sum())
             probabilities=logits.sigmoid().cpu().numpy();prediction=probabilities[valid]>=.5;truth=y.cpu().numpy()[valid]>0
             tp+=int((prediction&truth).sum());fp+=int((prediction&~truth).sum());fn+=int((~prediction&truth).sum())
-            intervals=decode(probabilities,args.hop/SR,len(x)/SR,args.on,args.off,args.on_ms,args.off_ms)
+            intervals=decode(probabilities,args.hop/SR,duration,args.on,args.off,args.on_ms,args.off_ms)
             b=boundary_metrics(record['segments'],intervals);boundary.append(b)
-            key='original' if noise is None else 'noisy'
+            costs.append(asymmetric_cost(record['segments'],intervals))
+            key='noisy' if condition.startswith('noise') and condition!='noise_only' else condition
             c=condition_totals.setdefault(key,dict(tp=0,fp=0,fn=0,gold=0,pred=0,matched=0))
             for name,value in dict(tp=int((prediction&truth).sum()),fp=int((prediction&~truth).sum()),fn=int((~prediction&truth).sum()),gold=b['gold'],pred=b['pred'],matched=b['matched']).items():c[name]+=value
-            details.append(dict(source_id=record['source_id'],speaker=record['speaker'],condition='original' if noise is None else f'noise{n-1}',gold=record['segments'],predicted=intervals,annotation_source=record['annotation_source']))
+            details.append(dict(source_id=record['source_id'],speaker=record['speaker'],condition=condition,duration_seconds=duration,gold=record['segments'],predicted=intervals,annotation_source=record['annotation_source']))
     matched=sum(b['matched'] for b in boundary);ng=sum(b['gold'] for b in boundary);npred=sum(b['pred'] for b in boundary)
     starts=[x for b in boundary for x in b['start_errors']];ends=[x for b in boundary for x in b['end_errors']]
     metrics=dict(bce=tot_loss/max(frames,1),frame_f1=2*tp/max(2*tp+fp+fn,1),event_f1=2*matched/max(ng+npred,1),matched_events=matched,missed_events=ng-matched,false_positive_events=npred-matched,
@@ -103,6 +131,8 @@ def evaluate(model,frontend,records,noises,reference,mean,std,args):
         start_p95_ms=1000*float(np.percentile(starts,95)) if starts else None,end_p95_ms=1000*float(np.percentile(ends,95)) if ends else None,
         start_cut_events_over10ms=sum(b['start_cuts'] for b in boundary),end_cut_events_over10ms=sum(b['end_cuts'] for b in boundary))
     metrics['by_condition']={k:dict(frame_f1=2*c['tp']/max(2*c['tp']+c['fp']+c['fn'],1),event_f1=2*c['matched']/max(c['gold']+c['pred'],1),missed_events=c['gold']-c['matched'],false_positive_events=c['pred']-c['matched']) for k,c in condition_totals.items()}
+    metrics['asymmetric_cost_ms']=1000*sum(x['cost_seconds'] for x in costs)/len(costs)
+    metrics['cost_components_ms']={k:1000*sum(x[k] for x in costs)/len(costs) for k in costs[0] if k!='cost_seconds'}
     return metrics,details
 
 
@@ -110,6 +140,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--manifest',type=Path,required=True);p.add_argument('--train-speakers',nargs='+',required=True);p.add_argument('--val-speakers',nargs='+',required=True)
     p.add_argument('--noise-manifest',type=Path);p.add_argument('--allow-noise-free',action='store_true');p.add_argument('--output',type=Path,required=True);p.add_argument('--resume',action='store_true')
+    p.add_argument('--architecture',choices=['tcn','cnn_gru'],default='tcn')
     p.add_argument('--width',type=int,choices=[32,64],default=64);p.add_argument('--hop',type=int,choices=[80,160],default=160);p.add_argument('--window-seconds',type=float,default=1.5)
     p.add_argument('--epochs',type=int,default=100);p.add_argument('--batch',type=int,default=32);p.add_argument('--lr',type=float,default=.001);p.add_argument('--seed',type=int,default=42)
     p.add_argument('--noise-probability',type=float,default=.8);p.add_argument('--snr-min',type=float,default=-5);p.add_argument('--snr-max',type=float,default=20);p.add_argument('--eval-snr',type=float,default=0)
@@ -124,7 +155,7 @@ def main():
     args.output.mkdir(parents=True,exist_ok=True)
     config={k:str(v) if isinstance(v,Path) else v for k,v in vars(args).items() if k!='resume'}
     config.update(manifest_sha256=sha(args.manifest),noise_manifest_sha256=sha(args.noise_manifest) if args.noise_manifest else None,
-        source_sha256={p.name:sha(p) for p in Path(__file__).parent.glob('*.py')},label_note='Annotations may be automatic/weak; boundary accuracy requires audited reference labels',selection='minimum mean validation BCE on original and fixed noisy cases',crop_margin_ms=0)
+        source_sha256={p.name:sha(p) for p in Path(__file__).parent.glob('*.py')},label_note='Annotations may be automatic/weak; boundary accuracy requires audited reference labels',selection='minimum mean asymmetric duration cost across original, fixed noisy and noise-only validation',crop_margin_ms=0,boundary_weights=dict(start=3,end=5,extra=1,training_boundary_ms=50))
     cfg=args.output/'config.json'
     if cfg.exists():
         if not args.resume:raise FileExistsError('Existing run; use --resume with identical config or a new output')
@@ -133,7 +164,7 @@ def main():
     torch.set_num_threads(2);torch.manual_seed(args.seed);np.random.seed(args.seed);random.seed(args.seed)
     torch.backends.cudnn.benchmark=False;torch.backends.cudnn.deterministic=True
     torch.use_deterministic_algorithms(True,warn_only=True)
-    frontend=Frontend(args.hop).to(args.device).eval();model=Detector(args.width).to(args.device)
+    frontend=Frontend(args.hop).to(args.device).eval();model=make_detector(args.architecture,args.width).to(args.device)
     records=load_records(train);validation=load_records(val);reference=reference_power(records)
     noises=noise_manifest(args.noise_manifest) if args.noise_manifest else {'train':[],'validation':[]}
     train_noises=[load_audio(x) for x in noises['train']];val_noises=[load_audio(x) for x in noises['validation']]
@@ -145,6 +176,7 @@ def main():
             x=frontend(torch.as_tensor(wave,device=args.device)[None]);valid=torch.arange(x.shape[-1],device=args.device)*args.hop<len(wave);x=x[:,:,valid]
             total+=x.sum(2,keepdim=True);square+=(x*x).sum(2,keepdim=True);count+=x.shape[-1]
         mean=total/count;std=(square/count-mean.square()).clamp_min(1e-8).sqrt()
+    cache=validation_cache(frontend,validation,val_noises,reference,mean,std,args)
     data=Windows(records,train_noises,reference,args.hop,args.window_seconds,args.seed,args.noise_probability,(args.snr_min,args.snr_max))
     optimizer=torch.optim.AdamW(model.parameters(),lr=args.lr,weight_decay=1e-4);history=[];best=float('inf');start=1
     checkpoint=args.output/'last.pt'
@@ -159,17 +191,17 @@ def main():
         lr=1e-5+(args.lr-1e-5)*(1+math.cos(math.pi*(epoch-1)/max(1,args.epochs-1)))/2
         for group in optimizer.param_groups:group['lr']=lr
         loss_sum=frames=0
-        for wave,y,valid in loader:
+        for wave,y,valid,weights in loader:
             wave=wave.to(args.device);y=y.to(args.device);valid=valid.to(args.device)
             with torch.no_grad():x=(frontend(wave)-mean)/std
-            logits=model(x);loss=F.binary_cross_entropy_with_logits(logits[valid],y[valid])
+            logits=model(x);weights=weights.to(args.device);loss=(F.binary_cross_entropy_with_logits(logits[valid],y[valid],reduction="none")*weights[valid]).mean()
             if not torch.isfinite(loss):raise RuntimeError('Nonfinite loss')
             optimizer.zero_grad(set_to_none=True);loss.backward();torch.nn.utils.clip_grad_norm_(model.parameters(),5.);optimizer.step()
             n=int(valid.sum());loss_sum+=float(loss)*n;frames+=n
-        metrics,details=evaluate(model,frontend,validation,val_noises,reference,mean,std,args)
-        row=dict(epoch=epoch,lr=lr,train_bce=loss_sum/frames,**metrics);history.append(row)
-        improved=metrics['bce']<best
-        if improved:best=metrics['bce']
+        metrics,details=evaluate(model,cache,args)
+        row=dict(epoch=epoch,lr=lr,train_weighted_bce=loss_sum/frames,**metrics);history.append(row)
+        improved=metrics['asymmetric_cost_ms']<best
+        if improved:best=metrics['asymmetric_cost_ms']
         state=dict(model=model.state_dict(),optimizer=optimizer.state_dict(),mean=mean,std=std,config=config,epoch=epoch,history=history,best=best)
         torch.save(state,args.output/'last.pt')
         if improved:
@@ -177,7 +209,7 @@ def main():
         write(args.output/'history.json',history)
         progress=dict(stage='training',epoch=epoch,epochs=args.epochs,estimated_training_minutes_remaining=(args.epochs-epoch)*(time.monotonic()-tick)/(epoch-start+1)/60,metrics=row)
         write(args.output/'progress.json',progress);print(json.dumps(progress),flush=True)
-    write(args.output/'progress.json',dict(stage='complete',epoch=args.epochs,epochs=args.epochs,best_validation_bce=best))
+    write(args.output/'progress.json',dict(stage='complete',epoch=args.epochs,epochs=args.epochs,best_validation_asymmetric_cost_ms=best))
 
 
 if __name__=='__main__':main()

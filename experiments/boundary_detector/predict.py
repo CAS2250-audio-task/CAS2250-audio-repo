@@ -5,7 +5,7 @@ import numpy as np
 import soundfile as sf
 import torch
 from .data import SR,load_audio
-from .model import Detector,Frontend
+from .model import make_detector,Frontend
 from .segments import decode
 
 
@@ -15,7 +15,7 @@ def main():
     if a.margin_ms<0:p.error('Negative margin')
     if a.output.exists():raise FileExistsError('Use a fresh output directory')
     torch.set_num_threads(2);s=torch.load(a.checkpoint,map_location=a.device,weights_only=False);c=s['config']
-    model=Detector(c['width']).to(a.device);model.load_state_dict(s['model']);model.eval();frontend=Frontend(c['hop']).to(a.device)
+    model=make_detector(c.get('architecture','tcn'),c['width']).to(a.device);model.load_state_dict(s['model']);model.eval();frontend=Frontend(c['hop']).to(a.device)
     wave=load_audio(a.audio)
     with torch.no_grad():prob=model((frontend(torch.as_tensor(wave,device=a.device)[None])-s['mean'])/s['std']).sigmoid()[0].cpu().numpy()
     segments=decode(prob,c['hop']/SR,len(wave)/SR,c['on'],c['off'],c['on_ms'],c['off_ms'])

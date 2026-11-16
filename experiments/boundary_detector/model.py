@@ -33,3 +33,21 @@ class Detector(nn.Module):
         self.blocks=nn.Sequential(*[Block(width,d) for d in [1,2,4,8]])
         self.head=nn.Conv1d(width,1,1)
     def forward(self,x):return self.head(self.blocks(self.stem(x)))[:,0]
+
+
+class CNNGRU(nn.Module):
+    """Causal local CNN followed by a unidirectional GRU."""
+    def __init__(self,width=64):
+        super().__init__()
+        self.stem=nn.Sequential(nn.Conv1d(64,width,1,bias=False),FrameNorm(width),nn.SiLU())
+        self.local=Block(width,1)
+        self.gru=nn.GRU(width,32,batch_first=True)
+        self.head=nn.Linear(32,1)
+    def forward(self,x):
+        x=self.local(self.stem(x)).transpose(1,2)
+        x,_=self.gru(x)
+        return self.head(x)[:,:,0]
+
+
+def make_detector(architecture='tcn',width=64):
+    return (Detector if architecture=='tcn' else CNNGRU)(width)
