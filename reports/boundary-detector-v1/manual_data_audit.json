@@ -1,0 +1,78 @@
+{
+  "source_branch": "data/manual-clipped-1000-20261116",
+  "source_commit": "ff35dab34f703b8cd0883dde4262ee183257c3ab",
+  "originals": 1000,
+  "clips": 1000,
+  "csv_rows": 1000,
+  "pcm_match_start_offset_samples": {
+    "0": 1000
+  },
+  "speakers": {
+    "S01": {
+      "files": 200,
+      "original_seconds": 380.4402499999993,
+      "under1p5_seconds": 62,
+      "median_original_seconds": 1.7066875,
+      "median_speech_seconds": 0.47553125000000007,
+      "no_context_either_side_10ms": 0,
+      "near_start_10ms": 0,
+      "near_end_10ms": 0
+    },
+    "S02": {
+      "files": 200,
+      "original_seconds": 480.9546875,
+      "under1p5_seconds": 2,
+      "median_original_seconds": 2.3893125,
+      "median_speech_seconds": 0.50725,
+      "no_context_either_side_10ms": 0,
+      "near_start_10ms": 0,
+      "near_end_10ms": 0
+    },
+    "S03": {
+      "files": 200,
+      "original_seconds": 386.4193124999998,
+      "under1p5_seconds": 98,
+      "median_original_seconds": 2.3989374999999997,
+      "median_speech_seconds": 0.6524375,
+      "no_context_either_side_10ms": 0,
+      "near_start_10ms": 2,
+      "near_end_10ms": 0
+    },
+    "S04": {
+      "files": 200,
+      "original_seconds": 263.8291874999998,
+      "under1p5_seconds": 173,
+      "median_original_seconds": 1.28,
+      "median_speech_seconds": 0.51003125,
+      "no_context_either_side_10ms": 0,
+      "near_start_10ms": 0,
+      "near_end_10ms": 0
+    },
+    "S05": {
+      "files": 200,
+      "original_seconds": 288.54049999999955,
+      "under1p5_seconds": 123,
+      "median_original_seconds": 1.376,
+      "median_speech_seconds": 0.43546874999999996,
+      "no_context_either_side_10ms": 0,
+      "near_start_10ms": 0,
+      "near_end_10ms": 0
+    }
+  },
+  "duplicate_original_hash_groups": [],
+  "actual_speech_columns": [
+    "speech_start_in_trimmed_s",
+    "speech_end_in_trimmed_s"
+  ],
+  "clip_margin_ms": 30,
+  "training_started": false,
+  "perceptual_boundary_audit_performed": false,
+  "speaker_id_map": {
+    "S01": "강재훈",
+    "S02": "노정민",
+    "S03": "곽민채",
+    "S04": "최환준",
+    "S05": "이서준"
+  },
+  "canonical_manifest": "runs/manual-clipped-v1-import/manifest.jsonl"
+}
