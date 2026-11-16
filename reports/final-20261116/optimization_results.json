@@ -1,0 +1,61 @@
+{
+  "stage": "complete",
+  "local_variants_only": true,
+  "results": [
+    {
+      "candidate": "accuracy_candidate",
+      "FP32_p50_ms": 23.243904928676784,
+      "FP32_p95_ms": 34.30761045310646,
+      "FP16_p50_ms": 25.65481746569276,
+      "FP16_p95_ms": 37.064834288321435,
+      "prediction_disagreements": 1,
+      "adoption": {
+        "adopt": false,
+        "precision": "fp32",
+        "reason": "Development predictions changed"
+      },
+      "cases": 1880,
+      "classifier_parameters": 84635,
+      "detector_parameters": 18209,
+      "S01_used": false
+    },
+    {
+      "candidate": "front5",
+      "FP32_p50_ms": 22.95705850701779,
+      "FP32_p95_ms": 34.015846299007535,
+      "FP16_p50_ms": 25.41139500681311,
+      "FP16_p95_ms": 37.83871597843244,
+      "prediction_disagreements": 0,
+      "adoption": {
+        "adopt": false,
+        "precision": "fp32",
+        "reason": "Less than10% median speedup or p95 worsened more than10%",
+        "prediction_parity_required": true,
+        "minimum_median_speedup_pct": 10,
+        "maximum_p95_regression_pct": 10
+      },
+      "cases": 1880,
+      "classifier_parameters": 84635,
+      "detector_parameters": 18209,
+      "S01_used": false
+    },
+    {
+      "candidate": "speaker_BCE",
+      "FP32_p50_ms": 23.51278648711741,
+      "FP32_p95_ms": 33.687777107115835,
+      "FP16_p50_ms": 26.033932925201952,
+      "FP16_p95_ms": 36.96505952393636,
+      "prediction_disagreements": 1,
+      "adoption": {
+        "adopt": false,
+        "precision": "fp32",
+        "reason": "Development predictions changed"
+      },
+      "cases": 1880,
+      "classifier_parameters": 84635,
+      "detector_parameters": 18209,
+      "S01_used": false
+    }
+  ],
+  "parameter_reduction": false
+}

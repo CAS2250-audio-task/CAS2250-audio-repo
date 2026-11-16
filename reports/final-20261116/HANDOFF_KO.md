@@ -74,7 +74,7 @@ Seoj 제공 원격 자료는 [commit82fe 고정 원문](https://github.com/CAS22
 - remote_results_user_supplied.json: 원격3서버 사용자 출력 전사이며 직접 원본 검증은 미완료. 원격 체크포인트/상세 예측/coverage/protocol 원본 수집 필요.
 - same_classifier_crop_diagnostic.json: 동일 가중치 OFF/oracle/actual 진단 원본. comparison.csv는 정리용 수치 표다.
 - **실제 게임 비교는 실행하지 않았다.** 현재 작업환경에 게임 실행 진입점이 없어 같은 게임 조건 승자를 검증했다고 쓰지 않는다.
-- 추론 최적화(FP16/compile/양자화 등)는 아직 시행하지 않았다. 먼저 이 인계를 원격 commit하고, 별도 단계에서 고정 후보의 동일 입력 정확도·지연 변화로 확인한다.
+- 23:11 1차 원격 커밋 이후 로컬3변형의 분류기 FP16 비교를 수행했고 모두 FP32 유지로 판정했다. [추론 최적화·지연 해석 추가 인계](OPTIMIZATION_AND_LATENCY.md)를 참조한다. 원격후보 전체의 동일 PC 최적화나 실제게임 비교가 완료된 것은 아니다.
 - 최종 유력 후보의 전체 파이프라인 화자 분리 CV와 독립 여성 검증은 남는다. 이미 화자를 본 기존 검출기를 해당 fold에 재사용하면 누수가 된다.
 - test 결과를 본 뒤 후보/threshold/증강을 다시 고르지 않는다. 추가 개발을 하면 S01은 이미 관찰한 test라는 사실을 남긴다.
 
