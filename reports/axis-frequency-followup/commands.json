@@ -1,0 +1,4 @@
+{
+  "A": ".venv/bin/python -u -m experiments.low_frequency_grid.run --architecture axis_frequency --frontend standard --folds spk03 --objective paired_supcon --positive-mode same_command --supcon-weight 0.1 --temperature 0.1 --epochs 1000 --schedule-epochs 1000 --stop-after 500 --output runs/lowfreq-axis_frequency-standard-spk03-e1000",
+  "B": ".venv/bin/python -u -m experiments.low_frequency_grid.run --architecture axis_frequency_attn --frontend standard --folds spk03 --objective paired_supcon --positive-mode same_command --supcon-weight 0.1 --temperature 0.1 --epochs 1000 --schedule-epochs 1000 --stop-after 500 --output runs/lowfreq-axis_frequency_attn-standard-spk03-e1000"
+}

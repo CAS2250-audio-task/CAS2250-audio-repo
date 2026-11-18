@@ -1,0 +1,7 @@
+{
+  "basic": "all three model state dicts bitwise identical to HEAD implementation",
+  "axis": "all three model state dicts bitwise identical to HEAD implementation",
+  "frequency": "all three model state dicts bitwise identical to HEAD implementation",
+  "frequency_attn": "all three model state dicts bitwise identical to HEAD implementation",
+  "axis_attn": "all three model state dicts bitwise identical to HEAD implementation"
+}

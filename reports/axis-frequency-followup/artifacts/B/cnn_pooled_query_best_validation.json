@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "original",
+    "noise_id": "none",
+    "draw": -1,
+    "macro_f1": 0.9446569085121155,
+    "accuracy": 0.9408866763114929,
+    "loss": 0.1711895763874054
+  },
+  {
+    "kind": "mixed_0db",
+    "noise_id": "cafeteria",
+    "draw": 0,
+    "macro_f1": 0.8127287030220032,
+    "accuracy": 0.8226600885391235,
+    "loss": 0.6112372279167175
+  },
+  {
+    "kind": "mixed_0db",
+    "noise_id": "car",
+    "draw": 0,
+    "macro_f1": 0.9135640859603882,
+    "accuracy": 0.9211822748184204,
+    "loss": 0.2550361752510071
+  },
+  {
+    "kind": "mixed_0db",
+    "noise_id": "compressor",
+    "draw": 0,
+    "macro_f1": 0.8140023350715637,
+    "accuracy": 0.8226600885391235,
+    "loss": 0.6085363030433655
+  },
+  {
+    "kind": "mixed_0db",
+    "noise_id": "fan",
+    "draw": 0,
+    "macro_f1": 0.8803666830062866,
+    "accuracy": 0.8866994976997375,
+    "loss": 0.4250575602054596
+  },
+  {
+    "kind": "mixed_0db",
+    "noise_id": "restaurant",
+    "draw": 0,
+    "macro_f1": 0.7856788635253906,
+    "accuracy": 0.7832512259483337,
+    "loss": 0.7434053421020508
+  },
+  {
+    "kind": "mixed_0db",
+    "noise_id": "station",
+    "draw": 0,
+    "macro_f1": 0.8404591679573059,
+    "accuracy": 0.8620689511299133,
+    "loss": 0.5077923536300659
+  },
+  {
+    "kind": "mixed_0db",
+    "noise_id": "traffic",
+    "draw": 0,
+    "macro_f1": 0.8828637003898621,
+    "accuracy": 0.8768472671508789,
+    "loss": 0.40687716007232666
+  },
+  {
+    "kind": "mixed_0db",
+    "noise_id": "washing",
+    "draw": 0,
+    "macro_f1": 0.9351443648338318,
+    "accuracy": 0.9310344457626343,
+    "loss": 0.23729337751865387
+  }
+]

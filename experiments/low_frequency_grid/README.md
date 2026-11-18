@@ -42,3 +42,28 @@ python -m experiments.low_frequency_grid.launch --resume --stop-after 1000 --lim
 
 이것은 검출기 전 고정1.5초 입력의 frontend 비교다. 검출 후 가변길이 성능으로 일반화하지 않는다.
 낮은대역 확대는 새 정보를 생성하지 않고 주파수 해상도 배분을 바꾸는 가설이다.
+
+## 실험 C 후속: 축 분리 전처리 + 두 구역 CNN
+
+기존 `run` 진입점에 두 구조를 추가했다. 기본 Mel은 `--frontend standard`,
+시간 집계는 기존과 같이 Pooled를 사용한다.
+
+- `--architecture axis_frequency` (A): 8채널 잔차 전처리(주파수 5×1 → 시간 1×3) → 두 구역 주파수 CNN.
+- `--architecture axis_frequency_attn` (B): A의 전처리와 CNN 사이에 기존 세로 어텐션 1블록을 추가한다.
+
+두 구조 모두 `quick_frequency40.models.Frontend`와 `BandRoutes`를 재사용하며,
+CNN 본체는 `frequency_local.models.FrequencyTimeCNN`의 주파수·시간 분리 블록을 사용한다.
+중간/최종 경로 각각에서 저·고 대역 평균을 연결한 뒤 32차원 투영을 더한다.
+
+실험 C의 같은 손실·증강·배치·1000 epoch cosine 일정으로 첫 500 epoch를 실행하고,
+매 epoch 소음 8종 draw0의 평균 0 dB macro F1로 선택한 가중치를 3구간으로 최종 평가한다.
+실제 샘플 배치 검증 → A 학습/평가 → B 학습/평가 → 기존 CNN과 비교표 생성을 순서대로 실행한다.
+
+```bash
+bash experiments/run_axis_frequency_followup.sh
+```
+
+결과표·실행 명령·감사 기록: `reports/axis-frequency-followup/`.
+개별 학습 로그: `runs/axis-frequency-followup/`.
+선택 가중치와 마지막 optimizer 체크포인트는 각
+`runs/lowfreq-axis_frequency{,_attn}-standard-spk03-e1000/spk03/`에 저장한다.

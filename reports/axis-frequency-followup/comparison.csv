@@ -1,0 +1,4 @@
+model,architecture,completed_epochs,best_epoch,original_f1,zero_f1,noise_only_fpr,parameters,training_only_projection_parameters,noise_only_false_positives,noise_only_count,checkpoint
+baseline,frequency,500,142,0.8857161402702332,0.8145044644673666,0.14375,87947,4192,69,480,runs/lowfreq-frequency-standard-spk03-e1000/spk03/cnn_pooled_query_best.pt
+A,axis_frequency,500,254,0.9079983830451965,0.8159008572498957,0.17083333333333334,88115,4192,82,480,runs/lowfreq-axis_frequency-standard-spk03-e1000/spk03/cnn_pooled_query_best.pt
+B,axis_frequency_attn,500,276,0.9446569085121155,0.8529079233606657,0.06875,90340,4192,33,480,runs/lowfreq-axis_frequency_attn-standard-spk03-e1000/spk03/cnn_pooled_query_best.pt

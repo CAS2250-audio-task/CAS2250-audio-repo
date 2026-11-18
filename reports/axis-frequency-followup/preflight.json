@@ -1,0 +1,380 @@
+{
+  "status": "passed",
+  "seed": 42,
+  "fold": "spk03",
+  "batch_paths": [
+    "audio/후진/spk05_189.wav",
+    "audio/왼쪽/spk04_089.wav",
+    "audio/오른쪽/spk04_081.wav",
+    "audio/복귀/spk02_010.wav",
+    "audio/정지/spk04_162.wav",
+    "audio/왼쪽/spk04_097.wav",
+    "audio/복귀/spk02_105.wav",
+    "audio/재시작/spk05_114.wav",
+    "audio/왼쪽/spk05_094.wav",
+    "audio/후진/spk05_195.wav",
+    "audio/정지/spk02_190.wav",
+    "audio/전진/spk05_126.wav",
+    "audio/대기/spk02_096.wav",
+    "audio/대기/spk02_097.wav",
+    "audio/출발/spk04_165.wav",
+    "audio/정지/spk05_153.wav",
+    "audio/시작/spk02_108.wav",
+    "audio/왼쪽/spk02_030.wav",
+    "audio/대기/spk05_014.wav",
+    "audio/전진/spk04_142.wav",
+    "audio/시작/spk05_059.wav",
+    "audio/재시작/spk02_033.wav",
+    "audio/출발/spk02_145.wav",
+    "audio/재시작/spk02_035.wav",
+    "audio/복귀/spk04_025.wav",
+    "audio/대기/spk02_068.wav",
+    "audio/전진/spk05_134.wav",
+    "audio/출발/spk02_051.wav",
+    "audio/전진/spk04_124.wav",
+    "audio/재시작/spk04_121.wav",
+    "audio/대기/spk04_016.wav",
+    "audio/대기/spk02_004.wav"
+  ],
+  "augmentation_trace": [
+    {
+      "index": 797,
+      "formant": true,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_canteen",
+      "start": 5154531,
+      "snr": 13.909931688363361
+    },
+    {
+      "index": 494,
+      "formant": false,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_pump",
+      "start": 277664,
+      "snr": 4.986522771885939
+    },
+    {
+      "index": 486,
+      "formant": true,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_mixer",
+      "start": 17550831,
+      "snr": 0.5579590473566309
+    },
+    {
+      "index": 9,
+      "formant": true,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_square",
+      "start": 3633534,
+      "snr": 17.47194136918375
+    },
+    {
+      "index": 567,
+      "formant": true,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_canteen",
+      "start": 12372515,
+      "snr": 8.561175833076557
+    },
+    {
+      "index": 502,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_pump",
+      "start": 7229869,
+      "snr": 3.61683575341368
+    },
+    {
+      "index": 104,
+      "formant": false,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_canteen",
+      "start": 11267583,
+      "snr": 3.4215986695973974
+    },
+    {
+      "index": 722,
+      "formant": true,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_pump",
+      "start": 20243988,
+      "snr": 14.016175492424495
+    },
+    {
+      "index": 702,
+      "formant": true,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_mixer",
+      "start": 22961119,
+      "snr": -0.41868616978083395
+    },
+    {
+      "index": 803,
+      "formant": true,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_pump",
+      "start": 20697373,
+      "snr": 12.550715856751882
+    },
+    {
+      "index": 189,
+      "formant": true,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_pump",
+      "start": 6211841,
+      "snr": 1.6965944554077286
+    },
+    {
+      "index": 734,
+      "formant": true,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_mixer",
+      "start": 8562629,
+      "snr": 9.106747530922645
+    },
+    {
+      "index": 95,
+      "formant": true,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_pump",
+      "start": 21842010,
+      "snr": 7.092395417842933
+    },
+    {
+      "index": 96,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_bus",
+      "start": 3175776,
+      "snr": 10.148224733420815
+    },
+    {
+      "index": 570,
+      "formant": true,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_traffic",
+      "start": 26396609,
+      "snr": 18.48184487591626
+    },
+    {
+      "index": 761,
+      "formant": false,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_pump",
+      "start": 1170094,
+      "snr": 14.368735392726673
+    },
+    {
+      "index": 107,
+      "formant": true,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_traffic",
+      "start": 21209087,
+      "snr": 18.045300144187745
+    },
+    {
+      "index": 29,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_canteen",
+      "start": 25518316,
+      "snr": 19.655497792842816
+    },
+    {
+      "index": 622,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_bus",
+      "start": 942031,
+      "snr": -4.612082655325857
+    },
+    {
+      "index": 547,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_canteen",
+      "start": 2411069,
+      "snr": 8.777626400750112
+    },
+    {
+      "index": 667,
+      "formant": true,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_canteen",
+      "start": 25220282,
+      "snr": 13.079252419672788
+    },
+    {
+      "index": 32,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_square",
+      "start": 3077672,
+      "snr": 12.269744517778395
+    },
+    {
+      "index": 144,
+      "formant": true,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_canteen",
+      "start": 16783131,
+      "snr": 15.086455632315946
+    },
+    {
+      "index": 34,
+      "formant": false,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_pump",
+      "start": 479634,
+      "snr": 9.244073147116044
+    },
+    {
+      "index": 430,
+      "formant": true,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_square",
+      "start": 4047140,
+      "snr": 4.596821436587009
+    },
+    {
+      "index": 67,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_mixer",
+      "start": 121743,
+      "snr": 9.81674881624497
+    },
+    {
+      "index": 742,
+      "formant": false,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_square",
+      "start": 2374110,
+      "snr": 6.049525107787067
+    },
+    {
+      "index": 50,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_mixer",
+      "start": 26293468,
+      "snr": 12.135256234756636
+    },
+    {
+      "index": 529,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_square",
+      "start": 216361,
+      "snr": 3.2535288671633182
+    },
+    {
+      "index": 526,
+      "formant": false,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_bus",
+      "start": 4681949,
+      "snr": -3.8465828047682877
+    },
+    {
+      "index": 421,
+      "formant": false,
+      "variant": 1,
+      "noise": true,
+      "noise_id": "train_traffic",
+      "start": 22714715,
+      "snr": 14.171427004310608
+    },
+    {
+      "index": 3,
+      "formant": false,
+      "variant": 0,
+      "noise": true,
+      "noise_id": "train_pump",
+      "start": 13652462,
+      "snr": 1.3468998063776345
+    }
+  ],
+  "source_sha256": {
+    "experiments/low_frequency_grid/__init__.py": "bf6bd0953bc2c0c80aa1de5292a5febc594e275bab872e057394104441b44420",
+    "experiments/low_frequency_grid/models.py": "d04cabbb9428a67ef0b02f8219a9cb0f15d4cfca84e9aa075ff98dc12e7a5cc1",
+    "experiments/low_frequency_grid/frontend.py": "049dc57f6f2853404aeb2480489b738dbb32f2b3216661f702423f1440dd0ea4",
+    "experiments/low_frequency_grid/run.py": "efdfaf27c05e5bd2074f6fb41e9ff0baeed7cf48d5bc932dd80ada5911c57f14",
+    "experiments/low_frequency_grid/launch.py": "d80db6ba3f3ec608707cd7f5ef352c7505568379a563d735fa9fa5cd0cb16ab8",
+    "experiments/low_frequency_grid/trainer.py": "964d4db2771ca12f30c4b77ddf2f65968a033d5d4ad8e254e9e7d66185a77495",
+    "experiments/low_frequency_grid/monitor.py": "5171d75f77c3e4ff57bfd3654a637b5f16727f598e577a3438a107233738ade2",
+    "experiments/low_frequency_grid/check_axis_frequency.py": "43c0c0430e2d5478b413acf149edf39d8cb20670ae278608beb979e229c63880"
+  },
+  "two_contiguous_bands_verified": true,
+  "results": [
+    {
+      "architecture": "axis_frequency",
+      "input_shape": [
+        32,
+        64,
+        151
+      ],
+      "logits_shape": [
+        32,
+        11
+      ],
+      "loss": 2.832585096359253,
+      "ce": 2.4179728031158447,
+      "supcon": 4.146121978759766,
+      "parameters": 88115,
+      "all_gradients_finite": true,
+      "initial_output_equal_to_band2": true,
+      "frontend_output_gradient": 0.022841086611151695
+    },
+    {
+      "architecture": "axis_frequency_attn",
+      "input_shape": [
+        32,
+        64,
+        151
+      ],
+      "logits_shape": [
+        32,
+        11
+      ],
+      "loss": 2.832585096359253,
+      "ce": 2.4179728031158447,
+      "supcon": 4.146121978759766,
+      "parameters": 90340,
+      "all_gradients_finite": true,
+      "initial_output_equal_to_band2": true,
+      "frontend_output_gradient": 0.022841086611151695
+    }
+  ]
+}

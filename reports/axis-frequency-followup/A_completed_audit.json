@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "matched_protocol_fields": [
+    "seed",
+    "folds",
+    "epochs",
+    "split",
+    "input",
+    "frontend",
+    "objective",
+    "augmentation",
+    "environment",
+    "optimizer",
+    "monitor",
+    "selection",
+    "final",
+    "labels",
+    "sources",
+    "audio_sha256",
+    "test_audio_read",
+    "test_evaluated"
+  ],
+  "normalization_bitwise_equal": true,
+  "identical_augmentation_epochs": 500,
+  "evidence": {
+    "history_rows": 500,
+    "original_predictions": 203,
+    "mixed_predictions": 4872,
+    "noise_draw_units": 24,
+    "predictions_recomputed_original_f1": 0.9079983017941466,
+    "predictions_recomputed_zero_f1": 0.8159008339524968,
+    "checkpoint_sha256": "2a42476856dfd5803774d9176c19e28f7e93fdb355ecdea1e6bc32223e36b939",
+    "last_checkpoint_sha256": "b214da31fae083a45cf9fe4a7cee87c86a396a5ca208f8182f8021dea39a1049",
+    "protocol_sha256": "94ea959c0cb4d37903b919d66077ad9207009282ba1cd95735428c0812f079f9",
+    "predictions_sha256": "b19d71e3bd6cd88fd6c5e7380fc1a17ce3edc13a8ee4c1dc8f1cd457eebba710",
+    "earliest_strict_maximum_verified": true,
+    "learning_rate_schedule_verified": true,
+    "checkpoint_strict_load_verified": true,
+    "parameter_count_verified": true
+  }
+}

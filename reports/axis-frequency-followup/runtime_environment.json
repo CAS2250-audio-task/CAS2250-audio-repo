@@ -1,0 +1,13 @@
+{
+  "python": "3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0]",
+  "executable": "/root/CAS2250-audio-repo/.venv/bin/python",
+  "torch": "2.3.1+cu121",
+  "torchaudio": "2.3.1+cu121",
+  "numpy": "1.24.4",
+  "pandas": "2.2.2",
+  "soundfile": "0.13.1",
+  "parselmouth": "0.4.6",
+  "source_snapshot_sha256": "1a2b8a8cb9a701c42f0af72a690bf88f6fe37f957745328da19e1d6307cbf02d",
+  "formant_cache_sha256": "dbfafd714f371befa1c609f0aa39858f267c944108bfc5d786976c29b2afd9b8",
+  "source_manifest_sha256": "b768e70d3711b2ef1f7c9c167b3cd26b5ab9cb29f131cef883e94bb04b99f828"
+}

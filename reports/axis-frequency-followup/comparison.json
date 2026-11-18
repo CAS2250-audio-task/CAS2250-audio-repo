@@ -1,0 +1,60 @@
+{
+  "rows": [
+    {
+      "model": "baseline",
+      "architecture": "frequency",
+      "completed_epochs": 500,
+      "best_epoch": 142,
+      "original_f1": 0.8857161402702332,
+      "zero_f1": 0.8145044644673666,
+      "noise_only_fpr": 0.14375,
+      "parameters": 87947,
+      "training_only_projection_parameters": 4192,
+      "noise_only_false_positives": 69,
+      "noise_only_count": 480,
+      "checkpoint": "runs/lowfreq-frequency-standard-spk03-e1000/spk03/cnn_pooled_query_best.pt"
+    },
+    {
+      "model": "A",
+      "architecture": "axis_frequency",
+      "completed_epochs": 500,
+      "best_epoch": 254,
+      "original_f1": 0.9079983830451965,
+      "zero_f1": 0.8159008572498957,
+      "noise_only_fpr": 0.17083333333333334,
+      "parameters": 88115,
+      "training_only_projection_parameters": 4192,
+      "noise_only_false_positives": 82,
+      "noise_only_count": 480,
+      "checkpoint": "runs/lowfreq-axis_frequency-standard-spk03-e1000/spk03/cnn_pooled_query_best.pt"
+    },
+    {
+      "model": "B",
+      "architecture": "axis_frequency_attn",
+      "completed_epochs": 500,
+      "best_epoch": 276,
+      "original_f1": 0.9446569085121155,
+      "zero_f1": 0.8529079233606657,
+      "noise_only_fpr": 0.06875,
+      "parameters": 90340,
+      "training_only_projection_parameters": 4192,
+      "noise_only_false_positives": 33,
+      "noise_only_count": 480,
+      "checkpoint": "runs/lowfreq-axis_frequency_attn-standard-spk03-e1000/spk03/cnn_pooled_query_best.pt"
+    }
+  ],
+  "deltas": {
+    "B_minus_A": {
+      "original_f1_pp": 3.6658525466918945,
+      "zero_f1_pp": 3.700706611076998,
+      "noise_only_fpr_pp": -10.208333333333334,
+      "parameters": 2225
+    },
+    "A_minus_baseline": {
+      "original_f1_pp": 2.228224277496338,
+      "zero_f1_pp": 0.1396392782529121,
+      "noise_only_fpr_pp": 2.708333333333335,
+      "parameters": 168
+    }
+  }
+}

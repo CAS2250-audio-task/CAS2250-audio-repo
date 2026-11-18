@@ -21,9 +21,11 @@ def main():
     info=dict(name='low-frequency-grid',architecture=args.architecture,frontend=configuration(args.frontend),
         pilot='Staged training under a fixed 1000epoch cosine protocol; stop budget is runtime-only; Pooled fixed',
         temporal_readout='Pooled',vertical_attention=args.architecture.endswith('_attn'),
-        frequency_cnn='2-band frequency pooling in both final and local path' if args.architecture.startswith('frequency') else None,
+        frequency_cnn='2-band frequency pooling in both final and local path' if 'frequency' in args.architecture else None,
         source_files='Full source hashes include baseline modules and this isolated wrapper',
         extra_source_files=[str(p.relative_to(root)) for p in sorted(set(paths))])
+    if args.architecture.startswith('axis_frequency'):
+        info['axis_frontend']='8-channel residual frequency5x1 then time1x3'
     trainer.main(remaining+['--models','cnn_pooled_query'],
         model_factory=lambda seed:models(seed,args.architecture),experiment_config=info)
 
